@@ -1,45 +1,43 @@
 # HyRead 九館：ChatGPT 輔助增量更新流程
 
-> **目前狀態：** 2026-10-30 的第一次 GitHub-hosted Runner 執行，九館的 HyRead 分類頁均回傳 HTTP 403。因此停止 GitHub Actions 每週直接擷取。**本文件描述新的人工輔助流程，不代表此時已完成任何一次新書單核對。**
+> **目前預設採 V1.6 簡化規則（schema 3）**。仍由使用者在 ChatGPT 對話手動發出更新指令，ChatGPT 查詢九館「最新出刊」清單，將已取得的新資料合併至 GitHub 並部署；並非 GitHub Runner 自動爬取。舊的 V1.4/V1.5 嚴格模式只留作歷史相容，**不再是新更新指令的預設規則**。
 
-## V1.5：ChatGPT 同批次分頁核對（優先使用）
+## V1.6：下次在 ChatGPT 直接這樣說
 
-**維持 ChatGPT 網頁版更新，不需要本機爬蟲，也沒有恢復 GitHub Runner 對 HyRead 的擷取。** 請在本對話直接要求「更新九館最近 7 天雜誌，從最新出刊第 1 頁依序查到回查日期界線，保留同批次分頁、快取時間與具體錯誤原因；驗證後推送 GitHub」。來源查詢、資料比對、推送都要於該次互動完成，不能虛構已讀取分頁。
+> 更新 HyRead 九館**最近 7 天**的雜誌。從每館最新出刊第 1 頁開始，依序讀到該日期界線，**不額外回查 7 天、不重查第一頁**。允許搜尋快取；只接受已確認的書目及出版日期；遇 HTTP 401/403 立即停止該館，暫時性錯誤或舊於資料庫的刊期隨機間隔再重試最多兩次，記錄原因。正常完成時保存第一本書的書名、jid（若有）、日期及連結。保留既有較新刊期及舊書，最後合併 GitHub 並部署。
 
-1. 每館建立獨立 `coverage.scan_id`（如 `tpml-20261030-190000`），由最新出刊第 1 頁開始，沿官方實際分頁連結依序讀取第 2、3…頁，直到回查日期界線。若無法直接取得，記錄所能確認的頁面；不得自行以搜尋引擎的查詢結果推定官方分頁內容。
-2. 對每頁區分 **`observed_at`（ChatGPT 實際觀察時間）** 與 **`indexed_at`（搜尋服務明確提供的原始索引時間）**。無法確知索引時間就留空，**不要把觀察時間當成索引建立時間**。可取得的是搜尋摘要／索引時，一律標為 `search_index`，不能標為 `direct`。
-3. 若可確認官方頁面是直接取得，保留該頁書目、頁碼、原始 URL、來源類型、`record_count` 與依書目生成的 SHA-256 `content_digest`。可由 `src/latest_pages.py` 的 `inspect_latest_html(..., scan_id=...)` 產生；**僅有搜尋快取摘要時，不得自行捏造 HTML 或摘要**。
-4. 直接連續讀完必要分頁後，重新取得第 1 頁，將再次解析的證據填入 `coverage.first_page_recheck`。V1.5（schema 2）宣稱 `complete` 必須通過相同 `scan_id`、每頁摘要、10 分鐘內的同次觀察、跨頁日期排序、日期界線與第 1 頁前後一致性檢查。`scan_id` 和時間接近本身仍不等於伺服器快照保證。
-5. 任一分頁缺漏、來源僅是搜尋索引、索引時間差異過大，或前後頁面不一致，都應標為 `partial`；保留已核實的書目與 `jid`，不得把拼接的搜尋快取當成完整核對。分類頁可補充個別已確認書目，但不能填補未知分頁的「完整」證明。
+### 工作規則（取代舊版嚴格來源驗證）
 
-### V1.5 錯誤代碼與回報
+1. **日期範圍：** 最近 N 天含當天，以臺灣日期計；例如 2026-10-30 查最近 7 天，就是 **2026-10-24 至 2026-10-30（含）**。不再無條件增加回查天數。
+2. **逐頁：** 優先讀各館 `/Template/RWD3.0/magazine_view_more.jsp`（第 1 頁），看該頁最後一筆出版日期。若日期 **大於** 查詢起日才讀第 2 頁，持續直到有一頁最後一筆 **小於或等於** 起日。每頁應能辨識真實書名、刊期及其分頁來源，不以零碎搜尋摘要猜測整頁。
+3. **不重查第一頁：** 結束後不要求再取得同一頁，也不要求掃描摘要、索引時間或全部頁面為同時快照；快取只要內容明確可讀，即可作為分頁資料。若缺頁、日期未達界線或頁面根本無法辨識，改記「部分更新」。
+4. **完成接續點：** 每館僅在本次**正常完成**指定日期頁面查詢、且沒有舊刊期異常時，寫入 `latest_page_anchor`：第 1 頁第一筆的書名、日期、經實際來源確認的 `jid`（無則 `null`）、`magazine_url`、`source_url`、`checked_at`。這是未來接續比較參考，**目前仍是每次從第 1 頁開始**。
+5. **舊刊期：** 若第 1 頁最新日期落後先前接續點（沒有接續點則比較資料庫該館已知最晚刊期），或某書刊期比資料庫已存刊期舊，請先重新讀取有問題的來源頁（最多額外 2 次，每次如有等待須記下實際秒數）。重試後仍舊，只記為 `STALE_CACHE`／部分更新；可安全合併其他已確認較新資料，**舊日期永遠不覆蓋新日期**。
+6. **失敗定義：** 實際確認 HTTP 401/403 或要求登入，該館立即停止，不再重試，記錄 `ACCESS_DENIED`。超時、偶發斷線、頁面內容不完整則允許隨機等待後重試兩次。第 1 頁始終沒辦法正常取得就是 `failed`，第 1 頁有取得但後續分頁不完整就是 `partial`。
+7. **書目保存：** 原有 `magazine_url`、`source_url`、書名與各館最新刊期照舊；同一書／同一館只有新日期才能升級，舊日期不覆蓋，新取得的合法書目連結可補齊缺值。增量未查到的舊書不刪除、不增加未收錄次數。
+8. **操作模式：** ChatGPT 在本次對話查詢並把核實的資料包送入 `src.assisted_update` 的 schema 3，再驗證、乾跑、推送 GitHub；不要求 Windows 或本機爬蟲。不保證 ChatGPT 頁面取得工具每次都能抓完所有分頁；無法讀取必須如實記錄。
 
-- `ACCESS_DENIED`：實際觀察到的 HTTP 401／403 或明確拒絕存取（不能從「工具無法讀取」推斷）；`RATE_LIMITED`：429；`TIMEOUT`、`NETWORK_ERROR`、`SERVER_ERROR`：實際連線或回應失敗。
-- `TOOL_UNAVAILABLE`：ChatGPT 讀取工具無法開啟、沒有可確認的 HTTP 回應；`PARSER_ERROR`：內容已取得但解析失敗；`PAGE_MISSING`：缺必要分頁。
-- `CACHE_ONLY`、`STALE_CACHE`、`DATE_BOUNDARY_NOT_REACHED`、`SNAPSHOT_DRIFT`：快取、界線或掃描一致性問題；不確定的錯誤請用 `UNKNOWN`，並在 `error` 描述證據，不要編造狀態碼。
-- V1.5 失敗館必須帶 `error_code`；失敗分頁可帶 `error_code`／`error`／實際觀察到的 `http_status`。保留每館 `attempts`、實際 `retry_wait_seconds`；臨時錯誤最多額外重試兩次，明確 401／403 不重試。
-- 網站的「書單更新紀錄」會顯示每館診斷碼、直接來源與快取頁數、缺頁及相關警示；報告 JSON 的 `coverage.diagnostics` 另外保留掃描時間差、快取索引時間差與第 1 頁重查結果。
+### schema 3（V1.6）資料格式
 
-### schema 2 完整核對範例（僅示意欄位）
-
-沿用下方既有的 `schema: 1` 範例作舊版相容；新批次改用 `schema: 2`，並將每館 `coverage` 補上以下結構。SHA-256 與時間必須來自實際取得的證據，以下符號不是可直接匯入的真實資料：
+沿用目前批次欄位 `source`、`batch_id`、`window_start`、`window_end`、`libraries`；將 `schema` 改為 **3**，各館使用 `coverage.method: latest_pages`。每個可確認頁面在 `coverage.pages` 記錄 `page`、`url`、`status`、`source_type`（`direct`／`search_index`）、`observed_at`、`newest_date`、`oldest_date`。第一頁成功時必須有：
 
 ```json
-{
-  "scan_id": "tpml-20261030-190000",
-  "method": "latest_pages",
-  "pagination_contiguous": true,
-  "date_boundary_reached": true,
-  "pages": [
-    {"page": 1, "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1", "status": "ok", "source_type": "direct", "scan_id": "tpml-20261030-190000", "observed_at": "2026-10-30T19:00:00+08:00", "newest_date": "2026-10-30", "oldest_date": "2026-10-28", "record_count": 12, "content_digest": "<實際SHA256>"}
-  ],
-  "first_page_recheck": {"source_type": "direct", "scan_id": "tpml-20261030-190000", "observed_at": "2026-10-30T19:02:00+08:00", "content_digest": "<實際SHA256>"}
+"first_book": {
+  "title": "示範書名",
+  "date": "2026-10-30",
+  "jid": "846",
+  "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+  "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1"
 }
 ```
 
-這個例子未包含到達查詢日期界線所需的所有分頁，因此也**不構成完整核對證明**。只有 `validate_batch` 實際通過才可以使用 `complete`。
+這段應放在該館 `coverage` 下，**僅為欄位範例，不能當作真實書目匯入**。沒有實際確認的 `jid` 與詳細書目網址，請填 `null`；不要用書名或其他館的 `jid` 推算。頁面 `source_type=search_index` 可以完成 V1.6 日期邊界，前提是每頁內容及頁碼確實可辨識。若只有片段索引，請改列 `partial`。
 
-**重要限制**：ChatGPT 的網頁讀取服務可能回傳快取或無法確認來源時間；V1.5 無法強迫外部網站提供同次即時分頁，只能優先直接取得並誠實記錄是否符合完整核對條件。
+當某館 `complete`，日期界線與連續頁碼由 `src/coverage.py` 自動檢查。若讀到已存資料更舊，更新器會要求最多兩次重試；送入的批次在三次嘗試後仍舊，將降級為 `partial`，保留既有較新資料與接續點，並顯示警示。
+
+**以下是歷史 V1.4/V1.5 內容，供查閱舊規則，不是目前預設執行流程。**
+
+---
 
 ## 你在 ChatGPT 的操作方式
 
