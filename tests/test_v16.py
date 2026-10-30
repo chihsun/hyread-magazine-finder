@@ -189,6 +189,7 @@ class SimpleUpdateV16(unittest.TestCase):
         self.assertEqual(saved['items'][key('未來刊甲')]['latest_date'],'2026-11-05')
         self.assertEqual(saved['items'][key('全新未來刊')]['latest_date'],'2026-11-01')
         self.assertEqual(saved['latest_page_anchor']['date'],'2026-11-05')
+        self.assertEqual(result['batch_schema'],3)
         self.assertEqual(result['summary']['new_issues'],1)
         self.assertEqual(result['summary']['new_titles'],2)
 
