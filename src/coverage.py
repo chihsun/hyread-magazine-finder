@@ -50,7 +50,7 @@ def _iso_date(value: str) -> str:
 
 
 def validate_coverage(payload: dict | None, library_id: str, window_start: str,
-                      completed: bool, *, strict: bool = False) -> dict:
+                      completed: bool, *, strict: bool = False, simple: bool = False) -> dict:
     """Validate claimed coverage, refusing unproven complete checks.
 
     Date boundary proof requires consecutive direct-source pages, starting at 1,
@@ -178,6 +178,40 @@ def validate_coverage(payload: dict | None, library_id: str, window_start: str,
     elif any(x in diagnostics['issues'] for x in
              ('SCAN_ID_MISMATCH','DUPLICATE_PAGE_CONTENT','SNAPSHOT_DRIFT_OR_RECHECK_INVALID')):
         is_complete=False
+    if simple:
+        # V1.6: prefer operational usefulness over cross-snapshot guarantees.
+        # A real page-by-page observation may be cached; only a continuous
+        # series with enough publication-date coverage may be marked complete.
+        # The cache warning stays in diagnostics but does not veto completion.
+        readable=sorted([p for p in cleaned if p['status']=='ok'],
+                        key=lambda p:p['page'])
+        page_ids=[p['page'] for p in readable]
+        uninterrupted=(bool(readable) and page_ids==list(range(1,len(readable)+1))
+                       and len(readable)==len(cleaned))
+        dates_ordered=all(
+            a['newest_date'] >= b['newest_date'] and
+            a['oldest_date'] >= b['oldest_date']
+            for a,b in zip(readable,readable[1:])
+        )
+        is_complete=(method=='latest_pages' and uninterrupted and dates_ordered
+                     and readable[-1]['oldest_date'] <= window_start)
+        if not dates_ordered:
+            diagnostics['issues'].append('CROSS_PAGE_DATE_ORDER')
+        # A missing page number, an actual failed page, or an undetermined
+        # last-page date must never accidentally become complete.
+        if completed and not is_complete:
+            raise ValueError(f'{library_id}: 最新出刊頁面未連續讀到要求日期，不能標示正常完成')
+        first_page = next((p for p in readable if p['page']==1),None)
+        return {'method':method,'pages':cleaned,
+                'date_boundary_reached':is_complete,
+                'pagination_contiguous':uninterrupted,
+                'checked_pages':len(readable),
+                'failed_pages':sum(p['status']=='failed' for p in cleaned),
+                'direct_pages':len(verified),'diagnostics':diagnostics,
+                'scan_id':diagnostics['scan_id'],
+                'first_page_ok':bool(first_page),
+                'first_book':payload.get('first_book'),
+                'mode':'simple'}
     if completed and not is_complete:
         raise ValueError(f'{library_id}: 未達完整核對條件：缺頁、快取、日期界線或未完整檢查 12 分類')
     return {'method':method,'pages':cleaned,'date_boundary_reached':bool(is_complete),
