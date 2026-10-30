@@ -1,0 +1,686 @@
+{
+  "schema": 1,
+  "source": "chatgpt_assisted",
+  "batch_id": "manual-20261030-7day-v14-002",
+  "window_start": "2026-10-23",
+  "window_end": "2026-10-30",
+  "libraries": [
+    {
+      "id": "taichunggov",
+      "status": "partial",
+      "attempts": 1,
+      "retry_wait_seconds": [],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-11-02",
+            "oldest_date": "2026-10-28",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          },
+          {
+            "page": 2,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-10-12",
+            "oldest_date": "2026-10-01",
+            "error": "分頁索引為前一週快取，與第一頁擷取時間不一致",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "今周刊(精華版)",
+          "date": "2026-10-29",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "點股成金特別版",
+          "date": "2026-10-29",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "新新聞",
+          "date": "2026-10-29",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "先探投資週刊",
+          "date": "2026-10-29",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "理財周刊",
+          "date": "2026-10-29",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "天下雜誌(精華版)",
+          "date": "2026-10-28",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "鏡週刊",
+          "date": "2026-10-28",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "經貿透視雙周刊",
+          "date": "2026-10-28",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "官方搜尋索引取得部分內容；非直接成功讀取"
+        }
+      ]
+    },
+    {
+      "id": "tpml",
+      "status": "partial",
+      "attempts": 1,
+      "retry_wait_seconds": [],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-11-02",
+            "oldest_date": "2026-10-29",
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "今周刊(精華版)",
+          "date": "2026-10-29",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941"
+        },
+        {
+          "title": "點股成金特別版",
+          "date": "2026-10-29",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "新新聞",
+          "date": "2026-10-29",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "今周刊",
+          "date": "2026-10-29",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134"
+        },
+        {
+          "title": "先探投資週刊",
+          "date": "2026-10-29",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "萬寶週刊",
+          "date": "2026-10-29",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=79",
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=79"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "官方搜尋索引取得部分內容；非直接成功讀取"
+        }
+      ]
+    },
+    {
+      "id": "tnml",
+      "status": "partial",
+      "attempts": 3,
+      "retry_wait_seconds": [
+        4.476,
+        11.219
+      ],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "failed",
+            "source_type": "direct",
+            "error": "最新出刊第1頁直接讀取仍不可用；三次嘗試後停止",
+            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          },
+          {
+            "page": 1,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-10-25",
+            "oldest_date": "2026-10-14",
+            "error": "搜尋索引快取上週版本；首頁已顯示10/29資料",
+            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "先探投資週刊",
+          "date": "2026-10-29",
+          "source_url": "https://tnml.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "理財周刊",
+          "date": "2026-10-29",
+          "source_url": "https://tnml.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "商業周刊(精華版)",
+          "date": "2026-10-26",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine.jsp"
+        },
+        {
+          "title": "商業周刊",
+          "date": "2026-10-26",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine.jsp"
+        },
+        {
+          "title": "APA KABAR印尼語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine.jsp"
+        },
+        {
+          "title": "英語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine.jsp"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "來源讀取器不可用"
+        },
+        {
+          "attempt": 2,
+          "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+          "result": "來源讀取器不可用",
+          "wait_before_seconds": 4.476
+        },
+        {
+          "attempt": 3,
+          "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+          "result": "來源讀取器不可用",
+          "wait_before_seconds": 11.219
+        }
+      ]
+    },
+    {
+      "id": "tphcc",
+      "status": "partial",
+      "attempts": 1,
+      "retry_wait_seconds": [],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-10-25",
+            "oldest_date": "2026-10-12",
+            "error": "第一頁搜尋索引為上週版本，首頁有較新的刊期資訊",
+            "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "先探投資週刊",
+          "date": "2026-10-29",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "今周刊(精華版)",
+          "date": "2026-10-29",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "商業周刊(精華版)",
+          "date": "2026-10-26",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "APA KABAR印尼語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "英語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "Hi! JAPAN 日語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "官方搜尋索引取得部分內容；非直接成功讀取"
+        }
+      ]
+    },
+    {
+      "id": "ksml",
+      "status": "partial",
+      "attempts": 3,
+      "retry_wait_seconds": [
+        4.476,
+        11.219
+      ],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "failed",
+            "source_type": "direct",
+            "error": "最新出刊第1頁無法讀取；三次嘗試後，改用本館首頁書目線索",
+            "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "先探投資週刊",
+          "date": "2026-10-29",
+          "source_url": "https://ksml.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "今周刊(精華版)",
+          "date": "2026-10-29",
+          "source_url": "https://ksml.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "商業周刊(精華版)",
+          "date": "2026-10-26",
+          "source_url": "https://ksml.ebook.hyread.com.tw/index.jsp"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "來源讀取器不可用"
+        },
+        {
+          "attempt": 2,
+          "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+          "result": "來源讀取器不可用",
+          "wait_before_seconds": 4.476
+        },
+        {
+          "attempt": 3,
+          "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+          "result": "來源讀取器不可用",
+          "wait_before_seconds": 11.219
+        }
+      ]
+    },
+    {
+      "id": "tycccgov",
+      "status": "partial",
+      "attempts": 1,
+      "retry_wait_seconds": [],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-11-02",
+            "oldest_date": "2026-10-28",
+            "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "今周刊(精華版)",
+          "date": "2026-10-29",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "點股成金特別版",
+          "date": "2026-10-29",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "新新聞",
+          "date": "2026-10-29",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "先探投資週刊",
+          "date": "2026-10-29",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "理財周刊",
+          "date": "2026-10-29",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "天下雜誌(精華版)",
+          "date": "2026-10-28",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "鏡週刊",
+          "date": "2026-10-28",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "經貿透視雙周刊",
+          "date": "2026-10-28",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "大師輕鬆讀",
+          "date": "2026-10-28",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "Android玩樂誌",
+          "date": "2026-10-26",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "官方搜尋索引取得部分內容；非直接成功讀取"
+        }
+      ]
+    },
+    {
+      "id": "hchcc",
+      "status": "partial",
+      "attempts": 1,
+      "retry_wait_seconds": [],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-11-01",
+            "oldest_date": "2026-10-15",
+            "error": "索引上週版本，不能據此宣稱今天查至日期界線",
+            "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "商業周刊(精華版)",
+          "date": "2026-10-26",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "商業周刊",
+          "date": "2026-10-26",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "APA KABAR印尼語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "英語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "Hi! JAPAN 日語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "官方搜尋索引取得部分內容；非直接成功讀取"
+        }
+      ]
+    },
+    {
+      "id": "hcmlgov",
+      "status": "partial",
+      "attempts": 3,
+      "retry_wait_seconds": [
+        4.476,
+        11.219
+      ],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "failed",
+            "source_type": "direct",
+            "error": "最新出刊第1頁直接讀取無法使用；三次嘗試後改用首頁與索引",
+            "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          },
+          {
+            "page": 1,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-10-25",
+            "oldest_date": "2026-10-09",
+            "error": "分頁索引上週版本，但首頁已有10/29期刊",
+            "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "先探投資週刊",
+          "date": "2026-10-29",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "理財周刊",
+          "date": "2026-10-29",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "今周刊(精華版)",
+          "date": "2026-10-29",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/index.jsp"
+        },
+        {
+          "title": "APA KABAR印尼語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "英語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        },
+        {
+          "title": "Hi! JAPAN 日語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "來源讀取器不可用"
+        },
+        {
+          "attempt": 2,
+          "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+          "result": "來源讀取器不可用",
+          "wait_before_seconds": 4.476
+        },
+        {
+          "attempt": 3,
+          "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+          "result": "來源讀取器不可用",
+          "wait_before_seconds": 11.219
+        }
+      ]
+    },
+    {
+      "id": "klccab",
+      "status": "partial",
+      "attempts": 3,
+      "retry_wait_seconds": [
+        4.476,
+        11.219
+      ],
+      "notes": "僅能核對部分 HyRead 官方網頁搜尋索引，並非同次直接、連續讀取「最新出刊」全部分頁；分頁快取不一致或尚未查至日期界線，不能判定未列出的書已下架。",
+      "coverage": {
+        "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
+        "pages": [
+          {
+            "page": 1,
+            "status": "failed",
+            "source_type": "direct",
+            "error": "最新出刊第1頁無法讀取，經兩次間隔重試仍無法存取",
+            "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          },
+          {
+            "page": 2,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-10-28",
+            "oldest_date": "2026-10-06",
+            "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          },
+          {
+            "page": 3,
+            "status": "ok",
+            "source_type": "search_index",
+            "newest_date": "2026-10-01",
+            "oldest_date": "2026-10-01",
+            "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "observed_at": "2026-10-30T19:04:43.776+08:00"
+          }
+        ]
+      },
+      "records": [
+        {
+          "title": "大師輕鬆讀",
+          "date": "2026-10-28",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+        },
+        {
+          "title": "Android玩樂誌",
+          "date": "2026-10-26",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+        },
+        {
+          "title": "500輯",
+          "date": "2026-10-25",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+        },
+        {
+          "title": "APA KABAR印尼語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+        },
+        {
+          "title": "英語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+        },
+        {
+          "title": "Hi! JAPAN 日語學習誌",
+          "date": "2026-10-25",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+        }
+      ],
+      "query_log": [
+        {
+          "attempt": 1,
+          "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "result": "來源讀取器不可用"
+        },
+        {
+          "attempt": 2,
+          "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+          "result": "來源讀取器不可用",
+          "wait_before_seconds": 4.476
+        },
+        {
+          "attempt": 3,
+          "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+          "result": "來源讀取器不可用",
+          "wait_before_seconds": 11.219
+        }
+      ]
+    }
+  ]
+}
