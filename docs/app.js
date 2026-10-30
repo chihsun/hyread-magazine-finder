@@ -162,12 +162,18 @@ function renderReport(report) {
     const failedPages=Number(coverage.failed_pages)||0;
     const boundary=coverage.date_boundary_reached?'✓ 已驗證日期界線':'日期界線未確認';
     const coverageLine=assisted?`<p class="report-muted">頁面核對：${verifiedPages} 頁通過，${failedPages} 頁失敗 · ${boundary} · 來源 ${safe(coverage.method||'unknown')} ${pages.length?` · 已記錄 ${pages.length} 頁來源`:''}</p>`:'';
-    const pagesLine=pages.length?`<details class="change-details"><summary>查看已查／缺漏分頁（${pages.length}）</summary><ul>${pages.map(p=>`<li>${safe('第'+p.page+'頁')} · ${safe(p.status)} · ${safe(p.source_type)} · ${safe(p.oldest_date||'?')}～${safe(p.newest_date||'?')}${officialLink(p.url)?` · <a href="${safe(officialLink(p.url))}" rel="noopener noreferrer" target="_blank">來源 ↗</a>`:''}</li>`).join('')}</ul></details>`:'';
+    const diagnostic=coverage.diagnostics||{};
+    const problems=Array.isArray(diagnostic.issues)?diagnostic.issues:[];
+    const gaps=Array.isArray(diagnostic.missing_pages)?diagnostic.missing_pages:[];
+    const sourceKinds=diagnostic.source_types||{};
+    const diagnosticLine=assisted && (l.error_code || coverage.scan_id || problems.length || gaps.length || sourceKinds.search_index)?
+      `<p class="report-muted">診斷：${l.error_code?`<strong>${safe(l.error_code)}</strong> · `:''}${coverage.scan_id?`批次 ${safe(coverage.scan_id)} · `:''}直接來源 ${Number(sourceKinds.direct)||0} 頁、搜尋快取 ${Number(sourceKinds.search_index)||0} 頁${gaps.length?` · 缺頁 ${safe(gaps.join(', '))}`:''}${problems.length?` · 警示 ${safe(problems.join('、'))}`:''}</p>`:'';
+    const pagesLine=pages.length?`<details class="change-details"><summary>查看已查／缺漏分頁（${pages.length}）</summary><ul>${pages.map(p=>`<li>${safe('第'+p.page+'頁')} · ${safe(p.status)} · ${safe(p.source_type)} · ${safe(p.oldest_date||'?')}～${safe(p.newest_date||'?')}${p.error_code?` · <strong>${safe(p.error_code)}</strong>`:''}${p.http_status?` · HTTP ${Number(p.http_status)}`:''}${p.indexed_at?` · 索引時間 ${safe(fmtStamp(p.indexed_at))}`:''}${p.error?` · ${safe(p.error)}`:''}${officialLink(p.url)?` · <a href="${safe(officialLink(p.url))}" rel="noopener noreferrer" target="_blank">來源 ↗</a>`:''}</li>`).join('')}</ul></details>`:'';
     const attempt=assisted?` · 嘗試 ${Number(l.attempts)||0} 次`:` · 重試 ${Number(l.retries)||0} 次`;
     return `<div class="report-library"><div class="report-lib-head"><strong>${safe(l.name)}</strong><span class="status-badge ${kind==='ok'?'ok':kind==='partial'?'seed':'stale'}">${wording}</span></div>
     <div class="report-lib-stats">${count} · 現有 ${Number(l.active_count)||0} 筆${attempt} · 最近完整核對 ${safe(fmtStamp(l.last_complete_check||l.last_success))} · 最近部分核對 ${safe(fmtStamp(l.last_partial_check))}<br>
     新增書名 ${(c.new||[]).length} · 新刊期 ${(c.new_issue||[]).length} · 恢復 ${(c.returned||[]).length} · 停止列出 ${(c.not_listed||[]).length}</div>
-    ${coverageLine}${pagesLine}
+    ${coverageLine}${diagnosticLine}${pagesLine}
     ${l.notes?`<p class="report-muted">核對範圍：${safe(l.notes)}</p>`:''}
     ${l.error?`<p class="report-error">${safe(l.error)}</p>`:''}
     ${changeCount?`<details class="change-details"><summary>展開 ${changeCount} 筆異動書名</summary>${changes}</details>`:`<p class="report-muted">${kind==='stale'?'本次未取得可確認的更新。':kind==='not_checked'?'本次未安排查詢。':'本次無新書目異動（不代表全館沒有更新）。'}</p>`}
