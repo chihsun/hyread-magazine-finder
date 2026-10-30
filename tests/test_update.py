@@ -1,11 +1,12 @@
 import copy
 import tempfile
 import unittest
+import requests
 from datetime import datetime
 from pathlib import Path
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
-from src.hyread import LibraryScanner,AccessDeniedError,extract_category,key
+from src.hyread import LibraryScanner,AccessDeniedError,RateLimitPause,extract_category,key,retry_after_seconds
 from src.update import initialize,make_seed,ingest,published
 
 SAMPLE = '''<html><body><nav>電子雜誌　財經商管</nav>
@@ -85,6 +86,65 @@ class HyReadTests(unittest.TestCase):
             scanner.fetch('https://tpml.ebook.hyread.com.tw/')
         self.assertEqual(fake.get.call_count, 1)
         self.assertEqual(scanner.used_retries, 0)
+
+    def test_transient_retries_use_jitter_windows(self):
+        fake = Mock()
+        fake.headers = {}
+        fake.get.side_effect = [requests.exceptions.Timeout('slow'),
+                                requests.exceptions.Timeout('slow'),
+                                requests.exceptions.Timeout('slow'),
+                                Mock(status_code=200, content=b'x'*1000)]
+        scanner = LibraryScanner('tpml', retries=3, session=fake)
+        with patch('src.hyread.random.uniform', side_effect=[3.0, 7.0, 15.0]) as rng, \
+             patch('src.hyread.time.sleep') as pause:
+            data = scanner.fetch('https://example.test/')
+        self.assertEqual(len(data), 1000)
+        self.assertEqual(fake.get.call_count, 4)
+        self.assertEqual(scanner.used_retries, 3)
+        self.assertEqual([c.args[0] for c in pause.call_args_list], [3.0, 7.0, 15.0])
+        self.assertEqual([c.args for c in rng.call_args_list],
+                         [(2.0, 5.0), (5.0, 10.0), (10.0, 20.0)])
+
+    def test_categories_have_random_pacing(self):
+        scanner = LibraryScanner('tpml', delay=(1.5, 3.5))
+        with patch('src.hyread.random.uniform', return_value=2.5) as rng, \
+             patch('src.hyread.time.sleep') as pause:
+            scanner._wait_between_categories()
+        rng.assert_called_once_with(1.5, 3.5)
+        pause.assert_called_once_with(2.5)
+
+    def test_http_429_respects_retry_after(self):
+        fake = Mock()
+        fake.headers = {}
+        retry = Mock(status_code=429)
+        retry.headers = {'Retry-After':'12'}
+        success = Mock(status_code=200, content=b'x'*1000)
+        fake.get.side_effect = [retry, success]
+        scanner = LibraryScanner('tpml', session=fake)
+        with patch('src.hyread.random.uniform', return_value=3), \
+             patch('src.hyread.time.sleep') as pause:
+            scanner.fetch('https://example.test/')
+        pause.assert_called_once_with(12.0)
+        self.assertEqual(scanner.used_retries, 1)
+
+    def test_long_retry_after_stops_without_retry(self):
+        fake = Mock()
+        fake.headers = {}
+        response = Mock(status_code=429)
+        response.headers={'Retry-After':'300'}
+        fake.get.return_value=response
+        scanner=LibraryScanner('tpml',session=fake)
+        with patch('src.hyread.time.sleep') as pause:
+            with self.assertRaises(RateLimitPause):
+                scanner.fetch('https://example.test/')
+        self.assertEqual(fake.get.call_count, 1)
+        pause.assert_not_called()
+        self.assertEqual(scanner.used_retries, 0)
+
+    def test_retry_after_date_header(self):
+        self.assertIsNone(retry_after_seconds('invalid'))
+        self.assertEqual(retry_after_seconds('0'), 0.0)
+        self.assertGreater(retry_after_seconds('Fri, 30 Oct 2037 10:00:00 GMT'), 0)
 
     def test_retry_budget_per_library_not_per_request(self):
         class FakeSession:
