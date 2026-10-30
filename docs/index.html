@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b3552">
+  <meta name="theme-color" id="theme-color" content="#0b3552">
   <meta name="description" content="搜尋九間臺灣公共圖書館 HyRead 電子雜誌書單與最新發刊日期。">
   <title>HyRead 九館電子雜誌搜尋</title>
+  <script>try{const t=localStorage.getItem('hyread-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(_){}</script>
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
@@ -18,6 +19,13 @@
       <p>一次比較九間圖書館的電子雜誌，掌握各館最新發刊日期。</p>
     </div>
     <div class="header-actions">
+      <label class="theme-switch" for="theme">◐ 顯示模式
+        <select id="theme" aria-label="顯示模式">
+          <option value="auto">自動</option>
+          <option value="light">淺色</option>
+          <option value="dark">深色</option>
+        </select>
+      </label>
       <button id="refresh" type="button" class="glass">↻ 重新載入資料</button>
       <a id="admin" class="glass" href="https://github.com/chihsun/hyread-magazine-finder/actions/workflows/update-magazines.yml" target="_blank" rel="noopener noreferrer" title="需登入 GitHub 並具備此專案的寫入權限">⚙ 管理者更新 ↗</a>
     </div>
@@ -52,9 +60,28 @@
       </label>
       <label class="field" for="freshness">最新發刊日期
         <select id="freshness">
-          <option value="all">不限日期</option><option value="30">最近 30 天</option><option value="90">最近 90 天</option>
-          <option value="180">最近 180 天</option><option value="old">超過 180 天</option>
+          <option value="all">不限日期</option>
+          <option value="7">最近 7 天</option>
+          <option value="14">最近 14 天</option>
+          <option value="30">最近 30 天</option>
+          <option value="90">最近 90 天</option>
+          <option value="old90">超過 90 天</option>
         </select>
+      </label>
+    </div>
+    <div class="filter-extras">
+      <div class="sort-fields">
+        <label class="field" for="sortby">雜誌清單排序
+          <select id="sortby"><option value="date" selected>依最新發刊日期</option><option value="title">依書名</option></select>
+        </label>
+        <label class="field" for="sortdir">排序方向
+          <select id="sortdir"><option value="desc" selected>由新至舊（降冪）</option><option value="asc">由舊至新（升冪）</option></select>
+        </label>
+      </div>
+      <label class="toggle" for="hideMissing">
+        <input type="checkbox" id="hideMissing">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span class="toggle-caption"><strong>隱藏沒有該本書的圖書館</strong><small>預設顯示全部九館；僅影響清單顯示</small></span>
       </label>
     </div>
     <div class="filter-footer"><span id="matched" aria-live="polite">—</span><button id="export" type="button" class="export">↓ 匯出篩選結果 CSV</button></div>
@@ -66,6 +93,8 @@
   </section>
   <details class="panel help"><summary>資料定義與更新說明</summary>
     <p>「有收錄」指 HyRead 該館的雜誌書目列出此書名及最新發刊日期，並非即時可借閱狀態。一般版與精華版分開計算。「未列出」不代表沒有舊期刊。</p>
+    <p>發刊日期篩選以臺灣日期計算；最近 N 天包含今天，網站預告的未來刊期只出現在「不限日期」，不會算進最近 N 天或超過 90 天。未指定圖書館時，以所有圖書館中最新的發刊日期篩選與排序；指定圖書館時，改用該館的發刊日期，無該館日期的結果在日期排序中排最後。</p>
+    <p>「隱藏沒有該本書的圖書館」只精簡畫面上的每本雜誌館藏列，並不更改收錄館數、搜尋結果或 CSV 的九館對照欄位。</p>
     <p>本系統每週五早上 08:00（臺灣時間）執行更新，並支援管理者透過 GitHub Actions 手動執行。「重新載入資料」只讀取已發布的網站資料，不會對 HyRead 發起抓取。</p>
     <p>每館抓取至多額外重試三次。若本次失敗，保留最後成功紀錄並顯示資料可能過期；連續三次完整核對未列出才會將書目標記為未列出。歷史變動只保留 180 天，各館最新一筆紀錄則永久保存。</p>
     <p>來源：九間公共圖書館的 HyRead 官方雜誌分類書單。最初資料核對截止日為 2026/09/20（含）。部分發刊日期可能是網站預告的未來刊期。</p>
