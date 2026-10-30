@@ -5,7 +5,8 @@ change network identity, or bypass an HTTP 403. Its evidence can be embedded in
 an assisted update batch, whose completeness is checked by src.coverage.
 """
 from __future__ import annotations
-from datetime import datetime
+from datetime import datetime, date, timedelta
+from zoneinfo import ZoneInfo
 import hashlib
 import json
 from urllib.parse import parse_qs, urlparse
@@ -13,6 +14,14 @@ from urllib.parse import parse_qs, urlparse
 from .hyread import extract_latest_page, key
 from .coverage import official_url
 from .scan_evidence import scan_id as check_scan_id, timestamp as check_timestamp
+
+
+def requested_window(days: int, today: date | None = None) -> tuple[str,str]:
+    """Exactly N inclusive calendar days in Taiwan; no automatic overlap."""
+    if type(days) is not int or not 1 <= days <= 366:
+        raise ValueError('查詢天數須為 1–366 天')
+    today = today or datetime.now(ZoneInfo('Asia/Taipei')).date()
+    return ((today-timedelta(days=days-1)).isoformat(),today.isoformat())
 
 
 def latest_page_url(library_id: str, page: int) -> str:
@@ -75,8 +84,16 @@ def build_latest_observations(pages: list[tuple[list[dict],dict]], window_start:
     if not pages: raise ValueError('未提供任何最新出刊頁面')
     mapping={}
     evidence=[]
+    first_book=None
     for rows,meta in sorted(pages,key=lambda x:x[1]['page']):
         evidence.append(meta)
+        if meta['page']==1 and rows:
+            first=rows[0]
+            url=first.get('magazine_url')
+            jid=parse_qs(urlparse(url).query).get('jid',[None])[0] if url else None
+            first_book={'title':first['title'],'date':first['date'],
+                        'magazine_url':url,'jid':jid,
+                        'source_url':meta['url']}
         for row in rows:
             # Include the overlap window as caller-chosen window_start. Do not
             # infer absence or book removal from missing observations.
@@ -91,6 +108,7 @@ def build_latest_observations(pages: list[tuple[list[dict],dict]], window_start:
     reached=contiguous and sorted_pages[-1]['oldest_date']<=window_start
     coverage={'method':'latest_pages','pages':sorted_pages,
               'pagination_contiguous':contiguous,'date_boundary_reached':reached}
+    if first_book is not None: coverage['first_book']=first_book
     if scan_id is not None:
         coverage['scan_id']=check_scan_id(scan_id)
     if first_page_recheck is not None:

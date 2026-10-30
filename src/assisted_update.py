@@ -14,7 +14,7 @@ import copy
 import json
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 
 from .hyread import key
 from .coverage import official_url, magazine_url, validate_coverage
@@ -34,10 +34,50 @@ def _require_date(s: str) -> str:
     return s
 
 
+def first_book_checkpoint(data: dict, libid: str, coverage: dict) -> dict:
+    """Save only the first title actually seen on page 1, never an inferred jid."""
+    if not isinstance(data, dict):
+        raise ValueError(f'{libid}: 正常／部分讀取需要最新出刊第 1 頁的 first_book')
+    title=data.get('title')
+    if not isinstance(title, str) or not title.strip() or len(title)>180:
+        raise ValueError(f'{libid}: first_book 缺少有效書名')
+    issue=_require_date(data.get('date'))
+    url=magazine_url(data.get('magazine_url'),libid)
+    jid=parse_qs(urlparse(url).query)['jid'][0] if url else None
+    if data.get('jid') not in (None, jid):
+        raise ValueError(f'{libid}: first_book jid 與實際書目網址不一致')
+    source=official_url(data.get('source_url'),libid)
+    first=next((p for p in coverage['pages'] if p['page']==1 and p['status']=='ok'),None)
+    if not first or issue!=first['newest_date']:
+        raise ValueError(f'{libid}: first_book 日期必須符合第 1 頁第一筆日期')
+    canonical=source + '?nowpage=1' if source.endswith('/magazine_view_more.jsp') else source
+    if canonical!=first['url']:
+        raise ValueError(f'{libid}: first_book 必須來自本次第 1 頁')
+    return {'title':title.strip(),'date':issue,
+            'jid':jid,'magazine_url':url,'source_url':first['url']}
+
+
+def older_observations(saved: dict, entry: dict) -> list[str]:
+    """V1.6: detect stale page-1 head and titles older than stored issues."""
+    problems=[]
+    anchor=saved.get('latest_page_anchor')
+    known=[x.get('latest_date') for x in saved.get('items',{}).values() if x.get('latest_date')]
+    baseline=anchor.get('date') if isinstance(anchor,dict) and anchor.get('date') else max(known,default=None)
+    first=entry.get('first_book')
+    if first and baseline and first['date']<baseline:
+        problems.append(f"第一頁最新刊期 {first['date']} 早於既有紀錄 {baseline}")
+    for k,obs in entry['observed'].items():
+        prev=saved.get('items',{}).get(k)
+        if prev and obs['date']<prev['latest_date']:
+            problems.append(f"{obs['title']}：讀到 {obs['date']}，已存 {prev['latest_date']}")
+    return problems
+
+
 def validate_batch(batch: dict, conf: list[dict]) -> dict:
-    if not isinstance(batch, dict) or batch.get('schema') not in (1, 2):
-        raise ValueError('輸入資料須為 schema=1 或 schema=2 的 JSON 物件')
+    if not isinstance(batch, dict) or batch.get('schema') not in (1, 2, 3):
+        raise ValueError('輸入資料須為 schema=1、2 或 3 的 JSON 物件')
     strict = batch['schema'] == 2
+    simple = batch['schema'] == 3
     if batch.get('source') != 'chatgpt_assisted':
         raise ValueError('source 必須是 chatgpt_assisted')
     batch_id = batch.get('batch_id')
@@ -75,7 +115,7 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
         if not isinstance(error, str) or len(error) > 600:
             raise ValueError(f'{libid}: error 太長或不是字串')
         diagnostic_code = check_error_code(entry.get('error_code'))
-        if strict and status == 'failed' and not diagnostic_code:
+        if (strict or simple) and status == 'failed' and not diagnostic_code:
             raise ValueError(f'{libid}: schema=2 的失敗館必須記錄 error_code')
         rows = entry.get('records', [])
         if not isinstance(rows, list):
@@ -103,7 +143,22 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
             if (k not in observed or observed[k]['date'] < publish_date
                     or (observed[k]['date']==publish_date and not observed[k]['magazine_url'] and normalized_row['magazine_url'])):
                 observed[k]=normalized_row
-        coverage=validate_coverage(entry.get('coverage'),libid,started,status=='complete',strict=strict)
+        coverage=validate_coverage(entry.get('coverage'),libid,started,
+                                   status=='complete',strict=strict,simple=simple)
+        first_book=None
+        if simple:
+            if status!='failed':
+                if coverage['method']!='latest_pages' or not coverage.get('first_page_ok'):
+                    raise ValueError(f'{libid}: 第一頁未正常讀取應標為 failed')
+                first_book=first_book_checkpoint(coverage.get('first_book'),libid,coverage)
+                successful_urls={p['url'] for p in coverage['pages'] if p['status']=='ok'}
+                for item in observed.values():
+                    source=item['source_url']
+                    canonical=source+'?nowpage=1' if source.endswith('/magazine_view_more.jsp') else source
+                    if canonical not in successful_urls:
+                        raise ValueError(f'{libid}: 書目來源不在本次已讀取的最新出刊分頁中')
+            elif coverage.get('first_page_ok'):
+                raise ValueError(f'{libid}: 第一頁已成功但標示 failed，應改為 partial')
         if strict and status == 'complete' and coverage['method'] == 'latest_pages':
             # All accepted observations must originate in one of the actual,
             # verified direct pages (query-less page 1 is the same as nowpage=1).
@@ -119,6 +174,7 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
         normalized[libid]={
             'coverage':coverage,'status':status,'attempts':attempts,'retry_wait_seconds':waits,
             'notes':notes,'error':error,'error_code':diagnostic_code,'observed':observed,
+            'first_book':first_book,'simple':simple,
         }
     return {'batch_id':batch_id,'window_start':started,'window_end':ended,'libraries':normalized}
 
@@ -184,7 +240,11 @@ def build_assisted_report(conf, state, stamp, batch, results, previous):
             'last_complete_check':saved.get('last_complete_check'), 'last_partial_check':saved.get('last_partial_check'),
             'verified_count':reviewed,'active_count':sum(v['active'] for v in saved['items'].values()),
             'attempts':attempts,'retries':max(attempts-1,0),'retry_wait_seconds':waits,
-            'notes':notes,'error':error,'error_code':diagnostic_code,'coverage':coverage, 'changes':changes,'change_count':len(events),
+            'notes':notes,'error':error,'error_code':diagnostic_code,'coverage':coverage,
+            'first_book':info.get('first_book') if info else None,
+            'saved_first_book':saved.get('latest_page_anchor'),
+            'stale_observations':info.get('stale_observations',[]) if info else [],
+            'changes':changes,'change_count':len(events),
         })
     complete=sum(x['status']=='ok' for x in details)
     partial=sum(x['status']=='partial' for x in details)
@@ -236,6 +296,21 @@ def apply_batch(batch: dict, *, persist: bool=False, stamp: str|None=None) -> di
         saved['last_attempt']=stamp
         saved['retry_count']=entry['attempts']-1
         status=entry['status']
+        if entry.get('simple') and status!='failed':
+            stale=older_observations(saved,entry)
+            if stale:
+                # ChatGPT should first retry the offending page twice.
+                # A batch with exhausted attempts is still allowed to merge
+                # *newer* observations safely, but is never 'complete'.
+                if entry['attempts']<3:
+                    raise ValueError(f'{host}: 讀到比原資料舊的刊期，需重試最多兩次後以 partial 提交')
+                status='partial'
+                entry['status']='partial'
+                entry['error_code']='STALE_CACHE'
+                entry['stale_observations']=stale
+                summary='；'.join(stale[:5])
+                entry['notes']=(entry['notes']+'；舊刊期警示：'+summary)[:600]
+                entry['error']=('重試後仍讀到舊刊期；'+summary)[:600]
         if status=='failed':
             # No mutation to existing books or previous good verification stamp.
             saved.update({'result':'stale','error':entry['error']})
@@ -247,6 +322,8 @@ def apply_batch(batch: dict, *, persist: bool=False, stamp: str|None=None) -> di
                           'last_assisted_success':stamp})
             if status=='complete':
                 saved['last_complete_check']=stamp
+                if entry.get('simple') and entry.get('first_book'):
+                    saved['latest_page_anchor']={**entry['first_book'],'checked_at':stamp}
             else:
                 saved['last_partial_check']=stamp
             history['events'].extend(events)
