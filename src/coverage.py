@@ -7,6 +7,9 @@ from __future__ import annotations
 
 from datetime import date, datetime
 from urllib.parse import parse_qs, urlparse
+from .scan_evidence import (summarize_evidence, scan_id as check_scan_id,
+                            digest as check_digest, error_code as check_error_code,
+                            timestamp as check_timestamp)
 
 
 def official_url(value: str, library_id: str) -> str:
@@ -47,7 +50,7 @@ def _iso_date(value: str) -> str:
 
 
 def validate_coverage(payload: dict | None, library_id: str, window_start: str,
-                      completed: bool) -> dict:
+                      completed: bool, *, strict: bool = False) -> dict:
     """Validate claimed coverage, refusing unproven complete checks.
 
     Date boundary proof requires consecutive direct-source pages, starting at 1,
@@ -118,6 +121,27 @@ def validate_coverage(payload: dict | None, library_id: str, window_start: str,
                 'observed_at':observed_at,'oldest_date':oldest,'newest_date':newest}
         if category: record['category']=category
         if p.get('error'): record['error']=str(p['error'])[:300]
+        if 'scan_id' in p:
+            record['scan_id']=check_scan_id(p['scan_id'])
+        if 'content_digest' in p:
+            record['content_digest']=check_digest(p['content_digest'], 'content_digest')
+        if 'record_count' in p:
+            if type(p['record_count']) is not int or p['record_count'] < 1 or p['record_count'] > 500:
+                raise ValueError('record_count 應為 1–500 的整數')
+            record['record_count']=p['record_count']
+        if 'indexed_at' in p:
+            check_timestamp(p['indexed_at'], 'indexed_at')
+            if source_type != 'search_index':
+                raise ValueError('indexed_at 僅適用於搜尋引擎索引')
+            record['indexed_at']=p['indexed_at']
+        if 'error_code' in p:
+            record['error_code']=check_error_code(p['error_code'])
+            if status == 'ok' and record['error_code']:
+                raise ValueError('成功頁面不可設定 error_code')
+        if 'http_status' in p:
+            if type(p['http_status']) is not int or not 100 <= p['http_status'] <= 599:
+                raise ValueError('http_status 必須是實際觀察到的 HTTP 狀態碼')
+            record['http_status']=p['http_status']
         cleaned.append(record)
         if status == 'ok' and source_type == 'direct': verified.append(record)
     consecutive=(len({p['page'] for p in verified})==len(verified)
@@ -143,10 +167,22 @@ def validate_coverage(payload: dict | None, library_id: str, window_start: str,
         groups=[p.get('category') for p in verified]
         is_complete=(scan_consistent and direct_only and len(groups)==12 and len(set(groups))==12
                      and set(groups)=={f'M{i:02}' for i in range(1,13)})
+    diagnostics, evidence_ok=summarize_evidence(payload,cleaned,method,strict=strict)
+    if method == 'latest_pages' and strict:
+        by_page=sorted(verified,key=lambda p:p['page'])
+        if any(a['oldest_date'] < b['newest_date'] for a,b in zip(by_page,by_page[1:])):
+            diagnostics['issues'].append('CROSS_PAGE_DATE_ORDER')
+            evidence_ok=False
+    if strict:
+        is_complete=is_complete and evidence_ok
+    elif any(x in diagnostics['issues'] for x in
+             ('SCAN_ID_MISMATCH','DUPLICATE_PAGE_CONTENT','SNAPSHOT_DRIFT_OR_RECHECK_INVALID')):
+        is_complete=False
     if completed and not is_complete:
         raise ValueError(f'{library_id}: 未達完整核對條件：缺頁、快取、日期界線或未完整檢查 12 分類')
     return {'method':method,'pages':cleaned,'date_boundary_reached':bool(is_complete),
-            'pagination_contiguous':bool(is_complete if completed else consecutive and claimed_contiguous),
+            'pagination_contiguous':bool(is_complete if completed else consecutive and claimed_contiguous and direct_only),
             'checked_pages':sum(p['status']=='ok' for p in cleaned),
             'failed_pages':sum(p['status']=='failed' for p in cleaned),
-            'direct_pages':len(verified)}
+            'direct_pages':len(verified),
+            'diagnostics':diagnostics,'scan_id':diagnostics['scan_id']}
