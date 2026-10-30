@@ -95,6 +95,8 @@ class SimpleUpdateV16(unittest.TestCase):
         conf,state=initialize()
         state=deepcopy(state)
         state['libraries'][LIB]['items']={}
+        # Isolate this synthetic test from real production checkpoint dates.
+        state['libraries'][LIB].pop('latest_page_anchor',None)
         writes={}
         def remember(path,data):
             writes[str(path)]=deepcopy(data)
