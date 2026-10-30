@@ -27,6 +27,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Regression tests
         run: python -m unittest discover -s tests -q
+      - name: Frontend future issue filter regression
+        run: node tests/test_v161_web.js
       - name: Identify one newly submitted ChatGPT batch
         id: batch
         env:
