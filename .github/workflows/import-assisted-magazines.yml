@@ -1,0 +1,43 @@
+# Import reviewed ChatGPT observations; no requests to HyRead.
+# GitHub-hosted runners only validate and merge source data supplied in Git.
+name: Import verified ChatGPT HyRead batch
+on:
+  push:
+    paths:
+      - 'data/assisted-batches/*.json'
+permissions:
+  contents: write
+concurrency:
+  group: hyread-assisted-batch-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  apply:
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Regression tests
+        run: python -m unittest discover -s tests -q
+      - name: Validate and apply this reviewed observation batch
+        env:
+          BATCH_PATH: data/assisted-batches/manual-20261030-7day-v16-003.json
+        run: |
+          python -m src.assisted_update "$BATCH_PATH" --dry-run
+          python -m src.assisted_update "$BATCH_PATH" --apply
+      - name: Commit generated state and published site data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json data/history.json docs/data/catalog.json docs/data/update-report.json docs/data/status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: apply HyRead V1.6 ChatGPT seven-day audit (2026-10-30)"
+            git push origin HEAD:"${GITHUB_REF_NAME}"
+          fi
