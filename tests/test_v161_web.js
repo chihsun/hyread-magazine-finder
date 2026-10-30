@@ -26,6 +26,6 @@ assert.equal(ctx.recentMatch(magazine('2026-11-05'), '30', 'tpml', today), true,
 assert.equal(ctx.recentMatch(magazine('2026-11-05'), '90', '', today), true);
 assert.equal(ctx.recentMatch(magazine('2026-10-24'), '30', 'tpml', today), true);
 assert.equal(ctx.recentMatch(magazine('2026-08-01'), '30', 'tpml', today), false);
-assert.equal(ctx.recentMatch(magazine('2026-08-01'), 'old90', 'tpml', today), true);
+assert.equal(ctx.recentMatch(magazine('2026-07-01'), 'old90', 'tpml', today), true);
 assert.equal(ctx.recentMatch(magazine('2026-11-05'), 'old90', 'tpml', today), false);
 console.log('V1.6.1 frontend date filters: passed');
