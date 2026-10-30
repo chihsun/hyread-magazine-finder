@@ -22,9 +22,9 @@ def page_html(*titles):
 
 
 def example():
-    a=inspect_latest_html(page_html(('新刊甲','2026-10-30'),('新刊乙','2026-10-28')),
+    a=inspect_latest_html(page_html(('甲號雜誌','2026-10-30'),('乙號雜誌','2026-10-28')),
                           LIB,1,STAMP,source_type='search_index')
-    b=inspect_latest_html(page_html(('新刊丙','2026-10-27'),('新刊丁','2026-10-23')),
+    b=inspect_latest_html(page_html(('丙號雜誌','2026-10-27'),('丁號雜誌','2026-10-23')),
                           LIB,2,STAMP,source_type='search_index')
     rows,cov=build_latest_observations([a,b],'2026-10-24','2026-10-30')
     return rows,cov
@@ -50,7 +50,7 @@ class SimpleUpdateV16(unittest.TestCase):
         rows,cov=example()
         self.assertEqual(len(rows),3)
         self.assertFalse('first_page_recheck' in cov)
-        self.assertEqual(cov['first_book']['title'],'新刊甲')
+        self.assertEqual(cov['first_book']['title'],'甲號雜誌')
         self.assertEqual(cov['first_book']['jid'],'800')
         checked=validate_coverage(cov,LIB,'2026-10-24',True,simple=True)
         self.assertTrue(checked['date_boundary_reached'])
@@ -102,7 +102,7 @@ class SimpleUpdateV16(unittest.TestCase):
             with patch('src.assisted_update.atomic_json',side_effect=remember):
                 result=apply_batch(batch(rows,cov),persist=True,stamp=STAMP)
         saved=writes[str(STATE)]['libraries'][LIB]
-        self.assertEqual(saved['latest_page_anchor']['title'],'新刊甲')
+        self.assertEqual(saved['latest_page_anchor']['title'],'甲號雜誌')
         self.assertEqual(saved['latest_page_anchor']['jid'],'800')
         self.assertEqual(saved['latest_page_anchor']['date'],'2026-10-30')
         self.assertEqual(result['summary']['successful'],1)
@@ -133,7 +133,7 @@ class SimpleUpdateV16(unittest.TestCase):
         state=deepcopy(state)
         from src.hyread import key
         state['libraries'][LIB]['items']={
-            key('新刊乙'):{'title':'新刊乙','latest_date':'2026-10-29',
+            key('乙號雜誌'):{'title':'乙號雜誌','latest_date':'2026-10-29',
                            'source_url':'https://tpml.ebook.hyread.com.tw/index.jsp',
                            'active':True,'first_seen':'2026-10-01',
                            'last_seen':'2026-10-29','misses':0}}
@@ -141,7 +141,7 @@ class SimpleUpdateV16(unittest.TestCase):
             with patch('src.assisted_update.atomic_json') as writes:
                 report=apply_batch(batch(rows,cov,attempts=3),persist=True,stamp=STAMP)
         saved=next(x.args[1] for x in writes.call_args_list if x.args[0]==STATE)
-        self.assertEqual(saved['libraries'][LIB]['items'][key('新刊乙')]['latest_date'],'2026-10-29')
+        self.assertEqual(saved['libraries'][LIB]['items'][key('乙號雜誌')]['latest_date'],'2026-10-29')
         self.assertEqual(next(x for x in report['libraries'] if x['id']==LIB)['error_code'],'STALE_CACHE')
 
     def test_future_first_book_checkpoint_independent_of_day_filter(self):
