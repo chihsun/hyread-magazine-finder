@@ -86,7 +86,7 @@ function drawRecords() {
   }
   const hideMissing = $('hideMissing').checked;
   $('results').innerHTML = state.records.slice(0, state.limit).map(r => `<article class="item"><div class="item-top"><h3>${safe(r.title)}</h3><span class="count-chip">${r.count} / ${p.libraries.length} 館</span></div><div class="libs">${p.libraries.filter(l => !hideMissing || Boolean(r.by[l.id])).map(l => {
-    const v = r.by[l.id], stale = l.status === 'stale';
+    const v = r.by[l.id], stale = l.status === 'stale' || l.status === 'partial';
     if (!v) return `<div class="lib-row"><span>${safe(l.name)}</span><span class="missing">— 未列出</span></div>`;
     const link = officialLink(v.source_url);
     const label = `✓ ${safe(v.date)} ${stale ? '⚠' : ''} ${link ? '↗' : ''}`;
@@ -135,26 +135,34 @@ function changeLines(entries, kind) {
 function renderReport(report) {
   const summary=$('update-summary'), libraries=$('update-libraries'), history=$('update-history');
   if (report.type === 'seed' || !report.summary) {
-    summary.innerHTML='<div class="report-status"><span class="status-badge seed">初始資料</span><strong>尚無自動擷取紀錄</strong></div><p>目前顯示的是先前人工核對的九館初始書單；不能將其視為本次成功更新九館。</p>';
-    libraries.innerHTML=(report.libraries||[]).map(l=>`<div class="report-library"><strong>${safe(l.name)}</strong><span>初始收錄 ${Number(l.active_count)||0} 筆（尚未自動核對）</span></div>`).join('');
-    history.textContent='尚無排程或手動更新紀錄。';
+    summary.innerHTML='<div class="report-status"><span class="status-badge seed">初始資料</span><strong>尚無正式核對的增量更新紀錄</strong></div><p>目前顯示的是先前核對的九館初始書單；不是最近一次自動完整擷取。</p>';
+    libraries.innerHTML=(report.libraries||[]).map(l=>`<div class="report-library"><strong>${safe(l.name)}</strong><span>初始收錄 ${Number(l.active_count)||0} 筆</span></div>`).join('');
+    history.textContent='尚無正式的增量核對紀錄。';
     return;
   }
-  const s=report.summary, all=report.complete;
-  summary.innerHTML=`<div class="report-status"><span class="status-badge ${all?'ok':'stale'}">${all?'全部成功':'部分失敗'}</span><strong>${s.successful} / ${s.total} 館成功</strong><small>執行時間：${safe(fmtStamp(report.generated_at))}</small></div>
-    <div class="update-stats"><span>核對 <b>${Number(s.verified_records)||0}</b> 筆（成功館）</span><span>目前館藏 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>新刊期 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span></div>
-    <p class="report-note">「新增書名」指某館首次收錄該書名；「新刊期」指既有雜誌的最新發刊日變更。兩者皆以各館為單位計算，非九館不重複書名數。未成功核對的圖書館保留舊資料。</p>`;
+  const s=report.summary, assisted=report.type==='chatgpt_assisted', all=report.complete;
+  const partial=Number(s.partial)||0, failed=Number(s.failed)||0, unchecked=Number(s.not_checked)||0;
+  const badge=assisted?'人工輔助增量':'自動完整擷取';
+  summary.innerHTML=`<div class="report-status"><span class="status-badge ${all?'ok':'stale'}">${safe(badge)}${all?' · 範圍完成':' · 未完全核對'}</span><strong>${Number(s.successful)||0} 館範圍完成 · ${partial} 館部分 · ${failed} 館失敗${unchecked?' · '+unchecked+' 館未查':''}</strong><small>執行時間：${safe(fmtStamp(report.generated_at))}</small></div>
+    ${assisted?`<p class="report-note">本次核對刊期範圍：${safe(report.window_start)} ～ ${safe(report.window_end)}。完成僅指該日期範圍；並非所有舊刊、全部分類都已重新確認。未查到的書名一律保留。</p>`:''}
+    <div class="update-stats"><span>本次確認 <b>${Number(s.verified_records)||0}</b> 筆</span><span>資料庫現有 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>新刊期 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span></div>
+    <p class="report-note">新增與新刊期以「雜誌 × 圖書館」計算。未完整核對的館別保留已確認的變動，其他書目不刪除、不視為下架；最新資料日期不等於全部九館均完成核查。</p>`;
   libraries.innerHTML=(report.libraries||[]).map(l=>{
-    const ok=l.status==='ok', c=l.changes||{}, changeCount=Number(l.change_count)||0;
+    const c=l.changes||{}, changeCount=Number(l.change_count)||0;
+    const kind=l.status==='ok'?'ok':l.status==='partial'?'partial':l.status==='not_checked'?'not_checked':'stale';
+    const wording={ok:'✓ 範圍已核對',partial:'◐ 部分核對',stale:'⚠ 查詢失敗／沿用',not_checked:'— 本次未核對'}[kind];
     const changes=['new','new_issue','returned','not_listed'].map(k=>changeLines(c[k],k)).join('');
-    return `<div class="report-library"><div class="report-lib-head"><strong>${safe(l.name)}</strong><span class="status-badge ${ok?'ok':'stale'}">${ok?'✓ 成功':'⚠ 失敗／沿用'}</span></div>
-    <div class="report-lib-stats">${ok?`本次核對 ${Number(l.verified_count)||0} 筆`:`最後成功：${safe(fmtStamp(l.last_success))}`} · 目前列出 ${Number(l.active_count)||0} 筆 · 重試 ${Number(l.retries)||0} 次<br>
-    新增書名 ${(c.new||[]).length} · 新刊期 ${(c.new_issue||[]).length} · 重新列出 ${(c.returned||[]).length} · 停止列出 ${(c.not_listed||[]).length}</div>
+    const count=typeof l.verified_count==='number'?`本次確認 ${l.verified_count} 筆`:'本次無有效核對筆數';
+    const attempt=assisted?` · 嘗試 ${Number(l.attempts)||0} 次`:` · 重試 ${Number(l.retries)||0} 次`;
+    return `<div class="report-library"><div class="report-lib-head"><strong>${safe(l.name)}</strong><span class="status-badge ${kind==='ok'?'ok':kind==='partial'?'seed':'stale'}">${wording}</span></div>
+    <div class="report-lib-stats">${count} · 現有 ${Number(l.active_count)||0} 筆${attempt} · 最後完整核對 ${safe(fmtStamp(l.last_success))}<br>
+    新增書名 ${(c.new||[]).length} · 新刊期 ${(c.new_issue||[]).length} · 恢復 ${(c.returned||[]).length} · 停止列出 ${(c.not_listed||[]).length}</div>
+    ${l.notes?`<p class="report-muted">核對範圍：${safe(l.notes)}</p>`:''}
     ${l.error?`<p class="report-error">${safe(l.error)}</p>`:''}
-    ${changeCount?`<details class="change-details"><summary>展開 ${changeCount} 筆異動書名</summary>${changes}</details>`:`<p class="report-muted">${ok?'本次沒有館藏變動。':'本次無法確認變動。'}</p>`}
+    ${changeCount?`<details class="change-details"><summary>展開 ${changeCount} 筆異動書名</summary>${changes}</details>`:`<p class="report-muted">${kind==='stale'?'本次未取得可確認的更新。':kind==='not_checked'?'本次未安排查詢。':'本次無新書目異動（不代表全館沒有更新）。'}</p>`}
     </div>`;
   }).join('');
-  history.innerHTML=(report.history||[]).map(r=>`<div class="history-row"><strong>${safe(fmtStamp(r.at))}</strong><span>${r.summary?.successful??0}/${r.summary?.total??0} 館成功</span><span>新書名 ${r.summary?.new_titles??0} · 新刊期 ${r.summary?.new_issues??0} · 變動 ${r.summary?.changes_total??0}</span></div>`).join('')||'尚無歷史紀錄';
+  history.innerHTML=(report.history||[]).map(r=>`<div class="history-row"><strong>${safe(fmtStamp(r.at))}</strong><span>${safe(r.source==='chatgpt_assisted'?'輔助更新':'爬蟲更新')}：完成 ${r.summary?.successful??0}、部分 ${r.summary?.partial??0}、失敗 ${r.summary?.failed??0}</span><span>新書名 ${r.summary?.new_titles??0} · 新刊期 ${r.summary?.new_issues??0} · 變動 ${r.summary?.changes_total??0}</span></div>`).join('')||'尚無歷史紀錄';
 }
 async function loadReport() {
   try {
@@ -179,8 +187,8 @@ async function load() {
     if (!Array.isArray(data.libraries) || !Array.isArray(data.magazines)) throw new Error('JSON 欄位不符');
     state.payload = data;
     renderOptions(); query();
-    const bad = data.libraries.filter(x => x.status === 'stale');
-    notice(bad.length ? `⚠ ${bad.length} 間圖書館本次擷取失敗，沿用最後成功資料：${bad.map(x => x.name).join('、')}` : `✅ 已讀取 ${data.magazines.length} 種雜誌；九館資料可搜尋`, bad.length ? 'warning' : '');
+    const flagged = data.libraries.filter(x => x.status === 'stale' || x.status === 'partial');
+    notice(flagged.length ? `⚠ ${flagged.length} 館尚未完成近期全面核對（含沿用資料）：${flagged.map(x => x.name).join('、')}` : `✅ 已讀取 ${data.magazines.length} 種雜誌；請查看各館核對狀態`, flagged.length ? 'warning' : '');
   } catch (e) { notice('讀取資料失敗：' + e.message + '。請檢查網站部署或重新整理。', 'error'); }
 }
 for (const id of ['query', 'library', 'presence', 'freshness', 'sortdir']) $(id).addEventListener('input', query);

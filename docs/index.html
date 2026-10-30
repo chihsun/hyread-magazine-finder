@@ -27,7 +27,7 @@
         </select>
       </label>
       <button id="refresh" type="button" class="glass">↻ 重新載入資料</button>
-      <a id="admin" class="glass" href="https://github.com/chihsun/hyread-magazine-finder/actions/workflows/update-magazines.yml" target="_blank" rel="noopener noreferrer" title="需登入 GitHub 並具備此專案的寫入權限">⚙ 管理者更新 ↗</a>
+      <a id="admin" class="glass" href="https://github.com/chihsun/hyread-magazine-finder/blob/main/docs/ASSISTED_UPDATE.md" target="_blank" rel="noopener noreferrer" title="手動在 ChatGPT 要求核對並推送 GitHub">⚙ 輔助更新說明 ↗</a>
     </div>
   </div>
 </header>
@@ -40,7 +40,7 @@
     <div class="metric"><span>最後資料更新</span><strong id="updated" class="small-date">—</strong></div>
   </div>
   <section class="panel update-board" aria-labelledby="updatetitle">
-    <div class="section-title update-title"><h2 id="updatetitle">🔄 書單更新紀錄</h2><a class="textbtn" href="https://github.com/chihsun/hyread-magazine-finder/actions/workflows/update-magazines.yml" target="_blank" rel="noopener noreferrer">查看 GitHub 執行紀錄 ↗</a></div>
+    <div class="section-title update-title"><h2 id="updatetitle">🔄 書單更新紀錄</h2><a class="textbtn" href="https://github.com/chihsun/hyread-magazine-finder/blob/main/docs/ASSISTED_UPDATE.md" target="_blank" rel="noopener noreferrer">更新操作與核對規則 ↗</a></div>
     <div id="update-summary" class="update-summary" role="status" aria-live="polite">正在讀取更新紀錄…</div>
     <details class="update-details"><summary>查看各館狀態、核對筆數及異動書名</summary><div id="update-libraries" class="update-libraries"></div></details>
     <details class="update-details"><summary>最近更新歷史（180 天）</summary><div id="update-history" class="update-history"></div></details>
@@ -101,8 +101,8 @@
     <p>「有收錄」指 HyRead 該館的雜誌書目列出此書名及最新發刊日期，並非即時可借閱狀態。一般版與精華版分開計算。「未列出」不代表沒有舊期刊。</p>
     <p>發刊日期篩選以臺灣日期計算；最近 N 天包含今天，網站預告的未來刊期只出現在「不限日期」，不會算進最近 N 天或超過 90 天。未指定圖書館時，以所有圖書館中最新的發刊日期篩選與排序；指定圖書館時，改用該館的發刊日期，無該館日期的結果在日期排序中排最後。</p>
     <p>「隱藏沒有該本書的圖書館」只精簡畫面上的每本雜誌館藏列，並不更改收錄館數、搜尋結果或 CSV 的九館對照欄位。</p>
-    <p>本系統每週五早上 08:00（臺灣時間）執行更新，並支援管理者透過 GitHub Actions 手動執行。「重新載入資料」只讀取已發布的網站資料，不會對 HyRead 發起抓取。</p>
-    <p>每館抓取至多額外重試三次。若本次失敗，保留最後成功紀錄並顯示資料可能過期；連續三次完整核對未列出才會將書目標記為未列出。歷史變動只保留 180 天，各館最新一筆紀錄則永久保存。</p>
+    <p>目前已停用從 GitHub Actions 直接抓取 HyRead 的排程（來源回應 HTTP 403）。採用 ChatGPT 輔助增量核對：在對話中提出更新請求，逐館確認書名、刊期與來源，再安全合併推送 GitHub。按「重新載入資料」只讀取已發布的書單。</p>
+    <p>ChatGPT 輔助更新每館第一次失敗後，遇暫時性錯誤會隨機等待並最多再試兩次（共三次）；遇 HTTP 401／403 等拒絕存取則立即停止。所有失敗、部分核對與缺漏都會記錄；未找到的既有書目不刪除、不計未列出次數。歷史變動保留 180 天，最新刊期永久保留。</p>
     <p>來源：九間公共圖書館的 HyRead 官方雜誌分類書單。最初資料核對截止日為 2026/09/20（含）。部分發刊日期可能是網站預告的未來刊期。</p>
     <div id="source-links" class="source-links"></div>
   </details>

@@ -8,8 +8,8 @@
 - **搜尋**：書名搜尋、指定圖書館、該館有／未列出、最新發刊時間（30／90／180 天）。
 - **收錄館數可複選**：9／8／7／6／5／4／3／2／1 館；可自由組合。
 - **資料分離**：前端 `docs/` 靜態網站，資料 `docs/data/catalog.json`；不須資料庫服務。
-- **每週更新**：GitHub Actions 每週五臺灣時間 08:00（實際啟動可能延遲）；支援 Actions `workflow_dispatch`。
-- **限制重試**：**每館首次嘗試外，最多再重試三次**；共用整館額度，不會每頁三次造成指數放大。分類頁正常請求間隨機等待 1.5～3.5 秒；暫時錯誤依序隨機退避 2～5、5～10、10～20 秒；遇到 HTTP 429 遵守 `Retry-After`（若要求等待超過 60 秒則停止該館本次掃描），遇到 HTTP 401／403 立即停止、不再重試。這是降低伺服器負擔的禮貌節流，不能繞過存取限制。
+- **輔助增量更新**：目前暫停 GitHub Runner 的 HyRead 抓取排程（九館皆遭 HTTP 403）；改由 ChatGPT 檢索後提交經驗證的增量批次。操作見 [`docs/ASSISTED_UPDATE.md`](docs/ASSISTED_UPDATE.md)。
+- **限制重試**：輔助查詢遇暫時性錯誤時每館最多額外重試 **2 次**，並在 2–5／6–12 秒範圍隨機等待；403、401 等存取拒絕立即停止。舊版程式自動擷取已停用排程。分類頁正常請求間隨機等待 1.5～3.5 秒；暫時錯誤依序隨機退避 2～5、5～10、10～20 秒；遇到 HTTP 429 遵守 `Retry-After`（若要求等待超過 60 秒則停止該館本次掃描），遇到 HTTP 401／403 立即停止、不再重試。這是降低伺服器負擔的禮貌節流，不能繞過存取限制。
 - **失敗保護**：12 分類需全部驗證成功、異常大幅減少不覆蓋；若失敗保留該館上次成功資料、顯示過期警示。
 - **保留策略**：不同圖書館、不同版別分開；只顯示每個書名每館最新一期；書目（包含最後已知發刊日）長期保存，最近 180 天變動歷史儲存在 `data/history.json`；連續三次完整核對仍不存在才標記不再列出。
 - **CSV**：匯出當前篩選結果。
@@ -27,7 +27,7 @@
 2. 將此 ZIP 解壓後的**所有檔案（包括 `.github/` 及 `docs/`）**推送至 `main`。
 3. 到 **Settings → Pages → Build and deployment → Source** 選 **GitHub Actions**。
 4. 此時 `.github/workflows/deploy-pages.yml` 可在 `main` 推送時自動發布；也可在 Actions 手動執行 **Deploy HyRead search to GitHub Pages**。網站網址預計為 `https://<你的帳號>.github.io/hyread-magazine-finder/`，以 Pages 顯示的實際連結為準。
-5. 到 **Actions → Weekly HyRead magazine update → Run workflow** 可立即重新查九館；排程則自動每週五執行。網站右上方「管理者更新」連結指向此頁，**使用 GitHub 自身權限，不需要將 token 放在公開網站**。
+5. 目前請在 ChatGPT 對話中要求核對／合併九館書目；GitHub Actions 的 `Validate HyRead assisted updates` 只執行單元測試，**不會重新抓取 HyRead**。
 
 備註：若 repo 不是 `chihsun/hyread-magazine-finder`，請同步修改 `docs/index.html` 的管理者更新網址。
 
@@ -39,7 +39,8 @@
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 python -m src.update --seed-only   # 僅把起始資料轉成網站 JSON，不對外連線
-python -m src.update --once        # 擷取九館，需網路
+python -m src.assisted_update assisted-batch.json --dry-run  # 檢查增量批次
+python -m src.assisted_update assisted-batch.json --apply    # 驗證後套用
 python -m http.server 8000 -d docs
 ```
 
@@ -69,3 +70,7 @@ tests/                  資料與爬蟲邏輯測試
 - 這個 repo 僅索引公開 metadata，不登入、不繞過封鎖、不抓取雜誌正文或封面。
 - 若 GitHub Pages 尚未啟用，網站不會自動取得公開網址。
 - Github Actions 的成功與否以 workflow 執行結果為準，網站發布 JSON 會標示過期的館別。
+
+## 2026-10-30：輔助更新模式（重要）
+
+首次 GitHub 雲端執行九館皆回覆 HTTP 403，因此暫停原本的週更爬蟲排程；用 ChatGPT 助理每次取得來源明確的部分資料、確認後合併，並由 GitHub Pages 發布。**增量核對不等於完整掃描**；既有雜誌未查到仍保留。每館暫時性失敗最多再試 2 次（共 3 次），使用隨機間隔；拒絕存取的 401／403 立即停止。詳見 [`輔助更新操作規範`](docs/ASSISTED_UPDATE.md)。

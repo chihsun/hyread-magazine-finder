@@ -1,22 +1,17 @@
-name: Weekly HyRead magazine update
+# The HyRead endpoints returned HTTP 403 from GitHub runners on 2026-10-30.
+# Deliberately no schedule and no scraper execution: assisted updates are
+# reviewed and committed via ChatGPT + GitHub connector instead.
+name: Validate HyRead assisted updates
 on:
-  schedule:
-    # 08:00 Friday Asia/Taipei = 00:00 Friday UTC; Actions may start later.
-    - cron: '0 0 * * 5'
   workflow_dispatch:
 permissions:
-  contents: write
-concurrency:
-  group: hyread-weekly-update
-  cancel-in-progress: false
+  contents: read
 jobs:
-  crawl:
+  verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-        with:
-          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -24,22 +19,6 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Unit tests
         run: python -m unittest discover -s tests -v
-      - name: Crawl nine libraries (3 extra retries PER LIBRARY)
-        id: crawl
-        continue-on-error: true
-        run: python -m src.update --once
-      - name: Commit validated updates (including partial failure status)
-        if: always() && steps.crawl.outcome != 'skipped'
+      - name: Explain update process
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/state.json data/history.json docs/data/catalog.json docs/data/status.json docs/data/update-report.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'data: refresh HyRead magazine catalog and health status'
-            git push
-          fi
-      - name: Report stale libraries in Actions
-        if: steps.crawl.outcome == 'failure'
-        run: |
-          echo 'One or more library scans failed; last good data was retained.' >> "$GITHUB_STEP_SUMMARY"
-          exit 1
+          echo 'No HyRead request was made. See docs/ASSISTED_UPDATE.md.' >> "$GITHUB_STEP_SUMMARY"
