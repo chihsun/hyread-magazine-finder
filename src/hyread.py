@@ -8,8 +8,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 import datetime as dt
 import re
+import random
 import time
 import unicodedata
+from email.utils import parsedate_to_datetime
 from urllib.parse import urljoin
 
 import requests
@@ -25,6 +27,39 @@ LATEST_RE = re.compile(r'最新發刊\s*[:：]?|最新刊\s*[:：]?')
 
 class AccessDeniedError(RuntimeError):
     """The source explicitly denied access; do not retry or disguise the client."""
+
+
+class RateLimitPause(RuntimeError):
+    """A source requested a longer cooling period than one job can safely wait."""
+
+
+class RetryableRateLimit(RuntimeError):
+    """HTTP 429, with an optional Retry-After delay in seconds."""
+
+    def __init__(self, seconds: float | None):
+        self.seconds = seconds
+        super().__init__('HTTP 429 Too Many Requests')
+
+
+RETRY_WINDOWS = ((2.0, 5.0), (5.0, 10.0), (10.0, 20.0))
+MAX_RETRY_AFTER = 60.0   # Stop this library rather than ignore a longer server cooling period.
+
+
+def retry_after_seconds(value: str | None) -> float | None:
+    """Parse HTTP Retry-After in delta-seconds or RFC 7231 date format."""
+    if not value:
+        return None
+    value = value.strip()
+    try:
+        return max(0.0, float(value))
+    except ValueError:
+        try:
+            date = parsedate_to_datetime(value)
+            if date.tzinfo is None:
+                date = date.replace(tzinfo=dt.timezone.utc)
+            return max(0.0, (date - dt.datetime.now(dt.timezone.utc)).total_seconds())
+        except (TypeError, ValueError, OverflowError):
+            return None
 
 
 def key(title: str) -> str:
@@ -75,7 +110,7 @@ class LibraryScanner:
     host: str
     retries: int = 3   # maximum ADDITIONAL attempts shared by all requests for a library
     timeout: int = 18
-    delay: float = 0.5
+    delay: float | tuple[float, float] = (1.5, 3.5)
     session: requests.Session | None = None
 
     def __post_init__(self):
@@ -86,6 +121,22 @@ class LibraryScanner:
         })
         self.used_retries=0
         self.requests_made=0
+
+    def _wait_retry(self, hint: float | None = None):
+        """Randomized backoff only for transient failures; honor server Retry-After."""
+        low, high = RETRY_WINDOWS[min(self.used_retries, len(RETRY_WINDOWS)) - 1]
+        seconds = random.uniform(low, high)
+        if hint is not None:
+            seconds = max(seconds, hint)
+        time.sleep(seconds)
+
+    def _wait_between_categories(self):
+        if isinstance(self.delay, tuple):
+            seconds = random.uniform(*self.delay)
+        else:
+            seconds = float(self.delay)
+        if seconds > 0:
+            time.sleep(seconds)
 
     def fetch(self,url):
         while True:
@@ -99,18 +150,25 @@ class LibraryScanner:
                         f'HyRead 回應 HTTP {r.status_code}，拒絕此執行環境存取；'
                         f'已停止重試。請使用取得授權的官方資料來源。{url}'
                     )
+                if r.status_code == 429:
+                    hint = retry_after_seconds(r.headers.get('Retry-After'))
+                    if hint is not None and hint > MAX_RETRY_AFTER:
+                        raise RateLimitPause(
+                            f'HyRead 回應 HTTP 429，要求至少等待 {hint:.0f} 秒；'
+                            '本次停止核對以遵守 Retry-After。'
+                        )
+                    raise RetryableRateLimit(hint)
                 r.raise_for_status()
                 if len(r.content)<900:
                     raise ValueError('回應頁面異常短')
                 return r.content
-            except AccessDeniedError:
+            except (AccessDeniedError, RateLimitPause):
                 raise
-            except (requests.RequestException,ValueError) as e:
+            except (requests.RequestException, ValueError, RetryableRateLimit) as e:
                 if self.used_retries>=self.retries:
                     raise RuntimeError(f'全館重試額度已用盡({self.retries}次): {url}: {e}') from e
                 self.used_retries+=1
-                # Back off. 403/429 are handled like other errors, never evade blocks.
-                time.sleep(min(8,2**self.used_retries))
+                self._wait_retry(e.seconds if isinstance(e, RetryableRateLimit) else None)
 
     def scan(self):
         records={}
@@ -121,19 +179,19 @@ class LibraryScanner:
                 try:
                     batch=extract_category(self.fetch(url),url,cat)
                     break
-                except AccessDeniedError:
+                except (AccessDeniedError, RateLimitPause):
                     raise
                 except Exception:
                     if self.used_retries>=self.retries:
                         raise
                     self.used_retries+=1
-                    time.sleep(min(8,2**self.used_retries))
+                    self._wait_retry()
             for rec in batch:
                 k=key(rec['title'])
                 if k not in records or rec['date']>records[k]['date']:
                     records[k]=rec
             if no<len(CATEGORY_LABELS):
-                time.sleep(self.delay)
+                self._wait_between_categories()
         if len(records)<30:
             raise ValueError(f'擷取總量僅{len(records)}筆，低於可信門檻30')
         return records
