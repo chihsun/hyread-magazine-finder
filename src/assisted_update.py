@@ -18,6 +18,7 @@ from urllib.parse import urlparse
 
 from .hyread import key
 from .coverage import official_url, magazine_url, validate_coverage
+from .scan_evidence import error_code as check_error_code
 from .update import (
     ROOT, CUTOFF, CONFIG, HISTORY, PUBLIC, REPORT, STATE, STATUS,
     atomic_json, initialize, load, now, published,
@@ -34,8 +35,9 @@ def _require_date(s: str) -> str:
 
 
 def validate_batch(batch: dict, conf: list[dict]) -> dict:
-    if not isinstance(batch, dict) or batch.get('schema') != 1:
-        raise ValueError('輸入資料須為 schema=1 的 JSON 物件')
+    if not isinstance(batch, dict) or batch.get('schema') not in (1, 2):
+        raise ValueError('輸入資料須為 schema=1 或 schema=2 的 JSON 物件')
+    strict = batch['schema'] == 2
     if batch.get('source') != 'chatgpt_assisted':
         raise ValueError('source 必須是 chatgpt_assisted')
     batch_id = batch.get('batch_id')
@@ -72,6 +74,9 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
         error = entry.get('error', '')
         if not isinstance(error, str) or len(error) > 600:
             raise ValueError(f'{libid}: error 太長或不是字串')
+        diagnostic_code = check_error_code(entry.get('error_code'))
+        if strict and status == 'failed' and not diagnostic_code:
+            raise ValueError(f'{libid}: schema=2 的失敗館必須記錄 error_code')
         rows = entry.get('records', [])
         if not isinstance(rows, list):
             raise ValueError(f'{libid}: records 必須為陣列')
@@ -98,10 +103,22 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
             if (k not in observed or observed[k]['date'] < publish_date
                     or (observed[k]['date']==publish_date and not observed[k]['magazine_url'] and normalized_row['magazine_url'])):
                 observed[k]=normalized_row
-        coverage=validate_coverage(entry.get('coverage'),libid,started,status=='complete')
+        coverage=validate_coverage(entry.get('coverage'),libid,started,status=='complete',strict=strict)
+        if strict and status == 'complete' and coverage['method'] == 'latest_pages':
+            # All accepted observations must originate in one of the actual,
+            # verified direct pages (query-less page 1 is the same as nowpage=1).
+            verified_urls = {p['url'] for p in coverage['pages'] if
+                             p['status'] == 'ok' and p['source_type'] == 'direct'}
+            for observed_row in observed.values():
+                source = observed_row['source_url']
+                if source not in verified_urls and not (
+                    source.endswith('/magazine_view_more.jsp') and
+                    source + '?nowpage=1' in verified_urls
+                ):
+                    raise ValueError(f'{libid}: 完整核對的書目來源不在本次直接取得的分頁中')
         normalized[libid]={
             'coverage':coverage,'status':status,'attempts':attempts,'retry_wait_seconds':waits,
-            'notes':notes,'error':error,'observed':observed,
+            'notes':notes,'error':error,'error_code':diagnostic_code,'observed':observed,
         }
     return {'batch_id':batch_id,'window_start':started,'window_end':ended,'libraries':normalized}
 
@@ -153,12 +170,12 @@ def build_assisted_report(conf, state, stamp, batch, results, previous):
         saved=state['libraries'][host]
         changes={t:[] for t in CHANGE_TYPES}
         if info is None:
-            status='not_checked'; events=[]; attempts=0; notes='本次未排入核對'; error=''; reviewed=None; waits=[]; coverage={'method':'unknown','pages':[],'checked_pages':0,'failed_pages':0,'date_boundary_reached':False}
+            status='not_checked'; events=[]; attempts=0; notes='本次未排入核對'; error=''; diagnostic_code=None; reviewed=None; waits=[]; coverage={'method':'unknown','pages':[],'checked_pages':0,'failed_pages':0,'date_boundary_reached':False}
         else:
             status={'complete':'ok','partial':'partial','failed':'stale'}[info['status']]
             events=info['events']; attempts=info['attempts']; notes=info['notes']; error=info['error']
             reviewed=info['verified_count'] if info['status']!='failed' else None
-            waits=info['retry_wait_seconds']; coverage=info['coverage']
+            waits=info['retry_wait_seconds']; coverage=info['coverage']; diagnostic_code=info.get('error_code')
         for event in events:
             changes[event['type']].append({k:v for k,v in event.items() if k in ('title','from','to')})
         details.append({
@@ -167,13 +184,19 @@ def build_assisted_report(conf, state, stamp, batch, results, previous):
             'last_complete_check':saved.get('last_complete_check'), 'last_partial_check':saved.get('last_partial_check'),
             'verified_count':reviewed,'active_count':sum(v['active'] for v in saved['items'].values()),
             'attempts':attempts,'retries':max(attempts-1,0),'retry_wait_seconds':waits,
-            'notes':notes,'error':error,'coverage':coverage, 'changes':changes,'change_count':len(events),
+            'notes':notes,'error':error,'error_code':diagnostic_code,'coverage':coverage, 'changes':changes,'change_count':len(events),
         })
     complete=sum(x['status']=='ok' for x in details)
     partial=sum(x['status']=='partial' for x in details)
     failed=sum(x['status']=='stale' for x in details)
     totals={t:sum(len(l['changes'][t]) for l in details) for t in CHANGE_TYPES}
+    codes={}
+    for x in details:
+        if x.get('error_code'):
+            codes[x['error_code']]=codes.get(x['error_code'],0)+1
     summary={
+        'error_code_counts':codes,
+        'cached_pages':sum(l['coverage'].get('diagnostics',{}).get('source_types',{}).get('search_index',0) for l in details),
         'successful':complete,'partial':partial,'failed':failed,'not_checked':len(details)-complete-partial-failed,
         'total':len(details),'verified_records':sum(l['verified_count'] or 0 for l in details),
         'active_records':sum(l['active_count'] for l in details),
