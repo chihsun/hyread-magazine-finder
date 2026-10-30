@@ -169,3 +169,8 @@ footer { text-align:center;padding:26px 16px 32px;color:var(--muted);font-size:1
 .history-row strong { color:var(--ink); }
 @media(max-width:820px) { .update-libraries { grid-template-columns:1fr; }.update-stats {grid-template-columns:repeat(2,minmax(0,1fr));} }
 @media(max-width:420px) { .update-board {padding:14px;} .report-status small {margin-left:0;width:100%;}.update-stats{grid-template-columns:1fr 1fr;} }
+
+/* V1.4: show a magazine detail link only when a jid has been confirmed. */
+.lib-links { display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:8px; text-align:right; }
+.lib-row .lib-links { color:var(--ink); }
+.lib-row a.detail-link { font-size:11px; border:1px solid var(--accent-line); padding:2px 7px; border-radius:7px; white-space:nowrap; }

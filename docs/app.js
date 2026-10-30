@@ -89,8 +89,11 @@ function drawRecords() {
     const v = r.by[l.id], stale = l.status === 'stale' || l.status === 'partial';
     if (!v) return `<div class="lib-row"><span>${safe(l.name)}</span><span class="missing">— 未列出</span></div>`;
     const link = officialLink(v.source_url);
+    const detail = officialLink(v.magazine_url);
     const label = `✓ ${safe(v.date)} ${stale ? '⚠' : ''} ${link ? '↗' : ''}`;
-    return `<div class="lib-row"><span>${safe(l.name)}</span>${link ? `<a class="${stale ? 'stale' : ''}" href="${safe(link)}" target="_blank" rel="noopener noreferrer" title="${stale ? '本館本次更新失敗，沿用上次核對資料' : '官方來源'}">${label}</a>` : `<span>${label}</span>`}</div>`;
+    const source = link ? `<a class="${stale ? 'stale' : ''}" href="${safe(link)}" target="_blank" rel="noopener noreferrer" title="${stale ? '本館部分核對或更新失敗；舊有資料可能需要重新確認' : '來源書櫃'}">${label}</a>` : `<span>${label}</span>`;
+    const detailLink = detail ? `<a class="detail-link" href="${safe(detail)}" target="_blank" rel="noopener noreferrer" title="開啟該館此雜誌的書目詳情">書目詳情 ↗</a>` : '';
+    return `<div class="lib-row"><span>${safe(l.name)}</span><span class="lib-links">${source}${detailLink}</span></div>`;
   }).join('')}</div></article>`).join('');
 }
 function exportCSV() {
@@ -128,7 +131,7 @@ function fmtStamp(value) {
 }
 function changeLines(entries, kind) {
   if (!entries?.length) return '';
-  const labels={new:'新增書名',new_issue:'新刊期',returned:'恢復列出',not_listed:'停止列出'};
+  const labels={new:'新增書名',new_issue:'新刊期',returned:'恢復列出',not_listed:'停止列出',link_added:'補上書目連結',link_changed:'修正書目連結'};
   const body=entries.map(e => `<li>${safe(e.title)}${kind==='new_issue'?`：${safe(e.from)} → ${safe(e.to)}`:e.to?`（${safe(e.to)}）`:''}</li>`).join('');
   return `<div class="change-group"><strong>${labels[kind]} ${entries.length} 筆</strong><ul>${body}</ul></div>`;
 }
@@ -145,18 +148,26 @@ function renderReport(report) {
   const badge=assisted?'人工輔助增量':'自動完整擷取';
   summary.innerHTML=`<div class="report-status"><span class="status-badge ${all?'ok':'stale'}">${safe(badge)}${all?' · 範圍完成':' · 未完全核對'}</span><strong>${Number(s.successful)||0} 館範圍完成 · ${partial} 館部分 · ${failed} 館失敗${unchecked?' · '+unchecked+' 館未查':''}</strong><small>執行時間：${safe(fmtStamp(report.generated_at))}</small></div>
     ${assisted?`<p class="report-note">本次核對刊期範圍：${safe(report.window_start)} ～ ${safe(report.window_end)}。完成僅指該日期範圍；並非所有舊刊、全部分類都已重新確認。未查到的書名一律保留。</p>`:''}
-    <div class="update-stats"><span>本次確認 <b>${Number(s.verified_records)||0}</b> 筆</span><span>資料庫現有 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>新刊期 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span></div>
+    <div class="update-stats"><span>本次確認 <b>${Number(s.verified_records)||0}</b> 筆</span><span>資料庫現有 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>新刊期 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span><span>補上書目連結 <b>${Number(s.links_added)||0}</b> 筆</span><span>修正書目連結 <b>${Number(s.links_changed)||0}</b> 筆</span><span>已檢查頁面 <b>${Number(s.pages_checked)||0}</b> 頁</span><span>失敗頁面 <b>${Number(s.pages_failed)||0}</b> 頁</span></div>
     <p class="report-note">新增與新刊期以「雜誌 × 圖書館」計算。未完整核對的館別保留已確認的變動，其他書目不刪除、不視為下架；最新資料日期不等於全部九館均完成核查。</p>`;
   libraries.innerHTML=(report.libraries||[]).map(l=>{
     const c=l.changes||{}, changeCount=Number(l.change_count)||0;
     const kind=l.status==='ok'?'ok':l.status==='partial'?'partial':l.status==='not_checked'?'not_checked':'stale';
     const wording={ok:'✓ 範圍已核對',partial:'◐ 部分核對',stale:'⚠ 查詢失敗／沿用',not_checked:'— 本次未核對'}[kind];
-    const changes=['new','new_issue','returned','not_listed'].map(k=>changeLines(c[k],k)).join('');
+    const changes=['new','new_issue','returned','not_listed','link_added','link_changed'].map(k=>changeLines(c[k],k)).join('');
     const count=typeof l.verified_count==='number'?`本次確認 ${l.verified_count} 筆`:'本次無有效核對筆數';
+    const coverage=l.coverage||{};
+    const pages=Array.isArray(coverage.pages)?coverage.pages:[];
+    const verifiedPages=Number(coverage.checked_pages)||0;
+    const failedPages=Number(coverage.failed_pages)||0;
+    const boundary=coverage.date_boundary_reached?'✓ 已驗證日期界線':'日期界線未確認';
+    const coverageLine=assisted?`<p class="report-muted">頁面核對：${verifiedPages} 頁通過，${failedPages} 頁失敗 · ${boundary} · 來源 ${safe(coverage.method||'unknown')} ${pages.length?` · 已記錄 ${pages.length} 頁來源`:''}</p>`:'';
+    const pagesLine=pages.length?`<details class="change-details"><summary>查看已查／缺漏分頁（${pages.length}）</summary><ul>${pages.map(p=>`<li>${safe('第'+p.page+'頁')} · ${safe(p.status)} · ${safe(p.source_type)} · ${safe(p.oldest_date||'?')}～${safe(p.newest_date||'?')}${officialLink(p.url)?` · <a href="${safe(officialLink(p.url))}" rel="noopener noreferrer" target="_blank">來源 ↗</a>`:''}</li>`).join('')}</ul></details>`:'';
     const attempt=assisted?` · 嘗試 ${Number(l.attempts)||0} 次`:` · 重試 ${Number(l.retries)||0} 次`;
     return `<div class="report-library"><div class="report-lib-head"><strong>${safe(l.name)}</strong><span class="status-badge ${kind==='ok'?'ok':kind==='partial'?'seed':'stale'}">${wording}</span></div>
-    <div class="report-lib-stats">${count} · 現有 ${Number(l.active_count)||0} 筆${attempt} · 最後完整核對 ${safe(fmtStamp(l.last_success))}<br>
+    <div class="report-lib-stats">${count} · 現有 ${Number(l.active_count)||0} 筆${attempt} · 最近完整核對 ${safe(fmtStamp(l.last_complete_check||l.last_success))} · 最近部分核對 ${safe(fmtStamp(l.last_partial_check))}<br>
     新增書名 ${(c.new||[]).length} · 新刊期 ${(c.new_issue||[]).length} · 恢復 ${(c.returned||[]).length} · 停止列出 ${(c.not_listed||[]).length}</div>
+    ${coverageLine}${pagesLine}
     ${l.notes?`<p class="report-muted">核對範圍：${safe(l.notes)}</p>`:''}
     ${l.error?`<p class="report-error">${safe(l.error)}</p>`:''}
     ${changeCount?`<details class="change-details"><summary>展開 ${changeCount} 筆異動書名</summary>${changes}</details>`:`<p class="report-muted">${kind==='stale'?'本次未取得可確認的更新。':kind==='not_checked'?'本次未安排查詢。':'本次無新書目異動（不代表全館沒有更新）。'}</p>`}

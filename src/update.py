@@ -53,6 +53,7 @@ def make_seed(snapshot,config):
             items[k]={
                 'title':r['title'],'latest_date':r['date'],
                 'source_url':r.get('source_page') or r.get('url') or '',
+                'magazine_url':r.get('magazine_url'),
                 'first_seen':'2026-10-30','last_seen':'2026-10-30',
                 'misses':0,'active':True,
             }
@@ -87,6 +88,7 @@ def ingest(state,lib,observed,when,cutoff=CUTOFF):
             all_items[k]={
                 'title':r['title'],'latest_date':r['date'],'source_url':r['source_url'],
                 'first_seen':when[:10],'last_seen':when[:10],'misses':0,'active':True,
+                'magazine_url':r.get('magazine_url'),
             }
             events.append({'at':when,'library':lib['id'],'type':'new','title':r['title'],'to':r['date']})
         else:
@@ -95,6 +97,8 @@ def ingest(state,lib,observed,when,cutoff=CUTOFF):
                 events.append({'at':when,'library':lib['id'],'type':'new_issue',
                                'title':cur['title'],'from':cur['latest_date'],'to':r['date']})
                 cur['latest_date']=r['date']
+            if r.get('magazine_url'):
+                cur['magazine_url']=r['magazine_url']
             if not cur['active']:
                 events.append({'at':when,'library':lib['id'],'type':'returned','title':cur['title'],'to':cur['latest_date']})
             cur.update({'source_url':r['source_url'],'last_seen':when[:10],'misses':0,'active':True})
@@ -124,7 +128,8 @@ def published(state,conf,stamp):
         for k,r in lib['items'].items():
             if not r['active']:continue
             if k not in series: series[k]={'title':r['title'],'key':k,'by':{}}
-            series[k]['by'][l['id']]={'date':r['latest_date'],'source_url':r['source_url']}
+            series[k]['by'][l['id']]={'date':r['latest_date'],'source_url':r['source_url'],
+                                      'magazine_url':r.get('magazine_url')}
     matrix=list(series.values())
     for r in matrix:r['count']=len(r['by'])
     matrix.sort(key=lambda r:(-r['count'],r['key']))

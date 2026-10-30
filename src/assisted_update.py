@@ -17,27 +17,19 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from .hyread import key
+from .coverage import official_url, magazine_url, validate_coverage
 from .update import (
     ROOT, CUTOFF, CONFIG, HISTORY, PUBLIC, REPORT, STATE, STATUS,
     atomic_json, initialize, load, now, published,
 )
 
 VALID_STATES = {'complete', 'partial', 'failed'}
-CHANGE_TYPES = ('new', 'new_issue', 'returned', 'not_listed')
+CHANGE_TYPES = ('new', 'new_issue', 'returned', 'not_listed', 'link_added', 'link_changed')
 
 
 def _require_date(s: str) -> str:
     if not isinstance(s, str) or len(s) != 10 or date.fromisoformat(s).isoformat() != s:
         raise ValueError(f'無效日期：{s!r}，須為 YYYY-MM-DD')
-    return s
-
-
-def _require_official_url(s: str, library_id: str) -> str:
-    if not isinstance(s, str) or not s:
-        raise ValueError('每筆確認書目必須附官方來源網址')
-    u = urlparse(s)
-    if u.scheme != 'https' or u.hostname != f'{library_id}.ebook.hyread.com.tw' or u.username or u.password:
-        raise ValueError(f'來源網址與圖書館不符：{s}')
     return s
 
 
@@ -97,15 +89,18 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
             if not isinstance(title, str) or not title.strip() or len(title) > 180:
                 raise ValueError(f'{libid}: 無效書名')
             publish_date = _require_date(row.get('date'))
-            _require_official_url(row.get('source_url'), libid)
+            official_url(row.get('source_url'), libid)
             # Observations may be outside lookback because newer/older issue is
             # visible on a source page. Never invent issue history from them.
-            normalized_row={'title':title.strip(),'date':publish_date,'source_url':row['source_url']}
+            normalized_row={'title':title.strip(),'date':publish_date,'source_url':row['source_url'],
+                            'magazine_url':magazine_url(row.get('magazine_url'),libid)}
             k=key(title)
-            if k not in observed or observed[k]['date'] < publish_date:
+            if (k not in observed or observed[k]['date'] < publish_date
+                    or (observed[k]['date']==publish_date and not observed[k]['magazine_url'] and normalized_row['magazine_url'])):
                 observed[k]=normalized_row
+        coverage=validate_coverage(entry.get('coverage'),libid,started,status=='complete')
         normalized[libid]={
-            'status':status,'attempts':attempts,'retry_wait_seconds':waits,
+            'coverage':coverage,'status':status,'attempts':attempts,'retry_wait_seconds':waits,
             'notes':notes,'error':error,'observed':observed,
         }
     return {'batch_id':batch_id,'window_start':started,'window_end':ended,'libraries':normalized}
@@ -125,6 +120,7 @@ def merge_incremental(state: dict, library: dict, observations: dict, stamp: str
                 'title':obs['title'],'latest_date':obs['date'],
                 'source_url':obs['source_url'],'first_seen':stamp[:10],
                 'last_seen':stamp[:10],'misses':0,'active':True,
+                'magazine_url':obs.get('magazine_url'),
             }
             events.append({'at':stamp,'library':host,'type':'new','title':obs['title'],'to':obs['date']})
             continue
@@ -133,6 +129,15 @@ def merge_incremental(state: dict, library: dict, observations: dict, stamp: str
                            'from':cur['latest_date'],'to':obs['date']})
             cur['latest_date']=obs['date']
             cur['source_url']=obs['source_url']
+        # Metadata link is independent of the newest issue date: an older
+        # source can validly supply the permanent magazine detail page.
+        old_link=cur.get('magazine_url')
+        new_link=obs.get('magazine_url')
+        if new_link and new_link != old_link:
+            cur['magazine_url']=new_link
+            cur['magazine_url_checked_at']=stamp
+            events.append({'at':stamp,'library':host,'type':'link_changed' if old_link else 'link_added',
+                           'title':cur['title'],'from':old_link or '', 'to':new_link})
         if not cur['active']:
             events.append({'at':stamp,'library':host,'type':'returned','title':cur['title'],'to':cur['latest_date']})
             cur['active']=True
@@ -148,20 +153,21 @@ def build_assisted_report(conf, state, stamp, batch, results, previous):
         saved=state['libraries'][host]
         changes={t:[] for t in CHANGE_TYPES}
         if info is None:
-            status='not_checked'; events=[]; attempts=0; notes='本次未排入核對'; error=''; reviewed=None; waits=[]
+            status='not_checked'; events=[]; attempts=0; notes='本次未排入核對'; error=''; reviewed=None; waits=[]; coverage={'method':'unknown','pages':[],'checked_pages':0,'failed_pages':0,'date_boundary_reached':False}
         else:
             status={'complete':'ok','partial':'partial','failed':'stale'}[info['status']]
             events=info['events']; attempts=info['attempts']; notes=info['notes']; error=info['error']
             reviewed=info['verified_count'] if info['status']!='failed' else None
-            waits=info['retry_wait_seconds']
+            waits=info['retry_wait_seconds']; coverage=info['coverage']
         for event in events:
             changes[event['type']].append({k:v for k,v in event.items() if k in ('title','from','to')})
         details.append({
             'id':host,'name':lib['name'],'status':status,'attempted_at':stamp if info else None,
             'last_success':saved.get('last_success'), 'last_assisted_success':saved.get('last_assisted_success'),
+            'last_complete_check':saved.get('last_complete_check'), 'last_partial_check':saved.get('last_partial_check'),
             'verified_count':reviewed,'active_count':sum(v['active'] for v in saved['items'].values()),
             'attempts':attempts,'retries':max(attempts-1,0),'retry_wait_seconds':waits,
-            'notes':notes,'error':error, 'changes':changes,'change_count':len(events),
+            'notes':notes,'error':error,'coverage':coverage, 'changes':changes,'change_count':len(events),
         })
     complete=sum(x['status']=='ok' for x in details)
     partial=sum(x['status']=='partial' for x in details)
@@ -172,7 +178,11 @@ def build_assisted_report(conf, state, stamp, batch, results, previous):
         'total':len(details),'verified_records':sum(l['verified_count'] or 0 for l in details),
         'active_records':sum(l['active_count'] for l in details),
         'new_titles':totals['new'],'new_issues':totals['new_issue'],
-        'returned':totals['returned'],'not_listed':0,'changes_total':sum(totals.values()),
+        'returned':totals['returned'],'not_listed':0,
+        'links_added':totals['link_added'],'links_changed':totals['link_changed'],
+        'pages_checked':sum(l['coverage'].get('checked_pages',0) for l in details),
+        'pages_failed':sum(l['coverage'].get('failed_pages',0) for l in details),
+        'changes_total':sum(totals.values()),
     }
     complete_run=complete==len(details)
     line={'at':stamp,'batch_id':batch['batch_id'],'source':'chatgpt_assisted',
@@ -209,8 +219,13 @@ def apply_batch(batch: dict, *, persist: bool=False, stamp: str|None=None) -> di
             events=[]
         else:
             events=merge_incremental(state,libmap[host],entry['observed'],stamp)
-            saved.update({'result':'partial','error':entry['notes'] if status=='partial' else '',
+            saved.update({'result':'ok' if status=='complete' else 'partial',
+                          'error':entry['notes'] if status=='partial' else '',
                           'last_assisted_success':stamp})
+            if status=='complete':
+                saved['last_complete_check']=stamp
+            else:
+                saved['last_partial_check']=stamp
             history['events'].extend(events)
         results[host]={**entry,'events':events,'verified_count':len(entry['observed'])}
     threshold=(datetime.fromisoformat(stamp).date()-timedelta(days=180)).isoformat()

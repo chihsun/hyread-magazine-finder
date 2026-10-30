@@ -13,6 +13,7 @@ import time
 import unicodedata
 from email.utils import parsedate_to_datetime
 from urllib.parse import urljoin
+from .coverage import magazine_url as validate_magazine_url
 
 import requests
 from bs4 import BeautifulSoup
@@ -76,6 +77,25 @@ def extract_category(html: bytes | str, url: str, category: str) -> list[dict]:
     # page has its heading and a repeated latest-publication marker per issue.
     if not any(re.search(re.escape(category)+r'\s*\(\s*\d+\s*\)',v) for v in lines):
         raise ValueError(f'分類「{category}」標題不存在（可能是阻擋頁）')
+    # Keep the real magazine detail link where the source HTML provides one.
+    # Catalog/category URLs are not individual magazine pages and must never be
+    # substituted for magazine_more.jsp?jid=... .
+    titles_to_links={}
+    ambiguous=set()
+    for a in soup.find_all('a', href=True):
+        text_of_link=a.get_text(' ',strip=True)
+        if not text_of_link:
+            continue
+        try:
+            found=validate_magazine_url(urljoin(url,a['href']), url.split('/')[2].split('.')[0])
+        except ValueError:
+            continue
+        if not found:
+            continue
+        k=key(text_of_link)
+        if k in titles_to_links and titles_to_links[k]!=found:
+            ambiguous.add(k)
+        titles_to_links[k]=found
     dates=[]
     for i,line in enumerate(lines):
         if not LATEST_RE.search(line):
@@ -90,7 +110,8 @@ def extract_category(html: bytes | str, url: str, category: str) -> list[dict]:
         title=lines[i-1]
         if not title or len(title)>180 or title.startswith(('最新','雜誌類型','新刊')):
             raise ValueError(f'無法辨識標題: {title}')
-        dates.append({'title':title,'date':day,'source_url':url})
+        dates.append({'title':title,'date':day,'source_url':url,
+                      'magazine_url':titles_to_links.get(key(title)) if key(title) not in ambiguous else None})
     if not dates:
         # Some empty categories exist; reject pages listing catalog entries but
         # missing dates, because treating them as empty would erase coverage.
@@ -143,8 +164,9 @@ class LibraryScanner:
             self.requests_made+=1
             try:
                 r=self.session.get(url,timeout=self.timeout)
-                # HTTP 401/403 is an explicit denial, not a transient error.
-                # Do not repeatedly request a blocked endpoint.
+                # A clear HTTP 401/403 denial is not a transient error. Stop
+                # immediately rather than sending repeated requests to a site
+                # that does not permit this execution environment.
                 if r.status_code in (401, 403):
                     raise AccessDeniedError(
                         f'HyRead 回應 HTTP {r.status_code}，拒絕此執行環境存取；'
@@ -195,3 +217,21 @@ class LibraryScanner:
         if len(records)<30:
             raise ValueError(f'擷取總量僅{len(records)}筆，低於可信門檻30')
         return records
+
+
+def extract_latest_page(html: bytes | str, url: str) -> list[dict]:
+    """Parse public '最新出刊' page metadata only (no auth/network/bypass).
+
+    Returns issue dates and, when an actual title anchor exists, its magazine
+    detail URL. Does NOT prove pagination completeness or freshness itself.
+    """
+    from bs4 import BeautifulSoup
+    soup=BeautifulSoup(html,'html.parser')
+    if '最新出刊' not in soup.get_text(' ',strip=True):
+        raise ValueError('頁面缺少最新出刊標題，無法確認來源')
+    # The same per-item markup appears on category pages. Inject a neutral
+    # category heading *in memory* to reuse its strict title/date parser.
+    heading=soup.new_tag('h3')
+    heading.string='最新出刊(9999)'
+    soup.body.insert(0,heading) if soup.body else soup.insert(0,heading)
+    return extract_category(str(soup),url,'最新出刊')

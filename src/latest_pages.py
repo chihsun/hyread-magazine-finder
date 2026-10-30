@@ -1,0 +1,75 @@
+"""Offline, verified parsing for the preferred HyRead '最新出刊' page series.
+
+Pass HTML legitimately obtained from a source: this module does not fetch pages,
+change network identity, or bypass an HTTP 403. Its evidence can be embedded in
+an assisted update batch, whose completeness is checked by src.coverage.
+"""
+from __future__ import annotations
+from datetime import datetime
+from urllib.parse import parse_qs, urlparse
+
+from .hyread import extract_latest_page, key
+from .coverage import official_url
+
+
+def latest_page_url(library_id: str, page: int) -> str:
+    if type(page) is not int or not 1 <= page <= 200:
+        raise ValueError('最新出刊頁碼須為 1–200')
+    return (f'https://{library_id}.ebook.hyread.com.tw/Template/RWD3.0/'
+            f'magazine_view_more.jsp?nowpage={page}')
+
+
+def inspect_latest_html(html: str | bytes, library_id: str, page: int,
+                        observed_at: str, source_type: str = 'direct') -> tuple[list[dict], dict]:
+    """Extract observed titles, issue dates, individual jid links and page evidence.
+
+    Callers must label search-engine caches as `search_index`, never `direct`.
+    In-page issue date order is verified before a page can support a boundary.
+    """
+    if source_type not in ('direct','search_index'):
+        raise ValueError('source_type 必須是 direct 或 search_index')
+    try:
+        d=datetime.fromisoformat(observed_at)
+        if d.tzinfo is None:raise ValueError()
+    except (TypeError,ValueError):
+        raise ValueError('observed_at 必須是含時區的實際觀察時間') from None
+    url=latest_page_url(library_id,page)
+    official_url(url,library_id)
+    records=extract_latest_page(html,url)
+    if not records:
+        raise ValueError('最新出刊頁面沒有可辨識的書名與刊期，不能當成已核對頁面')
+    dates=[x['date'] for x in records]
+    if dates!=sorted(dates,reverse=True):
+        raise ValueError('最新出刊頁面的日期並未由新至舊排序，不能用來判斷日期界線')
+    evidence={'page':page,'url':url,'status':'ok','source_type':source_type,
+              'observed_at':observed_at,'newest_date':dates[0], 'oldest_date':dates[-1]}
+    return records,evidence
+
+
+def build_latest_observations(pages: list[tuple[list[dict],dict]], window_start: str,
+                              window_end: str) -> tuple[list[dict],dict]:
+    """Combine inspected page results; complete status requires later validation.
+
+    This only records a *claim* about the boundary. validate_coverage separately
+    rejects missing pages and index-only or incoherent captures.
+    """
+    if not pages: raise ValueError('未提供任何最新出刊頁面')
+    mapping={}
+    evidence=[]
+    for rows,meta in sorted(pages,key=lambda x:x[1]['page']):
+        evidence.append(meta)
+        for row in rows:
+            # Include the overlap window as caller-chosen window_start. Do not
+            # infer absence or book removal from missing observations.
+            if row['date'] < window_start or row['date'] > window_end:
+                continue
+            k=key(row['title'])
+            if k not in mapping or mapping[k]['date']<row['date'] or (
+                    mapping[k]['date']==row['date'] and not mapping[k].get('magazine_url') and row.get('magazine_url')):
+                mapping[k]=row
+    sorted_pages=sorted(evidence,key=lambda x:x['page'])
+    contiguous=[x['page'] for x in sorted_pages]==list(range(1,len(sorted_pages)+1))
+    reached=contiguous and sorted_pages[-1]['oldest_date']<=window_start
+    coverage={'method':'latest_pages','pages':sorted_pages,
+              'pagination_contiguous':contiguous,'date_boundary_reached':reached}
+    return list(mapping.values()),coverage
