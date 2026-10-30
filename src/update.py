@@ -21,6 +21,7 @@ STATE=ROOT/'data/state.json'
 HISTORY=ROOT/'data/history.json'
 PUBLIC=ROOT/'docs/data/catalog.json'
 STATUS=ROOT/'docs/data/status.json'
+REPORT=ROOT/'docs/data/update-report.json'
 CUTOFF='2026-09-20'
 MIN_ACTIVE=30
 TZ=timezone(timedelta(hours=8))
@@ -132,11 +133,77 @@ def published(state,conf,stamp):
             'distribution':{str(i):sum(r['count']==i for r in matrix) for i in range(1,len(conf)+1)}}
 
 
+def build_report(conf, state, stamp, per_library, previous=None):
+    """Summarize actual changes in this crawl; never infer additions from counts."""
+    details=[]
+    for lib in conf:
+        item=state['libraries'][lib['id']]
+        outcome=per_library[lib['id']]
+        changes={t:[] for t in ('new','new_issue','returned','not_listed')}
+        for event in outcome['events']:
+            changes[event['type']].append({k:v for k,v in event.items() if k in ('title','from','to')})
+        details.append({
+            'id':lib['id'], 'name':lib['name'],
+            'status':'ok' if outcome['ok'] else 'stale',
+            'attempted_at':stamp, 'last_success':item.get('last_success'),
+            # Never reuse a prior successful scan's verified count on a failed run.
+            'verified_count':outcome['verified_count'] if outcome['ok'] else None,
+            'active_count':sum(v['active'] for v in item['items'].values()),
+            'retries':item.get('retry_count',0),
+            'error':item.get('error','') if not outcome['ok'] else '',
+            'changes':changes,
+            'change_count':len(outcome['events']),
+        })
+    successful=sum(v['status']=='ok' for v in details)
+    totals={name:sum(len(v['changes'][name]) for v in details) for name in ('new','new_issue','returned','not_listed')}
+    summary={
+        'successful':successful,'failed':len(details)-successful,'total':len(details),
+        'verified_records':sum(v['verified_count'] or 0 for v in details),
+        'active_records':sum(v['active_count'] for v in details),
+        'new_titles':totals['new'],'new_issues':totals['new_issue'],
+        'returned':totals['returned'],'not_listed':totals['not_listed'],
+        'changes_total':sum(totals.values()),
+    }
+    # Retain compact summaries for 180d; only the latest run contains book titles.
+    item={'at':stamp,'summary':summary,'complete':successful==len(details)}
+    previous_history=(previous or {}).get('history',[])
+    threshold=(datetime.fromisoformat(stamp).date()-timedelta(days=180)).isoformat()
+    past=[r for r in previous_history if isinstance(r,dict) and r.get('at','')[:10]>=threshold and r.get('at')!=stamp]
+    return {'schema':1,'type':'crawl','generated_at':stamp,
+            'complete':item['complete'],'summary':summary,
+            'libraries':details,'history':([item]+past)[:40]}
+
+
+def initial_report(conf,state,stamp):
+    """Seeded historic data is not evidence of an automated nine-library scan."""
+    return {'schema':1,'type':'seed','generated_at':stamp,'complete':None,
+            'summary':None,'libraries':[{'id':l['id'],'name':l['name'],
+            'active_count':sum(v['active'] for v in state['libraries'][l['id']]['items'].values()),
+            'status':'seed'} for l in conf], 'history':[]}
+
+
+def action_summary(report):
+    """Also emit actionable summary in the Actions run without requiring site access."""
+    s=report['summary']
+    lines=[f"## HyRead 更新結果 · {report['generated_at']}",
+           f"- 成功 {s['successful']}/{s['total']} 館；失敗 {s['failed']} 館",
+           f"- 本次成功核對書目筆數：{s['verified_records']}；目前各館已收錄紀錄：{s['active_records']}",
+           f"- 新增館藏書名 {s['new_titles']}、新刊期 {s['new_issues']}、恢復列出 {s['returned']}、停止列出 {s['not_listed']}",
+           '', '| 圖書館 | 結果 | 核對筆數 | 新書名 | 新刊期 |',
+           '|---|---|---:|---:|---:|']
+    for l in report['libraries']:
+        lines.append(f"| {l['name']} | {'成功' if l['status']=='ok' else '失敗（保留舊資料）'} | {l['verified_count'] if l['verified_count'] is not None else '—'} | {len(l['changes']['new'])} | {len(l['changes']['new_issue'])} |")
+    path=os.environ.get('GITHUB_STEP_SUMMARY')
+    if path:
+        with open(path,'a',encoding='utf-8') as out:out.write('\n'.join(lines)+'\n')
+
+
 def run(scanner_factory=LibraryScanner,when=None):
     stamp=when or now()
     conf,state=initialize()
     history=load(HISTORY,{'version':1,'events':[]})
     results=[]
+    per_library={}
     for lib in conf:
         print(f"[{lib['name']}] scanning 12 categories...",flush=True)
         scanner=scanner_factory(lib['id'])
@@ -148,21 +215,26 @@ def run(scanner_factory=LibraryScanner,when=None):
             history['events'].extend(events)
             record['retry_count']=scanner.used_retries
             results.append(True)
+            per_library[lib['id']]={'ok':True,'events':events,'verified_count':record['verified_count']}
             print(f"  ✓ verified {record['verified_count']}; changes {len(events)}; retries {scanner.used_retries}",flush=True)
         except Exception as exc:
             record.update({'result':'stale','error':str(exc)[:300],
                            'retry_count':scanner.used_retries})
             results.append(False)
+            per_library[lib['id']]={'ok':False,'events':[],'verified_count':None}
             print(f"  ! stale: {exc}",flush=True)
         # Even when one library fails, proceed to other libraries; only this
         # library's last good records are preserved.
     threshold=(datetime.fromisoformat(stamp).date()-timedelta(days=180)).isoformat()
     history['events']=[e for e in history['events'] if e.get('at','')[:10]>=threshold]
     payload=published(state,conf,stamp)
+    report=build_report(conf,state,stamp,per_library,load(REPORT,{}))
+    action_summary(report)
     # Publish only once, after all libraries have finished and validated.
     atomic_json(STATE,state)
     atomic_json(HISTORY,history)
     atomic_json(PUBLIC,payload)
+    atomic_json(REPORT,report)
     atomic_json(STATUS,{'generated_at':stamp,'results':payload['libraries'],
                         'complete':all(results),'successful':sum(results),'total':len(results)})
     return all(results)
@@ -179,6 +251,7 @@ def main():
         if not HISTORY.exists():atomic_json(HISTORY,{'version':1,'events':[]})
         initial=published(state,conf,'2026-10-30T12:30:00+08:00')
         atomic_json(PUBLIC,initial)
+        if not REPORT.exists():atomic_json(REPORT,initial_report(conf,state,initial['generated_at']))
         atomic_json(STATUS,{'generated_at':initial['generated_at'],'results':initial['libraries'],
                             'complete':True,'successful':9,'total':9,'note':'2026-10-30 手工核對初始資料快照；後續每週由爬蟲核對'})
         print('Seed generated',len(initial['magazines']))

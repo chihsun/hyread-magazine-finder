@@ -39,6 +39,12 @@
     <div class="metric"><span>九館都有</span><strong id="common">—</strong></div>
     <div class="metric"><span>最後資料更新</span><strong id="updated" class="small-date">—</strong></div>
   </div>
+  <section class="panel update-board" aria-labelledby="updatetitle">
+    <div class="section-title update-title"><h2 id="updatetitle">🔄 書單更新紀錄</h2><a class="textbtn" href="https://github.com/chihsun/hyread-magazine-finder/actions/workflows/update-magazines.yml" target="_blank" rel="noopener noreferrer">查看 GitHub 執行紀錄 ↗</a></div>
+    <div id="update-summary" class="update-summary" role="status" aria-live="polite">正在讀取更新紀錄…</div>
+    <details class="update-details"><summary>查看各館狀態、核對筆數及異動書名</summary><div id="update-libraries" class="update-libraries"></div></details>
+    <details class="update-details"><summary>最近更新歷史（180 天）</summary><div id="update-history" class="update-history"></div></details>
+  </section>
   <section class="panel filters" aria-labelledby="filtertitle">
     <div class="section-title"><h2 id="filtertitle">搜尋與篩選</h2><button type="button" id="reset" class="textbtn">重設篩選</button></div>
     <label class="field" for="query">搜尋雜誌名稱

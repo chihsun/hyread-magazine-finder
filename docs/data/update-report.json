@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "type": "seed",
+  "generated_at": "2026-10-30T12:30:00+08:00",
+  "complete": null,
+  "summary": null,
+  "libraries": [
+    {
+      "id": "taichunggov",
+      "name": "臺中市立圖書館",
+      "active_count": 115,
+      "status": "seed"
+    },
+    {
+      "id": "tpml",
+      "name": "臺北市立圖書館",
+      "active_count": 129,
+      "status": "seed"
+    },
+    {
+      "id": "tnml",
+      "name": "臺南市立圖書館",
+      "active_count": 125,
+      "status": "seed"
+    },
+    {
+      "id": "tphcc",
+      "name": "新北市立圖書館",
+      "active_count": 126,
+      "status": "seed"
+    },
+    {
+      "id": "ksml",
+      "name": "高雄市立圖書館",
+      "active_count": 113,
+      "status": "seed"
+    },
+    {
+      "id": "tycccgov",
+      "name": "桃園市立圖書館",
+      "active_count": 123,
+      "status": "seed"
+    },
+    {
+      "id": "hchcc",
+      "name": "新竹縣公共圖書館",
+      "active_count": 116,
+      "status": "seed"
+    },
+    {
+      "id": "hcmlgov",
+      "name": "新竹市圖書館",
+      "active_count": 114,
+      "status": "seed"
+    },
+    {
+      "id": "klccab",
+      "name": "基隆市公共圖書館",
+      "active_count": 114,
+      "status": "seed"
+    }
+  ],
+  "history": []
+}

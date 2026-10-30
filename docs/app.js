@@ -121,7 +121,56 @@ function initTheme() {
   setTheme(mode);
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncThemeColor);
 }
+function fmtStamp(value) {
+  if (!value) return '—';
+  const m=String(value).match(/^(\d{4}-\d{2}-\d{2})(?:T(\d{2}:\d{2}))?/);
+  return m ? `${m[1]} ${m[2] || ''}`.trim() + (String(value).includes('+08:00') ? '（臺灣）' : '') : String(value);
+}
+function changeLines(entries, kind) {
+  if (!entries?.length) return '';
+  const labels={new:'新增書名',new_issue:'新刊期',returned:'恢復列出',not_listed:'停止列出'};
+  const body=entries.map(e => `<li>${safe(e.title)}${kind==='new_issue'?`：${safe(e.from)} → ${safe(e.to)}`:e.to?`（${safe(e.to)}）`:''}</li>`).join('');
+  return `<div class="change-group"><strong>${labels[kind]} ${entries.length} 筆</strong><ul>${body}</ul></div>`;
+}
+function renderReport(report) {
+  const summary=$('update-summary'), libraries=$('update-libraries'), history=$('update-history');
+  if (report.type === 'seed' || !report.summary) {
+    summary.innerHTML='<div class="report-status"><span class="status-badge seed">初始資料</span><strong>尚無自動擷取紀錄</strong></div><p>目前顯示的是先前人工核對的九館初始書單；不能將其視為本次成功更新九館。</p>';
+    libraries.innerHTML=(report.libraries||[]).map(l=>`<div class="report-library"><strong>${safe(l.name)}</strong><span>初始收錄 ${Number(l.active_count)||0} 筆（尚未自動核對）</span></div>`).join('');
+    history.textContent='尚無排程或手動更新紀錄。';
+    return;
+  }
+  const s=report.summary, all=report.complete;
+  summary.innerHTML=`<div class="report-status"><span class="status-badge ${all?'ok':'stale'}">${all?'全部成功':'部分失敗'}</span><strong>${s.successful} / ${s.total} 館成功</strong><small>執行時間：${safe(fmtStamp(report.generated_at))}</small></div>
+    <div class="update-stats"><span>核對 <b>${Number(s.verified_records)||0}</b> 筆（成功館）</span><span>目前館藏 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>新刊期 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span></div>
+    <p class="report-note">「新增書名」指某館首次收錄該書名；「新刊期」指既有雜誌的最新發刊日變更。兩者皆以各館為單位計算，非九館不重複書名數。未成功核對的圖書館保留舊資料。</p>`;
+  libraries.innerHTML=(report.libraries||[]).map(l=>{
+    const ok=l.status==='ok', c=l.changes||{}, changeCount=Number(l.change_count)||0;
+    const changes=['new','new_issue','returned','not_listed'].map(k=>changeLines(c[k],k)).join('');
+    return `<div class="report-library"><div class="report-lib-head"><strong>${safe(l.name)}</strong><span class="status-badge ${ok?'ok':'stale'}">${ok?'✓ 成功':'⚠ 失敗／沿用'}</span></div>
+    <div class="report-lib-stats">${ok?`本次核對 ${Number(l.verified_count)||0} 筆`:`最後成功：${safe(fmtStamp(l.last_success))}`} · 目前列出 ${Number(l.active_count)||0} 筆 · 重試 ${Number(l.retries)||0} 次<br>
+    新增書名 ${(c.new||[]).length} · 新刊期 ${(c.new_issue||[]).length} · 重新列出 ${(c.returned||[]).length} · 停止列出 ${(c.not_listed||[]).length}</div>
+    ${l.error?`<p class="report-error">${safe(l.error)}</p>`:''}
+    ${changeCount?`<details class="change-details"><summary>展開 ${changeCount} 筆異動書名</summary>${changes}</details>`:`<p class="report-muted">${ok?'本次沒有館藏變動。':'本次無法確認變動。'}</p>`}
+    </div>`;
+  }).join('');
+  history.innerHTML=(report.history||[]).map(r=>`<div class="history-row"><strong>${safe(fmtStamp(r.at))}</strong><span>${r.summary?.successful??0}/${r.summary?.total??0} 館成功</span><span>新書名 ${r.summary?.new_titles??0} · 新刊期 ${r.summary?.new_issues??0} · 變動 ${r.summary?.changes_total??0}</span></div>`).join('')||'尚無歷史紀錄';
+}
+async function loadReport() {
+  try {
+    const response=await fetch('data/update-report.json?ts='+Date.now(),{cache:'no-store'});
+    if (!response.ok) throw new Error('HTTP '+response.status);
+    const report=await response.json();
+    if (!report || !Array.isArray(report.libraries)) throw new Error('更新紀錄格式不符');
+    renderReport(report);
+  } catch (e) {
+    $('update-summary').textContent='目前無法讀取更新紀錄；不影響雜誌搜尋。';
+    $('update-libraries').textContent='更新紀錄暫時無法取得。';
+    $('update-history').textContent='—';
+  }
+}
 async function load() {
+  loadReport();
   notice('正在載入最新雜誌資料…');
   try {
     const response = await fetch('data/catalog.json?ts=' + Date.now(), { cache: 'no-store' });

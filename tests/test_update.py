@@ -80,3 +80,44 @@ class HyReadTests(unittest.TestCase):
         self.assertEqual(fake.calls,3)
 
 if __name__=='__main__':unittest.main()
+
+class UpdateReportTests(unittest.TestCase):
+    def test_summary_distinguishes_new_titles_from_new_issues_and_failed_scans(self):
+        from src.update import build_report, initial_report
+        conf,state=initialize()
+        stamp='2026-11-06T08:00:00+08:00'
+        per={}
+        for lib in conf:
+            item=state['libraries'][lib['id']]
+            per[lib['id']]={'ok':True,'verified_count':len(item['items']),'events':[]}
+        first=conf[0]['id']
+        second=conf[1]['id']
+        per[first]['events']=[
+          {'at':stamp,'library':first,'type':'new','title':'新測試雜誌','to':'2026-11-06'},
+          {'at':stamp,'library':first,'type':'new_issue','title':'既有雜誌','from':'2026-10-30','to':'2026-11-06'},
+        ]
+        per[second]={'ok':False,'verified_count':None,'events':[]}
+        state['libraries'][second]['result']='stale'
+        state['libraries'][second]['error']='read timeout'
+        prev=initial_report(conf,state,'2026-10-30T12:30:00+08:00')
+        report=build_report(conf,state,stamp,per,prev)
+        self.assertEqual(report['summary']['successful'],8)
+        self.assertEqual(report['summary']['new_titles'],1)
+        self.assertEqual(report['summary']['new_issues'],1)
+        self.assertIsNone(report['libraries'][1]['verified_count'])
+        self.assertEqual(report['libraries'][1]['change_count'],0)
+        self.assertEqual(report['libraries'][0]['changes']['new'][0]['title'],'新測試雜誌')
+        self.assertFalse(report['complete'])
+        self.assertEqual(report['history'][0]['summary']['changes_total'],2)
+
+    def test_history_only_180_days_and_seed_not_pretend_scraped(self):
+        from src.update import build_report, initial_report
+        conf,state=initialize()
+        seed=initial_report(conf,state,'2026-10-30T12:30:00+08:00')
+        self.assertIsNone(seed['summary'])
+        per={lib['id']:{'ok':True,'verified_count':len(state['libraries'][lib['id']]['items']),'events':[]} for lib in conf}
+        previous={'history':[{'at':'2025-01-01T08:00:00+08:00','summary':{}}, {'at':'2026-11-01T08:00:00+08:00','summary':{}}]}
+        report=build_report(conf,state,'2026-11-06T08:00:00+08:00',per,previous)
+        self.assertEqual(len(report['history']),2)
+        self.assertEqual(report['summary']['changes_total'],0)
+        self.assertEqual(report['summary']['verified_records'],sum(len(state['libraries'][l['id']]['items']) for l in conf))
