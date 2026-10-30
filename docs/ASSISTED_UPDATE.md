@@ -2,6 +2,45 @@
 
 > **目前狀態：** 2026-10-30 的第一次 GitHub-hosted Runner 執行，九館的 HyRead 分類頁均回傳 HTTP 403。因此停止 GitHub Actions 每週直接擷取。**本文件描述新的人工輔助流程，不代表此時已完成任何一次新書單核對。**
 
+## V1.5：ChatGPT 同批次分頁核對（優先使用）
+
+**維持 ChatGPT 網頁版更新，不需要本機爬蟲，也沒有恢復 GitHub Runner 對 HyRead 的擷取。** 請在本對話直接要求「更新九館最近 7 天雜誌，從最新出刊第 1 頁依序查到回查日期界線，保留同批次分頁、快取時間與具體錯誤原因；驗證後推送 GitHub」。來源查詢、資料比對、推送都要於該次互動完成，不能虛構已讀取分頁。
+
+1. 每館建立獨立 `coverage.scan_id`（如 `tpml-20261030-190000`），由最新出刊第 1 頁開始，沿官方實際分頁連結依序讀取第 2、3…頁，直到回查日期界線。若無法直接取得，記錄所能確認的頁面；不得自行以搜尋引擎的查詢結果推定官方分頁內容。
+2. 對每頁區分 **`observed_at`（ChatGPT 實際觀察時間）** 與 **`indexed_at`（搜尋服務明確提供的原始索引時間）**。無法確知索引時間就留空，**不要把觀察時間當成索引建立時間**。可取得的是搜尋摘要／索引時，一律標為 `search_index`，不能標為 `direct`。
+3. 若可確認官方頁面是直接取得，保留該頁書目、頁碼、原始 URL、來源類型、`record_count` 與依書目生成的 SHA-256 `content_digest`。可由 `src/latest_pages.py` 的 `inspect_latest_html(..., scan_id=...)` 產生；**僅有搜尋快取摘要時，不得自行捏造 HTML 或摘要**。
+4. 直接連續讀完必要分頁後，重新取得第 1 頁，將再次解析的證據填入 `coverage.first_page_recheck`。V1.5（schema 2）宣稱 `complete` 必須通過相同 `scan_id`、每頁摘要、10 分鐘內的同次觀察、跨頁日期排序、日期界線與第 1 頁前後一致性檢查。`scan_id` 和時間接近本身仍不等於伺服器快照保證。
+5. 任一分頁缺漏、來源僅是搜尋索引、索引時間差異過大，或前後頁面不一致，都應標為 `partial`；保留已核實的書目與 `jid`，不得把拼接的搜尋快取當成完整核對。分類頁可補充個別已確認書目，但不能填補未知分頁的「完整」證明。
+
+### V1.5 錯誤代碼與回報
+
+- `ACCESS_DENIED`：實際觀察到的 HTTP 401／403 或明確拒絕存取（不能從「工具無法讀取」推斷）；`RATE_LIMITED`：429；`TIMEOUT`、`NETWORK_ERROR`、`SERVER_ERROR`：實際連線或回應失敗。
+- `TOOL_UNAVAILABLE`：ChatGPT 讀取工具無法開啟、沒有可確認的 HTTP 回應；`PARSER_ERROR`：內容已取得但解析失敗；`PAGE_MISSING`：缺必要分頁。
+- `CACHE_ONLY`、`STALE_CACHE`、`DATE_BOUNDARY_NOT_REACHED`、`SNAPSHOT_DRIFT`：快取、界線或掃描一致性問題；不確定的錯誤請用 `UNKNOWN`，並在 `error` 描述證據，不要編造狀態碼。
+- V1.5 失敗館必須帶 `error_code`；失敗分頁可帶 `error_code`／`error`／實際觀察到的 `http_status`。保留每館 `attempts`、實際 `retry_wait_seconds`；臨時錯誤最多額外重試兩次，明確 401／403 不重試。
+- 網站的「書單更新紀錄」會顯示每館診斷碼、直接來源與快取頁數、缺頁及相關警示；報告 JSON 的 `coverage.diagnostics` 另外保留掃描時間差、快取索引時間差與第 1 頁重查結果。
+
+### schema 2 完整核對範例（僅示意欄位）
+
+沿用下方既有的 `schema: 1` 範例作舊版相容；新批次改用 `schema: 2`，並將每館 `coverage` 補上以下結構。SHA-256 與時間必須來自實際取得的證據，以下符號不是可直接匯入的真實資料：
+
+```json
+{
+  "scan_id": "tpml-20261030-190000",
+  "method": "latest_pages",
+  "pagination_contiguous": true,
+  "date_boundary_reached": true,
+  "pages": [
+    {"page": 1, "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1", "status": "ok", "source_type": "direct", "scan_id": "tpml-20261030-190000", "observed_at": "2026-10-30T19:00:00+08:00", "newest_date": "2026-10-30", "oldest_date": "2026-10-28", "record_count": 12, "content_digest": "<實際SHA256>"}
+  ],
+  "first_page_recheck": {"source_type": "direct", "scan_id": "tpml-20261030-190000", "observed_at": "2026-10-30T19:02:00+08:00", "content_digest": "<實際SHA256>"}
+}
+```
+
+這個例子未包含到達查詢日期界線所需的所有分頁，因此也**不構成完整核對證明**。只有 `validate_batch` 實際通過才可以使用 `complete`。
+
+**重要限制**：ChatGPT 的網頁讀取服務可能回傳快取或無法確認來源時間；V1.5 無法強迫外部網站提供同次即時分頁，只能優先直接取得並誠實記錄是否符合完整核對條件。
+
 ## 你在 ChatGPT 的操作方式
 
 在連接了此 GitHub 儲存庫的對話中，直接要求：
@@ -10,7 +49,7 @@
 
 ChatGPT 必須在**當次對話中**完成檢索、比對與推送；不是一項自動排程或背景服務。不保證每次都能從搜尋服務完整取得九館資訊。
 
-## V1.4 查詢來源優先順序與日期界線（每館獨立）
+## V1.4／V1.5 查詢來源優先順序與日期界線（每館獨立）
 
 **第一順位不是一本一本搜尋，而是各館獨立的「最新出刊」書櫃**：
 
