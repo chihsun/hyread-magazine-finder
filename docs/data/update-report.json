@@ -1,64 +1,200 @@
 {
-  "schema": 1,
-  "type": "seed",
-  "generated_at": "2026-10-30T12:30:00+08:00",
-  "complete": null,
-  "summary": null,
-  "libraries": [
+  "complete": false,
+  "generated_at": "2026-10-30T16:23:26+08:00",
+  "history": [
     {
-      "id": "taichunggov",
-      "name": "臺中市立圖書館",
-      "active_count": 115,
-      "status": "seed"
-    },
-    {
-      "id": "tpml",
-      "name": "臺北市立圖書館",
-      "active_count": 129,
-      "status": "seed"
-    },
-    {
-      "id": "tnml",
-      "name": "臺南市立圖書館",
-      "active_count": 125,
-      "status": "seed"
-    },
-    {
-      "id": "tphcc",
-      "name": "新北市立圖書館",
-      "active_count": 126,
-      "status": "seed"
-    },
-    {
-      "id": "ksml",
-      "name": "高雄市立圖書館",
-      "active_count": 113,
-      "status": "seed"
-    },
-    {
-      "id": "tycccgov",
-      "name": "桃園市立圖書館",
-      "active_count": 123,
-      "status": "seed"
-    },
-    {
-      "id": "hchcc",
-      "name": "新竹縣公共圖書館",
-      "active_count": 116,
-      "status": "seed"
-    },
-    {
-      "id": "hcmlgov",
-      "name": "新竹市圖書館",
-      "active_count": 114,
-      "status": "seed"
-    },
-    {
-      "id": "klccab",
-      "name": "基隆市公共圖書館",
-      "active_count": 114,
-      "status": "seed"
+      "at": "2026-10-30T16:23:26+08:00",
+      "complete": false,
+      "summary": {
+        "active_records": 1075,
+        "changes_total": 0,
+        "failed": 9,
+        "new_issues": 0,
+        "new_titles": 0,
+        "not_listed": 0,
+        "returned": 0,
+        "successful": 0,
+        "total": 9,
+        "verified_records": 0
+      }
     }
   ],
-  "history": []
+  "libraries": [
+    {
+      "active_count": 115,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "taichunggov",
+      "last_success": "2026-10-30",
+      "name": "臺中市立圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    },
+    {
+      "active_count": 129,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "tpml",
+      "last_success": "2026-10-30",
+      "name": "臺北市立圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    },
+    {
+      "active_count": 125,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "tnml",
+      "last_success": "2026-10-30",
+      "name": "臺南市立圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    },
+    {
+      "active_count": 126,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "tphcc",
+      "last_success": "2026-10-30",
+      "name": "新北市立圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    },
+    {
+      "active_count": 113,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "ksml",
+      "last_success": "2026-10-30",
+      "name": "高雄市立圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    },
+    {
+      "active_count": 123,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "tycccgov",
+      "last_success": "2026-10-30",
+      "name": "桃園市立圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    },
+    {
+      "active_count": 116,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "hchcc",
+      "last_success": "2026-10-30",
+      "name": "新竹縣公共圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    },
+    {
+      "active_count": 114,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "hcmlgov",
+      "last_success": "2026-10-30",
+      "name": "新竹市圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    },
+    {
+      "active_count": 114,
+      "attempted_at": "2026-10-30T16:23:26+08:00",
+      "change_count": 0,
+      "changes": {
+        "new": [],
+        "new_issue": [],
+        "not_listed": [],
+        "returned": []
+      },
+      "error": "全館重試額度已用盡(3次): https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "id": "klccab",
+      "last_success": "2026-10-30",
+      "name": "基隆市公共圖書館",
+      "retries": 3,
+      "status": "stale",
+      "verified_count": null
+    }
+  ],
+  "schema": 1,
+  "summary": {
+    "active_records": 1075,
+    "changes_total": 0,
+    "failed": 9,
+    "new_issues": 0,
+    "new_titles": 0,
+    "not_listed": 0,
+    "returned": 0,
+    "successful": 0,
+    "total": 9,
+    "verified_records": 0
+  },
+  "type": "crawl"
 }
