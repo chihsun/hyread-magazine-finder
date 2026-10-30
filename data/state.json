@@ -1,7 +1,7 @@
 {
   "libraries": {
     "hchcc": {
-      "error": "全館重試額度已用盡(3次): https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -1048,15 +1048,16 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "新竹縣公共圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 116
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 116,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     },
     "hcmlgov": {
-      "error": "全館重試額度已用盡(3次): https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -2085,15 +2086,16 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "新竹市圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 114
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 114,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     },
     "klccab": {
-      "error": "全館重試額度已用盡(3次): https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -3122,15 +3124,16 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "基隆市公共圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 114
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 114,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     },
     "ksml": {
-      "error": "全館重試額度已用盡(3次): https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -4150,15 +4153,16 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "高雄市立圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 113
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 113,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     },
     "taichunggov": {
-      "error": "全館重試額度已用盡(3次): https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -5196,15 +5200,16 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "臺中市立圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 115
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 115,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     },
     "tnml": {
-      "error": "全館重試額度已用盡(3次): https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -6332,15 +6337,16 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "臺南市立圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 125
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 125,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     },
     "tphcc": {
-      "error": "全館重試額度已用盡(3次): https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -7477,15 +7483,16 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "新北市立圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 126
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 126,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     },
     "tpml": {
-      "error": "全館重試額度已用盡(3次): https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -8649,15 +8656,16 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "臺北市立圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 129
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 129,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     },
     "tycccgov": {
-      "error": "全館重試額度已用盡(3次): https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01: 403 Client Error: Forbidden for url: https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
+      "error": "僅比對可由官方 HyRead 公開搜尋索引核實的近期書目；部分直接開啟頁面失敗，無法完成 12 類和所有分頁核對。搜尋索引可能較網站即時資料落後，未列出的書目不作下架判定。",
       "items": {
         "500輯": {
           "active": true,
@@ -9767,12 +9775,13 @@
           "title": "點股成金特別版"
         }
       },
-      "last_attempt": "2026-10-30T16:23:26+08:00",
+      "last_attempt": "2026-10-30T18:03:23.686+08:00",
       "last_success": "2026-10-30",
       "name": "桃園市立圖書館",
-      "result": "stale",
-      "retry_count": 3,
-      "verified_count": 123
+      "result": "partial",
+      "retry_count": 1,
+      "verified_count": 123,
+      "last_assisted_success": "2026-10-30T18:03:23.686+08:00"
     }
   },
   "start_date": "2026-09-20",
