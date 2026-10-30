@@ -39,7 +39,9 @@ function recentMatch(row, value, lib, todayNumber) {
   if (!Number.isFinite(n)) return false;
   const age = todayNumber - n;
   if (value === 'old90') return age > 90;
-  return age >= 0 && age <= Number(value);
+  // A HyRead e-magazine may be available before its printed issue date.
+  // Recent-date filters have a lower bound only; future dates remain visible.
+  return age <= Number(value);
 }
 function updateSortLabels() {
   const byTitle = $('sortby').value === 'title';
