@@ -76,6 +76,34 @@ class SimpleUpdateV16(unittest.TestCase):
             validate_coverage(cov,LIB,'2026-10-24',True,simple=True)
         self.assertFalse(validate_coverage(cov,LIB,'2026-10-24',False,simple=True)['date_boundary_reached'])
 
+
+    def test_bare_first_page_source_accepted_and_preserved(self):
+        """HyRead bare JSP and ?nowpage=1 may serve different cached page versions."""
+        rows,cov=example()
+        numbered=cov['pages'][0]['url']
+        bare=numbered.replace('?nowpage=1','')
+        cov['pages'][0]['url']=bare
+        cov['first_book']['source_url']=bare
+        for row in rows:
+            if row['source_url']==numbered:
+                row['source_url']=bare
+        conf,_=initialize()
+        checked=validate_batch(batch(rows,cov),conf)
+        self.assertEqual(checked['libraries'][LIB]['first_book']['source_url'],bare)
+
+    def test_committed_v161_nine_library_observation_package_valid(self):
+        """The committed audit batch must be ingestible by the real schema-3 validator."""
+        import json
+        from pathlib import Path
+        saved=Path(__file__).resolve().parents[1] / 'data/assisted-batches/manual-20261031-7day-v161-001.json'
+        payload=json.loads(saved.read_text(encoding='utf-8'))
+        conf,_=initialize()
+        checked=validate_batch(payload,conf)
+        self.assertEqual(len(checked['libraries']),9)
+        self.assertEqual(sum(x['status']=='complete' for x in checked['libraries'].values()),3)
+        self.assertEqual(sum(x['status']=='partial' for x in checked['libraries'].values()),5)
+        self.assertEqual(sum(x['status']=='failed' for x in checked['libraries'].values()),1)
+
     def test_first_page_failed_requires_failed_status(self):
         rows,cov=example()
         cov['pages'][0]['status']='failed'

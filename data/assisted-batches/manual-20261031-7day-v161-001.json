@@ -271,7 +271,7 @@
       "status": "complete",
       "attempts": 1,
       "retry_wait_seconds": [],
-      "notes": "V1.6.1：從最新出刊第 1 頁連續讀至第 3 頁，頁尾日期 2026-10-19 已達 2026-10-25 下限；索引頁內容可辨識，允許收錄 11 月紙本刊期。",
+      "notes": "V1.6.1：從最新出刊第 1 頁連續讀至第 3 頁，頁尾日期 2026-10-05 已達 2026-10-25 下限；索引頁內容可辨識，允許收錄 11 月紙本刊期。",
       "error": "",
       "error_code": null,
       "coverage": {
@@ -304,8 +304,8 @@
             "source_type": "search_index",
             "observed_at": "2026-10-31T00:25:59+08:00",
             "newest_date": "2026-10-25",
-            "oldest_date": "2026-10-19",
-            "record_count": 8
+            "oldest_date": "2026-10-05",
+            "record_count": 20
           }
         ],
         "pagination_contiguous": true,

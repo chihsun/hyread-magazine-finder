@@ -18,6 +18,8 @@
 8. **兩館一組、逐組處理：** 預設館別順序為 **臺中＋臺北 → 臺南＋新北 → 高雄＋桃園 → 新竹縣＋新竹市 → 基隆**（最後一館單獨處理）。在 ChatGPT 對話中先完成該組兩館各自的「第 1 頁 → 必要分頁 → 筆數與較新刊期比對／失敗原因」，再開始下一組；避免同時開啟九館分頁造成混淆。此方式**不保證消除搜尋快取**。程式中的 `src.latest_pages.library_groups(config, 2)` 可生成順序分組。
 9. **操作模式：** ChatGPT 在本次對話查詢並把核實的資料包送入 `src.assisted_update` 的 schema 3，再驗證、乾跑、推送 GitHub；不要求 Windows 或本機爬蟲。不保證 ChatGPT 頁面取得工具每次都能抓完所有分頁；無法讀取必須如實記錄。
 
+**首頁網址原樣保留：** 第 1 頁可能使用不帶 `?nowpage=1` 的 `/magazine_view_more.jsp` 原始網址；匯入時接受其作為有效第 1 頁證據。由於帶與不帶參數可能讀到不同快取，請保留真正取得的來源網址，不要為了統一格式而改寫。
+
 ### schema 3（V1.6.1，兼容 V1.6）資料格式
 
 沿用目前批次欄位 `source`、`batch_id`、`window_start`、`window_end`、`libraries`；維持 `schema` 為 **3**。其中 `window_start` 是可納入書目的**最早紙本刊期**，`window_end` 是**查詢基準日**，不是發刊日期的上限。各館使用 `coverage.method: latest_pages`。每個可確認頁面在 `coverage.pages` 記錄 `page`、`url`、`status`、`source_type`（`direct`／`search_index`）、`observed_at`、`newest_date`、`oldest_date`。第一頁成功時必須有：

@@ -51,7 +51,7 @@ def first_book_checkpoint(data: dict, libid: str, coverage: dict) -> dict:
     if not first or issue!=first['newest_date']:
         raise ValueError(f'{libid}: first_book 日期必須符合第 1 頁第一筆日期')
     canonical=source + '?nowpage=1' if source.endswith('/magazine_view_more.jsp') else source
-    if canonical!=first['url']:
+    if source!=first['url'] and canonical!=first['url']:
         raise ValueError(f'{libid}: first_book 必須來自本次第 1 頁')
     return {'title':title.strip(),'date':issue,
             'jid':jid,'magazine_url':url,'source_url':first['url']}
@@ -155,7 +155,7 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
                 for item in observed.values():
                     source=item['source_url']
                     canonical=source+'?nowpage=1' if source.endswith('/magazine_view_more.jsp') else source
-                    if canonical not in successful_urls:
+                    if source not in successful_urls and canonical not in successful_urls:
                         raise ValueError(f'{libid}: 書目來源不在本次已讀取的最新出刊分頁中')
             elif coverage.get('first_page_ok'):
                 raise ValueError(f'{libid}: 第一頁已成功但標示 failed，應改為 partial')
