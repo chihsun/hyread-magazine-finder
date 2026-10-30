@@ -1,0 +1,11 @@
+[
+  {"id":"taichunggov","name":"臺中市立圖書館"},
+  {"id":"tpml","name":"臺北市立圖書館"},
+  {"id":"tnml","name":"臺南市立圖書館"},
+  {"id":"tphcc","name":"新北市立圖書館"},
+  {"id":"ksml","name":"高雄市立圖書館"},
+  {"id":"tycccgov","name":"桃園市立圖書館"},
+  {"id":"hchcc","name":"新竹縣公共圖書館"},
+  {"id":"hcmlgov","name":"新竹市圖書館"},
+  {"id":"klccab","name":"基隆市公共圖書館"}
+]

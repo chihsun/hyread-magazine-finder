@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b3552">
+  <meta name="description" content="搜尋九間臺灣公共圖書館 HyRead 電子雜誌書單與最新發刊日期。">
+  <title>HyRead 九館電子雜誌搜尋</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">LIBRARY MAGAZINE INDEX</span>
+      <h1>📚 HyRead 九館雜誌搜尋</h1>
+      <p>一次比較九間圖書館的電子雜誌，掌握各館最新發刊日期。</p>
+    </div>
+    <div class="header-actions">
+      <button id="refresh" type="button" class="glass">↻ 重新載入資料</button>
+      <a id="admin" class="glass" href="https://github.com/chihsun/hyread-magazine-finder/actions/workflows/update-magazines.yml" target="_blank" rel="noopener noreferrer" title="需登入 GitHub 並具備此專案的寫入權限">⚙ 管理者更新 ↗</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div id="alert" class="alert" role="status" aria-live="polite">讀取最新資料中…</div>
+  <div class="metrics" aria-label="目錄總覽">
+    <div class="metric"><span>不重複雜誌</span><strong id="total">—</strong></div>
+    <div class="metric"><span>圖書館</span><strong id="libtotal">9</strong></div>
+    <div class="metric"><span>九館都有</span><strong id="common">—</strong></div>
+    <div class="metric"><span>最後資料更新</span><strong id="updated" class="small-date">—</strong></div>
+  </div>
+  <section class="panel filters" aria-labelledby="filtertitle">
+    <div class="section-title"><h2 id="filtertitle">搜尋與篩選</h2><button type="button" id="reset" class="textbtn">重設篩選</button></div>
+    <label class="field" for="query">搜尋雜誌名稱
+      <input id="query" type="search" placeholder="例如：商業周刊、財訊、康健" autocomplete="off">
+    </label>
+    <fieldset class="number-filter">
+      <legend>有幾間圖書館收藏？<small>（可複選；符合任一勾選條件）</small></legend>
+      <div class="inline-actions"><button type="button" class="mini" id="allcounts">全部勾選</button><button type="button" class="mini" id="nonecounts">全部清除</button></div>
+      <div id="counts" class="choices"></div>
+    </fieldset>
+    <div class="filter-row">
+      <label class="field" for="library">指定圖書館
+        <select id="library"><option value="">全部圖書館</option></select>
+      </label>
+      <label class="field" for="presence">指定圖書館的收錄情況
+        <select id="presence">
+          <option value="all">不限</option><option value="yes">有收錄</option><option value="no">未列出</option>
+        </select>
+      </label>
+      <label class="field" for="freshness">最新發刊日期
+        <select id="freshness">
+          <option value="all">不限日期</option><option value="30">最近 30 天</option><option value="90">最近 90 天</option>
+          <option value="180">最近 180 天</option><option value="old">超過 180 天</option>
+        </select>
+      </label>
+    </div>
+    <div class="filter-footer"><span id="matched" aria-live="polite">—</span><button id="export" type="button" class="export">↓ 匯出篩選結果 CSV</button></div>
+  </section>
+  <section aria-label="搜尋結果">
+    <div class="result-header"><h2>雜誌清單</h2><span class="tiny">點選各館日期可開啟官方 HyRead 來源</span></div>
+    <div id="results" class="results"></div>
+    <div class="load-more"><button id="more" type="button" hidden>顯示更多雜誌</button></div>
+  </section>
+  <details class="panel help"><summary>資料定義與更新說明</summary>
+    <p>「有收錄」指 HyRead 該館的雜誌書目列出此書名及最新發刊日期，並非即時可借閱狀態。一般版與精華版分開計算。「未列出」不代表沒有舊期刊。</p>
+    <p>本系統每週五早上 08:00（臺灣時間）執行更新，並支援管理者透過 GitHub Actions 手動執行。「重新載入資料」只讀取已發布的網站資料，不會對 HyRead 發起抓取。</p>
+    <p>每館抓取至多額外重試三次。若本次失敗，保留最後成功紀錄並顯示資料可能過期；連續三次完整核對未列出才會將書目標記為未列出。歷史變動只保留 180 天，各館最新一筆紀錄則永久保存。</p>
+    <p>來源：九間公共圖書館的 HyRead 官方雜誌分類書單。最初資料核對截止日為 2026/09/20（含）。部分發刊日期可能是網站預告的未來刊期。</p>
+    <div id="source-links" class="source-links"></div>
+  </details>
+</main>
+<footer>HyRead 九館雜誌搜尋 · 非 HyRead 官方網站 · 公開書目資訊僅供參考</footer>
+</body>
+</html>

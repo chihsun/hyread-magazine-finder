@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "generated_at": "2026-10-30T12:30:00+08:00",
+  "note": "2026-10-30 手工核對初始資料快照；後續每週由爬蟲核對",
+  "results": [
+    {
+      "count": 115,
+      "error": "",
+      "id": "taichunggov",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "臺中市立圖書館",
+      "retries": 0,
+      "status": "seed"
+    },
+    {
+      "count": 129,
+      "error": "",
+      "id": "tpml",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "臺北市立圖書館",
+      "retries": 0,
+      "status": "seed"
+    },
+    {
+      "count": 125,
+      "error": "",
+      "id": "tnml",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "臺南市立圖書館",
+      "retries": 0,
+      "status": "seed"
+    },
+    {
+      "count": 126,
+      "error": "",
+      "id": "tphcc",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "新北市立圖書館",
+      "retries": 0,
+      "status": "seed"
+    },
+    {
+      "count": 113,
+      "error": "",
+      "id": "ksml",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "高雄市立圖書館",
+      "retries": 0,
+      "status": "seed"
+    },
+    {
+      "count": 123,
+      "error": "",
+      "id": "tycccgov",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "桃園市立圖書館",
+      "retries": 0,
+      "status": "seed"
+    },
+    {
+      "count": 116,
+      "error": "",
+      "id": "hchcc",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "新竹縣公共圖書館",
+      "retries": 0,
+      "status": "seed"
+    },
+    {
+      "count": 114,
+      "error": "",
+      "id": "hcmlgov",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "新竹市圖書館",
+      "retries": 0,
+      "status": "seed"
+    },
+    {
+      "count": 114,
+      "error": "",
+      "id": "klccab",
+      "last_attempt": "2026-10-30",
+      "last_success": "2026-10-30",
+      "name": "基隆市公共圖書館",
+      "retries": 0,
+      "status": "seed"
+    }
+  ],
+  "successful": 9,
+  "total": 9
+}
