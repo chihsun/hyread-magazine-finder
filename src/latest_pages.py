@@ -24,6 +24,17 @@ def requested_window(days: int, today: date | None = None) -> tuple[str,str]:
     return ((today-timedelta(days=days-1)).isoformat(),today.isoformat())
 
 
+def library_groups(libraries: list[dict], size: int = 2) -> list[list[dict]]:
+    """Plan sequential small batches of libraries for a ChatGPT-assisted scan.
+
+    Return consecutive groups in the configured order. This is a planning
+    helper, not a concurrent scraper and makes no network requests.
+    """
+    if type(size) is not int or size < 1:
+        raise ValueError('每組館數須為正整數')
+    return [libraries[i:i+size] for i in range(0, len(libraries), size)]
+
+
 def latest_page_url(library_id: str, page: int) -> str:
     if type(page) is not int or not 1 <= page <= 200:
         raise ValueError('最新出刊頁碼須為 1–200')
@@ -76,10 +87,12 @@ def inspect_latest_html(html: str | bytes, library_id: str, page: int,
 def build_latest_observations(pages: list[tuple[list[dict],dict]], window_start: str,
                               window_end: str, *, scan_id: str | None = None,
                               first_page_recheck: dict | None = None) -> tuple[list[dict],dict]:
-    """Combine inspected page results; complete status requires later validation.
+    """Combine all issues on scanned pages dated on/after window_start.
 
-    This only records a *claim* about the boundary. validate_coverage separately
-    rejects missing pages and index-only or incoherent captures.
+    window_end is the user's scan reference date, NOT an issue-date ceiling:
+    HyRead e-magazines can appear before the printed issue date. Older
+    publications outside the requested lookback are omitted.
+    Completeness is validated separately by src.coverage.
     """
     if not pages: raise ValueError('未提供任何最新出刊頁面')
     mapping={}
@@ -95,9 +108,10 @@ def build_latest_observations(pages: list[tuple[list[dict],dict]], window_start:
                         'magazine_url':url,'jid':jid,
                         'source_url':meta['url']}
         for row in rows:
-            # Include the overlap window as caller-chosen window_start. Do not
-            # infer absence or book removal from missing observations.
-            if row['date'] < window_start or row['date'] > window_end:
+            # Only the start date limits accepted issue dates. The reference
+            # day (window_end) is NOT an upper bound on printed issue dates.
+            # Do not infer absence or removal from missing observations.
+            if row['date'] < window_start:
                 continue
             k=key(row['title'])
             if k not in mapping or mapping[k]['date']<row['date'] or (
