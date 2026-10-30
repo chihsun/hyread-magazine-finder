@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from unittest.mock import Mock
 
-from src.hyread import LibraryScanner,extract_category,key
+from src.hyread import LibraryScanner,AccessDeniedError,extract_category,key
 from src.update import initialize,make_seed,ingest,published
 
 SAMPLE = '''<html><body><nav>電子雜誌　財經商管</nav>
@@ -59,6 +59,32 @@ class HyReadTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             ingest(state,lib,{'only':{'title':'一','date':'2026-10-01','source_url':'http://e'}},'2026-12-01T08:00:00+08:00')
         self.assertEqual(copy_before,state['libraries'][lib['id']]['items'])
+
+    def test_403_denial_does_not_retry(self):
+        class DeniedSession:
+            headers = {}
+            def __init__(self): self.calls = 0
+            def get(self, url, timeout=18):
+                self.calls += 1
+                response = Mock()
+                response.status_code = 403
+                return response
+        fake = DeniedSession()
+        scanner = LibraryScanner('tpml', retries=3, delay=0, session=fake)
+        with self.assertRaisesRegex(AccessDeniedError, 'HTTP 403'):
+            scanner.scan()
+        self.assertEqual(fake.calls, 1)
+        self.assertEqual(scanner.used_retries, 0)
+
+    def test_401_denial_does_not_retry(self):
+        fake = Mock()
+        fake.headers = {}
+        fake.get.return_value.status_code = 401
+        scanner = LibraryScanner('tpml', retries=3, delay=0, session=fake)
+        with self.assertRaises(AccessDeniedError):
+            scanner.fetch('https://tpml.ebook.hyread.com.tw/')
+        self.assertEqual(fake.get.call_count, 1)
+        self.assertEqual(scanner.used_retries, 0)
 
     def test_retry_budget_per_library_not_per_request(self):
         class FakeSession:
