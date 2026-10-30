@@ -31,6 +31,678 @@
       "title": "鏡週刊",
       "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
       "type": "link_added"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new",
+      "title": "Camera攝影誌",
+      "to": "2026-11-05"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "機械新刊=Insight Machinery Magazine",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "Travel Plus 就醬玩旅行",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "互動日本語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "人生",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "How it works知識大圖解",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "好房網雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "禪天下",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "CNN互動英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "taichunggov",
+      "type": "new_issue",
+      "title": "遠見雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new",
+      "title": "Camera攝影誌",
+      "to": "2026-11-05"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "機械新刊=Insight Machinery Magazine",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "Travel Plus 就醬玩旅行",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "互動日本語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "人生",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "How it works知識大圖解",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "好房網雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "禪天下",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "大家說英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "空中英語教室Studio Classroom",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "CNN互動英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tpml",
+      "type": "new_issue",
+      "title": "遠見雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new",
+      "title": "Camera攝影誌",
+      "to": "2026-11-05"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "機械新刊=Insight Machinery Magazine",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "Travel Plus 就醬玩旅行",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "互動日本語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "人生",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "How it works知識大圖解",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "好房網雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "禪天下",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "大家說英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "空中英語教室Studio Classroom",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tnml",
+      "type": "new_issue",
+      "title": "CNN互動英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new",
+      "title": "Camera攝影誌",
+      "to": "2026-11-05"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "機械新刊=Insight Machinery Magazine",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "Travel Plus 就醬玩旅行",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "互動日本語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "人生",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "How it works知識大圖解",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "好房網雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "禪天下",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "大家說英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tphcc",
+      "type": "new_issue",
+      "title": "空中英語教室Studio Classroom",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new",
+      "title": "Camera攝影誌",
+      "to": "2026-11-05"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "機械新刊=Insight Machinery Magazine",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "Travel Plus 就醬玩旅行",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "互動日本語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "人生",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "How it works知識大圖解",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "好房網雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "禪天下",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "大家說英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "空中英語教室Studio Classroom",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "ksml",
+      "type": "new_issue",
+      "title": "CNN互動英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new",
+      "title": "Camera攝影誌",
+      "to": "2026-11-05"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "機械新刊=Insight Machinery Magazine",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "Travel Plus 就醬玩旅行",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "互動日本語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "人生",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "How it works知識大圖解",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "好房網雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "禪天下",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "大家說英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "空中英語教室Studio Classroom",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "CNN互動英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "tycccgov",
+      "type": "new_issue",
+      "title": "遠見雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new",
+      "title": "Camera攝影誌",
+      "to": "2026-11-05"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new_issue",
+      "title": "機械新刊=Insight Machinery Magazine",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new_issue",
+      "title": "Travel Plus 就醬玩旅行",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new_issue",
+      "title": "互動日本語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new_issue",
+      "title": "人生",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new_issue",
+      "title": "How it works知識大圖解",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new_issue",
+      "title": "好房網雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new_issue",
+      "title": "禪天下",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hchcc",
+      "type": "new_issue",
+      "title": "CNN互動英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new",
+      "title": "Camera攝影誌",
+      "to": "2026-11-05"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "機械新刊=Insight Machinery Magazine",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "Travel Plus 就醬玩旅行",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "互動日本語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "人生",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "How it works知識大圖解",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "好房網雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "禪天下",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "CNN互動英語",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
+    },
+    {
+      "at": "2026-10-31T00:25:59+08:00",
+      "library": "hcmlgov",
+      "type": "new_issue",
+      "title": "遠見雜誌",
+      "from": "2026-10-01",
+      "to": "2026-11-01"
     }
   ],
   "version": 1
