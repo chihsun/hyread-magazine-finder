@@ -4,6 +4,18 @@
 name: Validate HyRead assisted updates
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'docs/app.js'
+      - '.github/workflows/update-magazines.yml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'docs/app.js'
+      - '.github/workflows/update-magazines.yml'
 permissions:
   contents: read
 jobs:
@@ -19,6 +31,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Unit tests
         run: python -m unittest discover -s tests -v
+      - name: JavaScript syntax
+        run: node --check docs/app.js
       - name: Explain update process
         run: |
           echo 'No HyRead request was made. See docs/ASSISTED_UPDATE.md.' >> "$GITHUB_STEP_SUMMARY"
