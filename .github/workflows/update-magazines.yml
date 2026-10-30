@@ -33,6 +33,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: JavaScript syntax
         run: node --check docs/app.js
+      - name: Frontend future issue filter regression
+        run: node tests/test_v161_web.js
       - name: Explain update process
         run: |
           echo 'No HyRead request was made. See docs/ASSISTED_UPDATE.md.' >> "$GITHUB_STEP_SUMMARY"

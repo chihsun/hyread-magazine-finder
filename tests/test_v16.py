@@ -4,7 +4,7 @@ from copy import deepcopy
 from datetime import date
 from unittest.mock import patch
 
-from src.latest_pages import inspect_latest_html, build_latest_observations, requested_window
+from src.latest_pages import inspect_latest_html, build_latest_observations, requested_window, library_groups
 from src.coverage import validate_coverage
 from src.assisted_update import apply_batch, validate_batch
 from src.update import initialize, STATE
@@ -95,6 +95,8 @@ class SimpleUpdateV16(unittest.TestCase):
         conf,state=initialize()
         state=deepcopy(state)
         state['libraries'][LIB]['items']={}
+        # Isolate this synthetic test from real production checkpoint dates.
+        state['libraries'][LIB].pop('latest_page_anchor',None)
         writes={}
         def remember(path,data):
             writes[str(path)]=deepcopy(data)
@@ -150,7 +152,49 @@ class SimpleUpdateV16(unittest.TestCase):
                               LIB,1,STAMP,'search_index')
         rows,cov=build_latest_observations([p],'2026-10-24','2026-10-30')
         self.assertEqual(cov['first_book']['date'],'2026-11-02')
-        self.assertEqual([x['title'] for x in rows],['本週刊'])
+        self.assertEqual([x['title'] for x in rows],['預告刊','本週刊'])
+        self.assertEqual(rows[0]['date'],'2026-11-02')
+        self.assertTrue(validate_coverage(cov,LIB,'2026-10-24',True,simple=True)['date_boundary_reached'])
+
+    def test_two_library_groups_in_config_order(self):
+        conf,_=initialize()
+        groups=library_groups(conf)
+        self.assertEqual([len(g) for g in groups],[2,2,2,2,1])
+        self.assertEqual(
+            [lib['id'] for group in groups for lib in group],
+            [lib['id'] for lib in conf])
+        with self.assertRaises(ValueError):
+            library_groups(conf,size=0)
+
+    def test_future_issue_can_upgrade_existing_issue_and_add_new_title(self):
+        from src.hyread import key
+        conf,state=initialize()
+        state=deepcopy(state)
+        state['libraries'][LIB]['items']={
+            key('未來刊甲'):{'title':'未來刊甲','latest_date':'2026-10-01',
+                         'source_url':'https://tpml.ebook.hyread.com.tw/index.jsp',
+                         'active':True,'first_seen':'2026-10-01',
+                         'last_seen':'2026-10-01','misses':0}}
+        p=inspect_latest_html(page_html(
+            ('未來刊甲','2026-11-05'),('全新未來刊','2026-11-01'),
+            ('本週刊','2026-10-26'),('上週刊','2026-10-23')),
+            LIB,1,STAMP,'search_index')
+        rows,cov=build_latest_observations([p],'2026-10-24','2026-10-30')
+        self.assertEqual(len(rows),3)
+        writes={}
+        def remember(path,data):
+            writes[str(path)]=deepcopy(data)
+        with patch('src.assisted_update.initialize',return_value=(conf,state)):
+            with patch('src.assisted_update.atomic_json',side_effect=remember):
+                result=apply_batch(batch(rows,cov),persist=True,stamp=STAMP)
+        saved=writes[str(STATE)]['libraries'][LIB]
+        self.assertEqual(saved['items'][key('未來刊甲')]['latest_date'],'2026-11-05')
+        self.assertEqual(saved['items'][key('全新未來刊')]['latest_date'],'2026-11-01')
+        self.assertEqual(saved['latest_page_anchor']['date'],'2026-11-05')
+        self.assertEqual(result['batch_schema'],3)
+        self.assertEqual(result['summary']['new_issues'],1)
+        self.assertEqual(result['summary']['new_titles'],2)
+
 
 
 if __name__=='__main__':

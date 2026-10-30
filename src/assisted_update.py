@@ -176,7 +176,7 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
             'notes':notes,'error':error,'error_code':diagnostic_code,'observed':observed,
             'first_book':first_book,'simple':simple,
         }
-    return {'batch_id':batch_id,'window_start':started,'window_end':ended,'libraries':normalized}
+    return {'schema':batch['schema'],'batch_id':batch_id,'window_start':started,'window_end':ended,'libraries':normalized}
 
 
 def merge_incremental(state: dict, library: dict, observations: dict, stamp: str) -> list[dict]:
@@ -273,7 +273,8 @@ def build_assisted_report(conf, state, stamp, batch, results, previous):
     threshold=(datetime.fromisoformat(stamp).date()-timedelta(days=180)).isoformat()
     past=[x for x in (previous or {}).get('history', [])
           if isinstance(x,dict) and x.get('at','')[:10]>=threshold and x.get('batch_id')!=batch['batch_id']]
-    return {'schema':1,'type':'chatgpt_assisted','batch_id':batch['batch_id'],
+    return {'schema':1,'batch_schema':batch.get('schema',1),
+            'type':'chatgpt_assisted','batch_id':batch['batch_id'],
             'generated_at':stamp,'window_start':batch['window_start'],'window_end':batch['window_end'],
             'complete':complete_run,'summary':summary,'libraries':details,
             'history':([line]+past)[:40]}

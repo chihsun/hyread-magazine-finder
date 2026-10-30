@@ -39,7 +39,9 @@ function recentMatch(row, value, lib, todayNumber) {
   if (!Number.isFinite(n)) return false;
   const age = todayNumber - n;
   if (value === 'old90') return age > 90;
-  return age >= 0 && age <= Number(value);
+  // A HyRead e-magazine may be available before its printed issue date.
+  // Recent-date filters have a lower bound only; future dates remain visible.
+  return age <= Number(value);
 }
 function updateSortLabels() {
   const byTitle = $('sortby').value === 'title';
@@ -144,10 +146,11 @@ function renderReport(report) {
     return;
   }
   const s=report.summary, assisted=report.type==='chatgpt_assisted', all=report.complete;
+  const upcomingIssuesIncluded=assisted && report.batch_schema===3;
   const partial=Number(s.partial)||0, failed=Number(s.failed)||0, unchecked=Number(s.not_checked)||0;
   const badge=assisted?'人工輔助增量':'自動完整擷取';
   summary.innerHTML=`<div class="report-status"><span class="status-badge ${all?'ok':'stale'}">${safe(badge)}${all?' · 範圍完成':' · 未完全核對'}</span><strong>${Number(s.successful)||0} 館範圍完成 · ${partial} 館部分 · ${failed} 館失敗${unchecked?' · '+unchecked+' 館未查':''}</strong><small>執行時間：${safe(fmtStamp(report.generated_at))}</small></div>
-    ${assisted?`<p class="report-note">本次核對刊期範圍：${safe(report.window_start)} ～ ${safe(report.window_end)}。完成僅指該日期範圍；並非所有舊刊、全部分類都已重新確認。未查到的書名一律保留。</p>`:''}
+    ${assisted?`<p class="report-note">${upcomingIssuesIncluded?`本次翻頁截至刊期：${safe(report.window_start)}（${safe(report.window_end)} 為查詢基準日；更晚刊期包含未來紙本日期也納入）`:`本次核對刊期範圍：${safe(report.window_start)} ～ ${safe(report.window_end)}`}。完成僅指指定查詢界線；並非所有舊刊、全部分類都已重新確認。未查到的書名一律保留。</p>`:''}
     <div class="update-stats"><span>本次確認 <b>${Number(s.verified_records)||0}</b> 筆</span><span>資料庫現有 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>新刊期 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span><span>補上書目連結 <b>${Number(s.links_added)||0}</b> 筆</span><span>修正書目連結 <b>${Number(s.links_changed)||0}</b> 筆</span><span>已檢查頁面 <b>${Number(s.pages_checked)||0}</b> 頁</span><span>失敗頁面 <b>${Number(s.pages_failed)||0}</b> 頁</span></div>
     <p class="report-note">新增與新刊期以「雜誌 × 圖書館」計算。未完整核對的館別保留已確認的變動，其他書目不刪除、不視為下架；最新資料日期不等於全部九館均完成核查。</p>`;
   libraries.innerHTML=(report.libraries||[]).map(l=>{
