@@ -23,6 +23,10 @@ DATE_RE = re.compile(r'(20\d{2})[-/.]([01]?\d)[-/.]([0-3]?\d)')
 LATEST_RE = re.compile(r'最新發刊\s*[:：]?|最新刊\s*[:：]?')
 
 
+class AccessDeniedError(RuntimeError):
+    """The source explicitly denied access; do not retry or disguise the client."""
+
+
 def key(title: str) -> str:
     """Normalize typography but do *not* merge ordinary and abridged editions."""
     s=unicodedata.normalize('NFKC',title).casefold().replace('臺','台')
@@ -88,10 +92,19 @@ class LibraryScanner:
             self.requests_made+=1
             try:
                 r=self.session.get(url,timeout=self.timeout)
+                # HTTP 401/403 is an explicit denial, not a transient error.
+                # Do not repeatedly request a blocked endpoint.
+                if r.status_code in (401, 403):
+                    raise AccessDeniedError(
+                        f'HyRead 回應 HTTP {r.status_code}，拒絕此執行環境存取；'
+                        f'已停止重試。請使用取得授權的官方資料來源。{url}'
+                    )
                 r.raise_for_status()
                 if len(r.content)<900:
                     raise ValueError('回應頁面異常短')
                 return r.content
+            except AccessDeniedError:
+                raise
             except (requests.RequestException,ValueError) as e:
                 if self.used_retries>=self.retries:
                     raise RuntimeError(f'全館重試額度已用盡({self.retries}次): {url}: {e}') from e
@@ -108,6 +121,8 @@ class LibraryScanner:
                 try:
                     batch=extract_category(self.fetch(url),url,cat)
                     break
+                except AccessDeniedError:
+                    raise
                 except Exception:
                     if self.used_retries>=self.retries:
                         raise
