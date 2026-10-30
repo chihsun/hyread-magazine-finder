@@ -2,27 +2,35 @@
   "events": [
     {
       "at": "2026-10-30T19:04:43.776+08:00",
+      "from": "",
       "library": "tpml",
-      "type": "link_added",
       "title": "今周刊(精華版)",
-      "from": "",
-      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941"
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+      "type": "link_added"
     },
     {
       "at": "2026-10-30T19:04:43.776+08:00",
+      "from": "",
       "library": "tpml",
-      "type": "link_added",
       "title": "今周刊",
-      "from": "",
-      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134"
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
+      "type": "link_added"
     },
     {
       "at": "2026-10-30T19:04:43.776+08:00",
-      "library": "tpml",
-      "type": "link_added",
-      "title": "萬寶週刊",
       "from": "",
-      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=79"
+      "library": "tpml",
+      "title": "萬寶週刊",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=79",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-10-30T23:50:14+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "鏡週刊",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+      "type": "link_added"
     }
   ],
   "version": 1
