@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-31T00:25:59+08:00",
+  "generated_at": "2026-10-31T08:28:37+08:00",
   "start_date": "2026-09-20",
   "libraries": [
     {
@@ -8,7 +8,7 @@
       "name": "臺中市立圖書館",
       "status": "ok",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 116,
       "error": "",
       "retries": 0
@@ -18,7 +18,7 @@
       "name": "臺北市立圖書館",
       "status": "ok",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 130,
       "error": "",
       "retries": 0
@@ -28,9 +28,9 @@
       "name": "臺南市立圖書館",
       "status": "partial",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 126,
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
       "retries": 0
     },
     {
@@ -38,9 +38,9 @@
       "name": "新北市立圖書館",
       "status": "partial",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 127,
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
       "retries": 0
     },
     {
@@ -48,9 +48,9 @@
       "name": "高雄市立圖書館",
       "status": "partial",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 114,
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。部分詳細頁回覆403，停止後續該站詳頁讀取。",
       "retries": 0
     },
     {
@@ -58,7 +58,7 @@
       "name": "桃園市立圖書館",
       "status": "ok",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 124,
       "error": "",
       "retries": 0
@@ -68,9 +68,9 @@
       "name": "新竹縣公共圖書館",
       "status": "partial",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 117,
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
       "retries": 0
     },
     {
@@ -78,9 +78,9 @@
       "name": "新竹市圖書館",
       "status": "partial",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 115,
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
       "retries": 0
     },
     {
@@ -88,9 +88,9 @@
       "name": "基隆市公共圖書館",
       "status": "stale",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 114,
-      "error": "最新出刊第 1 頁無法從網頁工具讀取，無可辨識書目；並非確認的 HTTP 401/403。",
+      "error": "最新出刊第一頁無法讀取，未取得可信書目資料（並未觀察到官方明確 HTTP 401/403）",
       "retries": 0
     }
   ],
@@ -102,12 +102,12 @@
         "taichunggov": {
           "date": "2026-10-25",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869"
         },
         "tpml": {
           "date": "2026-10-25",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869"
         },
         "tnml": {
           "date": "2026-10-25",
@@ -127,7 +127,7 @@
         "tycccgov": {
           "date": "2026-10-25",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M11",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869"
         },
         "hchcc": {
           "date": "2026-10-25",
@@ -154,22 +154,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -179,17 +179,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -206,12 +206,12 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
         },
         "tnml": {
           "date": "2026-11-01",
@@ -231,17 +231,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -310,12 +310,12 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
         },
         "tnml": {
           "date": "2026-11-01",
@@ -335,17 +335,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -414,12 +414,12 @@
         "taichunggov": {
           "date": "2026-10-26",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415"
         },
         "tpml": {
           "date": "2026-10-26",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415"
         },
         "tnml": {
           "date": "2026-10-26",
@@ -439,7 +439,7 @@
         "tycccgov": {
           "date": "2026-10-26",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M10",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415"
         },
         "hchcc": {
           "date": "2026-10-26",
@@ -466,12 +466,12 @@
         "taichunggov": {
           "date": "2026-10-25",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814"
         },
         "tpml": {
           "date": "2026-10-25",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814"
         },
         "tnml": {
           "date": "2026-10-25",
@@ -491,7 +491,7 @@
         "tycccgov": {
           "date": "2026-10-25",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814"
         },
         "hchcc": {
           "date": "2026-10-25",
@@ -830,17 +830,17 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
         },
         "tphcc": {
           "date": "2026-10-01",
@@ -855,17 +855,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -1038,22 +1038,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -1063,17 +1063,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -1090,22 +1090,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -1115,17 +1115,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -1402,12 +1402,12 @@
         "taichunggov": {
           "date": "2026-10-25",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356"
         },
         "tpml": {
           "date": "2026-10-25",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356"
         },
         "tnml": {
           "date": "2026-10-25",
@@ -1427,7 +1427,7 @@
         "tycccgov": {
           "date": "2026-10-25",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356"
         },
         "hchcc": {
           "date": "2026-10-25",
@@ -1558,22 +1558,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -1583,17 +1583,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -1662,12 +1662,12 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
         },
         "tnml": {
           "date": "2026-11-01",
@@ -1687,17 +1687,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -2130,42 +2130,42 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
         },
         "ksml": {
           "date": "2026-11-01",
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
         },
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -2338,42 +2338,42 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
         },
         "ksml": {
           "date": "2026-11-01",
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
         },
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -2390,22 +2390,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -2415,17 +2415,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -2442,7 +2442,7 @@
         "taichunggov": {
           "date": "2026-10-29",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941"
         },
         "tpml": {
           "date": "2026-10-29",
@@ -2467,7 +2467,7 @@
         "tycccgov": {
           "date": "2026-10-29",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941"
         },
         "hchcc": {
           "date": "2026-10-29",
@@ -2546,12 +2546,12 @@
         "taichunggov": {
           "date": "2026-10-29",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89"
         },
         "tpml": {
           "date": "2026-10-29",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89"
         },
         "tnml": {
           "date": "2026-10-29",
@@ -2571,7 +2571,7 @@
         "tycccgov": {
           "date": "2026-10-29",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89"
         },
         "hchcc": {
           "date": "2026-10-29",
@@ -3014,42 +3014,42 @@
         "taichunggov": {
           "date": "2026-11-02",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
         },
         "tpml": {
           "date": "2026-11-02",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
         },
         "tnml": {
           "date": "2026-11-02",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
         },
         "tphcc": {
           "date": "2026-11-02",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
         },
         "ksml": {
           "date": "2026-11-02",
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
         },
         "tycccgov": {
           "date": "2026-11-02",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
         },
         "hchcc": {
           "date": "2026-11-02",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
         },
         "hcmlgov": {
           "date": "2026-11-02",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
         },
         "klccab": {
           "date": "2026-11-02",
@@ -3170,12 +3170,12 @@
         "taichunggov": {
           "date": "2026-10-28",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69"
         },
         "tpml": {
           "date": "2026-10-28",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69"
         },
         "tnml": {
           "date": "2026-10-28",
@@ -3195,7 +3195,7 @@
         "tycccgov": {
           "date": "2026-10-28",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69"
         },
         "hchcc": {
           "date": "2026-10-28",
@@ -3222,12 +3222,12 @@
         "taichunggov": {
           "date": "2026-10-28",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876"
         },
         "tpml": {
           "date": "2026-10-28",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876"
         },
         "tnml": {
           "date": "2026-10-28",
@@ -3247,7 +3247,7 @@
         "tycccgov": {
           "date": "2026-10-28",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876"
         },
         "hchcc": {
           "date": "2026-10-28",
@@ -3274,22 +3274,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -3299,17 +3299,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -3482,12 +3482,12 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43"
         },
         "tnml": {
           "date": "2026-11-01",
@@ -3507,7 +3507,7 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43"
         },
         "hchcc": {
           "date": "2026-11-01",
@@ -3534,12 +3534,12 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42"
         },
         "tnml": {
           "date": "2026-11-01",
@@ -3559,7 +3559,7 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42"
         },
         "hchcc": {
           "date": "2026-11-01",
@@ -4002,12 +4002,12 @@
         "taichunggov": {
           "date": "2026-10-29",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165"
         },
         "tpml": {
           "date": "2026-10-29",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165"
         },
         "tnml": {
           "date": "2026-10-29",
@@ -4027,7 +4027,7 @@
         "tycccgov": {
           "date": "2026-10-29",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165"
         },
         "hchcc": {
           "date": "2026-10-29",
@@ -4054,22 +4054,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -4079,17 +4079,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M07",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M07",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M07",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -4210,42 +4210,42 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
         },
         "ksml": {
           "date": "2026-11-01",
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
         },
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -4470,12 +4470,12 @@
         "taichunggov": {
           "date": "2026-10-29",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88"
         },
         "tpml": {
           "date": "2026-10-29",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88"
         },
         "tnml": {
           "date": "2026-10-29",
@@ -4495,7 +4495,7 @@
         "tycccgov": {
           "date": "2026-10-29",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88"
         },
         "hchcc": {
           "date": "2026-10-29",
@@ -4730,22 +4730,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -4755,17 +4755,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -4938,12 +4938,12 @@
         "taichunggov": {
           "date": "2026-10-28",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233"
         },
         "tpml": {
           "date": "2026-10-28",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233"
         },
         "tnml": {
           "date": "2026-10-28",
@@ -4963,7 +4963,7 @@
         "tycccgov": {
           "date": "2026-10-28",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233"
         },
         "hchcc": {
           "date": "2026-10-28",
@@ -5094,12 +5094,12 @@
         "taichunggov": {
           "date": "2026-10-25",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676"
         },
         "tpml": {
           "date": "2026-10-25",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676"
         },
         "tnml": {
           "date": "2026-10-25",
@@ -5119,7 +5119,7 @@
         "tycccgov": {
           "date": "2026-10-25",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676"
         },
         "hchcc": {
           "date": "2026-10-25",
@@ -5354,22 +5354,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -5379,17 +5379,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -5458,12 +5458,12 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86"
         },
         "tnml": {
           "date": "2026-10-01",
@@ -5483,7 +5483,7 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86"
         },
         "hchcc": {
           "date": "2026-10-01",
@@ -5493,7 +5493,7 @@
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86"
         },
         "klccab": {
           "date": "2026-10-01",
@@ -5510,22 +5510,22 @@
         "taichunggov": {
           "date": "2026-11-01",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
         },
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -5535,17 +5535,17 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M06",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
         },
         "hchcc": {
           "date": "2026-11-01",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M06",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
         },
         "hcmlgov": {
           "date": "2026-11-01",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M06",
-          "magazine_url": null
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
         },
         "klccab": {
           "date": "2026-11-01",
@@ -5614,7 +5614,7 @@
         "taichunggov": {
           "date": "2026-10-28",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589"
         },
         "tpml": {
           "date": "2026-10-28",
@@ -5639,7 +5639,7 @@
         "tycccgov": {
           "date": "2026-10-28",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589"
         },
         "hchcc": {
           "date": "2026-10-28",
@@ -5770,12 +5770,12 @@
         "taichunggov": {
           "date": "2026-10-29",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850"
         },
         "tpml": {
           "date": "2026-10-29",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850"
         },
         "tnml": {
           "date": "2026-10-29",
@@ -5795,7 +5795,7 @@
         "tycccgov": {
           "date": "2026-10-29",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850"
         },
         "hchcc": {
           "date": "2026-10-29",
@@ -5827,12 +5827,12 @@
         "tpml": {
           "date": "2026-11-05",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
         },
         "tnml": {
           "date": "2026-11-05",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
         },
         "tphcc": {
           "date": "2026-11-05",
@@ -5847,7 +5847,7 @@
         "tycccgov": {
           "date": "2026-11-05",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
         },
         "hchcc": {
           "date": "2026-11-05",
@@ -6094,17 +6094,17 @@
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -6114,7 +6114,7 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
         }
       },
       "count": 5
@@ -6126,27 +6126,27 @@
         "tpml": {
           "date": "2026-11-02",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
         },
         "tnml": {
           "date": "2026-11-02",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
         },
         "tphcc": {
           "date": "2026-11-02",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
         },
         "tycccgov": {
           "date": "2026-11-02",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
         },
         "hchcc": {
           "date": "2026-11-02",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "magazine_url": null
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
         }
       },
       "count": 5
@@ -6158,17 +6158,17 @@
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -6178,7 +6178,7 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357"
         }
       },
       "count": 5
@@ -6190,17 +6190,17 @@
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213"
         },
         "tnml": {
           "date": "2026-11-01",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213"
         },
         "ksml": {
           "date": "2026-11-01",
@@ -6210,7 +6210,7 @@
         "tycccgov": {
           "date": "2026-11-01",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "magazine_url": null
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213"
         }
       },
       "count": 5
@@ -6369,12 +6369,12 @@
         "tpml": {
           "date": "2026-11-01",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=815"
         },
         "tphcc": {
           "date": "2026-11-01",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": null
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=815"
         }
       },
       "count": 2
@@ -6386,7 +6386,7 @@
         "tpml": {
           "date": "2026-10-28",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "magazine_url": null
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=358"
         },
         "tnml": {
           "date": "2026-10-28",

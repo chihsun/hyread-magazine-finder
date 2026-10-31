@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "batch_schema": 3,
+  "batch_schema": 4,
   "type": "chatgpt_assisted",
-  "batch_id": "manual-20261031-7day-v161-001",
-  "generated_at": "2026-10-31T00:25:59+08:00",
+  "batch_id": "manual-20261031-7day-v162-001",
+  "generated_at": "2026-10-31T08:28:37+08:00",
   "window_start": "2026-10-25",
   "window_end": "2026-10-31",
   "complete": false,
@@ -19,43 +19,45 @@
     "total": 9,
     "verified_records": 220,
     "active_records": 1083,
-    "new_titles": 8,
-    "new_issues": 77,
+    "new_titles": 0,
+    "new_issues": 0,
     "returned": 0,
     "not_listed": 0,
-    "links_added": 0,
-    "links_changed": 0,
+    "links_added": 193,
+    "links_changed": 3,
     "pages_checked": 12,
     "pages_failed": 6,
-    "changes_total": 85
+    "changes_total": 196
   },
   "libraries": [
     {
       "id": "taichunggov",
       "name": "臺中市立圖書館",
       "status": "ok",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_complete_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_complete_check": "2026-10-31T08:28:37+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "verified_count": 36,
       "active_count": 116,
       "attempts": 1,
       "retries": 0,
       "retry_wait_seconds": [],
-      "notes": "V1.6.1：從最新出刊第 1 頁連續讀至第 2 頁，頁尾日期 2026-10-19 已達 2026-10-25 下限；索引頁內容可辨識，允許收錄 11 月紙本刊期。",
+      "notes": "V1.6.2 已依序核對最新出刊 2 頁，末頁最舊刊期 2026-10-19 涵蓋 2026-10-25 下限；同頁標題連結獨立查證，並收錄提前上架的11月刊期。",
       "error": "",
       "error_code": null,
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": true,
+        "date_boundary_reached": true,
         "pages": [
           {
             "page": 1,
-            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-05",
             "oldest_date": "2026-11-01",
             "record_count": 20
@@ -65,41 +67,44 @@
             "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-01",
             "oldest_date": "2026-10-19",
             "record_count": 20
           }
         ],
-        "pagination_contiguous": true,
-        "date_boundary_reached": true,
         "first_book": {
           "title": "Camera攝影誌",
           "date": "2026-11-05",
           "jid": "187",
           "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1"
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          }
         },
         "checked_pages": 2,
         "failed_pages": 0,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": true,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
           "issues": [
             "CACHE_ONLY",
             "CACHE_TIMESTAMP_UNKNOWN"
           ],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 2
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": {
@@ -107,104 +112,236 @@
         "date": "2026-11-05",
         "jid": "187",
         "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1"
+        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "link_evidence": {
+          "anchor_text": "Camera攝影誌",
+          "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "saved_first_book": {
         "title": "Camera攝影誌",
         "date": "2026-11-05",
         "jid": "187",
         "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-        "checked_at": "2026-10-31T00:25:59+08:00"
+        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "checked_at": "2026-10-31T08:28:37+08:00"
       },
       "stale_observations": [],
       "changes": {
-        "new": [
+        "new": [],
+        "new_issue": [],
+        "returned": [],
+        "not_listed": [],
+        "link_added": [
           {
-            "title": "Camera攝影誌",
-            "to": "2026-11-05"
-          }
-        ],
-        "new_issue": [
+            "title": "商業周刊(精華版)",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          },
           {
             "title": "機械新刊=Insight Machinery Magazine",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
           },
           {
             "title": "Travel Plus 就醬玩旅行",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
           },
           {
             "title": "互動日本語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
+          },
+          {
+            "title": "鄉間小路",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
           },
           {
             "title": "人生",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
           },
           {
             "title": "How it works知識大圖解",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
           },
           {
             "title": "好房網雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
           },
           {
             "title": "禪天下",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
+          },
+          {
+            "title": "跟我學日語",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
+          },
+          {
+            "title": "English 4U 活用空中美語",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
+          },
+          {
+            "title": "English Digest 實用空中美語",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
+          },
+          {
+            "title": "A+ English空中美語",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
+          },
+          {
+            "title": "旅讀",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
           },
           {
             "title": "CNN互動英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
+          },
+          {
+            "title": "ALL+互動英語",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
+          },
+          {
+            "title": "Live互動英語",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
+          },
+          {
+            "title": "ABC互動英語",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
           },
           {
             "title": "遠見雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86"
+          },
+          {
+            "title": "常春藤生活英語雜誌",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43"
+          },
+          {
+            "title": "常春藤解析英語雜誌",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42"
+          },
+          {
+            "title": "今周刊(精華版)",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941"
+          },
+          {
+            "title": "點股成金特別版",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850"
+          },
+          {
+            "title": "新新聞",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165"
+          },
+          {
+            "title": "先探投資週刊",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89"
+          },
+          {
+            "title": "理財周刊",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88"
+          },
+          {
+            "title": "天下雜誌(精華版)",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876"
+          },
+          {
+            "title": "鏡週刊",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589"
+          },
+          {
+            "title": "經貿透視雙周刊",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233"
+          },
+          {
+            "title": "大師輕鬆讀",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69"
+          },
+          {
+            "title": "Android玩樂誌",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415"
+          },
+          {
+            "title": "500輯",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869"
+          },
+          {
+            "title": "APA KABAR印尼語學習誌",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814"
+          },
+          {
+            "title": "英語學習誌",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676"
+          },
+          {
+            "title": "Hi! JAPAN 日語學習誌",
+            "from": "",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356"
           }
         ],
-        "returned": [],
-        "not_listed": [],
-        "link_added": [],
         "link_changed": []
       },
-      "change_count": 10
+      "change_count": 35
     },
     {
       "id": "tpml",
       "name": "臺北市立圖書館",
       "status": "ok",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_complete_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_complete_check": "2026-10-31T08:28:37+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "verified_count": 44,
       "active_count": 130,
       "attempts": 1,
       "retries": 0,
       "retry_wait_seconds": [],
-      "notes": "V1.6.1：從最新出刊第 1 頁連續讀至第 3 頁，頁尾日期 2026-10-05 已達 2026-10-25 下限；索引頁內容可辨識，允許收錄 11 月紙本刊期。",
+      "notes": "V1.6.2 已依序核對最新出刊 3 頁，末頁最舊刊期 2026-10-05 涵蓋 2026-10-25 下限；同頁標題連結獨立查證，並收錄提前上架的11月刊期。",
       "error": "",
       "error_code": null,
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": true,
+        "date_boundary_reached": true,
         "pages": [
           {
             "page": 1,
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-05",
             "oldest_date": "2026-11-01",
             "record_count": 20
@@ -214,7 +351,7 @@
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-01",
             "oldest_date": "2026-10-26",
             "record_count": 20
@@ -224,156 +361,307 @@
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-10-25",
             "oldest_date": "2026-10-05",
             "record_count": 20
           }
         ],
-        "pagination_contiguous": true,
-        "date_boundary_reached": true,
         "first_book": {
           "title": "Camera攝影誌",
           "date": "2026-11-05",
-          "jid": "214",
-          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
-          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          "jid": "187",
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          }
         },
         "checked_pages": 3,
         "failed_pages": 0,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": true,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
           "issues": [
             "CACHE_ONLY",
             "CACHE_TIMESTAMP_UNKNOWN"
           ],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 3
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": {
         "title": "Camera攝影誌",
         "date": "2026-11-05",
-        "jid": "214",
-        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
-        "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        "jid": "187",
+        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+        "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "link_evidence": {
+          "anchor_text": "Camera攝影誌",
+          "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "saved_first_book": {
         "title": "Camera攝影誌",
         "date": "2026-11-05",
-        "jid": "214",
-        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
+        "jid": "187",
+        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
         "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "checked_at": "2026-10-31T00:25:59+08:00"
+        "checked_at": "2026-10-31T08:28:37+08:00"
       },
       "stale_observations": [],
       "changes": {
-        "new": [
+        "new": [],
+        "new_issue": [],
+        "returned": [],
+        "not_listed": [],
+        "link_added": [
           {
-            "title": "Camera攝影誌",
-            "to": "2026-11-05"
-          }
-        ],
-        "new_issue": [
+            "title": "商業周刊(精華版)",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          },
+          {
+            "title": "商業周刊",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
+          },
+          {
+            "title": "印刻文學生活誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=815"
+          },
           {
             "title": "機械新刊=Insight Machinery Magazine",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
           },
           {
             "title": "Travel Plus 就醬玩旅行",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
           },
           {
             "title": "互動日本語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
+          },
+          {
+            "title": "鄉間小路",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
           },
           {
             "title": "人生",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "How it works知識大圖解",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "好房網雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "禪天下",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
           },
           {
             "title": "大家說英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357"
+          },
+          {
+            "title": "How it works知識大圖解",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
+          },
+          {
+            "title": "好房網雜誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
+          },
+          {
+            "title": "Advanced彭蒙惠英語",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
           },
           {
             "title": "空中英語教室Studio Classroom",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213"
+          },
+          {
+            "title": "禪天下",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
+          },
+          {
+            "title": "跟我學日語",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
+          },
+          {
+            "title": "English 4U 活用空中美語",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
+          },
+          {
+            "title": "English Digest 實用空中美語",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
+          },
+          {
+            "title": "A+ English空中美語",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
+          },
+          {
+            "title": "旅讀",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
           },
           {
             "title": "CNN互動英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
+          },
+          {
+            "title": "ALL+互動英語",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
+          },
+          {
+            "title": "Live互動英語",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
+          },
+          {
+            "title": "ABC互動英語",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
           },
           {
             "title": "遠見雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86"
+          },
+          {
+            "title": "常春藤生活英語雜誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43"
+          },
+          {
+            "title": "常春藤解析英語雜誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42"
+          },
+          {
+            "title": "點股成金特別版",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850"
+          },
+          {
+            "title": "新新聞",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165"
+          },
+          {
+            "title": "先探投資週刊",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89"
+          },
+          {
+            "title": "理財周刊",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88"
+          },
+          {
+            "title": "天下雜誌(精華版)",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876"
+          },
+          {
+            "title": "天下雜誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=358"
+          },
+          {
+            "title": "經貿透視雙周刊",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233"
+          },
+          {
+            "title": "大師輕鬆讀",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69"
+          },
+          {
+            "title": "Android玩樂誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415"
+          },
+          {
+            "title": "500輯",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869"
+          },
+          {
+            "title": "APA KABAR印尼語學習誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814"
+          },
+          {
+            "title": "英語學習誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676"
+          },
+          {
+            "title": "Hi! JAPAN 日語學習誌",
+            "from": "",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356"
           }
         ],
-        "returned": [],
-        "not_listed": [],
-        "link_added": [],
-        "link_changed": []
+        "link_changed": [
+          {
+            "title": "Camera攝影誌",
+            "from": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
+          }
+        ]
       },
-      "change_count": 12
+      "change_count": 40
     },
     {
       "id": "tnml",
       "name": "臺南市立圖書館",
       "status": "partial",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
       "last_complete_check": null,
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "verified_count": 20,
       "active_count": 126,
       "attempts": 1,
       "retries": 0,
       "retry_wait_seconds": [],
-      "notes": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
-      "error": "第 2 頁無法由網頁工具讀取，未達日期界線。",
+      "notes": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
+      "error": "第 2 頁無法從網頁工具正常取得，尚未涵蓋查詢起日",
       "error_code": "TOOL_UNAVAILABLE",
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
         "pages": [
           {
             "page": 1,
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-05",
             "oldest_date": "2026-11-01",
             "record_count": 20
@@ -383,143 +671,199 @@
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "status": "failed",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
-            "error_code": "TOOL_UNAVAILABLE",
-            "error": "網頁讀取工具無法取得可辨識的完整分頁"
+            "observed_at": "2026-10-31T08:28:37+08:00",
+            "error": "當前網頁工具無法辨識該連續分頁",
+            "error_code": "TOOL_UNAVAILABLE"
           }
         ],
-        "pagination_contiguous": false,
-        "date_boundary_reached": false,
         "first_book": {
           "title": "Camera攝影誌",
           "date": "2026-11-05",
-          "jid": "220",
-          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
-          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          "jid": "187",
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          }
         },
         "checked_pages": 1,
         "failed_pages": 1,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": true,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
           "issues": [
             "CACHE_ONLY",
             "CACHE_TIMESTAMP_UNKNOWN"
           ],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 1
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": {
         "title": "Camera攝影誌",
         "date": "2026-11-05",
-        "jid": "220",
-        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
-        "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        "jid": "187",
+        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+        "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "link_evidence": {
+          "anchor_text": "Camera攝影誌",
+          "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "saved_first_book": null,
       "stale_observations": [],
       "changes": {
-        "new": [
+        "new": [],
+        "new_issue": [],
+        "returned": [],
+        "not_listed": [],
+        "link_added": [
           {
-            "title": "Camera攝影誌",
-            "to": "2026-11-05"
-          }
-        ],
-        "new_issue": [
+            "title": "商業周刊(精華版)",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          },
+          {
+            "title": "商業周刊",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
+          },
           {
             "title": "機械新刊=Insight Machinery Magazine",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
           },
           {
             "title": "Travel Plus 就醬玩旅行",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
           },
           {
             "title": "互動日本語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
+          },
+          {
+            "title": "鄉間小路",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
           },
           {
             "title": "人生",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "How it works知識大圖解",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "好房網雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "禪天下",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
           },
           {
             "title": "大家說英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357"
+          },
+          {
+            "title": "How it works知識大圖解",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
+          },
+          {
+            "title": "好房網雜誌",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
+          },
+          {
+            "title": "Advanced彭蒙惠英語",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
           },
           {
             "title": "空中英語教室Studio Classroom",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213"
+          },
+          {
+            "title": "禪天下",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
+          },
+          {
+            "title": "跟我學日語",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
+          },
+          {
+            "title": "English 4U 活用空中美語",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
+          },
+          {
+            "title": "English Digest 實用空中美語",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
+          },
+          {
+            "title": "A+ English空中美語",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
+          },
+          {
+            "title": "旅讀",
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
           },
           {
             "title": "CNN互動英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
           }
         ],
-        "returned": [],
-        "not_listed": [],
-        "link_added": [],
-        "link_changed": []
+        "link_changed": [
+          {
+            "title": "Camera攝影誌",
+            "from": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
+          }
+        ]
       },
-      "change_count": 11
+      "change_count": 20
     },
     {
       "id": "tphcc",
       "name": "新北市立圖書館",
       "status": "partial",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
       "last_complete_check": null,
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "verified_count": 20,
       "active_count": 127,
       "attempts": 1,
       "retries": 0,
       "retry_wait_seconds": [],
-      "notes": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
-      "error": "第 2 頁無法由網頁工具讀取，未達日期界線。",
+      "notes": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
+      "error": "第 2 頁無法從網頁工具正常取得，尚未涵蓋查詢起日",
       "error_code": "TOOL_UNAVAILABLE",
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
         "pages": [
           {
             "page": 1,
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-05",
             "oldest_date": "2026-11-01",
             "record_count": 20
@@ -529,40 +873,43 @@
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "status": "failed",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
-            "error_code": "TOOL_UNAVAILABLE",
-            "error": "網頁讀取工具無法取得可辨識的完整分頁"
+            "observed_at": "2026-10-31T08:28:37+08:00",
+            "error": "當前網頁工具無法辨識該連續分頁",
+            "error_code": "TOOL_UNAVAILABLE"
           }
         ],
-        "pagination_contiguous": false,
-        "date_boundary_reached": false,
         "first_book": {
           "title": "Camera攝影誌",
           "date": "2026-11-05",
           "jid": "187",
           "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          }
         },
         "checked_pages": 1,
         "failed_pages": 1,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": true,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
           "issues": [
             "CACHE_ONLY",
             "CACHE_TIMESTAMP_UNKNOWN"
           ],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 1
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": {
@@ -570,97 +917,149 @@
         "date": "2026-11-05",
         "jid": "187",
         "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-        "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "link_evidence": {
+          "anchor_text": "Camera攝影誌",
+          "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "saved_first_book": null,
       "stale_observations": [],
       "changes": {
-        "new": [
+        "new": [],
+        "new_issue": [],
+        "returned": [],
+        "not_listed": [],
+        "link_added": [
           {
-            "title": "Camera攝影誌",
-            "to": "2026-11-05"
-          }
-        ],
-        "new_issue": [
+            "title": "商業周刊(精華版)",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          },
+          {
+            "title": "商業周刊",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
+          },
+          {
+            "title": "印刻文學生活誌",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=815"
+          },
           {
             "title": "機械新刊=Insight Machinery Magazine",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
           },
           {
             "title": "Travel Plus 就醬玩旅行",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
           },
           {
             "title": "互動日本語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
+          },
+          {
+            "title": "鄉間小路",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
           },
           {
             "title": "人生",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "How it works知識大圖解",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "好房網雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "禪天下",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
           },
           {
             "title": "大家說英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357"
+          },
+          {
+            "title": "How it works知識大圖解",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
+          },
+          {
+            "title": "好房網雜誌",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
+          },
+          {
+            "title": "Advanced彭蒙惠英語",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
           },
           {
             "title": "空中英語教室Studio Classroom",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213"
+          },
+          {
+            "title": "禪天下",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
+          },
+          {
+            "title": "跟我學日語",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
+          },
+          {
+            "title": "English 4U 活用空中美語",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
+          },
+          {
+            "title": "English Digest 實用空中美語",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
+          },
+          {
+            "title": "A+ English空中美語",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
+          },
+          {
+            "title": "旅讀",
+            "from": "",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
           }
         ],
-        "returned": [],
-        "not_listed": [],
-        "link_added": [],
         "link_changed": []
       },
-      "change_count": 10
+      "change_count": 19
     },
     {
       "id": "ksml",
       "name": "高雄市立圖書館",
       "status": "partial",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
       "last_complete_check": null,
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "verified_count": 20,
       "active_count": 114,
       "attempts": 1,
       "retries": 0,
       "retry_wait_seconds": [],
-      "notes": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
-      "error": "第 2 頁無法由網頁工具讀取，未達日期界線。",
+      "notes": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。部分詳細頁回覆403，停止後續該站詳頁讀取。",
+      "error": "第 2 頁無法從網頁工具正常取得，尚未涵蓋查詢起日",
       "error_code": "TOOL_UNAVAILABLE",
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
         "pages": [
           {
             "page": 1,
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-05",
             "oldest_date": "2026-11-01",
             "record_count": 20
@@ -670,40 +1069,43 @@
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "status": "failed",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
-            "error_code": "TOOL_UNAVAILABLE",
-            "error": "網頁讀取工具無法取得可辨識的完整分頁"
+            "observed_at": "2026-10-31T08:28:37+08:00",
+            "error": "當前網頁工具無法辨識該連續分頁",
+            "error_code": "TOOL_UNAVAILABLE"
           }
         ],
-        "pagination_contiguous": false,
-        "date_boundary_reached": false,
         "first_book": {
           "title": "Camera攝影誌",
           "date": "2026-11-05",
           "jid": "187",
           "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          }
         },
         "checked_pages": 1,
         "failed_pages": 1,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": true,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
           "issues": [
             "CACHE_ONLY",
             "CACHE_TIMESTAMP_UNKNOWN"
           ],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 1
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": {
@@ -711,102 +1113,74 @@
         "date": "2026-11-05",
         "jid": "187",
         "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-        "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "link_evidence": {
+          "anchor_text": "Camera攝影誌",
+          "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "saved_first_book": null,
       "stale_observations": [],
       "changes": {
-        "new": [
+        "new": [],
+        "new_issue": [],
+        "returned": [],
+        "not_listed": [],
+        "link_added": [
           {
-            "title": "Camera攝影誌",
-            "to": "2026-11-05"
-          }
-        ],
-        "new_issue": [
+            "title": "商業周刊(精華版)",
+            "from": "",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          },
           {
             "title": "機械新刊=Insight Machinery Magazine",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
           },
           {
             "title": "Travel Plus 就醬玩旅行",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
           },
           {
             "title": "互動日本語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "人生",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "How it works知識大圖解",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "好房網雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "禪天下",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "大家說英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "空中英語教室Studio Classroom",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "CNN互動英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
           }
         ],
-        "returned": [],
-        "not_listed": [],
-        "link_added": [],
         "link_changed": []
       },
-      "change_count": 11
+      "change_count": 4
     },
     {
       "id": "tycccgov",
       "name": "桃園市立圖書館",
       "status": "ok",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_complete_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_complete_check": "2026-10-31T08:28:37+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "verified_count": 40,
       "active_count": 124,
       "attempts": 1,
       "retries": 0,
       "retry_wait_seconds": [],
-      "notes": "V1.6.1：從最新出刊第 1 頁連續讀至第 2 頁，頁尾日期 2026-10-25 已達 2026-10-25 下限；索引頁內容可辨識，允許收錄 11 月紙本刊期。",
+      "notes": "V1.6.2 已依序核對最新出刊 2 頁，末頁最舊刊期 2026-10-25 涵蓋 2026-10-25 下限；同頁標題連結獨立查證，並收錄提前上架的11月刊期。",
       "error": "",
       "error_code": null,
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": true,
+        "date_boundary_reached": true,
         "pages": [
           {
             "page": 1,
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-05",
             "oldest_date": "2026-11-01",
             "record_count": 20
@@ -816,156 +1190,307 @@
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-01",
             "oldest_date": "2026-10-25",
             "record_count": 20
           }
         ],
-        "pagination_contiguous": true,
-        "date_boundary_reached": true,
         "first_book": {
           "title": "Camera攝影誌",
           "date": "2026-11-05",
-          "jid": "372",
-          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
-          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          "jid": "187",
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          }
         },
         "checked_pages": 2,
         "failed_pages": 0,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": true,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
           "issues": [
             "CACHE_ONLY",
             "CACHE_TIMESTAMP_UNKNOWN"
           ],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 2
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": {
         "title": "Camera攝影誌",
         "date": "2026-11-05",
-        "jid": "372",
-        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
-        "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        "jid": "187",
+        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+        "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "link_evidence": {
+          "anchor_text": "Camera攝影誌",
+          "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "saved_first_book": {
         "title": "Camera攝影誌",
         "date": "2026-11-05",
-        "jid": "372",
-        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
+        "jid": "187",
+        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
         "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "checked_at": "2026-10-31T00:25:59+08:00"
+        "checked_at": "2026-10-31T08:28:37+08:00"
       },
       "stale_observations": [],
       "changes": {
-        "new": [
+        "new": [],
+        "new_issue": [],
+        "returned": [],
+        "not_listed": [],
+        "link_added": [
           {
-            "title": "Camera攝影誌",
-            "to": "2026-11-05"
-          }
-        ],
-        "new_issue": [
+            "title": "商業周刊(精華版)",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          },
+          {
+            "title": "商業周刊",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
+          },
           {
             "title": "機械新刊=Insight Machinery Magazine",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
           },
           {
             "title": "Travel Plus 就醬玩旅行",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
           },
           {
             "title": "互動日本語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
+          },
+          {
+            "title": "鄉間小路",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
           },
           {
             "title": "人生",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "How it works知識大圖解",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "好房網雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
-          },
-          {
-            "title": "禪天下",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
           },
           {
             "title": "大家說英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357"
+          },
+          {
+            "title": "How it works知識大圖解",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
+          },
+          {
+            "title": "好房網雜誌",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
+          },
+          {
+            "title": "Advanced彭蒙惠英語",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
           },
           {
             "title": "空中英語教室Studio Classroom",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213"
+          },
+          {
+            "title": "禪天下",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
+          },
+          {
+            "title": "跟我學日語",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
+          },
+          {
+            "title": "English 4U 活用空中美語",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
+          },
+          {
+            "title": "English Digest 實用空中美語",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
+          },
+          {
+            "title": "A+ English空中美語",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
+          },
+          {
+            "title": "旅讀",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
           },
           {
             "title": "CNN互動英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
+          },
+          {
+            "title": "ALL+互動英語",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
+          },
+          {
+            "title": "Live互動英語",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
+          },
+          {
+            "title": "ABC互動英語",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
           },
           {
             "title": "遠見雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86"
+          },
+          {
+            "title": "常春藤生活英語雜誌",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43"
+          },
+          {
+            "title": "常春藤解析英語雜誌",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42"
+          },
+          {
+            "title": "今周刊(精華版)",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941"
+          },
+          {
+            "title": "點股成金特別版",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850"
+          },
+          {
+            "title": "新新聞",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165"
+          },
+          {
+            "title": "先探投資週刊",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89"
+          },
+          {
+            "title": "理財周刊",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88"
+          },
+          {
+            "title": "天下雜誌(精華版)",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876"
+          },
+          {
+            "title": "鏡週刊",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589"
+          },
+          {
+            "title": "經貿透視雙周刊",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233"
+          },
+          {
+            "title": "大師輕鬆讀",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69"
+          },
+          {
+            "title": "Android玩樂誌",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415"
+          },
+          {
+            "title": "500輯",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869"
+          },
+          {
+            "title": "APA KABAR印尼語學習誌",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814"
+          },
+          {
+            "title": "英語學習誌",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676"
+          },
+          {
+            "title": "Hi! JAPAN 日語學習誌",
+            "from": "",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356"
           }
         ],
-        "returned": [],
-        "not_listed": [],
-        "link_added": [],
-        "link_changed": []
+        "link_changed": [
+          {
+            "title": "Camera攝影誌",
+            "from": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
+          }
+        ]
       },
-      "change_count": 12
+      "change_count": 40
     },
     {
       "id": "hchcc",
       "name": "新竹縣公共圖書館",
       "status": "partial",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
       "last_complete_check": null,
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "verified_count": 20,
       "active_count": 117,
       "attempts": 1,
       "retries": 0,
       "retry_wait_seconds": [],
-      "notes": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
-      "error": "第 2 頁無法由網頁工具讀取，未達日期界線。",
+      "notes": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
+      "error": "第 2 頁無法從網頁工具正常取得，尚未涵蓋查詢起日",
       "error_code": "TOOL_UNAVAILABLE",
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
         "pages": [
           {
             "page": 1,
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-05",
             "oldest_date": "2026-11-01",
             "record_count": 20
@@ -975,40 +1500,43 @@
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "status": "failed",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
-            "error_code": "TOOL_UNAVAILABLE",
-            "error": "網頁讀取工具無法取得可辨識的完整分頁"
+            "observed_at": "2026-10-31T08:28:37+08:00",
+            "error": "當前網頁工具無法辨識該連續分頁",
+            "error_code": "TOOL_UNAVAILABLE"
           }
         ],
-        "pagination_contiguous": false,
-        "date_boundary_reached": false,
         "first_book": {
           "title": "Camera攝影誌",
           "date": "2026-11-05",
           "jid": "187",
           "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          }
         },
         "checked_pages": 1,
         "failed_pages": 1,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": true,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
           "issues": [
             "CACHE_ONLY",
             "CACHE_TIMESTAMP_UNKNOWN"
           ],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 1
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": {
@@ -1016,92 +1544,149 @@
         "date": "2026-11-05",
         "jid": "187",
         "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-        "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "link_evidence": {
+          "anchor_text": "Camera攝影誌",
+          "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "saved_first_book": null,
       "stale_observations": [],
       "changes": {
-        "new": [
+        "new": [],
+        "new_issue": [],
+        "returned": [],
+        "not_listed": [],
+        "link_added": [
           {
-            "title": "Camera攝影誌",
-            "to": "2026-11-05"
-          }
-        ],
-        "new_issue": [
+            "title": "商業周刊(精華版)",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          },
+          {
+            "title": "商業周刊",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101"
+          },
           {
             "title": "機械新刊=Insight Machinery Magazine",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
           },
           {
             "title": "Travel Plus 就醬玩旅行",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
           },
           {
             "title": "互動日本語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
+          },
+          {
+            "title": "鄉間小路",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
           },
           {
             "title": "人生",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
           },
           {
             "title": "How it works知識大圖解",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
           },
           {
             "title": "好房網雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
           },
           {
             "title": "禪天下",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
+          },
+          {
+            "title": "跟我學日語",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
+          },
+          {
+            "title": "English 4U 活用空中美語",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
+          },
+          {
+            "title": "English Digest 實用空中美語",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
+          },
+          {
+            "title": "A+ English空中美語",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
+          },
+          {
+            "title": "旅讀",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
           },
           {
             "title": "CNN互動英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
+          },
+          {
+            "title": "ALL+互動英語",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
+          },
+          {
+            "title": "Live互動英語",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
+          },
+          {
+            "title": "ABC互動英語",
+            "from": "",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
           }
         ],
-        "returned": [],
-        "not_listed": [],
-        "link_added": [],
         "link_changed": []
       },
-      "change_count": 9
+      "change_count": 19
     },
     {
       "id": "hcmlgov",
       "name": "新竹市圖書館",
       "status": "partial",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
       "last_complete_check": null,
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "verified_count": 20,
       "active_count": 115,
       "attempts": 1,
       "retries": 0,
       "retry_wait_seconds": [],
-      "notes": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
-      "error": "第 2 頁無法由網頁工具讀取，未達日期界線。",
+      "notes": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
+      "error": "第 2 頁無法從網頁工具正常取得，尚未涵蓋查詢起日",
       "error_code": "TOOL_UNAVAILABLE",
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
         "pages": [
           {
             "page": 1,
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "ok",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
+            "observed_at": "2026-10-31T08:28:37+08:00",
             "newest_date": "2026-11-05",
             "oldest_date": "2026-11-01",
             "record_count": 20
@@ -1111,40 +1696,43 @@
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "status": "failed",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
-            "error_code": "TOOL_UNAVAILABLE",
-            "error": "網頁讀取工具無法取得可辨識的完整分頁"
+            "observed_at": "2026-10-31T08:28:37+08:00",
+            "error": "當前網頁工具無法辨識該連續分頁",
+            "error_code": "TOOL_UNAVAILABLE"
           }
         ],
-        "pagination_contiguous": false,
-        "date_boundary_reached": false,
         "first_book": {
           "title": "Camera攝影誌",
           "date": "2026-11-05",
           "jid": "187",
           "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          }
         },
         "checked_pages": 1,
         "failed_pages": 1,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": true,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
           "issues": [
             "CACHE_ONLY",
             "CACHE_TIMESTAMP_UNKNOWN"
           ],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 1
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": {
@@ -1152,76 +1740,126 @@
         "date": "2026-11-05",
         "jid": "187",
         "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-        "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "link_evidence": {
+          "anchor_text": "Camera攝影誌",
+          "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "saved_first_book": null,
       "stale_observations": [],
       "changes": {
-        "new": [
+        "new": [],
+        "new_issue": [],
+        "returned": [],
+        "not_listed": [],
+        "link_added": [
           {
-            "title": "Camera攝影誌",
-            "to": "2026-11-05"
-          }
-        ],
-        "new_issue": [
+            "title": "商業周刊(精華版)",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          },
           {
             "title": "機械新刊=Insight Machinery Magazine",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678"
           },
           {
             "title": "Travel Plus 就醬玩旅行",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595"
           },
           {
             "title": "互動日本語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572"
+          },
+          {
+            "title": "鄉間小路",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373"
           },
           {
             "title": "人生",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
           },
           {
             "title": "How it works知識大圖解",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247"
           },
           {
             "title": "好房網雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
           },
           {
             "title": "禪天下",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162"
+          },
+          {
+            "title": "跟我學日語",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148"
+          },
+          {
+            "title": "English 4U 活用空中美語",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130"
+          },
+          {
+            "title": "English Digest 實用空中美語",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129"
+          },
+          {
+            "title": "A+ English空中美語",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128"
+          },
+          {
+            "title": "旅讀",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116"
           },
           {
             "title": "CNN互動英語",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100"
+          },
+          {
+            "title": "ALL+互動英語",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98"
+          },
+          {
+            "title": "Live互動英語",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97"
+          },
+          {
+            "title": "ABC互動英語",
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96"
           },
           {
             "title": "遠見雜誌",
-            "from": "2026-10-01",
-            "to": "2026-11-01"
+            "from": "",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86"
           }
         ],
-        "returned": [],
-        "not_listed": [],
-        "link_added": [],
         "link_changed": []
       },
-      "change_count": 10
+      "change_count": 19
     },
     {
       "id": "klccab",
       "name": "基隆市公共圖書館",
       "status": "stale",
-      "attempted_at": "2026-10-31T00:25:59+08:00",
+      "attempted_at": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "last_assisted_success": "2026-10-30T19:04:43.776+08:00",
       "last_complete_check": null,
@@ -1232,43 +1870,40 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "notes": "",
-      "error": "最新出刊第 1 頁無法從網頁工具讀取，無可辨識書目；並非確認的 HTTP 401/403。",
+      "error": "最新出刊第一頁無法讀取，未取得可信書目資料（並未觀察到官方明確 HTTP 401/403）",
       "error_code": "TOOL_UNAVAILABLE",
       "coverage": {
         "method": "latest_pages",
+        "pagination_contiguous": false,
+        "date_boundary_reached": false,
         "pages": [
           {
             "page": 1,
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
             "status": "failed",
             "source_type": "search_index",
-            "observed_at": "2026-10-31T00:25:59+08:00",
-            "error_code": "TOOL_UNAVAILABLE",
-            "error": "首頁讀取工具不可用"
+            "observed_at": "2026-10-31T08:28:37+08:00",
+            "error": "第一頁多次不可用，無法核實書名刊期",
+            "error_code": "TOOL_UNAVAILABLE"
           }
         ],
-        "pagination_contiguous": false,
-        "date_boundary_reached": false,
         "checked_pages": 0,
         "failed_pages": 1,
         "direct_pages": 0,
-        "mode": "simple",
         "first_page_ok": false,
+        "mode": "simple",
         "scan_id": null,
         "diagnostics": {
-          "issues": [
-            "CACHE_ONLY",
-            "CACHE_TIMESTAMP_UNKNOWN"
-          ],
+          "issues": [],
+          "missing_pages": [],
+          "observed_span_seconds": 0,
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "scan_id": null,
           "source_types": {
             "direct": 0,
             "search_index": 0
-          },
-          "scan_id": null,
-          "missing_pages": [],
-          "first_page_stable": null,
-          "observed_span_seconds": 0,
-          "cache_index_span_seconds": null
+          }
         }
       },
       "first_book": null,
@@ -1286,6 +1921,34 @@
     }
   ],
   "history": [
+    {
+      "at": "2026-10-31T08:28:37+08:00",
+      "batch_id": "manual-20261031-7day-v162-001",
+      "source": "chatgpt_assisted",
+      "summary": {
+        "error_code_counts": {
+          "TOOL_UNAVAILABLE": 6
+        },
+        "cached_pages": 12,
+        "successful": 3,
+        "partial": 5,
+        "failed": 1,
+        "not_checked": 0,
+        "total": 9,
+        "verified_records": 220,
+        "active_records": 1083,
+        "new_titles": 0,
+        "new_issues": 0,
+        "returned": 0,
+        "not_listed": 0,
+        "links_added": 193,
+        "links_changed": 3,
+        "pages_checked": 12,
+        "pages_failed": 6,
+        "changes_total": 196
+      },
+      "complete": false
+    },
     {
       "at": "2026-10-31T00:25:59+08:00",
       "batch_id": "manual-20261031-7day-v161-001",

@@ -1,7 +1,7 @@
 {
   "libraries": {
     "hchcc": {
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
       "items": {
         "500輯": {
           "active": true,
@@ -18,20 +18,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "A+ English空中美語"
+          "title": "A+ English空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "abc互動英語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "ABC互動英語"
+          "title": "ABC互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "alba阿路巴高爾夫雜誌": {
           "active": true,
@@ -48,10 +52,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "ALL+互動英語"
+          "title": "ALL+互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "android密技王": {
           "active": true,
@@ -148,10 +154,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "CNN互動英語"
+          "title": "CNN互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "ctimes零組件": {
           "active": true,
@@ -188,20 +196,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "English 4U 活用空中美語"
+          "title": "English 4U 活用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "englishdigest實用空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "English Digest 實用空中美語"
+          "title": "English Digest 實用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "enyafashionqueen": {
           "active": true,
@@ -288,10 +300,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "How it works知識大圖解"
+          "title": "How it works知識大圖解",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "iphone,ipad玩樂誌": {
           "active": true,
@@ -308,10 +322,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "Live互動英語"
+          "title": "Live互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "living空間美學": {
           "active": true,
@@ -398,10 +414,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Travel Plus 就醬玩旅行"
+          "title": "Travel Plus 就醬玩旅行",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "vogue": {
           "active": true,
@@ -438,20 +456,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "互動日本語"
+          "title": "互動日本語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "人生": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "人生"
+          "title": "人生",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "今周刊(精華版)": {
           "active": true,
@@ -568,20 +590,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "商業周刊"
+          "title": "商業周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "商業周刊(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "商業周刊(精華版)"
+          "title": "商業周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "單車誌": {
           "active": true,
@@ -668,10 +694,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "好房網雜誌"
+          "title": "好房網雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "媽媽寶寶": {
           "active": true,
@@ -818,10 +846,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M07",
-          "title": "旅讀"
+          "title": "旅讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "早安健康": {
           "active": true,
@@ -848,10 +878,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "機械新刊=Insight Machinery Magazine"
+          "title": "機械新刊=Insight Machinery Magazine",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "汽車百科": {
           "active": true,
@@ -958,10 +990,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "禪天下"
+          "title": "禪天下",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "科學月刊": {
           "active": true,
@@ -1078,10 +1112,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "跟我學日語"
+          "title": "跟我學日語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "遙控技術": {
           "active": true,
@@ -1108,10 +1144,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373",
           "misses": 0,
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M06",
-          "title": "鄉間小路"
+          "title": "鄉間小路",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "醫美時尚dr.beauty": {
           "active": true,
@@ -1171,12 +1209,14 @@
           "last_seen": "2026-10-31",
           "misses": 0,
           "active": true,
-          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         }
       },
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹縣公共圖書館",
       "result": "partial",
@@ -1184,7 +1224,7 @@
       "verified_count": 116
     },
     "hcmlgov": {
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
       "items": {
         "500輯": {
           "active": true,
@@ -1201,20 +1241,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "A+ English空中美語"
+          "title": "A+ English空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "abc互動英語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "ABC互動英語"
+          "title": "ABC互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "alba阿路巴高爾夫雜誌": {
           "active": true,
@@ -1231,10 +1275,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "ALL+互動英語"
+          "title": "ALL+互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "android密技王": {
           "active": true,
@@ -1331,10 +1377,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "CNN互動英語"
+          "title": "CNN互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "ctimes零組件": {
           "active": true,
@@ -1371,20 +1419,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "English 4U 活用空中美語"
+          "title": "English 4U 活用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "englishdigest實用空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "English Digest 實用空中美語"
+          "title": "English Digest 實用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "enyafashionqueen": {
           "active": true,
@@ -1471,10 +1523,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "How it works知識大圖解"
+          "title": "How it works知識大圖解",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "iphone,ipad玩樂誌": {
           "active": true,
@@ -1491,10 +1545,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "Live互動英語"
+          "title": "Live互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "living空間美學": {
           "active": true,
@@ -1581,10 +1637,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Travel Plus 就醬玩旅行"
+          "title": "Travel Plus 就醬玩旅行",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "vogue": {
           "active": true,
@@ -1621,20 +1679,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "互動日本語"
+          "title": "互動日本語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "人生": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "人生"
+          "title": "人生",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "今周刊(精華版)": {
           "active": true,
@@ -1751,10 +1813,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "商業周刊(精華版)"
+          "title": "商業周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "單車誌": {
           "active": true,
@@ -1831,10 +1895,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "好房網雜誌"
+          "title": "好房網雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "媽媽寶寶": {
           "active": true,
@@ -1981,10 +2047,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M07",
-          "title": "旅讀"
+          "title": "旅讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "早安健康": {
           "active": true,
@@ -2011,10 +2079,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "機械新刊=Insight Machinery Magazine"
+          "title": "機械新刊=Insight Machinery Magazine",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "汽車百科": {
           "active": true,
@@ -2121,10 +2191,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "禪天下"
+          "title": "禪天下",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "科學月刊": {
           "active": true,
@@ -2241,10 +2313,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "跟我學日語"
+          "title": "跟我學日語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "遙控技術": {
           "active": true,
@@ -2261,20 +2335,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "遠見雜誌"
+          "title": "遠見雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "鄉間小路": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373",
           "misses": 0,
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M06",
-          "title": "鄉間小路"
+          "title": "鄉間小路",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "醫美時尚dr.beauty": {
           "active": true,
@@ -2334,12 +2412,14 @@
           "last_seen": "2026-10-31",
           "misses": 0,
           "active": true,
-          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         }
       },
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹市圖書館",
       "result": "partial",
@@ -2347,7 +2427,7 @@
       "verified_count": 114
     },
     "klccab": {
-      "error": "最新出刊第 1 頁無法從網頁工具讀取，無可辨識書目；並非確認的 HTTP 401/403。",
+      "error": "最新出刊第一頁無法讀取，未取得可信書目資料（並未觀察到官方明確 HTTP 401/403）",
       "items": {
         "500輯": {
           "active": true,
@@ -3491,7 +3571,7 @@
         }
       },
       "last_assisted_success": "2026-10-30T19:04:43.776+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "基隆市公共圖書館",
@@ -3500,7 +3580,7 @@
       "verified_count": 114
     },
     "ksml": {
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。部分詳細頁回覆403，停止後續該站詳頁讀取。",
       "items": {
         "500輯": {
           "active": true,
@@ -3907,10 +3987,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595",
           "misses": 0,
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Travel Plus 就醬玩旅行"
+          "title": "Travel Plus 就醬玩旅行",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "vogue": {
           "active": true,
@@ -3947,10 +4029,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572",
           "misses": 0,
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "互動日本語"
+          "title": "互動日本語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "人生": {
           "active": true,
@@ -4077,10 +4161,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
           "misses": 0,
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "商業周刊(精華版)"
+          "title": "商業周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "單車誌": {
           "active": true,
@@ -4317,10 +4403,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678",
           "misses": 0,
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "機械新刊=Insight Machinery Magazine"
+          "title": "機械新刊=Insight Machinery Magazine",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "汽車百科": {
           "active": true,
@@ -4640,12 +4728,14 @@
           "last_seen": "2026-10-31",
           "misses": 0,
           "active": true,
-          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         }
       },
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "高雄市立圖書館",
       "result": "partial",
@@ -4660,30 +4750,36 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "500輯"
+          "title": "500輯",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "a+english空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "A+ English空中美語"
+          "title": "A+ English空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "abc互動英語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "ABC互動英語"
+          "title": "ABC互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "alba阿路巴高爾夫雜誌": {
           "active": true,
@@ -4700,10 +4796,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "ALL+互動英語"
+          "title": "ALL+互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "android密技王": {
           "active": true,
@@ -4720,20 +4818,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-26",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "Android玩樂誌"
+          "title": "Android玩樂誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "apakabar印尼語學習誌": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "APA KABAR印尼語學習誌"
+          "title": "APA KABAR印尼語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "audioart音響論壇": {
           "active": true,
@@ -4800,10 +4902,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "CNN互動英語"
+          "title": "CNN互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "ctimes零組件": {
           "active": true,
@@ -4840,20 +4944,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "English 4U 活用空中美語"
+          "title": "English 4U 活用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "englishdigest實用空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "English Digest 實用空中美語"
+          "title": "English Digest 實用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "enyafashionqueen": {
           "active": true,
@@ -4910,10 +5018,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "Hi! JAPAN 日語學習誌"
+          "title": "Hi! JAPAN 日語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "holaespaña西語學習誌": {
           "active": true,
@@ -4940,10 +5050,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "How it works知識大圖解"
+          "title": "How it works知識大圖解",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "iphone,ipad玩樂誌": {
           "active": true,
@@ -4960,10 +5072,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "Live互動英語"
+          "title": "Live互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "living空間美學": {
           "active": true,
@@ -5050,10 +5164,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "Travel Plus 就醬玩旅行"
+          "title": "Travel Plus 就醬玩旅行",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "vogue": {
           "active": true,
@@ -5090,30 +5206,36 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "互動日本語"
+          "title": "互動日本語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "人生": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "人生"
+          "title": "人生",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "今周刊(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "今周刊(精華版)"
+          "title": "今周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "傳記文學": {
           "active": true,
@@ -5130,10 +5252,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "先探投資週刊"
+          "title": "先探投資週刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "全球中央": {
           "active": true,
@@ -5220,10 +5344,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "商業周刊(精華版)"
+          "title": "商業周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "單車誌": {
           "active": true,
@@ -5260,20 +5386,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "大師輕鬆讀"
+          "title": "大師輕鬆讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "天下雜誌(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "天下雜誌(精華版)"
+          "title": "天下雜誌(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "好健康": {
           "active": true,
@@ -5310,10 +5440,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "好房網雜誌"
+          "title": "好房網雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "媽媽寶寶": {
           "active": true,
@@ -5350,20 +5482,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "常春藤生活英語雜誌"
+          "title": "常春藤生活英語雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "常春藤解析英語雜誌": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "常春藤解析英語雜誌"
+          "title": "常春藤解析英語雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "幸運雜誌": {
           "active": true,
@@ -5450,20 +5586,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "新新聞"
+          "title": "新新聞",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "旅讀": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "旅讀"
+          "title": "旅讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "早安健康": {
           "active": true,
@@ -5490,10 +5630,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "機械新刊=Insight Machinery Magazine"
+          "title": "機械新刊=Insight Machinery Magazine",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "汽車百科": {
           "active": true,
@@ -5550,10 +5692,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "理財周刊"
+          "title": "理財周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "環球生技月刊": {
           "active": true,
@@ -5600,10 +5744,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "禪天下"
+          "title": "禪天下",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "科學月刊": {
           "active": true,
@@ -5640,10 +5786,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "經貿透視雙周刊"
+          "title": "經貿透視雙周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "職業棒球": {
           "active": true,
@@ -5670,10 +5818,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "英語學習誌"
+          "title": "英語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "行遍天下": {
           "active": true,
@@ -5720,10 +5870,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "跟我學日語"
+          "title": "跟我學日語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "遙控技術": {
           "active": true,
@@ -5740,20 +5892,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "遠見雜誌"
+          "title": "遠見雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "鄉間小路": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "鄉間小路"
+          "title": "鄉間小路",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "醫美時尚dr.beauty": {
           "active": true,
@@ -5770,10 +5926,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "鏡週刊"
+          "title": "鏡週刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "電電時代": {
           "active": true,
@@ -5800,10 +5958,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
           "misses": 0,
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "點股成金特別版"
+          "title": "點股成金特別版",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "camera攝影誌": {
           "title": "Camera攝影誌",
@@ -5813,12 +5973,14 @@
           "last_seen": "2026-10-31",
           "misses": 0,
           "active": true,
-          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         }
       },
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
-      "last_complete_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
+      "last_complete_check": "2026-10-31T08:28:37+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "latest_page_anchor": {
@@ -5826,8 +5988,8 @@
         "date": "2026-11-05",
         "jid": "187",
         "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-        "checked_at": "2026-10-31T00:25:59+08:00"
+        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "checked_at": "2026-10-31T08:28:37+08:00"
       },
       "name": "臺中市立圖書館",
       "result": "ok",
@@ -5835,7 +5997,7 @@
       "verified_count": 115
     },
     "tnml": {
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
       "items": {
         "500輯": {
           "active": true,
@@ -5852,10 +6014,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "A+ English空中美語"
+          "title": "A+ English空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "abc互動英語": {
           "active": true,
@@ -5872,10 +6036,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "Advanced彭蒙惠英語"
+          "title": "Advanced彭蒙惠英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "alba阿路巴高爾夫雜誌": {
           "active": true,
@@ -5992,10 +6158,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "CNN互動英語"
+          "title": "CNN互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "ctimes零組件": {
           "active": true,
@@ -6032,20 +6200,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "English 4U 活用空中美語"
+          "title": "English 4U 活用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "englishdigest實用空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "English Digest 實用空中美語"
+          "title": "English Digest 實用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "enyafashionqueen": {
           "active": true,
@@ -6132,10 +6304,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "How it works知識大圖解"
+          "title": "How it works知識大圖解",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "iphone,ipad玩樂誌": {
           "active": true,
@@ -6252,10 +6426,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Travel Plus 就醬玩旅行"
+          "title": "Travel Plus 就醬玩旅行",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "vogue": {
           "active": true,
@@ -6292,20 +6468,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "互動日本語"
+          "title": "互動日本語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "人生": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "人生"
+          "title": "人生",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "今周刊": {
           "active": true,
@@ -6432,20 +6612,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "商業周刊"
+          "title": "商業周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "商業周刊(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "商業周刊(精華版)"
+          "title": "商業周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "單車誌": {
           "active": true,
@@ -6482,10 +6666,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "大家說英語"
+          "title": "大家說英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "大師輕鬆讀": {
           "active": true,
@@ -6552,10 +6738,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "好房網雜誌"
+          "title": "好房網雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "媽媽寶寶": {
           "active": true,
@@ -6732,10 +6920,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "旅讀"
+          "title": "旅讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "早安健康": {
           "active": true,
@@ -6762,10 +6952,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "機械新刊=Insight Machinery Magazine"
+          "title": "機械新刊=Insight Machinery Magazine",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "汽車百科": {
           "active": true,
@@ -6872,10 +7064,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "禪天下"
+          "title": "禪天下",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "科學月刊": {
           "active": true,
@@ -6892,10 +7086,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "空中英語教室Studio Classroom"
+          "title": "空中英語教室Studio Classroom",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "經典雜誌": {
           "active": true,
@@ -7002,10 +7198,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "跟我學日語"
+          "title": "跟我學日語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "遙控技術": {
           "active": true,
@@ -7032,10 +7230,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373",
           "misses": 0,
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "鄉間小路"
+          "title": "鄉間小路",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "醫美時尚dr.beauty": {
           "active": true,
@@ -7095,12 +7295,14 @@
           "last_seen": "2026-10-31",
           "misses": 0,
           "active": true,
-          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220"
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         }
       },
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "臺南市立圖書館",
       "result": "partial",
@@ -7108,7 +7310,7 @@
       "verified_count": 125
     },
     "tphcc": {
-      "error": "最新出刊第 1 頁可讀（20 筆），但第 2 頁在本次查詢工具不可用；未能確認 2026-10-25 日期界線，僅合併第 1 頁的可靠紀錄。",
+      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
       "items": {
         "500輯": {
           "active": true,
@@ -7125,10 +7327,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "A+ English空中美語"
+          "title": "A+ English空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "abc互動英語": {
           "active": true,
@@ -7145,10 +7349,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "Advanced彭蒙惠英語"
+          "title": "Advanced彭蒙惠英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "alba阿路巴高爾夫雜誌": {
           "active": true,
@@ -7305,20 +7511,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "English 4U 活用空中美語"
+          "title": "English 4U 活用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "englishdigest實用空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "English Digest 實用空中美語"
+          "title": "English Digest 實用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "enyafashionqueen": {
           "active": true,
@@ -7405,10 +7615,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "How it works知識大圖解"
+          "title": "How it works知識大圖解",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "iphone,ipad玩樂誌": {
           "active": true,
@@ -7525,10 +7737,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Travel Plus 就醬玩旅行"
+          "title": "Travel Plus 就醬玩旅行",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "vogue": {
           "active": true,
@@ -7565,20 +7779,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "互動日本語"
+          "title": "互動日本語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "人生": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "人生"
+          "title": "人生",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "今周刊": {
           "active": true,
@@ -7655,10 +7873,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=815",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "印刻文學生活誌"
+          "title": "印刻文學生活誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "台灣光華雜誌中英文版": {
           "active": true,
@@ -7715,20 +7935,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "商業周刊"
+          "title": "商業周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "商業周刊(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "商業周刊(精華版)"
+          "title": "商業周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "單車誌": {
           "active": true,
@@ -7765,10 +7989,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "大家說英語"
+          "title": "大家說英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "大師輕鬆讀": {
           "active": true,
@@ -7825,10 +8051,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "好房網雜誌"
+          "title": "好房網雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "媽媽寶寶": {
           "active": true,
@@ -8005,10 +8233,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "旅讀"
+          "title": "旅讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "早安健康": {
           "active": true,
@@ -8035,10 +8265,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "機械新刊=Insight Machinery Magazine"
+          "title": "機械新刊=Insight Machinery Magazine",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "汽車百科": {
           "active": true,
@@ -8155,10 +8387,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "禪天下"
+          "title": "禪天下",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "科學月刊": {
           "active": true,
@@ -8175,10 +8409,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "空中英語教室Studio Classroom"
+          "title": "空中英語教室Studio Classroom",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "經典雜誌": {
           "active": true,
@@ -8285,10 +8521,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "跟我學日語"
+          "title": "跟我學日語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "遙控技術": {
           "active": true,
@@ -8315,10 +8553,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373",
           "misses": 0,
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "鄉間小路"
+          "title": "鄉間小路",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "醫美時尚dr.beauty": {
           "active": true,
@@ -8378,12 +8618,14 @@
           "last_seen": "2026-10-31",
           "misses": 0,
           "active": true,
-          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187"
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         }
       },
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
-      "last_partial_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新北市立圖書館",
       "result": "partial",
@@ -8398,40 +8640,48 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "500輯"
+          "title": "500輯",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "a+english空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "A+ English空中美語"
+          "title": "A+ English空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "abc互動英語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "ABC互動英語"
+          "title": "ABC互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "advanced彭蒙惠英語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "Advanced彭蒙惠英語"
+          "title": "Advanced彭蒙惠英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "alba阿路巴高爾夫雜誌": {
           "active": true,
@@ -8448,10 +8698,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "ALL+互動英語"
+          "title": "ALL+互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "android密技王": {
           "active": true,
@@ -8468,20 +8720,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-26",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "Android玩樂誌"
+          "title": "Android玩樂誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "apakabar印尼語學習誌": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "APA KABAR印尼語學習誌"
+          "title": "APA KABAR印尼語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "audioart音響論壇": {
           "active": true,
@@ -8548,10 +8804,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "CNN互動英語"
+          "title": "CNN互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "ctimes零組件": {
           "active": true,
@@ -8588,20 +8846,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "English 4U 活用空中美語"
+          "title": "English 4U 活用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "englishdigest實用空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "English Digest 實用空中美語"
+          "title": "English Digest 實用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "enyafashionqueen": {
           "active": true,
@@ -8658,10 +8920,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "Hi! JAPAN 日語學習誌"
+          "title": "Hi! JAPAN 日語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "holaespaña西語學習誌": {
           "active": true,
@@ -8688,10 +8952,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "How it works知識大圖解"
+          "title": "How it works知識大圖解",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "iphone,ipad玩樂誌": {
           "active": true,
@@ -8718,10 +8984,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "Live互動英語"
+          "title": "Live互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "living空間美學": {
           "active": true,
@@ -8818,10 +9086,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Travel Plus 就醬玩旅行"
+          "title": "Travel Plus 就醬玩旅行",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "vogue": {
           "active": true,
@@ -8858,20 +9128,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "互動日本語"
+          "title": "互動日本語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "人生": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "人生"
+          "title": "人生",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "今周刊": {
           "active": true,
@@ -8879,10 +9153,11 @@
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
           "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
-          "magazine_url_checked_at": "2026-10-30T19:04:43.776+08:00",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "今周刊"
+          "title": "今周刊",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "今周刊(精華版)": {
           "active": true,
@@ -8890,10 +9165,11 @@
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
           "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
-          "magazine_url_checked_at": "2026-10-30T19:04:43.776+08:00",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "今周刊(精華版)"
+          "title": "今周刊(精華版)",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "傳記文學": {
           "active": true,
@@ -8910,10 +9186,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "先探投資週刊"
+          "title": "先探投資週刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "全球中央": {
           "active": true,
@@ -8950,10 +9228,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=815",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "印刻文學生活誌"
+          "title": "印刻文學生活誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "台灣光華雜誌中英文版": {
           "active": true,
@@ -9010,20 +9290,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "商業周刊"
+          "title": "商業周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "商業周刊(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "商業周刊(精華版)"
+          "title": "商業周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "單車誌": {
           "active": true,
@@ -9060,40 +9344,48 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "大家說英語"
+          "title": "大家說英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "大師輕鬆讀": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "大師輕鬆讀"
+          "title": "大師輕鬆讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "天下雜誌": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=358",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "天下雜誌"
+          "title": "天下雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "天下雜誌(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "天下雜誌(精華版)"
+          "title": "天下雜誌(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "好健康": {
           "active": true,
@@ -9130,10 +9422,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "好房網雜誌"
+          "title": "好房網雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "媽媽寶寶": {
           "active": true,
@@ -9190,20 +9484,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "常春藤生活英語雜誌"
+          "title": "常春藤生活英語雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "常春藤解析英語雜誌": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "常春藤解析英語雜誌"
+          "title": "常春藤解析英語雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "幸運雜誌": {
           "active": true,
@@ -9290,10 +9588,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "新新聞"
+          "title": "新新聞",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "旅人誌": {
           "active": true,
@@ -9310,10 +9610,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "旅讀"
+          "title": "旅讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "早安健康": {
           "active": true,
@@ -9340,10 +9642,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "機械新刊=Insight Machinery Magazine"
+          "title": "機械新刊=Insight Machinery Magazine",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "汽車百科": {
           "active": true,
@@ -9400,10 +9704,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "理財周刊"
+          "title": "理財周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "環球生技月刊": {
           "active": true,
@@ -9460,10 +9766,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "禪天下"
+          "title": "禪天下",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "科學月刊": {
           "active": true,
@@ -9480,10 +9788,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "空中英語教室Studio Classroom"
+          "title": "空中英語教室Studio Classroom",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "經典雜誌": {
           "active": true,
@@ -9510,10 +9820,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "經貿透視雙周刊"
+          "title": "經貿透視雙周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "職業棒球": {
           "active": true,
@@ -9540,10 +9852,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "英語學習誌"
+          "title": "英語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "萬寶週刊": {
           "active": true,
@@ -9551,10 +9865,11 @@
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
           "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=79",
-          "magazine_url_checked_at": "2026-10-30T19:04:43.776+08:00",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "萬寶週刊"
+          "title": "萬寶週刊",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "行遍天下": {
           "active": true,
@@ -9601,10 +9916,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "跟我學日語"
+          "title": "跟我學日語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "遙控技術": {
           "active": true,
@@ -9621,20 +9938,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "遠見雜誌"
+          "title": "遠見雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "鄉間小路": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "鄉間小路"
+          "title": "鄉間小路",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "醫美時尚dr.beauty": {
           "active": true,
@@ -9652,10 +9973,11 @@
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
           "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
-          "magazine_url_checked_at": "2026-10-30T23:50:14+08:00",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "鏡週刊"
+          "title": "鏡週刊",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "電電時代": {
           "active": true,
@@ -9682,10 +10004,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
           "misses": 0,
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "title": "點股成金特別版"
+          "title": "點股成金特別版",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "camera攝影誌": {
           "title": "Camera攝影誌",
@@ -9695,21 +10019,23 @@
           "last_seen": "2026-10-31",
           "misses": 0,
           "active": true,
-          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214"
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         }
       },
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
-      "last_complete_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
+      "last_complete_check": "2026-10-31T08:28:37+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "latest_page_anchor": {
         "title": "Camera攝影誌",
         "date": "2026-11-05",
-        "jid": "214",
-        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
+        "jid": "187",
+        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
         "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "checked_at": "2026-10-31T00:25:59+08:00"
+        "checked_at": "2026-10-31T08:28:37+08:00"
       },
       "name": "臺北市立圖書館",
       "result": "ok",
@@ -9724,40 +10050,48 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M11",
-          "title": "500輯"
+          "title": "500輯",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "a+english空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=128",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "A+ English空中美語"
+          "title": "A+ English空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "abc互動英語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=96",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "ABC互動英語"
+          "title": "ABC互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "advanced彭蒙惠英語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=214",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "Advanced彭蒙惠英語"
+          "title": "Advanced彭蒙惠英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "alba阿路巴高爾夫雜誌": {
           "active": true,
@@ -9774,10 +10108,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=98",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "ALL+互動英語"
+          "title": "ALL+互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "android密技王": {
           "active": true,
@@ -9794,20 +10130,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-26",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M10",
-          "title": "Android玩樂誌"
+          "title": "Android玩樂誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "apakabar印尼語學習誌": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "APA KABAR印尼語學習誌"
+          "title": "APA KABAR印尼語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "audioart音響論壇": {
           "active": true,
@@ -9874,10 +10214,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=100",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "CNN互動英語"
+          "title": "CNN互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "ctimes零組件": {
           "active": true,
@@ -9914,20 +10256,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=130",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "English 4U 活用空中美語"
+          "title": "English 4U 活用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "englishdigest實用空中美語": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=129",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "English Digest 實用空中美語"
+          "title": "English Digest 實用空中美語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "enyafashionqueen": {
           "active": true,
@@ -9984,10 +10330,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "Hi! JAPAN 日語學習誌"
+          "title": "Hi! JAPAN 日語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "holaespaña西語學習誌": {
           "active": true,
@@ -10014,10 +10362,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=247",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "How it works知識大圖解"
+          "title": "How it works知識大圖解",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "iphone,ipad玩樂誌": {
           "active": true,
@@ -10034,10 +10384,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=97",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "Live互動英語"
+          "title": "Live互動英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "living空間美學": {
           "active": true,
@@ -10134,10 +10486,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=595",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Travel Plus 就醬玩旅行"
+          "title": "Travel Plus 就醬玩旅行",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "vogue": {
           "active": true,
@@ -10174,30 +10528,36 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=572",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "互動日本語"
+          "title": "互動日本語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "人生": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "人生"
+          "title": "人生",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "今周刊(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "今周刊(精華版)"
+          "title": "今周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "傳記文學": {
           "active": true,
@@ -10214,10 +10574,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "先探投資週刊"
+          "title": "先探投資週刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "全球中央": {
           "active": true,
@@ -10304,20 +10666,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "商業周刊"
+          "title": "商業周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "商業周刊(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-02",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "商業周刊(精華版)"
+          "title": "商業周刊(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "單車誌": {
           "active": true,
@@ -10354,30 +10720,36 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=357",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "大家說英語"
+          "title": "大家說英語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "大師輕鬆讀": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "大師輕鬆讀"
+          "title": "大師輕鬆讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "天下雜誌(精華版)": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=876",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "天下雜誌(精華版)"
+          "title": "天下雜誌(精華版)",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "好健康": {
           "active": true,
@@ -10414,10 +10786,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=220",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "好房網雜誌"
+          "title": "好房網雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "媽媽寶寶": {
           "active": true,
@@ -10474,20 +10848,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=43",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "常春藤生活英語雜誌"
+          "title": "常春藤生活英語雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "常春藤解析英語雜誌": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=42",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "常春藤解析英語雜誌"
+          "title": "常春藤解析英語雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "幸運雜誌": {
           "active": true,
@@ -10574,20 +10952,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
-          "title": "新新聞"
+          "title": "新新聞",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "旅讀": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=116",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M07",
-          "title": "旅讀"
+          "title": "旅讀",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "早安健康": {
           "active": true,
@@ -10614,10 +10996,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=678",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "機械新刊=Insight Machinery Magazine"
+          "title": "機械新刊=Insight Machinery Magazine",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "汽車百科": {
           "active": true,
@@ -10674,10 +11058,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "理財周刊"
+          "title": "理財周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "環球生技月刊": {
           "active": true,
@@ -10734,10 +11120,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=162",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "禪天下"
+          "title": "禪天下",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "科學月刊": {
           "active": true,
@@ -10754,10 +11142,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=213",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "空中英語教室Studio Classroom"
+          "title": "空中英語教室Studio Classroom",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "經典雜誌": {
           "active": true,
@@ -10784,10 +11174,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=233",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "經貿透視雙周刊"
+          "title": "經貿透視雙周刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "職業棒球": {
           "active": true,
@@ -10814,10 +11206,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-25",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "英語學習誌"
+          "title": "英語學習誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "行遍天下": {
           "active": true,
@@ -10864,10 +11258,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=148",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M04",
-          "title": "跟我學日語"
+          "title": "跟我學日語",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "遙控技術": {
           "active": true,
@@ -10884,20 +11280,24 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=86",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-          "title": "遠見雜誌"
+          "title": "遠見雜誌",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "鄉間小路": {
           "active": true,
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-11-01",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=373",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M06",
-          "title": "鄉間小路"
+          "title": "鄉間小路",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "醫美時尚dr.beauty": {
           "active": true,
@@ -10914,10 +11314,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-28",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M01",
-          "title": "鏡週刊"
+          "title": "鏡週刊",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "電電時代": {
           "active": true,
@@ -10944,10 +11346,12 @@
           "first_seen": "2026-10-30",
           "last_seen": "2026-10-31",
           "latest_date": "2026-10-29",
-          "magazine_url": null,
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
           "misses": 0,
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine-list.jsp?magazineclass=M02",
-          "title": "點股成金特別版"
+          "title": "點股成金特別版",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         },
         "camera攝影誌": {
           "title": "Camera攝影誌",
@@ -10957,21 +11361,23 @@
           "last_seen": "2026-10-31",
           "misses": 0,
           "active": true,
-          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372"
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "magazine_url_checked_at": "2026-10-31T08:28:37+08:00",
+          "magazine_url_verified_by": "source_title_anchor"
         }
       },
-      "last_assisted_success": "2026-10-31T00:25:59+08:00",
-      "last_attempt": "2026-10-31T00:25:59+08:00",
-      "last_complete_check": "2026-10-31T00:25:59+08:00",
+      "last_assisted_success": "2026-10-31T08:28:37+08:00",
+      "last_attempt": "2026-10-31T08:28:37+08:00",
+      "last_complete_check": "2026-10-31T08:28:37+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "latest_page_anchor": {
         "title": "Camera攝影誌",
         "date": "2026-11-05",
-        "jid": "372",
-        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=372",
+        "jid": "187",
+        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
         "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "checked_at": "2026-10-31T00:25:59+08:00"
+        "checked_at": "2026-10-31T08:28:37+08:00"
       },
       "name": "桃園市立圖書館",
       "result": "ok",
