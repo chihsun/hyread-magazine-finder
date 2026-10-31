@@ -1,7 +1,6 @@
 # The HyRead endpoints returned HTTP 403 from GitHub runners on 2026-10-30.
-# Deliberately no schedule and no scraper execution: assisted updates are
-# reviewed and committed via ChatGPT + GitHub connector instead.
-name: Validate HyRead assisted updates
+# No schedule and no scraping. Book lists are manually collected and merged locally.
+name: Validate HyRead catalog data
 on:
   workflow_dispatch:
   push:
@@ -35,6 +34,8 @@ jobs:
         run: node --check docs/app.js
       - name: Frontend future issue filter regression
         run: node tests/test_v161_web.js
+      - name: Update title change list regression
+        run: node tests/test_update_ui.js
       - name: Explain update process
         run: |
-          echo 'No HyRead request was made. See docs/ASSISTED_UPDATE.md.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Tests only: no HyRead request. Catalog updates are collected and merged locally.' >> "$GITHUB_STEP_SUMMARY"
