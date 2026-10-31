@@ -34,6 +34,13 @@ def _require_date(s: str) -> str:
     return s
 
 
+def comparable_listing_url(value: str) -> str:
+    """Treat legacy '?nowpage=1' as equivalent without requesting that URL."""
+    if value.endswith('/magazine_view_more.jsp?nowpage=1'):
+        return value[:-len('?nowpage=1')]
+    return value
+
+
 def verified_title_link(evidence: dict | None, title: str, url: str | None,
                         source_url: str, library_id: str) -> dict | None:
     """Accept a jid only when its original title anchor proves the association.
@@ -58,8 +65,7 @@ def verified_title_link(evidence: dict | None, title: str, url: str | None,
     if actual != url:
         raise ValueError(f'{library_id}: 書目網址與錨點實際 href 不一致')
     origin=official_url(evidence.get('source_url'),library_id)
-    normalized=lambda x: x+'?nowpage=1' if x.endswith('/magazine_view_more.jsp') else x
-    if normalized(origin)!=normalized(source_url):
+    if comparable_listing_url(origin)!=comparable_listing_url(source_url):
         raise ValueError(f'{library_id}: 來源錨點頁面與書目來源頁不一致')
     return {'anchor_text':label.strip(),'href':actual,'source_url':origin}
 
@@ -80,8 +86,7 @@ def first_book_checkpoint(data: dict, libid: str, coverage: dict, *, require_pro
     first=next((p for p in coverage['pages'] if p['page']==1 and p['status']=='ok'),None)
     if not first or issue!=first['newest_date']:
         raise ValueError(f'{libid}: first_book 日期必須符合第 1 頁第一筆日期')
-    canonical=source + '?nowpage=1' if source.endswith('/magazine_view_more.jsp') else source
-    if source!=first['url'] and canonical!=first['url']:
+    if comparable_listing_url(source)!=comparable_listing_url(first['url']):
         raise ValueError(f'{libid}: first_book 必須來自本次第 1 頁')
     if require_proof:
         verified_title_link(data.get('link_evidence'),title,url,source,libid)
@@ -191,25 +196,21 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
                     raise ValueError(f'{libid}: 第一頁未正常讀取應標為 failed')
                 first_book=first_book_checkpoint(coverage.get('first_book'),libid,coverage,
                                                 require_proof=require_link_evidence)
-                successful_urls={p['url'] for p in coverage['pages'] if p['status']=='ok'}
+                successful_urls={comparable_listing_url(p['url']) for p in coverage['pages'] if p['status']=='ok'}
                 for item in observed.values():
-                    source=item['source_url']
-                    canonical=source+'?nowpage=1' if source.endswith('/magazine_view_more.jsp') else source
-                    if source not in successful_urls and canonical not in successful_urls:
+                    source=comparable_listing_url(item['source_url'])
+                    if source not in successful_urls:
                         raise ValueError(f'{libid}: 書目來源不在本次已讀取的最新出刊分頁中')
             elif coverage.get('first_page_ok'):
                 raise ValueError(f'{libid}: 第一頁已成功但標示 failed，應改為 partial')
         if strict and status == 'complete' and coverage['method'] == 'latest_pages':
             # All accepted observations must originate in one of the actual,
             # verified direct pages (query-less page 1 is the same as nowpage=1).
-            verified_urls = {p['url'] for p in coverage['pages'] if
+            verified_urls = {comparable_listing_url(p['url']) for p in coverage['pages'] if
                              p['status'] == 'ok' and p['source_type'] == 'direct'}
             for observed_row in observed.values():
-                source = observed_row['source_url']
-                if source not in verified_urls and not (
-                    source.endswith('/magazine_view_more.jsp') and
-                    source + '?nowpage=1' in verified_urls
-                ):
+                source = comparable_listing_url(observed_row['source_url'])
+                if source not in verified_urls:
                     raise ValueError(f'{libid}: 完整核對的書目來源不在本次直接取得的分頁中')
         normalized[libid]={
             'coverage':coverage,'status':status,'attempts':attempts,'retry_wait_seconds':waits,
