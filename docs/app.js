@@ -3,7 +3,7 @@ const $ = id => document.getElementById(id);
 const state = { payload: null, records: [], limit: 30 };
 const safe = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const collator = new Intl.Collator('zh-Hant-TW', { numeric: true, sensitivity: 'base' });
-function notice(s, type = '') { const e = $('alert'); e.textContent = s; e.className = 'alert ' + type; }
+function notice(s, type = '') { const e = $('alert'); e.textContent = s; e.className = 'alert ' + type; e.hidden = !s; }
 function countLabel(n, total) { return n === total ? `${total === 9 ? '九' : total}館都有` : n === 1 ? '只有一館有' : `${['', '一', '兩', '三', '四', '五', '六', '七', '八', '九'][n] || n}館有`; }
 function renderOptions() {
   const p = state.payload;
@@ -52,6 +52,10 @@ function query() {
   const p = state.payload;
   if (!p) return;
   const wanted = new Set([...document.querySelectorAll('input[name=count]:checked')].map(x => Number(x.value)));
+  const selectedCounts = [...wanted].sort((a,b)=>b-a);
+  $('count-selected').textContent = wanted.size===p.libraries.length ? '全部'
+    : !wanted.size ? '未選' : selectedCounts.length<=3
+    ? selectedCounts.map(x=>x+'館').join('、') : '已選 '+selectedCounts.length+' 種';
   const needle = $('query').value.trim().toLocaleLowerCase();
   const selected = $('library').value, presence = $('presence').value, fresh = $('freshness').value;
   const sortBy = $('sortby').value, dir = $('sortdir').value === 'asc' ? 1 : -1;
@@ -79,7 +83,7 @@ function officialLink(url) {
 }
 function drawRecords() {
   const p = state.payload;
-  $('matched').textContent = `符合條件 ${state.records.length} 種雜誌`;
+  $('matched').textContent = `${state.records.length} 種`;
   $('more').hidden = state.records.length <= state.limit;
   $('more').textContent = `顯示更多（已顯示 ${Math.min(state.limit, state.records.length)} / ${state.records.length} 種）`;
   if (!state.records.length) {
@@ -87,16 +91,19 @@ function drawRecords() {
     return;
   }
   const hideMissing = $('hideMissing').checked;
-  $('results').innerHTML = state.records.slice(0, state.limit).map(r => `<article class="item"><div class="item-top"><h3>${safe(r.title)}</h3><span class="count-chip">${r.count} / ${p.libraries.length} 館</span></div><div class="libs">${p.libraries.filter(l => !hideMissing || Boolean(r.by[l.id])).map(l => {
-    const v = r.by[l.id], stale = l.status === 'stale' || l.status === 'partial';
-    if (!v) return `<div class="lib-row"><span>${safe(l.name)}</span><span class="missing">— 未列出</span></div>`;
-    const link = officialLink(v.source_url);
-    const detail = officialLink(v.magazine_url);
-    const label = `✓ ${safe(v.date)} ${stale ? '⚠' : ''} ${link ? '↗' : ''}`;
-    const source = link ? `<a class="${stale ? 'stale' : ''}" href="${safe(link)}" target="_blank" rel="noopener noreferrer" title="${stale ? '本館部分核對或更新失敗；舊有資料可能需要重新確認' : '來源書櫃'}">${label}</a>` : `<span>${label}</span>`;
-    const detailLink = detail ? `<a class="detail-link" href="${safe(detail)}" target="_blank" rel="noopener noreferrer" title="開啟該館此雜誌的書目詳情">書目詳情 ↗</a>` : '';
-    return `<div class="lib-row"><span>${safe(l.name)}</span><span class="lib-links">${source}${detailLink}</span></div>`;
-  }).join('')}</div></article>`).join('');
+  $('results').innerHTML = state.records.slice(0, state.limit).map(r => `
+    <article class="item">
+      <div class="item-top"><h3>${safe(r.title)}</h3><span class="count-chip">${r.count} / ${p.libraries.length} 館</span></div>
+      <div class="libs">${p.libraries.filter(l => !hideMissing || Boolean(r.by[l.id])).map(l => {
+        const v=r.by[l.id], stale=l.status==='stale'||l.status==='partial';
+        if(!v) return `<div class="lib-row is-missing"><span class="lib-name" title="${safe(l.name)}">${safe(l.name)}</span><span class="missing">未列出</span></div>`;
+        const link=officialLink(v.source_url), detail=officialLink(v.magazine_url);
+        const stamp=safe(v.date)+(stale?' ⚠':'');
+        const source=link ? `<a class="date-link${stale?' stale':''}" href="${safe(link)}" target="_blank" rel="noopener noreferrer" title="開啟${safe(l.name)}的來源書單">${stamp}<span aria-hidden="true">↗</span></a>` : `<span class="date-link">${stamp}</span>`;
+        const detailLink=detail ? `<a class="detail-link" href="${safe(detail)}" target="_blank" rel="noopener noreferrer" title="開啟${safe(l.name)}《${safe(r.title)}》書目詳情" aria-label="${safe(l.name)}《${safe(r.title)}》書目詳情">詳情</a>` : '';
+        return `<div class="lib-row"><span class="lib-name" title="${safe(l.name)}">${safe(l.name)}</span><span class="lib-links">${source}${detailLink}</span></div>`;
+      }).join('')}</div>
+    </article>`).join('');
 }
 function exportCSV() {
   const p = state.payload;
@@ -177,7 +184,7 @@ function renderTitleChanges(entries, compact = false) {
 function renderReport(report) {
   const summary=$('update-summary'), changesBoard=$('update-changes'), libraries=$('update-libraries'), history=$('update-history');
   if (report.type === 'seed' || !report.summary) {
-    summary.innerHTML='<div class="report-status"><span class="status-badge seed">初始資料</span><strong>尚無正式核對的增量更新紀錄</strong></div><p>目前顯示的是先前核對的九館初始書單；不是最近一次自動完整擷取。</p>';
+    summary.innerHTML='<div class="report-status"><span class="status-badge seed">初始書目</span><strong>尚無增量更新</strong></div>'; $('update-peek').textContent='尚無增量紀錄';
     libraries.innerHTML=(report.libraries||[]).map(l=>`<div class="report-library"><strong>${safe(l.name)}</strong><span>初始收錄 ${Number(l.active_count)||0} 筆</span></div>`).join('');
     changesBoard.innerHTML='';
     history.textContent='尚無正式的增量核對紀錄。';
@@ -187,13 +194,31 @@ function renderReport(report) {
   const upcomingIssuesIncluded=assisted && Number(report.batch_schema)>=3;
   const partial=Number(s.partial)||0, failed=Number(s.failed)||0, unchecked=Number(s.not_checked)||0;
   const badge=assisted?'書目增量更新':'書目資料更新';
-  summary.innerHTML=`<div class="report-status"><span class="status-badge ${all?'ok':'stale'}">${safe(badge)}${all?' · 範圍完成':' · 未完全核對'}</span><strong>${Number(s.successful)||0} 館範圍完成 · ${partial} 館部分 · ${failed} 館失敗${unchecked?' · '+unchecked+' 館未查':''}</strong><small>執行時間：${safe(fmtStamp(report.generated_at))}</small></div>
-    ${assisted?`<p class="report-note">${upcomingIssuesIncluded?`本次翻頁截至刊期：${safe(report.window_start)}（${safe(report.window_end)} 為查詢基準日；更晚刊期包含未來紙本日期也納入）`:`本次核對刊期範圍：${safe(report.window_start)} ～ ${safe(report.window_end)}`}。完成僅指指定查詢界線；並非所有舊刊、全部分類都已重新確認。未查到的書名一律保留。</p>`:''}
-    <div class="update-stats"><span>本次確認 <b>${Number(s.verified_records)||0}</b> 筆</span><span>資料庫現有 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>刊期更新 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span><span>補上書目連結 <b>${Number(s.links_added)||0}</b> 筆</span><span>修正書目連結 <b>${Number(s.links_changed)||0}</b> 筆</span><span>已檢查頁面 <b>${Number(s.pages_checked)||0}</b> 頁</span><span>失敗頁面 <b>${Number(s.pages_failed)||0}</b> 頁</span></div>
-    <p class="report-note">新增與新刊期以「雜誌 × 圖書館」計算。未完整核對的館別保留已確認的變動，其他書目不刪除、不視為下架；最新資料日期不等於全部九館均完成核查。</p>`;
+  const progress=all?'已核對 '+(Number(s.successful)||0)+' / '+(Number(s.total)||9)+' 館'
+    :'已核對 '+(Number(s.successful)||0)+' 館 · 部分 '+partial+' · 失敗 '+failed+(unchecked?' · 未查 '+unchecked:'');
+  $('update-peek').textContent = fmtStamp(report.generated_at).slice(0,10) + ' · 新增 '+(Number(s.new_titles)||0)+' · 刊期 '+(Number(s.new_issues)||0)+(all?'':' · ⚠ 未完整');
+  summary.innerHTML=`<div class="report-status"><span class="status-badge ${all?'ok':'stale'}">${safe(badge)} · ${all?'範圍完成':'尚未完成'}</span>
+    <strong>${safe(progress)}</strong><small>${safe(fmtStamp(report.generated_at))}</small></div>
+    <div class="update-stats">
+      <span>新增書名 <b>${Number(s.new_titles)||0}</b></span>
+      <span>刊期更新 <b>${Number(s.new_issues)||0}</b></span>
+      <span>已核對書目 <b>${Number(s.verified_records)||0}</b></span>
+      <span>核對頁面 <b>${Number(s.pages_checked)||0}</b></span>
+    </div>
+    ${!all?'<p class="report-error">⚠ 部分館別未完整核對，既有書目仍保留。</p>':''}
+    <details class="audit-meta"><summary>核對範圍與其他異動</summary>
+      ${assisted?`<p class="report-muted">刊期下限 ${safe(report.window_start)} · 查詢基準日 ${safe(report.window_end)}；提前上架的未來刊期仍包含在內。</p>`:''}
+      <div class="audit-grid"><span>資料庫收錄 <b>${Number(s.active_records)||0}</b> 筆</span>
+      <span>補上連結 <b>${Number(s.links_added)||0}</b> 筆</span>
+      <span>修正連結 <b>${Number(s.links_changed)||0}</b> 筆</span>
+      <span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span>
+      <span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span>
+      <span>失敗頁面 <b>${Number(s.pages_failed)||0}</b> 頁</span></div>
+      <p class="report-muted">異動以書名 × 圖書館計算；完成只代表指定核對範圍，未查到的舊書不視為下架。</p>
+    </details>`;
   const currentTitleChanges=(report.libraries||[]).flatMap(l=>['new','new_issue'].flatMap(type=>
     (l.changes?.[type]||[]).map(e=>({ ...e, type, library:l.name }))));
-  changesBoard.innerHTML='<h3>📋 本次新增書名與刊期更新</h3>'+renderTitleChanges(currentTitleChanges);
+  changesBoard.innerHTML='<h3>本次異動書名</h3>'+renderTitleChanges(currentTitleChanges);
   libraries.innerHTML=(report.libraries||[]).map(l=>{
     const c=l.changes||{}, changeCount=Number(l.change_count)||0;
     const kind=l.status==='ok'?'ok':l.status==='partial'?'partial':l.status==='not_checked'?'not_checked':'stale';
@@ -246,7 +271,8 @@ async function loadReport() {
     if (!report || !Array.isArray(report.libraries)) throw new Error('更新紀錄格式不符');
     renderReport(report);
   } catch (e) {
-    $('update-summary').textContent='目前無法讀取更新紀錄；不影響雜誌搜尋。';
+    $('update-summary').textContent='更新紀錄暫時無法讀取。';
+    $('update-peek').textContent='讀取失敗';
     $('update-changes').textContent='';
     $('update-libraries').textContent='更新紀錄暫時無法取得。';
     $('update-history').textContent='—';
@@ -263,7 +289,7 @@ async function load() {
     state.payload = data;
     renderOptions(); query();
     const flagged = data.libraries.filter(x => x.status === 'stale' || x.status === 'partial');
-    notice(flagged.length ? `⚠ ${flagged.length} 館尚未完成近期全面核對（含沿用資料）：${flagged.map(x => x.name).join('、')}` : `✅ 已讀取 ${data.magazines.length} 種雜誌；請查看各館核對狀態`, flagged.length ? 'warning' : '');
+    notice(flagged.length ? `⚠ ${flagged.length} 館核對未完整（沿用既有書目）：${flagged.map(x => x.name).join('、')}` : '', flagged.length ? 'warning' : '');
   } catch (e) { notice('讀取資料失敗：' + e.message + '。請檢查網站部署或重新整理。', 'error'); }
 }
 for (const id of ['query', 'library', 'presence', 'freshness', 'sortdir']) $(id).addEventListener('input', query);
@@ -279,6 +305,8 @@ $('reset').addEventListener('click', () => {
   document.querySelectorAll('input[name=count]').forEach(x => x.checked = true); query();
 });
 $('refresh').addEventListener('click', load);
+$('updates-link').addEventListener('click', () => { $('updates').open = true; });
+if (location.hash === '#updates') $('updates').open = true;
 $('export').addEventListener('click', exportCSV);
 $('more').addEventListener('click', () => { state.limit += 30; drawRecords(); });
 initTheme();
