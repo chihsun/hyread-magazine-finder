@@ -9,7 +9,8 @@ from datetime import datetime, date, timedelta
 from zoneinfo import ZoneInfo
 import hashlib
 import json
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, urljoin, urlparse
+from bs4 import BeautifulSoup
 
 from .hyread import extract_latest_page, key
 from .coverage import official_url
@@ -38,8 +39,27 @@ def library_groups(libraries: list[dict], size: int = 2) -> list[list[dict]]:
 def latest_page_url(library_id: str, page: int) -> str:
     if type(page) is not int or not 1 <= page <= 200:
         raise ValueError('最新出刊頁碼須為 1–200')
-    return (f'https://{library_id}.ebook.hyread.com.tw/Template/RWD3.0/'
-            f'magazine_view_more.jsp?nowpage={page}')
+    base=(f'https://{library_id}.ebook.hyread.com.tw/Template/RWD3.0/'
+          'magazine_view_more.jsp')
+    # A queryless first page is the actual magazine landing page. Adding
+    # ?nowpage=1 breaks access through some web-reading tools.
+    return base if page==1 else f'{base}?nowpage={page}'
+
+
+def next_page_link(html: str | bytes, library_id: str, page: int) -> str | None:
+    """Return a real next-page anchor found in this page's HTML, if present.
+
+    Do not manufacture a 'clicked' link. If pagination is JavaScript-only,
+    missing, or points outside the same library, return None; the assisted
+    workflow can try a direct URL or a clearly labeled search-index fallback.
+    """
+    base=latest_page_url(library_id,page)
+    expected=latest_page_url(library_id,page+1)
+    for a in BeautifulSoup(html,'html.parser').find_all('a',href=True):
+        candidate=urljoin(base,a['href'].strip())
+        if candidate==expected:
+            return candidate
+    return None
 
 
 def inspect_latest_html(html: str | bytes, library_id: str, page: int,
@@ -79,6 +99,11 @@ def inspect_latest_html(html: str | bytes, library_id: str, page: int,
     evidence={'page':page,'url':url,'status':'ok','source_type':source_type,
               'observed_at':observed_at,'newest_date':dates[0], 'oldest_date':dates[-1],
               'content_digest':fingerprint,'record_count':len(records)}
+    # Only present when a navigable next-page href actually appeared.
+    # No generated or hypothetical navigation link is reported as evidence.
+    discovered_next=next_page_link(html,library_id,page)
+    if discovered_next:
+        evidence['navigation_next_url']=discovered_next
     if scan_id is not None: evidence['scan_id']=scan_id
     if indexed_at is not None: evidence['indexed_at']=indexed_at
     return records,evidence
