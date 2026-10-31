@@ -1,6 +1,6 @@
-# Import reviewed ChatGPT observations; no requests to HyRead.
+# Optional legacy import of locally verified JSON; no requests to HyRead.
 # GitHub-hosted runners only validate and merge source data supplied in Git.
-name: Import verified ChatGPT HyRead batch
+name: Import verified local HyRead batch (optional)
 on:
   push:
     paths:
@@ -29,7 +29,9 @@ jobs:
         run: python -m unittest discover -s tests -q
       - name: Frontend future issue filter regression
         run: node tests/test_v161_web.js
-      - name: Identify one newly submitted ChatGPT batch
+      - name: Update title change list regression
+        run: node tests/test_update_ui.js
+      - name: Identify one newly submitted verified batch
         id: batch
         env:
           BEFORE: ${{ github.event.before }}
@@ -58,6 +60,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/state.json data/history.json docs/data/catalog.json docs/data/update-report.json docs/data/status.json
           if ! git diff --cached --quiet; then
-            git commit -m "data: apply reviewed ChatGPT HyRead magazine batch"
+            git commit -m "data: apply reviewed local HyRead magazine batch"
             git push origin HEAD:"${GITHUB_REF_NAME}"
           fi
