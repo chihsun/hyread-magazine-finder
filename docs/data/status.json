@@ -1,102 +1,102 @@
 {
-  "generated_at": "2026-10-31T08:28:37+08:00",
-  "source": "chatgpt_assisted",
+  "complete": true,
+  "failed": 0,
+  "generated_at": "2026-10-31T20:21:22+08:00",
+  "note": "增量核對：未找到的書目均保留，不代表完整館藏下架。",
+  "partial": 0,
   "results": [
     {
-      "id": "taichunggov",
-      "name": "臺中市立圖書館",
-      "status": "ok",
-      "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 116,
       "error": "",
-      "retries": 0
+      "id": "taichunggov",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
+      "last_success": "2026-10-30",
+      "name": "臺中市立圖書館",
+      "retries": 0,
+      "status": "ok"
     },
     {
-      "id": "tpml",
-      "name": "臺北市立圖書館",
-      "status": "ok",
-      "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 130,
       "error": "",
-      "retries": 0
+      "id": "tpml",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
+      "last_success": "2026-10-30",
+      "name": "臺北市立圖書館",
+      "retries": 0,
+      "status": "ok"
     },
     {
-      "id": "tnml",
-      "name": "臺南市立圖書館",
-      "status": "partial",
-      "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 126,
-      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
-      "retries": 0
+      "error": "",
+      "id": "tnml",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
+      "last_success": "2026-10-30",
+      "name": "臺南市立圖書館",
+      "retries": 0,
+      "status": "ok"
     },
     {
-      "id": "tphcc",
-      "name": "新北市立圖書館",
-      "status": "partial",
-      "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 127,
-      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
-      "retries": 0
+      "error": "",
+      "id": "tphcc",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
+      "last_success": "2026-10-30",
+      "name": "新北市立圖書館",
+      "retries": 0,
+      "status": "ok"
     },
     {
-      "id": "ksml",
-      "name": "高雄市立圖書館",
-      "status": "partial",
-      "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 114,
-      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。部分詳細頁回覆403，停止後續該站詳頁讀取。",
-      "retries": 0
+      "error": "",
+      "id": "ksml",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
+      "last_success": "2026-10-30",
+      "name": "高雄市立圖書館",
+      "retries": 0,
+      "status": "ok"
     },
     {
-      "id": "tycccgov",
-      "name": "桃園市立圖書館",
-      "status": "ok",
-      "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 124,
       "error": "",
-      "retries": 0
+      "id": "tycccgov",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
+      "last_success": "2026-10-30",
+      "name": "桃園市立圖書館",
+      "retries": 0,
+      "status": "ok"
     },
     {
-      "id": "hchcc",
-      "name": "新竹縣公共圖書館",
-      "status": "partial",
-      "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 117,
-      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
-      "retries": 0
+      "error": "",
+      "id": "hchcc",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
+      "last_success": "2026-10-30",
+      "name": "新竹縣公共圖書館",
+      "retries": 0,
+      "status": "ok"
     },
     {
-      "id": "hcmlgov",
-      "name": "新竹市圖書館",
-      "status": "partial",
-      "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
       "count": 115,
-      "error": "最新出刊第 1 頁 20 本書的書名與刊期已可辨識，但第2頁讀取失敗，無法確認 2026-10-25 界線。只合併可確認的第1頁資料與書名錨點；未查到的既有書目不刪除。",
-      "retries": 0
+      "error": "",
+      "id": "hcmlgov",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
+      "last_success": "2026-10-30",
+      "name": "新竹市圖書館",
+      "retries": 0,
+      "status": "ok"
     },
     {
+      "count": 115,
+      "error": "",
       "id": "klccab",
-      "name": "基隆市公共圖書館",
-      "status": "stale",
+      "last_attempt": "2026-10-31T20:21:22+08:00",
       "last_success": "2026-10-30",
-      "last_attempt": "2026-10-31T08:28:37+08:00",
-      "count": 114,
-      "error": "最新出刊第一頁無法讀取，未取得可信書目資料（並未觀察到官方明確 HTTP 401/403）",
-      "retries": 0
+      "name": "基隆市公共圖書館",
+      "retries": 0,
+      "status": "ok"
     }
   ],
-  "complete": false,
-  "successful": 3,
-  "partial": 5,
-  "failed": 1,
-  "total": 9,
-  "note": "增量核對：未找到的書目均保留，不代表完整館藏下架。"
+  "source": "chatgpt_assisted",
+  "successful": 9,
+  "total": 9
 }
