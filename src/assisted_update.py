@@ -34,7 +34,37 @@ def _require_date(s: str) -> str:
     return s
 
 
-def first_book_checkpoint(data: dict, libid: str, coverage: dict) -> dict:
+def verified_title_link(evidence: dict | None, title: str, url: str | None,
+                        source_url: str, library_id: str) -> dict | None:
+    """Accept a jid only when its original title anchor proves the association.
+
+    Schema 4 uses this during every ChatGPT-assisted update; previous batch
+    schemas remain importable for historical reproducibility. These are
+    observations supplied by the user-visible source inspection, NOT guessed
+    identifiers derived from a title or copied from another library.
+    """
+    if url is None:
+        if evidence is not None:
+            raise ValueError(f'{library_id}: 無書目網址不可提供 link_evidence')
+        return None
+    if not isinstance(evidence, dict):
+        raise ValueError(f'{library_id}: 書目連結必須附上來源書名錨點 link_evidence')
+    if set(evidence) != {'anchor_text','href','source_url'}:
+        raise ValueError(f'{library_id}: link_evidence 須有 anchor_text、href、source_url')
+    label=evidence.get('anchor_text')
+    if not isinstance(label,str) or not label.strip() or key(label)!=key(title):
+        raise ValueError(f'{library_id}: 書目網址的錨點文字與雜誌書名不一致')
+    actual=magazine_url(evidence.get('href'),library_id)
+    if actual != url:
+        raise ValueError(f'{library_id}: 書目網址與錨點實際 href 不一致')
+    origin=official_url(evidence.get('source_url'),library_id)
+    normalized=lambda x: x+'?nowpage=1' if x.endswith('/magazine_view_more.jsp') else x
+    if normalized(origin)!=normalized(source_url):
+        raise ValueError(f'{library_id}: 來源錨點頁面與書目來源頁不一致')
+    return {'anchor_text':label.strip(),'href':actual,'source_url':origin}
+
+
+def first_book_checkpoint(data: dict, libid: str, coverage: dict, *, require_proof: bool = False) -> dict:
     """Save only the first title actually seen on page 1, never an inferred jid."""
     if not isinstance(data, dict):
         raise ValueError(f'{libid}: 正常／部分讀取需要最新出刊第 1 頁的 first_book')
@@ -53,6 +83,8 @@ def first_book_checkpoint(data: dict, libid: str, coverage: dict) -> dict:
     canonical=source + '?nowpage=1' if source.endswith('/magazine_view_more.jsp') else source
     if source!=first['url'] and canonical!=first['url']:
         raise ValueError(f'{libid}: first_book 必須來自本次第 1 頁')
+    if require_proof:
+        verified_title_link(data.get('link_evidence'),title,url,source,libid)
     return {'title':title.strip(),'date':issue,
             'jid':jid,'magazine_url':url,'source_url':first['url']}
 
@@ -74,10 +106,11 @@ def older_observations(saved: dict, entry: dict) -> list[str]:
 
 
 def validate_batch(batch: dict, conf: list[dict]) -> dict:
-    if not isinstance(batch, dict) or batch.get('schema') not in (1, 2, 3):
-        raise ValueError('輸入資料須為 schema=1、2 或 3 的 JSON 物件')
+    if not isinstance(batch, dict) or batch.get('schema') not in (1, 2, 3, 4):
+        raise ValueError('輸入資料須為 schema=1、2、3 或 4 的 JSON 物件')
     strict = batch['schema'] == 2
-    simple = batch['schema'] == 3
+    simple = batch['schema'] in (3, 4)
+    require_link_evidence = batch['schema'] == 4
     if batch.get('source') != 'chatgpt_assisted':
         raise ValueError('source 必須是 chatgpt_assisted')
     batch_id = batch.get('batch_id')
@@ -137,8 +170,14 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
             official_url(row.get('source_url'), libid)
             # Observations may be outside lookback because newer/older issue is
             # visible on a source page. Never invent issue history from them.
+            detail=magazine_url(row.get('magazine_url'),libid)
+            proof=(verified_title_link(row.get('link_evidence'),title.strip(),detail,
+                                       row['source_url'],libid)
+                   if require_link_evidence else None)
             normalized_row={'title':title.strip(),'date':publish_date,'source_url':row['source_url'],
-                            'magazine_url':magazine_url(row.get('magazine_url'),libid)}
+                            'magazine_url':detail}
+            if proof is not None:
+                normalized_row['link_evidence']=proof
             k=key(title)
             if (k not in observed or observed[k]['date'] < publish_date
                     or (observed[k]['date']==publish_date and not observed[k]['magazine_url'] and normalized_row['magazine_url'])):
@@ -150,7 +189,8 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
             if status!='failed':
                 if coverage['method']!='latest_pages' or not coverage.get('first_page_ok'):
                     raise ValueError(f'{libid}: 第一頁未正常讀取應標為 failed')
-                first_book=first_book_checkpoint(coverage.get('first_book'),libid,coverage)
+                first_book=first_book_checkpoint(coverage.get('first_book'),libid,coverage,
+                                                require_proof=require_link_evidence)
                 successful_urls={p['url'] for p in coverage['pages'] if p['status']=='ok'}
                 for item in observed.values():
                     source=item['source_url']
@@ -175,6 +215,7 @@ def validate_batch(batch: dict, conf: list[dict]) -> dict:
             'coverage':coverage,'status':status,'attempts':attempts,'retry_wait_seconds':waits,
             'notes':notes,'error':error,'error_code':diagnostic_code,'observed':observed,
             'first_book':first_book,'simple':simple,
+            'link_evidence_required':require_link_evidence,
         }
     return {'schema':batch['schema'],'batch_id':batch_id,'window_start':started,'window_end':ended,'libraries':normalized}
 
@@ -195,6 +236,9 @@ def merge_incremental(state: dict, library: dict, observations: dict, stamp: str
                 'last_seen':stamp[:10],'misses':0,'active':True,
                 'magazine_url':obs.get('magazine_url'),
             }
+            if obs.get('link_evidence'):
+                items[k]['magazine_url_checked_at']=stamp
+                items[k]['magazine_url_verified_by']='source_title_anchor'
             events.append({'at':stamp,'library':host,'type':'new','title':obs['title'],'to':obs['date']})
             continue
         if obs['date'] > cur['latest_date']:
@@ -207,10 +251,19 @@ def merge_incremental(state: dict, library: dict, observations: dict, stamp: str
         old_link=cur.get('magazine_url')
         new_link=obs.get('magazine_url')
         if new_link and new_link != old_link:
+            # Schema 4 observations have a matching title anchor on the
+            # corresponding scanned page. A corrected link replaces a
+            # previously wrong jid even when the issue date is unchanged.
             cur['magazine_url']=new_link
             cur['magazine_url_checked_at']=stamp
+            if obs.get('link_evidence'):
+                cur['magazine_url_verified_by']='source_title_anchor'
             events.append({'at':stamp,'library':host,'type':'link_changed' if old_link else 'link_added',
                            'title':cur['title'],'from':old_link or '', 'to':new_link})
+        elif new_link and obs.get('link_evidence'):
+            # Reconfirmed link, not a new book/issue change.
+            cur['magazine_url_checked_at']=stamp
+            cur['magazine_url_verified_by']='source_title_anchor'
         if not cur['active']:
             events.append({'at':stamp,'library':host,'type':'returned','title':cur['title'],'to':cur['latest_date']})
             cur['active']=True
