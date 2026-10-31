@@ -54,6 +54,8 @@ def next_page_link(html: str | bytes, library_id: str, page: int) -> str | None:
     workflow can try a direct URL or a clearly labeled search-index fallback.
     """
     base=latest_page_url(library_id,page)
+    if page>=200:
+        return None
     expected=latest_page_url(library_id,page+1)
     for a in BeautifulSoup(html,'html.parser').find_all('a',href=True):
         candidate=urljoin(base,a['href'].strip())
