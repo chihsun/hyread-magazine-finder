@@ -77,25 +77,38 @@ def extract_category(html: bytes | str, url: str, category: str) -> list[dict]:
     # page has its heading and a repeated latest-publication marker per issue.
     if not any(re.search(re.escape(category)+r'\s*\(\s*\d+\s*\)',v) for v in lines):
         raise ValueError(f'分類「{category}」標題不存在（可能是阻擋頁）')
-    # Keep the real magazine detail link where the source HTML provides one.
-    # Catalog/category URLs are not individual magazine pages and must never be
-    # substituted for magazine_more.jsp?jid=... .
+    # Bind magazine detail URLs to the *book heading* rather than arbitrary
+    # links anywhere on the page. Unrelated navigation or suggestions could
+    # otherwise be mistaken for the book's own jid.
     titles_to_links={}
     ambiguous=set()
-    for a in soup.find_all('a', href=True):
-        text_of_link=a.get_text(' ',strip=True)
-        if not text_of_link:
+    host=url.split('/')[2].split('.')[0]
+    for heading in soup.find_all('h6'):
+        heading_title=heading.get_text(' ',strip=True)
+        if not heading_title:
             continue
-        try:
-            found=validate_magazine_url(urljoin(url,a['href']), url.split('/')[2].split('.')[0])
-        except ValueError:
-            continue
-        if not found:
-            continue
-        k=key(text_of_link)
-        if k in titles_to_links and titles_to_links[k]!=found:
-            ambiguous.add(k)
-        titles_to_links[k]=found
+        title_key=key(heading_title)
+        anchors=list(heading.find_all('a',href=True))
+        if heading.parent and heading.parent.name=='a' and heading.parent.has_attr('href'):
+            anchors.append(heading.parent)
+        choices=[]
+        for a in anchors:
+            anchor_text=a.get_text(' ',strip=True)
+            if key(anchor_text)!=title_key:
+                continue
+            try:
+                detail=validate_magazine_url(urljoin(url,a['href']),host)
+            except ValueError:
+                continue
+            if detail:
+                choices.append({'anchor_text':anchor_text,'href':detail,
+                                'source_url':url})
+        distinct={entry['href'] for entry in choices}
+        if len(distinct)>1 or (title_key in titles_to_links and
+                               distinct and titles_to_links[title_key]['href'] not in distinct):
+            ambiguous.add(title_key)
+        elif len(distinct)==1 and title_key not in ambiguous:
+            titles_to_links[title_key]=choices[0]
     dates=[]
     for i,line in enumerate(lines):
         if not LATEST_RE.search(line):
@@ -110,8 +123,12 @@ def extract_category(html: bytes | str, url: str, category: str) -> list[dict]:
         title=lines[i-1]
         if not title or len(title)>180 or title.startswith(('最新','雜誌類型','新刊')):
             raise ValueError(f'無法辨識標題: {title}')
-        dates.append({'title':title,'date':day,'source_url':url,
-                      'magazine_url':titles_to_links.get(key(title)) if key(title) not in ambiguous else None})
+        link=titles_to_links.get(key(title)) if key(title) not in ambiguous else None
+        row={'title':title,'date':day,'source_url':url,
+             'magazine_url':link['href'] if link else None}
+        if link:
+            row['link_evidence']=link
+        dates.append(row)
     if not dates:
         # Some empty categories exist; reject pages listing catalog entries but
         # missing dates, because treating them as empty would erase coverage.

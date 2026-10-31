@@ -107,6 +107,8 @@ def build_latest_observations(pages: list[tuple[list[dict],dict]], window_start:
             first_book={'title':first['title'],'date':first['date'],
                         'magazine_url':url,'jid':jid,
                         'source_url':meta['url']}
+            if url and first.get('link_evidence'):
+                first_book['link_evidence']=first['link_evidence']
         for row in rows:
             # Only the start date limits accepted issue dates. The reference
             # day (window_end) is NOT an upper bound on printed issue dates.
