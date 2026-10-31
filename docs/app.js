@@ -137,22 +137,63 @@ function changeLines(entries, kind) {
   const body=entries.map(e => `<li>${safe(e.title)}${kind==='new_issue'?`：${safe(e.from)} → ${safe(e.to)}`:e.to?`（${safe(e.to)}）`:''}</li>`).join('');
   return `<div class="change-group"><strong>${labels[kind]} ${entries.length} 筆</strong><ul>${body}</ul></div>`;
 }
+
+function titleChangeGroups(entries) {
+  const grouped = new Map();
+  for (const e of entries || []) {
+    if (!e || !['new', 'new_issue'].includes(e.type)) continue;
+    const title = String(e.title || '').trim();
+    if (!title) continue;
+    const key = e.type + ':' + title.toLocaleLowerCase('zh-Hant');
+    if (!grouped.has(key)) grouped.set(key, { type: e.type, title, events: [] });
+    grouped.get(key).events.push({
+      library: String(e.library || '未知館別'),
+      from: String(e.from || ''),
+      to: String(e.to || ''),
+    });
+  }
+  return [...grouped.values()].sort((a, b) => a.type === b.type
+    ? collator.compare(a.title, b.title) : a.type === 'new' ? -1 : 1);
+}
+function renderTitleChanges(entries, compact = false) {
+  const groups = titleChangeGroups(entries);
+  if (!groups.length) return '<p class="report-muted">此批次沒有新增書名或刊期更新。</p>';
+  return ['new', 'new_issue'].map(type => {
+    const subset = groups.filter(x => x.type === type);
+    if (!subset.length) return '';
+    const total = subset.reduce((n, x) => n + x.events.length, 0);
+    const label = type === 'new' ? '新增書名' : '刊期更新';
+    const items = subset.map(group => {
+      const notes = group.events.map(e => type === 'new'
+        ? safe(e.library) + (e.to ? '：首次列入（刊期 ' + safe(e.to) + '）' : '：首次列入')
+        : safe(e.library) + '：' + safe(e.from || '未知') + ' → ' + safe(e.to || '未知')).join('；');
+      return '<li><strong>' + safe(group.title) + '</strong><span class="title-change-meta">' + notes + '</span></li>';
+    }).join('');
+    return '<details class="title-change-group"' + (compact ? '' : ' open') + '><summary>' + label +
+      ' · ' + subset.length + ' 種書名／' + total + ' 筆館別異動</summary><ol>' + items + '</ol></details>';
+  }).join('');
+}
+
 function renderReport(report) {
-  const summary=$('update-summary'), libraries=$('update-libraries'), history=$('update-history');
+  const summary=$('update-summary'), changesBoard=$('update-changes'), libraries=$('update-libraries'), history=$('update-history');
   if (report.type === 'seed' || !report.summary) {
     summary.innerHTML='<div class="report-status"><span class="status-badge seed">初始資料</span><strong>尚無正式核對的增量更新紀錄</strong></div><p>目前顯示的是先前核對的九館初始書單；不是最近一次自動完整擷取。</p>';
     libraries.innerHTML=(report.libraries||[]).map(l=>`<div class="report-library"><strong>${safe(l.name)}</strong><span>初始收錄 ${Number(l.active_count)||0} 筆</span></div>`).join('');
+    changesBoard.innerHTML='';
     history.textContent='尚無正式的增量核對紀錄。';
     return;
   }
   const s=report.summary, assisted=report.type==='chatgpt_assisted', all=report.complete;
-  const upcomingIssuesIncluded=assisted && report.batch_schema===3;
+  const upcomingIssuesIncluded=assisted && Number(report.batch_schema)>=3;
   const partial=Number(s.partial)||0, failed=Number(s.failed)||0, unchecked=Number(s.not_checked)||0;
-  const badge=assisted?'人工輔助增量':'自動完整擷取';
+  const badge=assisted?'書目增量更新':'書目資料更新';
   summary.innerHTML=`<div class="report-status"><span class="status-badge ${all?'ok':'stale'}">${safe(badge)}${all?' · 範圍完成':' · 未完全核對'}</span><strong>${Number(s.successful)||0} 館範圍完成 · ${partial} 館部分 · ${failed} 館失敗${unchecked?' · '+unchecked+' 館未查':''}</strong><small>執行時間：${safe(fmtStamp(report.generated_at))}</small></div>
     ${assisted?`<p class="report-note">${upcomingIssuesIncluded?`本次翻頁截至刊期：${safe(report.window_start)}（${safe(report.window_end)} 為查詢基準日；更晚刊期包含未來紙本日期也納入）`:`本次核對刊期範圍：${safe(report.window_start)} ～ ${safe(report.window_end)}`}。完成僅指指定查詢界線；並非所有舊刊、全部分類都已重新確認。未查到的書名一律保留。</p>`:''}
-    <div class="update-stats"><span>本次確認 <b>${Number(s.verified_records)||0}</b> 筆</span><span>資料庫現有 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>新刊期 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span><span>補上書目連結 <b>${Number(s.links_added)||0}</b> 筆</span><span>修正書目連結 <b>${Number(s.links_changed)||0}</b> 筆</span><span>已檢查頁面 <b>${Number(s.pages_checked)||0}</b> 頁</span><span>失敗頁面 <b>${Number(s.pages_failed)||0}</b> 頁</span></div>
+    <div class="update-stats"><span>本次確認 <b>${Number(s.verified_records)||0}</b> 筆</span><span>資料庫現有 <b>${Number(s.active_records)||0}</b> 筆（含沿用）</span><span>新增書名 <b>${Number(s.new_titles)||0}</b> 筆</span><span>刊期更新 <b>${Number(s.new_issues)||0}</b> 筆</span><span>恢復列出 <b>${Number(s.returned)||0}</b> 筆</span><span>停止列出 <b>${Number(s.not_listed)||0}</b> 筆</span><span>補上書目連結 <b>${Number(s.links_added)||0}</b> 筆</span><span>修正書目連結 <b>${Number(s.links_changed)||0}</b> 筆</span><span>已檢查頁面 <b>${Number(s.pages_checked)||0}</b> 頁</span><span>失敗頁面 <b>${Number(s.pages_failed)||0}</b> 頁</span></div>
     <p class="report-note">新增與新刊期以「雜誌 × 圖書館」計算。未完整核對的館別保留已確認的變動，其他書目不刪除、不視為下架；最新資料日期不等於全部九館均完成核查。</p>`;
+  const currentTitleChanges=(report.libraries||[]).flatMap(l=>['new','new_issue'].flatMap(type=>
+    (l.changes?.[type]||[]).map(e=>({ ...e, type, library:l.name }))));
+  changesBoard.innerHTML='<h3>📋 本次新增書名與刊期更新</h3>'+renderTitleChanges(currentTitleChanges);
   libraries.innerHTML=(report.libraries||[]).map(l=>{
     const c=l.changes||{}, changeCount=Number(l.change_count)||0;
     const kind=l.status==='ok'?'ok':l.status==='partial'?'partial':l.status==='not_checked'?'not_checked':'stale';
@@ -186,7 +227,16 @@ function renderReport(report) {
     ${changeCount?`<details class="change-details"><summary>展開 ${changeCount} 筆異動書名</summary>${changes}</details>`:`<p class="report-muted">${kind==='stale'?'本次未取得可確認的更新。':kind==='not_checked'?'本次未安排查詢。':'本次無新書目異動（不代表全館沒有更新）。'}</p>`}
     </div>`;
   }).join('');
-  history.innerHTML=(report.history||[]).map(r=>`<div class="history-row"><strong>${safe(fmtStamp(r.at))}</strong><span>${safe(r.source==='chatgpt_assisted'?'輔助更新':'爬蟲更新')}：完成 ${r.summary?.successful??0}、部分 ${r.summary?.partial??0}、失敗 ${r.summary?.failed??0}</span><span>新書名 ${r.summary?.new_titles??0} · 新刊期 ${r.summary?.new_issues??0} · 變動 ${r.summary?.changes_total??0}</span></div>`).join('')||'尚無歷史紀錄';
+  history.innerHTML=(report.history||[]).map(r=>{
+    const titleChanges=Array.isArray(r.title_changes)?r.title_changes:[];
+    const missingDetails=!titleChanges.length && ((Number(r.summary?.new_titles)||0)+(Number(r.summary?.new_issues)||0)>0);
+    const body=titleChanges.length?renderTitleChanges(titleChanges,true):
+      '<p class="report-muted">'+(missingDetails?'舊紀錄僅保留異動數量，沒有逐本書名。':'此批次沒有新增書名或刊期更新。')+'</p>';
+    return `<details class="history-entry"><summary><strong>${safe(fmtStamp(r.at))}</strong>
+      <span>已核對更新：完成 ${Number(r.summary?.successful)||0}、部分 ${Number(r.summary?.partial)||0}、失敗 ${Number(r.summary?.failed)||0}</span>
+      <span>新增書名 ${Number(r.summary?.new_titles)||0} · 刊期更新 ${Number(r.summary?.new_issues)||0} · 所有異動 ${Number(r.summary?.changes_total)||0}</span></summary>
+      <div class="history-entry-body">${body}</div></details>`;
+  }).join('')||'尚無歷史紀錄';
 }
 async function loadReport() {
   try {
@@ -197,6 +247,7 @@ async function loadReport() {
     renderReport(report);
   } catch (e) {
     $('update-summary').textContent='目前無法讀取更新紀錄；不影響雜誌搜尋。';
+    $('update-changes').textContent='';
     $('update-libraries').textContent='更新紀錄暫時無法取得。';
     $('update-history').textContent='—';
   }
