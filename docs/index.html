@@ -13,58 +13,49 @@
 <body>
 <header class="hero">
   <div class="wrap hero-inner">
-    <div>
-      <span class="eyebrow">LIBRARY MAGAZINE INDEX</span>
-      <h1>📚 HyRead 九館雜誌搜尋</h1>
-      <p>一次比較九間圖書館的電子雜誌，掌握各館最新發刊日期。</p>
-    </div>
-    <div class="header-actions">
-      <label class="theme-switch" for="theme">◐ 顯示模式
+    <div class="brand"><span class="brand-mark" aria-hidden="true">H</span><h1>HyRead <span>九館雜誌</span></h1></div>
+    <nav class="header-actions" aria-label="頁面操作">
+      <a class="glass" id="updates-link" href="#updates">更新紀錄</a>
+      <button id="refresh" type="button" class="glass" title="重新載入最新書單" aria-label="重新載入最新書單">↻ 更新資料</button>
+      <label class="theme-switch" for="theme"><span class="sr-only">顯示模式</span>
         <select id="theme" aria-label="顯示模式">
-          <option value="auto">自動</option>
-          <option value="light">淺色</option>
-          <option value="dark">深色</option>
+          <option value="auto">系統外觀</option><option value="light">淺色</option><option value="dark">深色</option>
         </select>
       </label>
-      <button id="refresh" type="button" class="glass">↻ 重新載入資料</button>
-    </div>
+    </nav>
   </div>
 </header>
 <main class="wrap">
-  <div id="alert" class="alert" role="status" aria-live="polite">讀取最新資料中…</div>
+  <div id="alert" class="alert" role="status" aria-live="polite" hidden></div>
   <div class="metrics" aria-label="目錄總覽">
     <div class="metric"><span>不重複雜誌</span><strong id="total">—</strong></div>
     <div class="metric"><span>圖書館</span><strong id="libtotal">9</strong></div>
     <div class="metric"><span>九館都有</span><strong id="common">—</strong></div>
     <div class="metric"><span>最後資料更新</span><strong id="updated" class="small-date">—</strong></div>
   </div>
-  <section class="panel update-board" aria-labelledby="updatetitle">
-    <div class="section-title update-title"><h2 id="updatetitle">🔄 書單更新紀錄</h2><span class="report-muted">本機整理、確認後推送 GitHub；不自動連線抓取</span></div>
-    <div id="update-summary" class="update-summary" role="status" aria-live="polite">正在讀取更新紀錄…</div>
-    <div id="update-changes" class="update-changes" aria-label="本次新增書名與刊期異動"></div>
-    <details class="update-details"><summary>查看各館狀態、核對筆數及異動書名</summary><div id="update-libraries" class="update-libraries"></div></details>
-    <details class="update-details"><summary>最近更新歷史（180 天）</summary><div id="update-history" class="update-history"></div></details>
-  </section>
   <section class="panel filters" aria-labelledby="filtertitle">
-    <div class="section-title"><h2 id="filtertitle">搜尋與篩選</h2><button type="button" id="reset" class="textbtn">重設篩選</button></div>
-    <label class="field" for="query">搜尋雜誌名稱
-      <input id="query" type="search" placeholder="例如：商業周刊、財訊、康健" autocomplete="off">
+    <div class="section-title"><h2 id="filtertitle">搜尋雜誌</h2><button type="button" id="reset" class="textbtn">清除篩選</button></div>
+    <label class="field search-field" for="query"><span class="sr-only">搜尋雜誌名稱</span>
+      <input id="query" type="search" placeholder="搜尋書名，例如：商業周刊、財訊、康健" autocomplete="off">
     </label>
-    <fieldset class="number-filter">
-      <legend>有幾間圖書館收藏？<small>（可複選；符合任一勾選條件）</small></legend>
-      <div class="inline-actions"><button type="button" class="mini" id="allcounts">全部勾選</button><button type="button" class="mini" id="nonecounts">全部清除</button></div>
-      <div id="counts" class="choices"></div>
-    </fieldset>
+    <details class="filter-disclosure" id="count-filter">
+      <summary>收錄館數 <span class="count-selection" id="count-selected">全部</span></summary>
+      <fieldset class="number-filter">
+        <legend class="sr-only">選擇有多少間圖書館收錄，可複選</legend>
+        <div class="inline-actions"><button type="button" class="mini" id="allcounts">全選</button><button type="button" class="mini" id="nonecounts">清除</button></div>
+        <div id="counts" class="choices"></div>
+      </fieldset>
+    </details>
     <div class="filter-row">
-      <label class="field" for="library">指定圖書館
+      <label class="field" for="library">圖書館
         <select id="library"><option value="">全部圖書館</option></select>
       </label>
-      <label class="field" for="presence">指定圖書館的收錄情況
+      <label class="field" for="presence">收錄狀態
         <select id="presence">
           <option value="all">不限</option><option value="yes">有收錄</option><option value="no">未列出</option>
         </select>
       </label>
-      <label class="field" for="freshness">最新發刊日期
+      <label class="field" for="freshness">發刊日期
         <select id="freshness">
           <option value="all">不限日期</option>
           <option value="7">最近 7 天</option>
@@ -77,34 +68,39 @@
     </div>
     <div class="filter-extras">
       <div class="sort-fields">
-        <label class="field" for="sortby">雜誌清單排序
+        <label class="field" for="sortby">排序
           <select id="sortby"><option value="date" selected>依最新發刊日期</option><option value="title">依書名</option></select>
         </label>
-        <label class="field" for="sortdir">排序方向
+        <label class="field" for="sortdir">方向
           <select id="sortdir"><option value="desc" selected>由新至舊（降冪）</option><option value="asc">由舊至新（升冪）</option></select>
         </label>
       </div>
       <label class="toggle" for="hideMissing">
         <input type="checkbox" id="hideMissing">
         <span class="toggle-track" aria-hidden="true"></span>
-        <span class="toggle-caption"><strong>隱藏沒有該本書的圖書館</strong><small>預設顯示全部九館；僅影響清單顯示</small></span>
+        <span class="toggle-caption"><strong>隱藏未列出館別</strong></span>
       </label>
     </div>
-    <div class="filter-footer"><span id="matched" aria-live="polite">—</span><button id="export" type="button" class="export">↓ 匯出篩選結果 CSV</button></div>
+    
   </section>
+  <details class="panel update-board" id="updates">
+    <summary class="update-toggle"><strong id="updatetitle">更新紀錄</strong><span id="update-peek">讀取中…</span></summary>
+    <div class="update-content">
+      <div id="update-summary" class="update-summary" role="status" aria-live="polite">正在讀取更新紀錄…</div>
+      <div id="update-changes" class="update-changes" aria-label="本次新增書名與刊期異動"></div>
+      <details class="update-details"><summary>各館核對狀態與異動</summary><div id="update-libraries" class="update-libraries"></div></details>
+      <details class="update-details"><summary>歷次更新 · 180 天</summary><div id="update-history" class="update-history"></div></details>
+    </div>
+  </details>
   <section aria-label="搜尋結果">
-    <div class="result-header"><h2>雜誌清單</h2><span class="tiny">點選各館日期可開啟官方 HyRead 來源</span></div>
+    <div class="result-header"><h2>書目 <span id="matched" class="result-count" aria-live="polite">—</span></h2><button id="export" type="button" class="export">匯出 CSV ↗</button></div>
     <div id="results" class="results"></div>
     <div class="load-more"><button id="more" type="button" hidden>顯示更多雜誌</button></div>
   </section>
-  <details class="panel help"><summary>資料定義與更新說明</summary>
-    <p>「有收錄」指 HyRead 該館的雜誌書目列出此書名及最新發刊日期，並非即時可借閱狀態。一般版與精華版分開計算。「未列出」不代表沒有舊期刊。</p>
-    <p>發刊日期篩選以臺灣日期計算；最近 N 天包含今天，已提前上架的未來紙本刊期也會納入最近 N 天（沒有未來日期上限）。未指定圖書館時，以所有圖書館中最新的發刊日期篩選與排序；指定圖書館時，改用該館的發刊日期，無該館日期的結果在日期排序中排最後。</p>
-    <p>「隱藏沒有該本書的圖書館」只精簡畫面上的每本雜誌館藏列，並不更改收錄館數、搜尋結果或 CSV 的九館對照欄位。</p>
-    <p>書目由管理者在一般瀏覽器中人工取得，交由本機工具整理、驗證與增量合併，之後推送 GitHub 發布。由於網站的存取驗證限制，GitHub Actions 的每週 HyRead 擷取排程已取消；保留的 Actions 僅用於程式測試、選用的資料匯入與網站部署，不會自動擷取書目。「重新載入資料」僅重新讀取已發布的 JSON。</p>
-    <p>書目更新以本次核實的資料為準；若缺頁、核對未完成或來源無法取得，應標記部分核對／失敗並保留舊資料，不會因未查到就刪除原有書名。最新刊期與已核實的詳細書目連結會保留，異動歷史保留 180 天。</p>
-    <p>本次新增書名及刊期變動依「書名 × 圖書館」分別記錄；相同書名可能在多館各有一筆異動。頁面會列出書名、館別及刊期前後差異。個別雜誌已核實的詳細連結顯示於館別日期旁；沒有證據的 jid 不會猜測。</p>
-    <p>來源：九間公共圖書館的 HyRead 官方雜誌分類書單。最初資料核對截止日為 2026/09/20（含）。部分發刊日期可能是網站預告的未來刊期。</p>
+  <details class="panel help"><summary>資料範圍與來源</summary>
+    <p>「有收錄」指該館 HyRead 書單列出此雜誌，不代表即時可借閱；「未列出」也不代表沒有舊刊。一般版與精華版分開計算。</p>
+    <p>刊期依臺灣日期篩選，提前上架的未來紙本刊期仍納入最近 N 天。指定館別時以該館刊期排序；未指定時取九館最新日期。</p>
+    <p>由管理者在一般瀏覽器取得書目，再由本機工具驗證、合併後推送 GitHub；沒有每週自動擷取。部分核對或失敗時保留舊資料；更新歷史保存 180 天。書目詳情只在有核實連結時顯示。</p>
     <div id="source-links" class="source-links"></div>
   </details>
 </main>
