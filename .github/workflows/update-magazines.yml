@@ -36,6 +36,8 @@ jobs:
         run: node tests/test_v161_web.js
       - name: Update title change list regression
         run: node tests/test_update_ui.js
+      - name: Compact layout and library card regression
+        run: node tests/test_layout_ui.js
       - name: Explain update process
         run: |
           echo 'Tests only: no HyRead request. Catalog updates are collected and merged locally.' >> "$GITHUB_STEP_SUMMARY"
