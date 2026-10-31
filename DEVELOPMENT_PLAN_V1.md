@@ -1,5 +1,7 @@
 # HyRead 九館公開搜尋網站｜V1 開發計畫與驗收紀錄
 
+> **文件狀態（2026-10-31）**：這是 2026-10-30 的 V1.0 原始計畫，以下設計內容與驗收表保留作歷史紀錄，不代表目前排程或部署狀態。HyRead 在 GitHub runner 上回覆 HTTP 403 後，定時擷取工作流程已移除；目前使用 schema 4 輔助批次更新。現行操作見 [README](README.md) 與 [輔助更新規範](docs/ASSISTED_UPDATE.md)。
+
 **版本**：V1.0（2026-10-30）  
 **部署選擇**：Public GitHub Repository + GitHub Actions + GitHub Pages（Cloudflare Pages 亦可連接）  
 **原始九館資料截止日**：2026/09/20（含）；**初始核對日**：2026/10/30。
@@ -36,9 +38,9 @@
 | 發刊日期只增不回退 | ✅ | 測試（新刊日期保持已知最大值） |
 | 三次完整核對未列出後停用 | ✅ | 測試 |
 | 可疑縮減拒絕覆蓋 | ✅ | 測試 |
-| 九館每週自動工作流程 | ✅ 設定完成；⏳ 尚未線上執行 | YAML 已產生 |
-| GitHub Pages | ⏳ 等待新 Public repo 與啟用 Pages | 連線缺少新建 repo / Pages 管理權限 |
-| HyRead 全站即時網路實測 | ⏳ 等待 GitHub Actions 環境 | 此執行環境無法直接連至 HyRead |
+| 九館每週自動工作流程 | ⏸ 已移除 | GitHub runner 於 2026-10-30 對九館來源回覆 HTTP 403；目前沒有定時擷取 |
+| GitHub Pages | ✅ 部署 workflow 已設定 | 實際部署狀態以 repository 的 Actions 與 Pages 設定為準 |
+| HyRead runner 即時擷取 | ⏸ 不使用 | 來源拒絕 GitHub runner 存取；目前更新改用經核對的輔助批次 |
 | 手機瀏覽器端到端測試 | ⏳ | Chromium 在本環境被管理政策禁止讀取本機頁面；JS 語法及資料檢查已通過 |
 
 ## 風險與決策
@@ -47,12 +49,13 @@
 - 雜誌書名正規化 NFKC、全半形、空白、臺台差異；一般版與精華版維持不同實體。
 - 先採 GitHub Pages，避免未授權的 Cloudflare 設定；上線後可無縫切至 Cloudflare Pages。
 - 公開頁面不含任何 GitHub token，手動更新透過 GitHub Actions 原生授權執行。
-- V1 的「管理者更新」會連到 GitHub Actions 的 Run workflow 頁面，**不是匿名訪客可單擊立即觸發的 API**。若未來要從網站直接一鍵更新，V2 加 Cloudflare Worker + 身份驗證。
+- 公開頁面不提供匿名訪客直接更新資料的 API。管理者更新方式已改為依 [輔助更新規範](docs/ASSISTED_UPDATE.md) 提交經核對的批次。
 
-## 上線必要步驟
+## 原始部署計畫（歷史）
 
 1. 在 GitHub 建立空的 Public repo：`chihsun/hyread-magazine-finder`。
 2. 將本專案所有檔案上傳到預設 `main` 分支。
 3. GitHub 設定 `Settings > Pages > Source > GitHub Actions`。
 4. 手動執行 `Deploy HyRead search to GitHub Pages`，確認取得公開連結。
-5. 手動執行 `Weekly HyRead magazine update` 完整核對一次，確認 9 館狀態皆成功（或修正網站解析問題），再依排程持續更新。
+5. 原計畫中的 `Weekly HyRead magazine update` 已不再執行；目前 `update-magazines.yml` 只做驗證，不會向 HyRead 發送請求。依目前流程更新書目請看 [輔助更新規範](docs/ASSISTED_UPDATE.md)。
+

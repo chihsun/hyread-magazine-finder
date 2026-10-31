@@ -18,7 +18,7 @@
 
 程式新產生的第 1 頁 `coverage.pages[0].url`、`coverage.first_book.source_url`、每筆第 1 頁 `source_url`、`link_evidence.source_url` 都使用**不帶參數**的網址。若讀取到原有歷史資料的 `?nowpage=1`，匯入驗證僅將它與無參數第一頁視為同一來源，**不因此真的對網站發送帶參數的請求**。
 
-V1.6.2 的 `schema: 4` 及書名超連結證據、補齊／修正連結規則不變。這次**只更新程式、規則及測試**，不補登現有書目、不在背景自動抓取九館。
+V1.6.2 的 `schema: 4` 書名連結證據及補齊／修正規則仍適用。增量更新只處理本次查證的書目，不會把未出現的舊書刪除或視為下架。
 
 ---
 
@@ -40,12 +40,12 @@ V1.6.2 的 `schema: 4` 及書名超連結證據、補齊／修正連結規則不
 {
   "title": "Camera攝影誌",
   "date": "2026-11-05",
-  "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
+  "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
   "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
   "link_evidence": {
     "anchor_text": "Camera攝影誌",
     "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
-    "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1"
+    "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
   }
 }
 ```
@@ -58,9 +58,9 @@ V1.6.2 的 `schema: 4` 及書名超連結證據、補齊／修正連結規則不
 
 ---
 
-## V1.6.1：下次在 ChatGPT 直接這樣說
+## 歷史規則：V1.6.1／V1.6（schema 3）
 
-> **下次推薦指令：** 更新 HyRead 九館最近 7 天雜誌，按照 **V1.6.2**，兩館一組依最新出刊分頁查到指定起日，包含未來紙本刊期；每本雜誌若有官方書名連結，同時記錄書名、刊期、詳細頁 URL 及同頁書名錨點證據，與現有 GitHub 資料比對，補上缺少的連結或修正錯誤連結。沒有核實的連結不要猜測也不要刪除舊值；遇錯誤保留 V1.6 重試規則。僅整合本次核對資料，完成後推送 GitHub。
+以下內容保留舊 schema 3 批次與其查詢規則，供查閱和相容性參考。**新批次請依本文件前面的 V1.6.3 規則產生 schema 4。**
 
 > **V1.6.1 歷史指令：** 更新 HyRead 九館**最近 7 天**的雜誌，**每次連續處理兩館，完成該組再處理下一組**。從每館最新出刊第 1 頁開始，依序讀到指定起日即可停止；**指定日期只作為下限，11 月等未來紙本發刊日期也要收錄，不得以查詢當日為上限**。不額外回查 7 天、不重查第 1 頁。允許搜尋快取，但僅採用確實可辨識的書名與刊期；遇 HTTP 401/403 立即停止該館，暫時性錯誤或比資料庫舊的刊期隨機間隔再重試最多兩次。正常完成時保存第一本書的書名、jid（若有）、日期及連結。保留既有較新刊期及所有舊書，九館完成後將已確認資料合併 GitHub 並部署。
 
@@ -74,11 +74,11 @@ V1.6.2 的 `schema: 4` 及書名超連結證據、補齊／修正連結規則不
 6. **失敗定義：** 實際確認 HTTP 401/403 或要求登入，該館立即停止，不再重試，記錄 `ACCESS_DENIED`。超時、偶發斷線、頁面內容不完整則允許隨機等待後重試兩次。第 1 頁始終沒辦法正常取得就是 `failed`，第 1 頁有取得但後續分頁不完整就是 `partial`。
 7. **書目保存：** 原有 `magazine_url`、`source_url`、書名與各館最新刊期照舊；同一書／同一館只有新日期才能升級，舊日期不覆蓋，新取得的合法書目連結可補齊缺值。增量未查到的舊書不刪除、不增加未收錄次數。
 8. **兩館一組、逐組處理：** 預設館別順序為 **臺中＋臺北 → 臺南＋新北 → 高雄＋桃園 → 新竹縣＋新竹市 → 基隆**（最後一館單獨處理）。在 ChatGPT 對話中先完成該組兩館各自的「第 1 頁 → 必要分頁 → 筆數與較新刊期比對／失敗原因」，再開始下一組；避免同時開啟九館分頁造成混淆。此方式**不保證消除搜尋快取**。程式中的 `src.latest_pages.library_groups(config, 2)` 可生成順序分組。
-9. **操作模式：** ChatGPT 在本次對話查詢並把核實的資料包送入 `src.assisted_update` 的 schema 3，再驗證、乾跑、推送 GitHub；不要求 Windows 或本機爬蟲。不保證 ChatGPT 頁面取得工具每次都能抓完所有分頁；無法讀取必須如實記錄。
+9. **舊操作模式：** V1.6.1 批次使用 `src.assisted_update` schema 3。此格式仍可匯入舊資料；新批次須使用 schema 4，並為每個實際取得的書目詳細連結提供 `link_evidence`。
 
 **首頁網址原樣保留：** 第 1 頁可能使用不帶 `?nowpage=1` 的 `/magazine_view_more.jsp` 原始網址；匯入時接受其作為有效第 1 頁證據。由於帶與不帶參數可能讀到不同快取，請保留真正取得的來源網址，不要為了統一格式而改寫。
 
-### schema 3（V1.6.1，兼容 V1.6）資料格式
+### schema 3（舊格式；V1.6.1）資料格式
 
 沿用目前批次欄位 `source`、`batch_id`、`window_start`、`window_end`、`libraries`；維持 `schema` 為 **3**。其中 `window_start` 是可納入書目的**最早紙本刊期**，`window_end` 是**查詢基準日**，不是發刊日期的上限。各館使用 `coverage.method: latest_pages`。每個可確認頁面在 `coverage.pages` 記錄 `page`、`url`、`status`、`source_type`（`direct`／`search_index`）、`observed_at`、`newest_date`、`oldest_date`。第一頁成功時必須有：
 
@@ -139,48 +139,68 @@ ChatGPT 必須在**當次對話中**完成檢索、比對與推送；不是一�
 - 搜尋結果可用但不保證當次完整：網站顯示「範圍完成／部分核對／失敗／未核對」及每館實際查得筆數。
 - 寫入 `data/state.json`、`data/history.json`、`docs/data/catalog.json`、`docs/data/update-report.json`、`docs/data/status.json`，網站仍由 GitHub Pages 推送後自動部署。
 - 變動紀錄（增書名、新刊期等）保留最近 180 天；本次報表可展開具體書名及日期。
-- `coverage.method` 記錄 `latest_pages`（主要方式）、`categories`（備援）、`search_index`（只取得索引）。`coverage.pages` 記錄已查／失敗頁碼、來源 URL、查詢時間與日期界線。完整核對必須通過 `src/coverage.py` 的直接來源及分頁完整性驗證。
+- 新批次 `schema: 3`／`schema: 4` 使用 `coverage.method: latest_pages`；各頁的 `source_type` 記錄 `direct` 或 `search_index`。`src/coverage.py` 檢查頁碼連續、日期排序和下限是否到達。完整且可辨識的連續搜尋索引頁可完成日期範圍核對，但這代表核對了索引內容，不代表即時直接讀取 HyRead。舊 schema 1／2 保留分類頁等歷史匯入模式。
 - `batch_id` 為唯一批次識別碼；相同批次不重複匯入；更新前一律跑測試與乾跑比較。
 
-## 可供 ChatGPT／開發者匯入的 JSON 格式
+## schema 4 批次範例
 
-先準備 `assisted-batch.json`（以下資料 **僅為格式示意，不是實際書目**）：
+以下是可供 `src.assisted_update` 驗證的**部分核對格式示意**，不是實際書目。沒有收到可信 HTTP 狀態時使用 `TOOL_UNAVAILABLE`，省略 `http_status`；明確觀察到 HTTP 403 時才填 `http_status: 403` 並使用 `ACCESS_DENIED`。
 
 ```json
 {
-  "schema": 1,
+  "schema": 4,
   "source": "chatgpt_assisted",
   "batch_id": "manual-20261106-001",
-  "window_start": "2026-10-23",
+  "window_start": "2026-10-31",
   "window_end": "2026-11-06",
   "libraries": [
     {
-      "id": "tpml", "status": "partial", "attempts": 3,
-      "retry_wait_seconds": [3.1, 7.5],
-      "notes": "只核對到第一頁，其餘分頁未核實，不宣稱日期界線完整。",
+      "id": "tpml",
+      "status": "partial",
+      "attempts": 1,
+      "retry_wait_seconds": [],
+      "notes": "第 1 頁內容可辨識；第 2 頁網頁工具無法讀取，日期界線尚未確認。",
+      "error": "第 2 頁未取得可用頁面內容。",
+      "error_code": "TOOL_UNAVAILABLE",
       "coverage": {
         "method": "latest_pages", "pagination_contiguous": false,
         "date_boundary_reached": false,
-        "pages": [{"page": 1, "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1", "status": "ok", "source_type": "search_index", "observed_at": "2026-11-06T08:50:00+08:00", "newest_date": "2026-11-06", "oldest_date": "2026-11-04"}]
+        "pages": [
+          {
+            "page": 1,
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+            "status": "ok", "source_type": "search_index",
+            "observed_at": "2026-11-06T08:50:00+08:00",
+            "newest_date": "2026-11-06", "oldest_date": "2026-11-04"
+          },
+          {
+            "page": 2,
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "status": "failed", "source_type": "direct",
+            "observed_at": "2026-11-06T08:51:00+08:00",
+            "error_code": "TOOL_UNAVAILABLE",
+            "error": "URL is not accessible via this tool"
+          }
+        ],
+        "first_book": {
+          "title": "示範雜誌名稱", "date": "2026-11-06",
+          "jid": null, "magazine_url": null,
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+        }
       },
       "records": [
         {
           "title": "示範雜誌名稱", "date": "2026-11-06",
-          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=1",
-          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846"
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "magazine_url": null
         }
       ]
-    },
-    {
-      "id": "tnml", "status": "failed", "attempts": 1,
-      "retry_wait_seconds": [],
-      "error": "HTTP 403：來源拒絕存取，無再次嘗試。", "records": []
     }
   ]
 }
 ```
 
-成功完整核對指定範圍時，使用 `"status": "complete"` 並在 `notes` 寫明實際核對的分類／頁面和時間範圍。**不可僅憑搜尋結果未出現，即宣稱完整核對。**
+成功完整核對指定範圍時，使用 `"status": "complete"`，並在 `notes` 說明實際核對頁面與日期範圍。`coverage.first_book` 必須記錄第 1 頁首筆書目；凡 `magazine_url` 有值，每筆 `records` 及 `first_book` 都須附上與該書名相符的 `link_evidence`。**不可僅憑搜尋結果未出現，即宣稱完整核對。**
 
 ```bash
 python -m unittest discover -s tests -v
@@ -188,8 +208,15 @@ python -m src.assisted_update assisted-batch.json --dry-run
 python -m src.assisted_update assisted-batch.json --apply
 ```
 
-上方示意批次不要直接套用至正式資料。推送前應查看報表的每館狀態與異動清單，僅提交已驗證內容。完成推送後，確認 GitHub Pages 重新部署成功。
+先執行 `--dry-run` 檢查驗證結果與異動摘要；核對後才執行 `--apply` 寫入本機資料。推送 `data/assisted-batches/<批次>.json` 前，確認每館狀態、來源證據與異動清單。
 
 ## GitHub Actions 分工
 
-`.github/workflows/update-magazines.yml` 目前改為**手動執行單元測試／驗證**，不會自行抓取 HyRead 或更新書單。每週爬取排程已移除；網站的「重新載入資料」只是下載 GitHub Pages 上最新的 JSON。若未來找到獲許可的官方資料源，再另行評估排程。
+GitHub Actions 有三個分工：
+
+- `.github/workflows/update-magazines.yml` 在手動觸發或程式／測試變更時執行測試與語法檢查；不向 HyRead 發送請求。
+- `.github/workflows/import-assisted-magazines.yml` 在**非 `main` 分支**新增批次 JSON 時執行。每次推送必須新增且只新增一個批次；workflow 會跑測試、乾跑與正式套用，再把產生的資料檔 commit 回同一分支。直接推送到 `main` 時會略過這個 workflow。
+- `.github/workflows/deploy-pages.yml` 在 `main` 的 `docs/**` 或部署 workflow 變更時發布 GitHub Pages，也可手動執行。
+
+目前沒有定時擷取排程。網站的「重新載入資料」只會讀取已部署的 JSON；如需採用分支自動匯入流程，請待批次 workflow 完成後再把該分支合併到 `main`。
+

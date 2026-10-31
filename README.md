@@ -1,85 +1,74 @@
-# HyRead 九館電子雜誌搜尋 v1
+# HyRead 九館電子雜誌搜尋
 
-搜尋九間臺灣公共圖書館 HyRead 電子雜誌的**最新發刊日期**，比較哪幾館列出特定雜誌。這是公開書目索引，不提供電子書內容下載，也不顯示即時借閱狀態。
+搜尋臺灣九間公共圖書館 HyRead 電子雜誌的最新發刊日期，並比較哪些館列出指定雜誌。網站是公開書目索引，不提供雜誌全文、借閱狀態或使用者資料。
 
-## 主要功能
+## 功能
 
-- **九館**：臺中、臺北、臺南、新北、高雄、桃園、新竹縣、新竹市、基隆。
-- **搜尋**：書名搜尋、指定圖書館、該館有／未列出、最新發刊時間（30／90／180 天）。
-- **收錄館數可複選**：9／8／7／6／5／4／3／2／1 館；可自由組合。
-- **資料分離**：前端 `docs/` 靜態網站，資料 `docs/data/catalog.json`；不須資料庫服務。
-- **輔助增量更新**：目前暫停 GitHub Runner 的 HyRead 抓取排程（九館皆遭 HTTP 403）；改由 ChatGPT 檢索後提交經驗證的增量批次。操作見 [`docs/ASSISTED_UPDATE.md`](docs/ASSISTED_UPDATE.md)。
-- **限制重試**：輔助查詢遇暫時性錯誤時每館最多額外重試 **2 次**，並在 2–5／6–12 秒範圍隨機等待；403、401 等存取拒絕立即停止。舊版程式自動擷取已停用排程。分類頁正常請求間隨機等待 1.5～3.5 秒；暫時錯誤依序隨機退避 2～5、5～10、10～20 秒；遇到 HTTP 429 遵守 `Retry-After`（若要求等待超過 60 秒則停止該館本次掃描），遇到 HTTP 401／403 立即停止、不再重試。這是降低伺服器負擔的禮貌節流，不能繞過存取限制。
-- **失敗保護**：12 分類需全部驗證成功、異常大幅減少不覆蓋；若失敗保留該館上次成功資料、顯示過期警示。
-- **保留策略**：不同圖書館、不同版別分開；只顯示每個書名每館最新一期；書目（包含最後已知發刊日）長期保存，最近 180 天變動歷史儲存在 `data/history.json`；連續三次完整核對仍不存在才標記不再列出。
-- **CSV**：匯出當前篩選結果。
-- **V1.6.3 最新出刊網頁讀取**：每館第 1 頁使用不帶 `?nowpage=1` 的 `magazine_view_more.jsp`；第 2 頁起先嘗試實際分頁連結、必要時直接讀取對應頁碼或使用可辨識的搜尋索引完整頁面。工具無法存取不等於 HyRead 回 HTTP 403；失敗如實記錄，保留既有資料。沿用 V1.6.2 詳細連結比對與 V1.6.1 兩館一組／未來刊期規則。
-- **V1.6.2 書目連結核對**：下一次由 ChatGPT 擷取「最新出刊」時，同時記錄每本書名與直接對應的 `magazine_more.jsp?jid=...` 連結，以及該書名錨點的對應證據（schema 4）。未確認的連結留空且不覆蓋舊值；取得新且已核對的連結，才補齊或修正同館同書名的既有 URL，連結變更留存舊／新網址。**不批次回填或修改本次未查詢的書目。**
-- **V1.6.1 分頁與刊期規則**：按館別順序每次處理兩館，完成兩館後才讀下一組；最近 N 天只決定翻頁與收錄的**最早紙本刊期**，沒有最晚刊期限制。電子版提前上架（例如 10/30 已列出 11/05 的期刊）照常納入。網站最近 30／90／180 天篩選也顯示這些未來刊期。沿用 schema 3 與原本安全合併保護；詳見 `docs/ASSISTED_UPDATE.md`。
-- **V1.6 歷史簡化更新**：ChatGPT 手動查詢每館「最新出刊」第 1 頁起，按指令最近 N 天的確切日期界線翻頁，**不加 7 天、不重查第 1 頁**。快取分頁也能列入，但若同書刊期比資料庫舊須按規定重試兩次並提醒。每館正常完成後儲存第 1 頁首本書的書名／jid／日期／網址作為下次接續參考。未查到舊書不刪除；保留原詳細連結。ChatGPT schema 3 說明見 `docs/ASSISTED_UPDATE.md`。
-- **歷史模式保留**：V1.4／V1.5 的嚴格批次格式相容，僅供舊資料與測試使用。
-- **V1.5 ChatGPT 分頁證據與診斷**：依然由 ChatGPT 查詢九館並合併 GitHub；新增 schema 2 同批次 `scan_id`、每頁 SHA-256 書目摘要、第 1 頁重查、快取建立時間（若可得）、缺頁與錯誤碼診斷。非直接來源或跨時快取只能部分核對，保留舊資料。詳見 `docs/ASSISTED_UPDATE.md`。
-- **V1.4 最新出刊優先**：每館先查 `magazine_view_more.jsp`，連續分頁查到日期界線；搜索引擎舊索引不作完整核對證據。只在無法連續讀取時補查分類頁。
-- **雜誌詳細頁**：逐本逐館保留官方 `magazine_more.jsp?jid=...` 於 `magazine_url`，原資料缺乏 `jid` 則保留空值，不推測或捏造。
-- **更新紀錄**：網站顯示最近一次各館成功/失敗、當次核對筆數、新增書名與最新刊期變化（逐筆可展開），附 180 天簡要執行歷史及 GitHub Actions 連結。初始資料不會冒充排程抓取成功。
+- 搜尋雜誌名稱，篩選指定圖書館、該館有／未列出，以及最近 30／90／180 天的最新發刊日期。
+- 任意選擇 1～9 間圖書館；目前包括臺中、臺北、臺南、新北、高雄、桃園、新竹縣、新竹市與基隆。
+- 將目前篩選結果匯出為 CSV。
+- 使用靜態網站與 JSON 資料：`docs/` 是網站內容，`docs/data/catalog.json` 是書目索引，無須資料庫服務。
+- 顯示各館最近核對狀態、查得筆數、資料異動與更新歷史。增量更新未找到的舊書仍保留，不會據此判定下架。
 
-## 資料定義
+## 目前的書目更新方式
 
-`data/initial-snapshot.json` 是 2026-10-30 手工核對的九館起始清單，共 129 種不重複雜誌；資料完整性及後續日期變化需要透過**實際排程執行**驗證。原始資料保留供稽核，不代表目前可借閱。輔助更新優先從官方「最新出刊」書櫃依序核對頁面與日期界線，缺漏時才利用 12 類分類頁補查。只有最新發刊日 >= `2026-09-20` 的新書目會加入可搜尋資料；已加入的書目即使超過 180 天，也不會因清理歷史而刪除。
+GitHub Actions 不會定時抓取 HyRead。GitHub runner 曾遭 HyRead 拒絕存取，因此每週抓取排程已移除；目前以使用者核對來源後提供的 **schema 4** 增量批次更新資料。詳細欄位及步驟見 [`docs/ASSISTED_UPDATE.md`](docs/ASSISTED_UPDATE.md)。
 
-某館本次成功完整抓取但未發現已知書目時，先累積「未列出」次數，連續三次才將其改成不再列出；保留原記錄而不是刪掉。某館抓取失敗時絕不增加未列出次數。網站中的「未列出」是索引意義，不表示沒有舊刊。
+目前流程從每館不帶 `?nowpage=1` 的最新出刊第 1 頁開始，再按順序檢查必要分頁。若網頁工具無法讀取，可使用內容、館別與頁碼都能辨認的搜尋索引頁面；連續頁面涵蓋日期下限時可以完成日期範圍核對，但必須把來源記為 `search_index`，不可說成即時 HTTP 回應。沒有實際收到 HTTP 狀態碼時，不要把工具錯誤寫成 HTTP 403。
 
-## 首次部署（只需要一次）
+只合併本次有來源證據的書目。較舊刊期不會覆蓋已知新刊期；未核實的書目連結不會猜測或覆蓋舊值。schema 4 的新連結須有同頁書名錨點證據。最近 N 天以臺灣日期計算為最早紙本刊期下限，提前上架的未來刊期也會納入。
 
-1. 在 GitHub 建立空白 **Public** repository，名稱建議 **`hyread-magazine-finder`**，預設分支 `main`。
-2. 將此 ZIP 解壓後的**所有檔案（包括 `.github/` 及 `docs/`）**推送至 `main`。
-3. 到 **Settings → Pages → Build and deployment → Source** 選 **GitHub Actions**。
-4. 此時 `.github/workflows/deploy-pages.yml` 可在 `main` 推送時自動發布；也可在 Actions 手動執行 **Deploy HyRead search to GitHub Pages**。網站網址預計為 `https://<你的帳號>.github.io/hyread-magazine-finder/`，以 Pages 顯示的實際連結為準。
-5. 目前請在 ChatGPT 對話中要求核對／合併九館書目；GitHub Actions 的 `Validate HyRead assisted updates` 只執行單元測試，**不會重新抓取 HyRead**。
+程式仍保留 `python -m src.update --once` 的直接擷取入口，但目前沒有 GitHub Actions 排程呼叫它。這個入口使用 12 類分類頁；GitHub Actions 不會因此自動抓取 HyRead。
 
-備註：若 repo 不是 `chihsun/hyread-magazine-finder`，請同步修改 `docs/index.html` 的管理者更新網址。
+## GitHub Actions
 
-**Cloudflare Pages 選項**：可以將此 repo 連接 Cloudflare Pages，Framework preset 選 `None`，Build command 留空，Build output directory 設 `docs`。不需要同時使用兩種網站部署，選擇一個即可。
+| Workflow | 觸發方式與工作 |
+|---|---|
+| `Validate HyRead assisted updates` | 手動執行，或在程式／測試／前端程式變更時執行測試與語法檢查；不連線 HyRead。 |
+| `Import verified ChatGPT HyRead batch` | 非 `main` 分支新增輔助批次 JSON 時執行；每次推送必須剛好新增一個批次。通過測試與乾跑後套用批次，並將產生的資料檔 commit 回同一分支。`main` 分支不執行此匯入 workflow。 |
+| `Deploy HyRead search to GitHub Pages` | `main` 分支的 `docs/**` 或部署 workflow 變更時部署；也可手動執行。輸出目錄是 `docs/`。 |
+
+直接把人工驗證後的資料與網站 JSON 更新推送到 `main` 時，匯入 workflow 會略過該次推送；若要使用分支上的自動匯入，新增批次後等待 workflow 在該分支產生資料更新，再將分支合併到 `main`。包含 `docs/` 變更的 `main` 更新會觸發 Pages 部署。
+
+## 部署
+
+在 repository 設定 **Settings → Pages → Build and deployment → Source → GitHub Actions**。`main` 上 `docs/` 內容更新後，部署 workflow 會發布該目錄；網站 URL 以 Pages 設定頁顯示的網址為準。也可改用 Cloudflare Pages，Framework preset 選 `None`、Build command 留空、Build output directory 設為 `docs`。
 
 ## 本機開發與驗證
 
 ```bash
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
-python -m src.update --seed-only   # 僅把起始資料轉成網站 JSON，不對外連線
-python -m src.assisted_update assisted-batch.json --dry-run  # 檢查增量批次
-python -m src.assisted_update assisted-batch.json --apply    # 驗證後套用
+python -m src.update --seed-only
+python -m src.assisted_update assisted-batch.json --dry-run
+python -m src.assisted_update assisted-batch.json --apply
 python -m http.server 8000 -d docs
 ```
 
-在瀏覽器開啟 `http://localhost:8000`。
+`--dry-run` 驗證批次並預覽異動，不寫入資料；檢查結果後才使用 `--apply`。本機開啟 `http://localhost:8000` 可預覽網站。手動批次的來源檔案位於 `data/assisted-batches/`。
 
-## 目錄
+## 主要檔案
 
+```text
+config/libraries.json         九館設定
+data/state.json               長期保存的各館書目狀態
+data/history.json             最近 180 天書目異動
+src/assisted_update.py        輔助批次驗證、增量合併與報表
+src/coverage.py               日期界線、分頁與來源證據驗證
+src/latest_pages.py           最新出刊頁面的網址與 HTML 證據解析
+src/hyread.py                 網頁解析及舊版分類擷取邏輯
+src/update.py                 直接擷取與網站 JSON 產生入口
+docs/                         靜態網站與公開 JSON 資料
+tests/                        Python 與前端回歸測試
+.github/workflows/            測試、輔助批次匯入與 Pages 部署
 ```
-.github/workflows/      定時更新與 Pages 部署
-config/libraries.json   九館來源設定
-data/state.json         永久累積的各館最新書目；失敗不覆蓋
-data/history.json       180 天變動歷史
-src/hyread.py           最新出刊及分類書單解析、共享重試額度
-src/coverage.py         分頁完整性、日期界線及詳細頁網址檢查
-src/update.py           核對、合併、完整性保護、發布
-scripts/                （尚無額外指令）
-docs/                   靜態網頁、資料 JSON（含 update-report.json；可直接部署）
-tests/                  資料與爬蟲邏輯測試
-```
 
-## 使用量與安全
+`data/initial-snapshot.json` 是 2026-10-30 核對的初始資料快照，不代表即時館藏或目前借閱狀況。完整核對、部分核對與失敗狀態請以網站資料中的最近更新紀錄為準。
 
-公開儲存庫搭配標準 GitHub Actions runner、每週 9 館 × 12 類（約 108 個網站請求＋少量失敗重試）。有 20 分鐘執行上限、`concurrency` 防重疊。請遵守 HyRead 使用規範並避免頻繁手動刷新。GitHub Actions scheduler 可能延遲，或因 GitHub inactivity policy 而停用；建議偶爾確認 Actions 紀錄。
+## 使用範圍與限制
 
-## 限制
+- 僅索引公開書目 metadata；不登入、不下載雜誌內容或封面，也不嘗試繞過存取限制。
+- HyRead 頁面結構可能變動；讀取不完整時保留舊資料並如實標示狀態。
+- 最近發刊日期不是即時借閱狀態，也不代表尚未列出的館藏不存在。
+- GitHub Pages 須先啟用，並等待對應部署 workflow 成功，網站資料才會更新。
 
-- HyRead 隨時可能改版，分類頁的解析規則需跟著修改；**首次排程必須實際執行以驗證抓取是否成功**。
-- 這個 repo 僅索引公開 metadata，不登入、不繞過封鎖、不抓取雜誌正文或封面。
-- 若 GitHub Pages 尚未啟用，網站不會自動取得公開網址。
-- Github Actions 的成功與否以 workflow 執行結果為準，網站發布 JSON 會標示過期的館別。
-
-## 2026-10-30：輔助更新模式（重要）
-
-首次 GitHub 雲端執行九館皆回覆 HTTP 403，因此暫停原本的週更爬蟲排程；用 ChatGPT 助理每次取得來源明確的部分資料、確認後合併，並由 GitHub Pages 發布。**增量核對不等於完整掃描**；既有雜誌未查到仍保留。每館暫時性失敗最多再試 2 次（共 3 次），使用隨機間隔；拒絕存取的 401／403 立即停止。詳見 [`輔助更新操作規範`](docs/ASSISTED_UPDATE.md)。
