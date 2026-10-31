@@ -38,7 +38,7 @@ const item = {title:'書名 <特殊>', count:2, by:{
   tnml: {date:'2026-11-02',source_url:'https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp'}
 }};
 const safe = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const ctx=vm.createContext({$,safe,state:{payload,records:[item],limit:30}});
+const ctx=vm.createContext({$,safe,URL,state:{payload,records:[item],limit:30}});
 function $(id){return elements[id];}
 vm.runInContext([pick('officialLink'),pick('drawRecords')].join('\n'),ctx);
 ctx.drawRecords();
