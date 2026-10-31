@@ -174,3 +174,18 @@ footer { text-align:center;padding:26px 16px 32px;color:var(--muted);font-size:1
 .lib-links { display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:8px; text-align:right; }
 .lib-row .lib-links { color:var(--ink); }
 .lib-row a.detail-link { font-size:11px; border:1px solid var(--accent-line); padding:2px 7px; border-radius:7px; white-space:nowrap; }
+
+/* Local-import update highlights and expandable per-run title history. */
+.update-changes { margin:10px 0 18px;padding:13px 15px;border:1px solid var(--line);background:var(--surface-2);border-radius:12px; }
+.update-changes h3 { font-size:15px;margin:0 0 10px;color:var(--ink); }
+.title-change-group { border-top:1px solid var(--line);padding:9px 0; }
+.title-change-group>summary { cursor:pointer;color:var(--link);font-size:13px;font-weight:750; }
+.title-change-group ol { margin:9px 0 2px;padding-left:27px;max-height:310px;overflow-y:auto; }
+.title-change-group li { padding:5px 0;font-size:13px;line-height:1.6;overflow-wrap:anywhere; }
+.title-change-meta { display:block;color:var(--muted);font-size:12px; }
+.history-entry { border-top:1px solid var(--line);padding:10px 0; }
+.history-entry>summary { cursor:pointer;display:flex;gap:7px 14px;flex-wrap:wrap;align-items:baseline;font-size:12px;color:var(--muted); }
+.history-entry>summary strong { color:var(--ink); }
+.history-entry-body { padding:8px 10px 4px 18px; }
+.history-entry .title-change-group ol { max-height:270px; }
+@media(max-width:560px) { .history-entry>summary { display:block;line-height:1.8; }.history-entry>summary span { display:block;margin-left:16px; }.history-entry-body { padding-left:7px; } }
