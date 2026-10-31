@@ -273,7 +273,14 @@ def merge_incremental(state: dict, library: dict, observations: dict, stamp: str
     return events
 
 
-def build_assisted_report(conf, state, stamp, batch, results, previous):
+def title_history_changes(events, stamp):
+    """Preserve book/issue names for each update, without duplicating link-only changes."""
+    return [{k:event[k] for k in ('type', 'library', 'title', 'from', 'to') if k in event}
+            for event in events
+            if event.get('at') == stamp and event.get('type') in ('new', 'new_issue')]
+
+
+def build_assisted_report(conf, state, stamp, batch, results, previous, historical_events=None):
     details=[]
     for lib in conf:
         host=lib['id']; info=results.get(host)
@@ -322,11 +329,20 @@ def build_assisted_report(conf, state, stamp, batch, results, previous):
         'changes_total':sum(totals.values()),
     }
     complete_run=complete==len(details)
+    all_events=historical_events if historical_events is not None else [
+        event for info in results.values() for event in info.get('events', [])]
     line={'at':stamp,'batch_id':batch['batch_id'],'source':'chatgpt_assisted',
-          'summary':summary,'complete':complete_run}
+          'summary':summary,'complete':complete_run,
+          'title_changes':title_history_changes(all_events, stamp)}
     threshold=(datetime.fromisoformat(stamp).date()-timedelta(days=180)).isoformat()
-    past=[x for x in (previous or {}).get('history', [])
-          if isinstance(x,dict) and x.get('at','')[:10]>=threshold and x.get('batch_id')!=batch['batch_id']]
+    past=[]
+    for original in (previous or {}).get('history', []):
+        if not isinstance(original,dict) or original.get('at','')[:10]<threshold or original.get('batch_id')==batch['batch_id']:
+            continue
+        item=copy.deepcopy(original)
+        if 'title_changes' not in item:
+            item['title_changes']=title_history_changes(all_events, item.get('at'))
+        past.append(item)
     return {'schema':1,'batch_schema':batch.get('schema',1),
             'type':'chatgpt_assisted','batch_id':batch['batch_id'],
             'generated_at':stamp,'window_start':batch['window_start'],'window_end':batch['window_end'],
@@ -386,7 +402,7 @@ def apply_batch(batch: dict, *, persist: bool=False, stamp: str|None=None) -> di
     threshold=(datetime.fromisoformat(stamp).date()-timedelta(days=180)).isoformat()
     history['events']=[x for x in history['events'] if x.get('at','')[:10]>=threshold]
     catalog=published(state,conf,stamp)
-    report=build_assisted_report(conf,state,stamp,validated,results,previous)
+    report=build_assisted_report(conf,state,stamp,validated,results,previous,history['events'])
     status={
         'generated_at':stamp,'source':'chatgpt_assisted','results':catalog['libraries'],
         'complete':report['complete'],'successful':report['summary']['successful'],
