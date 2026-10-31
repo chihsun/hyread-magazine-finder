@@ -120,6 +120,15 @@ def validate_coverage(payload: dict | None, library_id: str, window_start: str,
         record={'page':page,'url':p['url'],'status':status,'source_type':source_type,
                 'observed_at':observed_at,'oldest_date':oldest,'newest_date':newest}
         if category: record['category']=category
+        if p.get('navigation_next_url'):
+            # Navigation provenance is optional: JavaScript-only paginators
+            # and search-index captures might expose no usable next-page href.
+            link=official_url(p['navigation_next_url'],library_id)
+            expected=(f'https://{library_id}.ebook.hyread.com.tw/Template/RWD3.0/'
+                      f'magazine_view_more.jsp?nowpage={page+1}')
+            if method!='latest_pages' or page>=200 or link!=expected:
+                raise ValueError(f'{library_id}: navigation_next_url 與實際下一頁不符')
+            record['navigation_next_url']=link
         if p.get('error'): record['error']=str(p['error'])[:300]
         if 'scan_id' in p:
             record['scan_id']=check_scan_id(p['scan_id'])
