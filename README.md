@@ -12,23 +12,23 @@
 
 ## 目前的書目更新方式
 
-GitHub Actions 不會定時抓取 HyRead。GitHub runner 曾遭 HyRead 拒絕存取，因此每週抓取排程已移除；目前以使用者核對來源後提供的 **schema 4** 增量批次更新資料。詳細欄位及步驟見 [`docs/ASSISTED_UPDATE.md`](docs/ASSISTED_UPDATE.md)。
+由於 HyRead 針對自動化連線有驗證保護，**不使用 GitHub Runner 每週抓取書目**。目前由使用者在正常 Chrome／Edge 瀏覽器人工取得最新書單，透過 Windows 本機工具離線整理、驗證及增量合併後，將 `data/`、`docs/data/` 等更新結果推送至 GitHub。GitHub Actions 仍可做程式測試與網站部署，但不會自行連線取得 HyRead 書目。schema 4 欄位與歷史核對規則保存在 [`docs/ASSISTED_UPDATE.md`](docs/ASSISTED_UPDATE.md)。
 
-目前流程從每館不帶 `?nowpage=1` 的最新出刊第 1 頁開始，再按順序檢查必要分頁。若網頁工具無法讀取，可使用內容、館別與頁碼都能辨認的搜尋索引頁面；連續頁面涵蓋日期下限時可以完成日期範圍核對，但必須把來源記為 `search_index`，不可說成即時 HTTP 回應。沒有實際收到 HTTP 狀態碼時，不要把工具錯誤寫成 HTTP 403。
+本機採集器應記錄每館官方最新出刊清單的頁碼、書名、刊期與同館詳細連結；第 1 頁網址不帶 `?nowpage=1`。依查詢起日確認連續分頁與日期界線。所有書目與錯誤狀態須有來源證據；頁面缺漏時只能標記部分核對，不能宣稱已完整更新。
 
 只合併本次有來源證據的書目。較舊刊期不會覆蓋已知新刊期；未核實的書目連結不會猜測或覆蓋舊值。schema 4 的新連結須有同頁書名錨點證據。最近 N 天以臺灣日期計算為最早紙本刊期下限，提前上架的未來刊期也會納入。
 
-程式仍保留 `python -m src.update --once` 的直接擷取入口，但目前沒有 GitHub Actions 排程呼叫它。這個入口使用 12 類分類頁；GitHub Actions 不會因此自動抓取 HyRead。
+舊版 `python -m src.update --once` 入口僅供歷史相容／開發測試，不是正式更新方式，也沒有任何 Actions 排程呼叫它。每次 `docs/data/update-report.json` 會顯示新增書名、刊期更新與各館異動，歷史批次也能展開查看曾記錄的書名。
 
 ## GitHub Actions
 
 | Workflow | 觸發方式與工作 |
 |---|---|
-| `Validate HyRead assisted updates` | 手動執行，或在程式／測試／前端程式變更時執行測試與語法檢查；不連線 HyRead。 |
-| `Import verified ChatGPT HyRead batch` | 非 `main` 分支新增輔助批次 JSON 時執行；每次推送必須剛好新增一個批次。通過測試與乾跑後套用批次，並將產生的資料檔 commit 回同一分支。`main` 分支不執行此匯入 workflow。 |
+| `Validate HyRead catalog data` | 手動執行，或程式／測試／前端變更時進行回歸測試；不連線 HyRead。 |
+| `Import verified local HyRead batch (optional)` | **舊版相容、選用**：非 `main` 分支新增 `data/assisted-batches/*.json` 時驗證並合併該批次，將結果 commit 回同一分支；不抓取 HyRead，`main` 分支不執行。一般本機合併後直接推送 `main` 不需使用此 workflow。 |
 | `Deploy HyRead search to GitHub Pages` | `main` 分支的 `docs/**` 或部署 workflow 變更時部署；也可手動執行。輸出目錄是 `docs/`。 |
 
-直接把人工驗證後的資料與網站 JSON 更新推送到 `main` 時，匯入 workflow 會略過該次推送；若要使用分支上的自動匯入，新增批次後等待 workflow 在該分支產生資料更新，再將分支合併到 `main`。包含 `docs/` 變更的 `main` 更新會觸發 Pages 部署。
+本機完成合併、驗證並直接推送 `main` 後，若變更包含 `docs/`，Pages 部署 workflow 會觸發。**這是網站發布，不是自動抓取書目。** 只有特別使用非 `main` 分支批次匯入流程，才會觸發上述選用的資料匯入 workflow。
 
 ## 部署
 
