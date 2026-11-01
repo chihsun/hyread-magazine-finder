@@ -1,9 +1,36 @@
 {
-  "batch_id": "catalog-20261101-003149-51dea4",
+  "batch_id": "catalog-20261101-175228-21cd74",
   "batch_schema": 4,
   "complete": true,
-  "generated_at": "2026-11-01T00:36:13+08:00",
+  "generated_at": "2026-11-01T17:57:03+08:00",
   "history": [
+    {
+      "at": "2026-11-01T17:57:03+08:00",
+      "batch_id": "catalog-20261101-175228-21cd74",
+      "complete": true,
+      "source": "chatgpt_assisted",
+      "summary": {
+        "active_records": 1084,
+        "cached_pages": 0,
+        "changes_total": 0,
+        "error_code_counts": {},
+        "failed": 0,
+        "links_added": 0,
+        "links_changed": 0,
+        "new_issues": 0,
+        "new_titles": 0,
+        "not_checked": 0,
+        "not_listed": 0,
+        "pages_checked": 23,
+        "pages_failed": 0,
+        "partial": 0,
+        "returned": 0,
+        "successful": 9,
+        "total": 9,
+        "verified_records": 361
+      },
+      "title_changes": []
+    },
     {
       "at": "2026-11-01T00:36:13+08:00",
       "batch_id": "catalog-20261101-003149-51dea4",
@@ -1221,66 +1248,14 @@
   "libraries": [
     {
       "active_count": 116,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -1292,8 +1267,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 9,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 8,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 2,
             "search_index": 0
@@ -1322,11 +1297,11 @@
             "http_status": 200,
             "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:31:53.049Z",
+            "observed_at": "2026-11-01T09:52:33.359Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -1336,18 +1311,18 @@
             "http_status": 200,
             "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:32:02.077Z",
+            "observed_at": "2026-11-01T09:52:41.726Z",
             "oldest_date": "2026-10-25",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -1359,8 +1334,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "taichunggov",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "臺中市立圖書館",
@@ -1368,7 +1343,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -1381,66 +1356,14 @@
     },
     {
       "active_count": 130,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -1452,8 +1375,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 14,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 16,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -1482,11 +1405,11 @@
             "http_status": 200,
             "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:32:22.200Z",
+            "observed_at": "2026-11-01T09:53:01.364Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -1496,11 +1419,11 @@
             "http_status": 200,
             "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:32:27.760Z",
+            "observed_at": "2026-11-01T09:53:09.481Z",
             "oldest_date": "2026-10-28",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
@@ -1510,18 +1433,18 @@
             "http_status": 200,
             "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-10-28",
-            "observed_at": "2026-10-31T16:32:36.947Z",
+            "observed_at": "2026-11-01T09:53:18.358Z",
             "oldest_date": "2026-10-14",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -1533,8 +1456,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "tpml",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "臺北市立圖書館",
@@ -1542,7 +1465,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -1555,66 +1478,14 @@
     },
     {
       "active_count": 126,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -1626,8 +1497,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 15,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 14,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -1656,11 +1527,11 @@
             "http_status": 200,
             "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:32:52.602Z",
+            "observed_at": "2026-11-01T09:53:35.484Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -1670,11 +1541,11 @@
             "http_status": 200,
             "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:33:01.576Z",
+            "observed_at": "2026-11-01T09:53:41.475Z",
             "oldest_date": "2026-10-28",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
@@ -1684,18 +1555,18 @@
             "http_status": 200,
             "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-10-28",
-            "observed_at": "2026-10-31T16:33:08.156Z",
+            "observed_at": "2026-11-01T09:53:50.055Z",
             "oldest_date": "2026-10-07",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -1707,8 +1578,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "tnml",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "臺南市立圖書館",
@@ -1716,7 +1587,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -1729,66 +1600,14 @@
     },
     {
       "active_count": 127,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -1800,8 +1619,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 16,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 15,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -1830,11 +1649,11 @@
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:33:24.634Z",
+            "observed_at": "2026-11-01T09:54:07.710Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -1844,11 +1663,11 @@
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:33:33.705Z",
+            "observed_at": "2026-11-01T09:54:16.742Z",
             "oldest_date": "2026-10-28",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
@@ -1858,18 +1677,18 @@
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-10-28",
-            "observed_at": "2026-10-31T16:33:41.630Z",
+            "observed_at": "2026-11-01T09:54:22.995Z",
             "oldest_date": "2026-10-07",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -1881,8 +1700,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "tphcc",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新北市立圖書館",
@@ -1890,7 +1709,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -1903,66 +1722,14 @@
     },
     {
       "active_count": 114,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -1974,8 +1741,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 16,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 15,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -2004,11 +1771,11 @@
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:34:00.283Z",
+            "observed_at": "2026-11-01T09:54:44.406Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -2018,11 +1785,11 @@
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:34:08.452Z",
+            "observed_at": "2026-11-01T09:54:51.924Z",
             "oldest_date": "2026-10-26",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
@@ -2032,18 +1799,18 @@
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-10-25",
-            "observed_at": "2026-10-31T16:34:16.616Z",
+            "observed_at": "2026-11-01T09:54:59.456Z",
             "oldest_date": "2026-10-05",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -2055,8 +1822,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "ksml",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "高雄市立圖書館",
@@ -2064,7 +1831,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2077,66 +1844,14 @@
     },
     {
       "active_count": 124,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -2148,8 +1863,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 13,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 15,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -2178,11 +1893,11 @@
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:34:33.290Z",
+            "observed_at": "2026-11-01T09:55:20.351Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -2192,11 +1907,11 @@
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:34:41.426Z",
+            "observed_at": "2026-11-01T09:55:26.929Z",
             "oldest_date": "2026-10-28",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
@@ -2206,18 +1921,18 @@
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-10-26",
-            "observed_at": "2026-10-31T16:34:46.957Z",
+            "observed_at": "2026-11-01T09:55:36.227Z",
             "oldest_date": "2026-10-05",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -2229,8 +1944,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "tycccgov",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "桃園市立圖書館",
@@ -2238,7 +1953,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2251,66 +1966,14 @@
     },
     {
       "active_count": 117,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -2322,8 +1985,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 5,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 8,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 2,
             "search_index": 0
@@ -2352,11 +2015,11 @@
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:35:05.874Z",
+            "observed_at": "2026-11-01T09:55:56.253Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -2366,18 +2029,18 @@
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:35:11.443Z",
+            "observed_at": "2026-11-01T09:56:04.810Z",
             "oldest_date": "2026-10-25",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -2389,8 +2052,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "hchcc",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹縣公共圖書館",
@@ -2398,7 +2061,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2411,66 +2074,14 @@
     },
     {
       "active_count": 115,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -2482,8 +2093,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 8,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 5,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 2,
             "search_index": 0
@@ -2512,11 +2123,11 @@
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:35:32.667Z",
+            "observed_at": "2026-11-01T09:56:25.420Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -2526,18 +2137,18 @@
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:35:41.039Z",
+            "observed_at": "2026-11-01T09:56:31.388Z",
             "oldest_date": "2026-10-25",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -2549,8 +2160,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "hcmlgov",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹市圖書館",
@@ -2558,7 +2169,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2571,66 +2182,14 @@
     },
     {
       "active_count": 115,
-      "attempted_at": "2026-11-01T00:36:13+08:00",
+      "attempted_at": "2026-11-01T17:57:03+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 0,
       "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "Bonjour!France法語學習誌",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569"
-          },
-          {
-            "from": "",
-            "title": "Hola España 西語學習誌",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566"
-          },
-          {
-            "from": "",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122"
-          },
-          {
-            "from": "",
-            "title": "經典雜誌",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=862"
-          },
-          {
-            "from": "",
-            "title": "皇冠雜誌",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859"
-          }
-        ],
+        "link_added": [],
         "link_changed": [],
         "new": [],
-        "new_issue": [
-          {
-            "from": "2026-10-05",
-            "title": "Bonjour!France法語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Hola España 西語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "Fighting! KOREA韓語學習誌",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "經典雜誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "皇冠雜誌",
-            "to": "2026-11-01"
-          }
-        ],
+        "new_issue": [],
         "not_listed": [],
         "returned": []
       },
@@ -2642,8 +2201,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 7,
-          "scan_id": "catalog-20261101-003149-51dea4",
+          "observed_span_seconds": 8,
+          "scan_id": "catalog-20261101-175228-21cd74",
           "source_types": {
             "direct": 2,
             "search_index": 0
@@ -2672,11 +2231,11 @@
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-10-31T16:36:00.976Z",
+            "observed_at": "2026-11-01T09:56:50.441Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
@@ -2686,18 +2245,18 @@
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-10-31T16:36:08.102Z",
+            "observed_at": "2026-11-01T09:56:58.542Z",
             "oldest_date": "2026-10-25",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261101-003149-51dea4",
+            "scan_id": "catalog-20261101-175228-21cd74",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261101-003149-51dea4"
+        "scan_id": "catalog-20261101-175228-21cd74"
       },
       "error": "",
       "error_code": null,
@@ -2709,8 +2268,8 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "klccab",
-      "last_assisted_success": "2026-11-01T00:36:13+08:00",
-      "last_complete_check": "2026-11-01T00:36:13+08:00",
+      "last_assisted_success": "2026-11-01T17:57:03+08:00",
+      "last_complete_check": "2026-11-01T17:57:03+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "基隆市公共圖書館",
@@ -2718,7 +2277,7 @@
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-01T00:36:13+08:00",
+        "checked_at": "2026-11-01T17:57:03+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2734,12 +2293,12 @@
   "summary": {
     "active_records": 1084,
     "cached_pages": 0,
-    "changes_total": 90,
+    "changes_total": 0,
     "error_code_counts": {},
     "failed": 0,
-    "links_added": 45,
+    "links_added": 0,
     "links_changed": 0,
-    "new_issues": 45,
+    "new_issues": 0,
     "new_titles": 0,
     "not_checked": 0,
     "not_listed": 0,
