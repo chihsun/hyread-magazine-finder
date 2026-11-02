@@ -4566,6 +4566,916 @@
       "title": "皇冠雜誌",
       "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=859",
       "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "taichunggov",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "國家地理雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "國家地理雜誌",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "康健",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "Money錢",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "taichunggov",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "經理人月刊",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "卓越雜誌",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "tpml",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "國家地理雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "國家地理雜誌",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "康健",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "Money錢",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "tpml",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "經理人月刊",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "PC home 電腦家庭",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "PC home 電腦家庭",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=17",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "旅人誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "旅人誌",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=13",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "卓越雜誌",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "tnml",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "國家地理雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "國家地理雜誌",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "康健",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "Money錢",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "tnml",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "經理人月刊",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "PC home 電腦家庭",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "PC home 電腦家庭",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=17",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "旅人誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "旅人誌",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=13",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "卓越雜誌",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "tphcc",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "國家地理雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "國家地理雜誌",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "康健",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "Money錢",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "tphcc",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "經理人月刊",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "PC home 電腦家庭",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "PC home 電腦家庭",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=17",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "旅人誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "旅人誌",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=13",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "卓越雜誌",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "ksml",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "ksml",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "康健",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "ksml",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "Money錢",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "ksml",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "ksml",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "經理人月刊",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "ksml",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "卓越雜誌",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "tycccgov",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "國家地理雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "國家地理雜誌",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "康健",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "Money錢",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "tycccgov",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "經理人月刊",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "PC home 電腦家庭",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "PC home 電腦家庭",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=17",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "卓越雜誌",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "hchcc",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "國家地理雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "國家地理雜誌",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "康健",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "Money錢",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "hchcc",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "經理人月刊",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "卓越雜誌",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "hcmlgov",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hcmlgov",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "康健",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hcmlgov",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "Money錢",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "hcmlgov",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hcmlgov",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "經理人月刊",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "hcmlgov",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "卓越雜誌",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "klccab",
+      "title": "IW傢飾",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "klccab",
+      "title": "康健",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "康健",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "klccab",
+      "title": "Money錢",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "Money錢",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "library": "klccab",
+      "title": "人本教育札記",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "klccab",
+      "title": "經理人月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "經理人月刊",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "2026-10-01",
+      "library": "klccab",
+      "title": "卓越雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-02T20:28:22+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "卓越雜誌",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
+      "type": "link_added"
     }
   ],
   "version": 1
