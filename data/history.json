@@ -5476,6 +5476,1050 @@
       "title": "卓越雜誌",
       "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7",
       "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "taichunggov",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "taichunggov",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "消費者報導",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "taichunggov",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "工業材料雜誌",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "宇宙光雜誌",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "台灣銀行家",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "taichunggov",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "taichunggov",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "taichunggov",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "taichunggov",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "環球生技月刊",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tpml",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "tpml",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "消費者報導",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "tpml",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "工業材料雜誌",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "宇宙光雜誌",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "台灣銀行家",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tpml",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tpml",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tpml",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "tpml",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "環球生技月刊",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tnml",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "tnml",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "消費者報導",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "tnml",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "工業材料雜誌",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "宇宙光雜誌",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "台灣銀行家",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tnml",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tnml",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tnml",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "tnml",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "環球生技月刊",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tphcc",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "tphcc",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "消費者報導",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "tphcc",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "工業材料雜誌",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "宇宙光雜誌",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "台灣銀行家",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tphcc",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tphcc",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tphcc",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "tphcc",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "環球生技月刊",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "ksml",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "ksml",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "消費者報導",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "ksml",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "ksml",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "工業材料雜誌",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "ksml",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "宇宙光雜誌",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "ksml",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "台灣銀行家",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "ksml",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "ksml",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "ksml",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "ksml",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "環球生技月刊",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tycccgov",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "tycccgov",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "消費者報導",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "tycccgov",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "工業材料雜誌",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "宇宙光雜誌",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "台灣銀行家",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tycccgov",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tycccgov",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "tycccgov",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "tycccgov",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "環球生技月刊",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "hchcc",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "hchcc",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "消費者報導",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "hchcc",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "工業材料雜誌",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "宇宙光雜誌",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "台灣銀行家",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "hchcc",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "hchcc",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "hchcc",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "hchcc",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "環球生技月刊",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "hcmlgov",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "hcmlgov",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "消費者報導",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "hcmlgov",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "hcmlgov",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "工業材料雜誌",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "hcmlgov",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "宇宙光雜誌",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "hcmlgov",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "台灣銀行家",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "hcmlgov",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "hcmlgov",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "hcmlgov",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "hcmlgov",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "環球生技月刊",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "klccab",
+      "title": "看雜誌",
+      "to": "2026-11-05",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-05",
+      "library": "klccab",
+      "title": "消費者報導",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "消費者報導",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-19",
+      "library": "klccab",
+      "title": "iPhone, iPad玩樂誌",
+      "to": "2026-11-02",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "klccab",
+      "title": "工業材料雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "工業材料雜誌",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "klccab",
+      "title": "宇宙光雜誌",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "宇宙光雜誌",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-10-01",
+      "library": "klccab",
+      "title": "台灣銀行家",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "台灣銀行家",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "klccab",
+      "title": "Joy to the World 佳音英語世界",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "klccab",
+      "title": "典藏．今藝術&投資",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "library": "klccab",
+      "title": "大家健康",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "2026-09-30",
+      "library": "klccab",
+      "title": "環球生技月刊",
+      "to": "2026-10-30",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "環球生技月刊",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
+      "type": "link_added"
     }
   ],
   "version": 1

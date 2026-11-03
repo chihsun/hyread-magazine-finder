@@ -1,9 +1,631 @@
 {
-  "batch_id": "catalog-20261102-202339-f34507",
+  "batch_id": "catalog-20261104-000940-ee7d1e",
   "batch_schema": 4,
   "complete": true,
-  "generated_at": "2026-11-02T20:28:22+08:00",
+  "generated_at": "2026-11-04T00:14:42+08:00",
   "history": [
+    {
+      "at": "2026-11-04T00:14:42+08:00",
+      "batch_id": "catalog-20261104-000940-ee7d1e",
+      "complete": true,
+      "source": "chatgpt_assisted",
+      "summary": {
+        "active_records": 1138,
+        "cached_pages": 0,
+        "changes_total": 135,
+        "error_code_counts": {},
+        "failed": 0,
+        "links_added": 45,
+        "links_changed": 0,
+        "new_issues": 54,
+        "new_titles": 36,
+        "not_checked": 0,
+        "not_listed": 0,
+        "pages_checked": 27,
+        "pages_failed": 0,
+        "partial": 0,
+        "returned": 0,
+        "successful": 9,
+        "total": 9,
+        "verified_records": 471
+      },
+      "title_changes": [
+        {
+          "library": "taichunggov",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "taichunggov",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "taichunggov",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "taichunggov",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "taichunggov",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "taichunggov",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "taichunggov",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        },
+        {
+          "library": "tpml",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tpml",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "tpml",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "tpml",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "tpml",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "tpml",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "tpml",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        },
+        {
+          "library": "tnml",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tnml",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "tnml",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "tnml",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "tnml",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "tnml",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "tnml",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        },
+        {
+          "library": "tphcc",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tphcc",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "tphcc",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "tphcc",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "tphcc",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "tphcc",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "tphcc",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        },
+        {
+          "library": "ksml",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "ksml",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "ksml",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "ksml",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "ksml",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "ksml",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "ksml",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        },
+        {
+          "library": "tycccgov",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tycccgov",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "tycccgov",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "tycccgov",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "tycccgov",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "tycccgov",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "tycccgov",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        },
+        {
+          "library": "hchcc",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "hchcc",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "hchcc",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "hchcc",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "hchcc",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "hchcc",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "hchcc",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        },
+        {
+          "library": "hcmlgov",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "hcmlgov",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "hcmlgov",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "hcmlgov",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "hcmlgov",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "hcmlgov",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "hcmlgov",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        },
+        {
+          "library": "klccab",
+          "title": "看雜誌",
+          "to": "2026-11-05",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "klccab",
+          "title": "消費者報導",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-19",
+          "library": "klccab",
+          "title": "iPhone, iPad玩樂誌",
+          "to": "2026-11-02",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "工業材料雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "宇宙光雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "台灣銀行家",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "klccab",
+          "title": "Joy to the World 佳音英語世界",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "klccab",
+          "title": "典藏．今藝術&投資",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "library": "klccab",
+          "title": "大家健康",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-09-30",
+          "library": "klccab",
+          "title": "環球生技月刊",
+          "to": "2026-10-30",
+          "type": "new_issue"
+        }
+      ]
+    },
     {
       "at": "2026-11-02T20:28:22+08:00",
       "batch_id": "catalog-20261102-202339-f34507",
@@ -1726,74 +2348,87 @@
   ],
   "libraries": [
     {
-      "active_count": 118,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 122,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 12,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "國家地理雜誌",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675"
+            "title": "消費者報導",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "康健",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "工業材料雜誌",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "宇宙光雜誌",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "台灣銀行家",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
           },
           {
             "from": "",
-            "title": "卓越雜誌",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "環球生技月刊",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "國家地理雜誌",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "經理人月刊",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -1807,8 +2442,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 17,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "observed_span_seconds": 18,
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -1833,50 +2468,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "9f672aa1c00210d659e0ecea41ad9c06cd0bd3486650538e3a24aa299549f325",
+            "content_digest": "85ce51bc3c04aca3a66b0819f8975a0f29c112acc3be800c7d7b9a0d113ececd",
             "http_status": 200,
             "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:23:44.419Z",
+            "observed_at": "2026-11-03T16:09:44.691Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "50a8a488db1ec0627d67e0e264d55fd6a8671e72c5f3e8eb346af3ebea756585",
+            "content_digest": "8ac3b8dcc27934e079a84506574e8250fd76562b5e8eacc3836bfe9f4a43d001",
             "http_status": 200,
             "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:23:54.185Z",
-            "oldest_date": "2026-10-28",
+            "observed_at": "2026-11-03T16:09:54.969Z",
+            "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "3f12e0c44c7e0a515347f6e92f1f9adc27e7f7a5c54dad391f717f63520b71bd",
+            "content_digest": "7fd0d066d10b6723dc10e187b2ac8c058aab06acf79079f035ec3a349132c630",
             "http_status": 200,
             "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-10-28",
-            "observed_at": "2026-11-02T12:24:01.967Z",
-            "oldest_date": "2026-10-10",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-03T16:10:03.501Z",
+            "oldest_date": "2026-10-20",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -1888,16 +2523,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "taichunggov",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "臺中市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -1906,97 +2541,90 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 43
+      "verified_count": 49
     },
     {
-      "active_count": 132,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 136,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 16,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "國家地理雜誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675"
+            "title": "消費者報導",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "康健",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "工業材料雜誌",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "宇宙光雜誌",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "台灣銀行家",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
           },
           {
             "from": "",
-            "title": "PC home 電腦家庭",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=17"
-          },
-          {
-            "from": "",
-            "title": "旅人誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=13"
-          },
-          {
-            "from": "",
-            "title": "卓越雜誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "環球生技月刊",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "國家地理雜誌",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "經理人月刊",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "PC home 電腦家庭",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "旅人誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -2010,8 +2638,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 14,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "observed_span_seconds": 15,
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -2036,50 +2664,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "7e1e9b55941222939ee9168e51289ef67c7dc3da1baf64c8da388cd3697a160e",
+            "content_digest": "d87e7af1eb3e82a4ec8b2631e58473ff211e5779f3ca7b98a9452228708129cd",
             "http_status": 200,
             "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:24:18.537Z",
+            "observed_at": "2026-11-03T16:10:17.984Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "6af4323be2bc934664d3cfb60140e5f907cf1c6d5662795780704b4cdc7ace58",
+            "content_digest": "e19002cb702e5352854eed788a5719ec9a0fb23451f962f8247d7db910e4f67c",
             "http_status": 200,
             "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:24:24.988Z",
+            "observed_at": "2026-11-03T16:10:26.500Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "1e40abe39ea114411e3777cc5aca91c3d770ae5e51ae5f2327d8836942e89c9a",
+            "content_digest": "ee2c2159c33301212b0d43030e6bf7c4a728ee467f3a6056db59a616fe5e8a23",
             "http_status": 200,
             "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:24:32.988Z",
-            "oldest_date": "2026-10-20",
+            "observed_at": "2026-11-03T16:10:33.664Z",
+            "oldest_date": "2026-10-28",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -2091,16 +2719,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "tpml",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "臺北市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2109,97 +2737,90 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 53
+      "verified_count": 58
     },
     {
-      "active_count": 128,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 132,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 16,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "國家地理雜誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675"
+            "title": "消費者報導",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "康健",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "工業材料雜誌",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "宇宙光雜誌",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "台灣銀行家",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
           },
           {
             "from": "",
-            "title": "PC home 電腦家庭",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=17"
-          },
-          {
-            "from": "",
-            "title": "旅人誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=13"
-          },
-          {
-            "from": "",
-            "title": "卓越雜誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "環球生技月刊",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "國家地理雜誌",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "經理人月刊",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "PC home 電腦家庭",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "旅人誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -2213,8 +2834,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 16,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "observed_span_seconds": 12,
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -2239,50 +2860,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "f6b45a62b27d4f595f1e46827140c8344f6cd5709fe330812eaebece974e34a2",
+            "content_digest": "6a16b223aca8b829de85db6ce66730a75c00065d82222c04bc7a60e9ce6b64dc",
             "http_status": 200,
             "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:24:50.937Z",
+            "observed_at": "2026-11-03T16:10:55.469Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "ce4d7eb3150630c0310a1f57acf650a622a0fa9cc3b7a95a0562467c943a384b",
+            "content_digest": "e98320cc1fc468a7acfd185b24c37d5b46e7816fe34f08f36b02d96d80534e74",
             "http_status": 200,
             "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:24:58.010Z",
+            "observed_at": "2026-11-03T16:11:02.516Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "52f436fa27a68aca32c95276ccbbd6bd7749170bb64513b7592cf7942f5b7acf",
+            "content_digest": "821208be930ee569cc2e7eec6c32ac8a4518e7c2424a34477701e47636436254",
             "http_status": 200,
             "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-10-29",
-            "observed_at": "2026-11-02T12:25:07.470Z",
-            "oldest_date": "2026-10-19",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-03T16:11:08.422Z",
+            "oldest_date": "2026-10-28",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -2294,16 +2915,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "tnml",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "臺南市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2312,97 +2933,90 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 51
+      "verified_count": 56
     },
     {
-      "active_count": 129,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 133,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 16,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "國家地理雜誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675"
+            "title": "消費者報導",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "康健",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "工業材料雜誌",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "宇宙光雜誌",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "台灣銀行家",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
           },
           {
             "from": "",
-            "title": "PC home 電腦家庭",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=17"
-          },
-          {
-            "from": "",
-            "title": "旅人誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=13"
-          },
-          {
-            "from": "",
-            "title": "卓越雜誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "環球生技月刊",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "國家地理雜誌",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "經理人月刊",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "PC home 電腦家庭",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "旅人誌",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -2416,8 +3030,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 14,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "observed_span_seconds": 11,
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -2442,50 +3056,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "fd11b6e414ae6b3e6c1d173068903fb55bd22112477f8fee516f33271e5cab9c",
+            "content_digest": "da0a543511c68363890fc0f247b1f8a0d6dcece41f1f8d3306f4ab2bfdcc4f1e",
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:25:23.447Z",
+            "observed_at": "2026-11-03T16:11:27.014Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "a31c6ef1008b0d57aa96e4743295465547f3ad0ac2666738a08ba0c77af3a4cb",
+            "content_digest": "ec7e67bd1dba636abd0fdcae89bb3bfeb03e00b3946744d097c92cbfe95dcbad",
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:25:30.432Z",
+            "observed_at": "2026-11-03T16:11:32.777Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "8657f96cac3758601d98017506982381a3de7f5eafd33b3e962d11dec20c6217",
+            "content_digest": "df2116de4fe4707a878fc5b2f650c2da023f3655372b18f17430626b7c702043",
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:25:38.015Z",
-            "oldest_date": "2026-10-19",
+            "observed_at": "2026-11-03T16:11:38.660Z",
+            "oldest_date": "2026-10-28",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -2497,16 +3111,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "tphcc",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新北市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2515,67 +3129,90 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 51
+      "verified_count": 57
     },
     {
-      "active_count": 116,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 120,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "康健",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "消費者報導",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "工業材料雜誌",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "宇宙光雜誌",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "卓越雜誌",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "台灣銀行家",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
+          },
+          {
+            "from": "",
+            "title": "環球生技月刊",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "經理人月刊",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -2590,7 +3227,7 @@
           "issues": [],
           "missing_pages": [],
           "observed_span_seconds": 15,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -2615,50 +3252,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "ab93b8394dcb860ec0b6cf9dce04fbd789e2c3bb995d439ec0d06ee1fa4204ef",
+            "content_digest": "45f9fb96a953a656cf66d55c4fa9b62e854c0e0757c7c2a4a5995f5b2f934ce0",
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:25:55.375Z",
+            "observed_at": "2026-11-03T16:11:55.647Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "401877e2eab3456a26ca321bf124329718aa5b652ff90f90d13f774a45bcdfd9",
+            "content_digest": "de2ce8e1633d19a1d1760c97371a65418e33df8c344d399424cab6d6453a8487",
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:26:04.659Z",
-            "oldest_date": "2026-10-29",
+            "observed_at": "2026-11-03T16:12:04.321Z",
+            "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "04b097f35a94803619529fded649f2e08f8c7eedd6a69ee50449a5dc30818726",
+            "content_digest": "fc4ffc225aa66fece47a583314588b5ab94265c37cee341a8eabbd15ddd1c412",
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-10-29",
-            "observed_at": "2026-11-02T12:26:10.590Z",
-            "oldest_date": "2026-10-07",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-03T16:12:11.482Z",
+            "oldest_date": "2026-10-25",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -2670,16 +3307,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "ksml",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "高雄市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2688,87 +3325,90 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 45
+      "verified_count": 51
     },
     {
-      "active_count": 126,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 130,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 14,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "國家地理雜誌",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675"
+            "title": "消費者報導",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "康健",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "工業材料雜誌",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "宇宙光雜誌",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "台灣銀行家",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
           },
           {
             "from": "",
-            "title": "PC home 電腦家庭",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=17"
-          },
-          {
-            "from": "",
-            "title": "卓越雜誌",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "環球生技月刊",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "國家地理雜誌",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "經理人月刊",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "PC home 電腦家庭",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -2782,8 +3422,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 16,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "observed_span_seconds": 13,
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -2808,50 +3448,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "42e0b60eff73f8aa0c492bfb8b2bc9aa959988edcec4b5f9fec7abb6a1c3aee5",
+            "content_digest": "97b03cbcb97da9e3030ccf85837b0fc08068f1291ba44f90b250d381a206cae3",
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:26:27.711Z",
+            "observed_at": "2026-11-03T16:12:26.060Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "6bb8a4c7333c643b8dd6ecccf42fd255e27729e2f6c03c94ef0871806353565f",
+            "content_digest": "3a3623ef9a348a7c89c37f9e14612e6048bc8b7123bab3dca68a4e2229fc33ab",
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:26:34.749Z",
-            "oldest_date": "2026-10-29",
+            "observed_at": "2026-11-03T16:12:34.121Z",
+            "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "fbd6052b4a8d0462cc9e16e4953009e891a478ba5fa8ea951fdebf81d26df152",
+            "content_digest": "fefcf640af2a0b646b9efe0f3d4a5ee78058086c10aff7db3c927ecc71f117b4",
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-10-29",
-            "observed_at": "2026-11-02T12:26:44.167Z",
-            "oldest_date": "2026-10-15",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-03T16:12:40.029Z",
+            "oldest_date": "2026-10-25",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -2863,16 +3503,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "tycccgov",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "桃園市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -2881,77 +3521,90 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 48
+      "verified_count": 54
     },
     {
-      "active_count": 119,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 123,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 12,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "國家地理雜誌",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=675"
+            "title": "消費者報導",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "康健",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "工業材料雜誌",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "宇宙光雜誌",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "台灣銀行家",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
           },
           {
             "from": "",
-            "title": "卓越雜誌",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "環球生技月刊",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "國家地理雜誌",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "經理人月刊",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -2965,8 +3618,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 13,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "observed_span_seconds": 17,
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -2991,50 +3644,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "dd10986f5f2645cef386153f826a09d00e4eb58ed88c938374bbf9c359f57211",
+            "content_digest": "3a57fa2bf04b3ef908b1a4530af3de7429ba7b252c4acabd5fa92ac36847ed39",
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:27:00.088Z",
+            "observed_at": "2026-11-03T16:13:03.530Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "14a66710ebdd08ba7bcbe6436d77b66963ea97b57f0429d666f48374e03eb68e",
+            "content_digest": "f8bf5e0c3983a310b703772e79ce1211b3e0afa471498a3b8db69357d587e326",
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:27:07.930Z",
-            "oldest_date": "2026-10-29",
+            "observed_at": "2026-11-03T16:13:12.097Z",
+            "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "9beb3531679848b1eec0d7f9eeefc649afb6e7d4f89a91281427f1bf32e48fe7",
+            "content_digest": "86378f1a86c3c51e5f5ad31c6d70360e38f4787cdfcdcc78fefe467b483571a6",
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-10-28",
-            "observed_at": "2026-11-02T12:27:13.428Z",
-            "oldest_date": "2026-10-14",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-03T16:13:20.613Z",
+            "oldest_date": "2026-10-22",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -3046,16 +3699,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "hchcc",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹縣公共圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -3064,67 +3717,90 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 44
+      "verified_count": 50
     },
     {
-      "active_count": 117,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 121,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "康健",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "消費者報導",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "工業材料雜誌",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "宇宙光雜誌",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "卓越雜誌",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "台灣銀行家",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
+          },
+          {
+            "from": "",
+            "title": "環球生技月刊",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "經理人月刊",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -3138,8 +3814,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 17,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "observed_span_seconds": 16,
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -3164,50 +3840,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "5e58bb6af48ab696da70d7ca809b83b0e13026d4fd881220182942e9a429a3d5",
+            "content_digest": "6ac99064ce0c4e099a12e003c7d6e7336ab47fe635db0c400e771d38bf639112",
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:27:28.213Z",
+            "observed_at": "2026-11-03T16:13:43.036Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "fb504c4809b7e49f3a033d855f4352451d5689f32190c12f9084d015dd65d0a5",
+            "content_digest": "109fd3caa4a739b72f94504385bb049be5678de8046af81a27dad7a1af5597af",
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:27:37.344Z",
-            "oldest_date": "2026-10-28",
+            "observed_at": "2026-11-03T16:13:51.890Z",
+            "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "baaa5203a2b92fcd38af02d20ea31105ecab1307ad0f50bc3273ddea75b4e8f2",
+            "content_digest": "63cd78478ad49e252d9d91d0bf18437454474b2822c48f5ec991374a6f6b97cc",
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-10-28",
-            "observed_at": "2026-11-02T12:27:45.370Z",
-            "oldest_date": "2026-10-07",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-03T16:13:59.169Z",
+            "oldest_date": "2026-10-20",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -3219,16 +3895,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "hcmlgov",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹市圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -3237,67 +3913,90 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 42
+      "verified_count": 48
     },
     {
-      "active_count": 117,
-      "attempted_at": "2026-11-02T20:28:22+08:00",
+      "active_count": 121,
+      "attempted_at": "2026-11-04T00:14:42+08:00",
       "attempts": 1,
-      "change_count": 10,
+      "change_count": 15,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "康健",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=364"
+            "title": "消費者報導",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181"
           },
           {
             "from": "",
-            "title": "Money錢",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=192"
+            "title": "工業材料雜誌",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=422"
           },
           {
             "from": "",
-            "title": "經理人月刊",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=31"
+            "title": "宇宙光雜誌",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=407"
           },
           {
             "from": "",
-            "title": "卓越雜誌",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=7"
+            "title": "台灣銀行家",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=135"
+          },
+          {
+            "from": "",
+            "title": "環球生技月刊",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "IW傢飾",
+            "title": "看雜誌",
+            "to": "2026-11-05"
+          },
+          {
+            "title": "Joy to the World 佳音英語世界",
             "to": "2026-11-01"
           },
           {
-            "title": "人本教育札記",
+            "title": "典藏．今藝術&投資",
+            "to": "2026-11-01"
+          },
+          {
+            "title": "大家健康",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
+            "from": "2026-10-05",
+            "title": "消費者報導",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-19",
+            "title": "iPhone, iPad玩樂誌",
+            "to": "2026-11-02"
+          },
+          {
             "from": "2026-10-01",
-            "title": "康健",
+            "title": "工業材料雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "Money錢",
+            "title": "宇宙光雜誌",
             "to": "2026-11-01"
           },
           {
             "from": "2026-10-01",
-            "title": "經理人月刊",
+            "title": "台灣銀行家",
             "to": "2026-11-01"
           },
           {
-            "from": "2026-10-01",
-            "title": "卓越雜誌",
-            "to": "2026-11-01"
+            "from": "2026-09-30",
+            "title": "環球生技月刊",
+            "to": "2026-10-30"
           }
         ],
         "not_listed": [],
@@ -3311,8 +4010,8 @@
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 14,
-          "scan_id": "catalog-20261102-202339-f34507",
+          "observed_span_seconds": 16,
+          "scan_id": "catalog-20261104-000940-ee7d1e",
           "source_types": {
             "direct": 3,
             "search_index": 0
@@ -3337,50 +4036,50 @@
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "fcd5e72901e1c6384128466f8af97ed284f6b6327c321d8a610ede8cb0636df6",
+            "content_digest": "ce3581d0592927ca9df9395fa27ec6b835f95efec84781ce521aa7d4fef7f161",
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
             "newest_date": "2026-11-05",
-            "observed_at": "2026-11-02T12:28:03.228Z",
+            "observed_at": "2026-11-03T16:14:20.856Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "4c4e528f86dad174deb6b043e99be49f652ce337e1df02a3e23b908b6bcd34eb",
+            "content_digest": "809dc32b9700a7abd79330623d1db116c41011e70b5daf90176c8041e77696e2",
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-02T12:28:11.060Z",
-            "oldest_date": "2026-10-28",
+            "observed_at": "2026-11-03T16:14:29.105Z",
+            "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "8324fe1dfe7dc7592fcc8b13d328fa0fd1b93d13e41c365fa09eb01fcaa069e0",
+            "content_digest": "352127801b286d755d1f2164bd3a8fe64d6c268959490bb70b38b103f5570b86",
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-10-28",
-            "observed_at": "2026-11-02T12:28:17.427Z",
-            "oldest_date": "2026-10-07",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-03T16:14:37.415Z",
+            "oldest_date": "2026-10-20",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261102-202339-f34507",
+            "scan_id": "catalog-20261104-000940-ee7d1e",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261102-202339-f34507"
+        "scan_id": "catalog-20261104-000940-ee7d1e"
       },
       "error": "",
       "error_code": null,
@@ -3392,16 +4091,16 @@
         "title": "Bonjour!France法語學習誌"
       },
       "id": "klccab",
-      "last_assisted_success": "2026-11-02T20:28:22+08:00",
-      "last_complete_check": "2026-11-02T20:28:22+08:00",
+      "last_assisted_success": "2026-11-04T00:14:42+08:00",
+      "last_complete_check": "2026-11-04T00:14:42+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "基隆市公共圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-27；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-02T20:28:22+08:00",
+        "checked_at": "2026-11-04T00:14:42+08:00",
         "date": "2026-11-05",
         "jid": "569",
         "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
@@ -3410,20 +4109,20 @@
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 42
+      "verified_count": 48
     }
   ],
   "schema": 1,
   "summary": {
-    "active_records": 1102,
+    "active_records": 1138,
     "cached_pages": 0,
-    "changes_total": 116,
+    "changes_total": 135,
     "error_code_counts": {},
     "failed": 0,
-    "links_added": 49,
+    "links_added": 45,
     "links_changed": 0,
-    "new_issues": 49,
-    "new_titles": 18,
+    "new_issues": 54,
+    "new_titles": 36,
     "not_checked": 0,
     "not_listed": 0,
     "pages_checked": 27,
@@ -3432,9 +4131,9 @@
     "returned": 0,
     "successful": 9,
     "total": 9,
-    "verified_records": 419
+    "verified_records": 471
   },
   "type": "chatgpt_assisted",
-  "window_end": "2026-11-02",
-  "window_start": "2026-10-27"
+  "window_end": "2026-11-04",
+  "window_start": "2026-10-29"
 }
