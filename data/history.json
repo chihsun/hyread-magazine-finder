@@ -6520,6 +6520,853 @@
       "title": "環球生技月刊",
       "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=250",
       "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "taichunggov",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "taichunggov",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "taichunggov",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "enya FASHION QUEEN",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "taichunggov",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "taichunggov",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "taichunggov",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "taichunggov",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "taichunggov",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "taichunggov",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "taichunggov",
+      "title": "張老師月刊",
+      "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "tpml",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "tpml",
+      "title": "商業周刊",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tpml",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "tpml",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "enya FASHION QUEEN",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tpml",
+      "title": "今周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tpml",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tpml",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "tpml",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "tpml",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "tpml",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "tpml",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "tpml",
+      "title": "張老師月刊",
+      "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "tnml",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "tnml",
+      "title": "商業周刊",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tnml",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "tnml",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "enya FASHION QUEEN",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tnml",
+      "title": "今周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tnml",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tnml",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "tnml",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "tnml",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "tnml",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "tnml",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "tnml",
+      "title": "張老師月刊",
+      "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "tphcc",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "tphcc",
+      "title": "商業周刊",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tphcc",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "tphcc",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "enya FASHION QUEEN",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tphcc",
+      "title": "今周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tphcc",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tphcc",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "tphcc",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "tphcc",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "tphcc",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "tphcc",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "tphcc",
+      "title": "張老師月刊",
+      "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "ksml",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "ksml",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "ksml",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "enya FASHION QUEEN",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "ksml",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "ksml",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "ksml",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "ksml",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "ksml",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "ksml",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "ksml",
+      "title": "張老師月刊",
+      "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "tycccgov",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "tycccgov",
+      "title": "商業周刊",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tycccgov",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "tycccgov",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "enya FASHION QUEEN",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tycccgov",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "tycccgov",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "tycccgov",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "tycccgov",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "tycccgov",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "tycccgov",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "tycccgov",
+      "title": "張老師月刊",
+      "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "hchcc",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "hchcc",
+      "title": "商業周刊",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "hchcc",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "hchcc",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "enya FASHION QUEEN",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "hchcc",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "hchcc",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "hchcc",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "hchcc",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "hchcc",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "hchcc",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "hchcc",
+      "title": "張老師月刊",
+      "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "hcmlgov",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "hcmlgov",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "hcmlgov",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "enya FASHION QUEEN",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "hcmlgov",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "hcmlgov",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "hcmlgov",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "hcmlgov",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "hcmlgov",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "hcmlgov",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "hcmlgov",
+      "title": "張老師月刊",
+      "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-11-02",
+      "library": "klccab",
+      "title": "商業周刊(精華版)",
+      "to": "2026-11-09",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "klccab",
+      "title": "今周刊(精華版)",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-05",
+      "library": "klccab",
+      "title": "enya FASHION QUEEN",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "enya FASHION QUEEN",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+      "type": "link_added"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "klccab",
+      "title": "先探投資週刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-29",
+      "library": "klccab",
+      "title": "理財周刊",
+      "to": "2026-11-05",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "klccab",
+      "title": "鏡週刊",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-28",
+      "library": "klccab",
+      "title": "大師輕鬆讀",
+      "to": "2026-11-04",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "library": "klccab",
+      "title": "美育",
+      "to": "2026-11-01",
+      "type": "new"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "2026-10-01",
+      "library": "klccab",
+      "title": "張老師月刊",
+      "to": "2026-11-01",
+      "type": "new_issue"
+    },
+    {
+      "at": "2026-11-04T23:10:13+08:00",
+      "from": "",
+      "library": "klccab",
+      "title": "張老師月刊",
+      "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217",
+      "type": "link_added"
     }
   ],
   "version": 1
