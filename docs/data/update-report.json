@@ -1,9 +1,882 @@
 {
-  "batch_id": "catalog-20261104-223039-f8b835",
+  "batch_id": "catalog-20261106-101301-e08b09",
   "batch_schema": 4,
   "complete": true,
-  "generated_at": "2026-11-04T23:10:13+08:00",
+  "generated_at": "2026-11-06T10:27:40+08:00",
   "history": [
+    {
+      "at": "2026-11-06T10:27:40+08:00",
+      "batch_id": "catalog-20261106-101301-e08b09",
+      "complete": true,
+      "source": "chatgpt_assisted",
+      "summary": {
+        "active_records": 1156,
+        "cached_pages": 0,
+        "changes_total": 207,
+        "error_code_counts": {},
+        "failed": 0,
+        "links_added": 85,
+        "links_changed": 0,
+        "new_issues": 113,
+        "new_titles": 9,
+        "not_checked": 0,
+        "not_listed": 0,
+        "pages_checked": 36,
+        "pages_failed": 0,
+        "partial": 0,
+        "returned": 0,
+        "successful": 9,
+        "total": 9,
+        "verified_records": 610
+      },
+      "title_changes": [
+        {
+          "from": "2026-10-15",
+          "library": "taichunggov",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "taichunggov",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "taichunggov",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "taichunggov",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "taichunggov",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "taichunggov",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-15",
+          "library": "tpml",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tpml",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tpml",
+          "title": "常春月刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "tpml",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tpml",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tpml",
+          "title": "萬寶週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "tpml",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tpml",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-15",
+          "library": "tnml",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tnml",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tnml",
+          "title": "常春月刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "tnml",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tnml",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "tnml",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tnml",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-15",
+          "library": "tphcc",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tphcc",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tphcc",
+          "title": "常春月刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "tphcc",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tphcc",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "tphcc",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tphcc",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-15",
+          "library": "ksml",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "ksml",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "ksml",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "ksml",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "ksml",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "ksml",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-15",
+          "library": "tycccgov",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tycccgov",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tycccgov",
+          "title": "常春月刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "tycccgov",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "tycccgov",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "tycccgov",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "tycccgov",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-15",
+          "library": "hchcc",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "hchcc",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "hchcc",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "hchcc",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "hchcc",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hchcc",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-15",
+          "library": "hcmlgov",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "hcmlgov",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "hcmlgov",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "hcmlgov",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "hcmlgov",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "hcmlgov",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-15",
+          "library": "klccab",
+          "title": "Xin Chào!Vietnam 越南語學習誌",
+          "to": "2026-11-15",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "klccab",
+          "title": "點股成金特別版",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-22",
+          "library": "klccab",
+          "title": "財訊雙週刊",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-29",
+          "library": "klccab",
+          "title": "新新聞",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "職業棒球",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "EZ Thai 泰語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "HALLO!Germany德語學習誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "機械工業雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "library": "klccab",
+          "title": "吾愛吾家",
+          "to": "2026-11-01",
+          "type": "new"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "CIO雜誌",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "Audioart音響論壇",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "汽車百科",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-01",
+          "library": "klccab",
+          "title": "行遍天下",
+          "to": "2026-11-01",
+          "type": "new_issue"
+        }
+      ]
+    },
     {
       "at": "2026-11-04T23:10:13+08:00",
       "batch_id": "catalog-20261104-223039-f8b835",
@@ -2990,664 +3863,124 @@
   ],
   "libraries": [
     {
-      "active_count": 123,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
+      "active_count": 124,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
       "attempts": 1,
-      "change_count": 11,
+      "change_count": 22,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
           },
           {
             "from": "",
-            "title": "張老師月刊",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
+            "title": "職業棒球",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "美育",
+            "title": "吾愛吾家",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
           },
           {
             "from": "2026-10-29",
-            "title": "今周刊(精華版)",
+            "title": "點股成金特別版",
             "to": "2026-11-05"
           },
           {
-            "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "先探投資週刊",
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
             "to": "2026-11-05"
           },
           {
             "from": "2026-10-29",
-            "title": "理財周刊",
+            "title": "新新聞",
             "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "職業棒球",
             "to": "2026-11-01"
-          }
-        ],
-        "not_listed": [],
-        "returned": []
-      },
-      "coverage": {
-        "checked_pages": 3,
-        "date_boundary_reached": true,
-        "diagnostics": {
-          "cache_index_span_seconds": null,
-          "first_page_stable": null,
-          "issues": [],
-          "missing_pages": [],
-          "observed_span_seconds": 13,
-          "scan_id": "catalog-20261104-223039-f8b835",
-          "source_types": {
-            "direct": 3,
-            "search_index": 0
-          }
-        },
-        "direct_pages": 3,
-        "failed_pages": 0,
-        "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
-          "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
-          },
-          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
-        },
-        "first_page_ok": true,
-        "method": "latest_pages",
-        "mode": "simple",
-        "pages": [
-          {
-            "content_digest": "6314f0a1858f983b9b92f0ecc0b781a735d2a921246a0229e2257ebea4ea36c2",
-            "http_status": 200,
-            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:30:46.861Z",
-            "oldest_date": "2026-11-01",
-            "page": 1,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
-          },
-          {
-            "content_digest": "02605be22d4549f666f09f2031d6186bcb271bc73f925f6e255584e193b7de0b",
-            "http_status": 200,
-            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:30:54.824Z",
-            "oldest_date": "2026-11-01",
-            "page": 2,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "41296d3864b0b0c818605a5eb0c185d7bac3bb99e4989672a62703cabe3cd9ac",
-            "http_status": 200,
-            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:31:00.576Z",
-            "oldest_date": "2026-10-25",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          }
-        ],
-        "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
-      },
-      "error": "",
-      "error_code": null,
-      "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
-      },
-      "id": "taichunggov",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
-      "last_partial_check": "2026-10-30T19:04:43.776+08:00",
-      "last_success": "2026-10-30",
-      "name": "臺中市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
-      "retries": 0,
-      "retry_wait_seconds": [],
-      "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
-      },
-      "stale_observations": [],
-      "status": "ok",
-      "verified_count": 54
-    },
-    {
-      "active_count": 137,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
-      "attempts": 1,
-      "change_count": 13,
-      "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
-          },
-          {
-            "from": "",
-            "title": "張老師月刊",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
-          }
-        ],
-        "link_changed": [],
-        "new": [
-          {
-            "title": "美育",
-            "to": "2026-11-01"
-          }
-        ],
-        "new_issue": [
-          {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
-          },
-          {
-            "from": "2026-11-02",
-            "title": "商業周刊",
-            "to": "2026-11-09"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "今周刊(精華版)",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "今周刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "先探投資週刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "理財周刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "EZ Thai 泰語學習誌",
             "to": "2026-11-01"
-          }
-        ],
-        "not_listed": [],
-        "returned": []
-      },
-      "coverage": {
-        "checked_pages": 4,
-        "date_boundary_reached": true,
-        "diagnostics": {
-          "cache_index_span_seconds": null,
-          "first_page_stable": null,
-          "issues": [],
-          "missing_pages": [],
-          "observed_span_seconds": 23,
-          "scan_id": "catalog-20261104-223039-f8b835",
-          "source_types": {
-            "direct": 4,
-            "search_index": 0
-          }
-        },
-        "direct_pages": 4,
-        "failed_pages": 0,
-        "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
-          "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
-          },
-          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
-        },
-        "first_page_ok": true,
-        "method": "latest_pages",
-        "mode": "simple",
-        "pages": [
-          {
-            "content_digest": "68b5f3873c04064dacc80ace5bf28abd01ba48de98b0245b501c8f897f8b4045",
-            "http_status": 200,
-            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:31:17.139Z",
-            "oldest_date": "2026-11-01",
-            "page": 1,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
-          },
-          {
-            "content_digest": "36e6a0b28de0fe57c1d9ad3774bce3923e6db5fc25311613d35490f0a34ad5d4",
-            "http_status": 200,
-            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:31:25.663Z",
-            "oldest_date": "2026-11-01",
-            "page": 2,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "754fc9b83c4795c607be9b653f67dff23201d4a2e29d209703b09fa97f4e15bd",
-            "http_status": 200,
-            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:31:34.095Z",
-            "oldest_date": "2026-10-30",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "d3d5c7e9aec76a0a0766f53abf52d96d81bcb8ae024753f32fac621514d3893b",
-            "http_status": 200,
-            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-10-29",
-            "observed_at": "2026-11-04T14:31:41.064Z",
-            "oldest_date": "2026-10-15",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
-          }
-        ],
-        "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
-      },
-      "error": "",
-      "error_code": null,
-      "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-        "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
-      },
-      "id": "tpml",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
-      "last_partial_check": "2026-10-30T19:04:43.776+08:00",
-      "last_success": "2026-10-30",
-      "name": "臺北市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
-      "retries": 0,
-      "retry_wait_seconds": [],
-      "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-        "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
-      },
-      "stale_observations": [],
-      "status": "ok",
-      "verified_count": 63
-    },
-    {
-      "active_count": 133,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
-      "attempts": 1,
-      "change_count": 13,
-      "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
-          },
-          {
-            "from": "",
-            "title": "張老師月刊",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
-          }
-        ],
-        "link_changed": [],
-        "new": [
-          {
-            "title": "美育",
-            "to": "2026-11-01"
-          }
-        ],
-        "new_issue": [
-          {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
-          },
-          {
-            "from": "2026-11-02",
-            "title": "商業周刊",
-            "to": "2026-11-09"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "今周刊(精華版)",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "今周刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "先探投資週刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "理財周刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "HALLO!Germany德語學習誌",
             "to": "2026-11-01"
-          }
-        ],
-        "not_listed": [],
-        "returned": []
-      },
-      "coverage": {
-        "checked_pages": 4,
-        "date_boundary_reached": true,
-        "diagnostics": {
-          "cache_index_span_seconds": null,
-          "first_page_stable": null,
-          "issues": [],
-          "missing_pages": [],
-          "observed_span_seconds": 23,
-          "scan_id": "catalog-20261104-223039-f8b835",
-          "source_types": {
-            "direct": 4,
-            "search_index": 0
-          }
-        },
-        "direct_pages": 4,
-        "failed_pages": 0,
-        "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
-          "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
-          },
-          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
-        },
-        "first_page_ok": true,
-        "method": "latest_pages",
-        "mode": "simple",
-        "pages": [
-          {
-            "content_digest": "38db19e99a922039d958b883d004befeac45413676acdf38b7ca1ac9cf36d2f4",
-            "http_status": 200,
-            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:31:56.345Z",
-            "oldest_date": "2026-11-01",
-            "page": 1,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
-          },
-          {
-            "content_digest": "e713029cc92aaa692524dcbb5d94a0eb272f8786feae08883435c4bb91174e2c",
-            "http_status": 200,
-            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:32:05.139Z",
-            "oldest_date": "2026-11-01",
-            "page": 2,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "66186437c29a0a8f1c4972d1e01f6a762e61a03a66702b10b969dde2dc68b82b",
-            "http_status": 200,
-            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:32:13.652Z",
-            "oldest_date": "2026-10-29",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "8db1257bcdf573e800b18e34e7826811cecc864a6d0c86be99950004726d318e",
-            "http_status": 200,
-            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-10-29",
-            "observed_at": "2026-11-04T14:32:19.566Z",
-            "oldest_date": "2026-10-10",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
-          }
-        ],
-        "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
-      },
-      "error": "",
-      "error_code": null,
-      "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-        "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
-      },
-      "id": "tnml",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
-      "last_partial_check": "2026-10-31T08:28:37+08:00",
-      "last_success": "2026-10-30",
-      "name": "臺南市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
-      "retries": 0,
-      "retry_wait_seconds": [],
-      "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-        "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
-      },
-      "stale_observations": [],
-      "status": "ok",
-      "verified_count": 61
-    },
-    {
-      "active_count": 134,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
-      "attempts": 1,
-      "change_count": 13,
-      "changes": {
-        "link_added": [
-          {
-            "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
-          },
-          {
-            "from": "",
-            "title": "張老師月刊",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
-          }
-        ],
-        "link_changed": [],
-        "new": [
-          {
-            "title": "美育",
-            "to": "2026-11-01"
-          }
-        ],
-        "new_issue": [
-          {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
-          },
-          {
-            "from": "2026-11-02",
-            "title": "商業周刊",
-            "to": "2026-11-09"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "今周刊(精華版)",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "今周刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "先探投資週刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "理財周刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
             "to": "2026-11-01"
           }
         ],
@@ -3663,7 +3996,7 @@
           "issues": [],
           "missing_pages": [],
           "observed_span_seconds": 22,
-          "scan_id": "catalog-20261104-223039-f8b835",
+          "scan_id": "catalog-20261106-101301-e08b09",
           "source_types": {
             "direct": 4,
             "search_index": 0
@@ -3672,175 +4005,1008 @@
         "direct_pages": 4,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
+          "date": "2026-11-15",
+          "jid": "355",
           "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
-          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "65be5a968d1ffce850fdd10404202dee39dd3a6e855264d7373cb475e905866f",
+            "content_digest": "51e08555e856022bdc99f08c53bda5526b1a5413d13b08c14e3eb00efc03bdab",
             "http_status": 200,
-            "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:32:34.069Z",
+            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:13:07.859Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "d524322fbc623f85599d208e2bee0d7e252a4f825258e0105769084a95a09c3e",
+            "http_status": 200,
+            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:13:16.977Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          {
+            "content_digest": "29d2f184e690b901b6275f509e3c582ebb062a935bfc61bd457d41d0f2faa4b0",
+            "http_status": 200,
+            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:13:24.355Z",
+            "oldest_date": "2026-11-01",
+            "page": 3,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          },
+          {
+            "content_digest": "2b28f14922ec1b5b10378c5aaab3ebfac2d34af09685d29b8934af049076a7f6",
+            "http_status": 200,
+            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:13:30.306Z",
+            "oldest_date": "2026-10-15",
+            "page": 4,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261106-101301-e08b09"
+      },
+      "error": "",
+      "error_code": null,
+      "first_book": {
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "title": "Xin Chào!Vietnam 越南語學習誌"
+      },
+      "id": "taichunggov",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
+      "last_partial_check": "2026-10-30T19:04:43.776+08:00",
+      "last_success": "2026-10-30",
+      "name": "臺中市立圖書館",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
+      "retries": 0,
+      "retry_wait_seconds": [],
+      "saved_first_book": {
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "title": "Xin Chào!Vietnam 越南語學習誌"
+      },
+      "stale_observations": [],
+      "status": "ok",
+      "verified_count": 64
+    },
+    {
+      "active_count": 138,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
+      "attempts": 1,
+      "change_count": 25,
+      "changes": {
+        "link_added": [
+          {
+            "from": "",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
+          },
+          {
+            "from": "",
+            "title": "常春月刊",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236"
+          },
+          {
+            "from": "",
+            "title": "職業棒球",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
+          }
+        ],
+        "link_changed": [],
+        "new": [
+          {
+            "title": "吾愛吾家",
+            "to": "2026-11-01"
+          }
+        ],
+        "new_issue": [
+          {
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
+          },
+          {
+            "from": "2026-10-29",
+            "title": "點股成金特別版",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "常春月刊",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-29",
+            "title": "新新聞",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-29",
+            "title": "萬寶週刊",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "職業棒球",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
+            "to": "2026-11-01"
+          }
+        ],
+        "not_listed": [],
+        "returned": []
+      },
+      "coverage": {
+        "checked_pages": 4,
+        "date_boundary_reached": true,
+        "diagnostics": {
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "issues": [],
+          "missing_pages": [],
+          "observed_span_seconds": 23,
+          "scan_id": "catalog-20261106-101301-e08b09",
+          "source_types": {
+            "direct": 4,
+            "search_index": 0
+          }
+        },
+        "direct_pages": 4,
+        "failed_pages": 0,
+        "first_book": {
+          "date": "2026-11-15",
+          "jid": "355",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        "first_page_ok": true,
+        "method": "latest_pages",
+        "mode": "simple",
+        "pages": [
+          {
+            "content_digest": "4280e671397e99b4b0763b7b3b4ca89072cab4b4804941c43020a78db4ae60d1",
+            "http_status": 200,
+            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:13:45.884Z",
+            "oldest_date": "2026-11-04",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "0e2f6c74a0bed35fcb0be7b08901bcbcdb8576c28119942609fb66e53cb37cbc",
+            "http_status": 200,
+            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-04",
+            "observed_at": "2026-11-06T02:13:53.125Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          {
+            "content_digest": "11c5ecaa06ac79ffd06c4d38ec98b38d0e0620d2f2ce16808dee6f2074e8a964",
+            "http_status": 200,
+            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:14:00.440Z",
+            "oldest_date": "2026-11-01",
+            "page": 3,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          },
+          {
+            "content_digest": "f11c26aa0f0f7ca23055c2d5d0ca9808a8060afc20afddb77a8fb244cc8e6467",
+            "http_status": 200,
+            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:14:09.548Z",
+            "oldest_date": "2026-10-25",
+            "page": 4,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261106-101301-e08b09"
+      },
+      "error": "",
+      "error_code": null,
+      "first_book": {
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "title": "Xin Chào!Vietnam 越南語學習誌"
+      },
+      "id": "tpml",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
+      "last_partial_check": "2026-10-30T19:04:43.776+08:00",
+      "last_success": "2026-10-30",
+      "name": "臺北市立圖書館",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
+      "retries": 0,
+      "retry_wait_seconds": [],
+      "saved_first_book": {
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "title": "Xin Chào!Vietnam 越南語學習誌"
+      },
+      "stale_observations": [],
+      "status": "ok",
+      "verified_count": 74
+    },
+    {
+      "active_count": 134,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
+      "attempts": 1,
+      "change_count": 24,
+      "changes": {
+        "link_added": [
+          {
+            "from": "",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
+          },
+          {
+            "from": "",
+            "title": "常春月刊",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236"
+          },
+          {
+            "from": "",
+            "title": "職業棒球",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
+          }
+        ],
+        "link_changed": [],
+        "new": [
+          {
+            "title": "吾愛吾家",
+            "to": "2026-11-01"
+          }
+        ],
+        "new_issue": [
+          {
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
+          },
+          {
+            "from": "2026-10-29",
+            "title": "點股成金特別版",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "常春月刊",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-29",
+            "title": "新新聞",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "職業棒球",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
+            "to": "2026-11-01"
+          }
+        ],
+        "not_listed": [],
+        "returned": []
+      },
+      "coverage": {
+        "checked_pages": 4,
+        "date_boundary_reached": true,
+        "diagnostics": {
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "issues": [],
+          "missing_pages": [],
+          "observed_span_seconds": 19,
+          "scan_id": "catalog-20261106-101301-e08b09",
+          "source_types": {
+            "direct": 4,
+            "search_index": 0
+          }
+        },
+        "direct_pages": 4,
+        "failed_pages": 0,
+        "first_book": {
+          "date": "2026-11-15",
+          "jid": "355",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        "first_page_ok": true,
+        "method": "latest_pages",
+        "mode": "simple",
+        "pages": [
+          {
+            "content_digest": "2c82189eec571ad4a504061b078e927e40079efe09cdbd13958d6ab0381a6ff6",
+            "http_status": 200,
+            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:14:28.024Z",
+            "oldest_date": "2026-11-04",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "0fb8fc75f1472ead84ace5c75c9e04b33e340bc42bf67695219a7ddb8c346dde",
+            "http_status": 200,
+            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-02",
+            "observed_at": "2026-11-06T02:14:36.264Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          {
+            "content_digest": "607efc4b09bbacbda00b9b925d3786aac2ca58b57205ca6c0a4d044dcbb39dda",
+            "http_status": 200,
+            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:14:41.842Z",
+            "oldest_date": "2026-11-01",
+            "page": 3,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          },
+          {
+            "content_digest": "8418d8826a95032afa9897520669344b42be0ef0560fd97ee0966aa1e4253f54",
+            "http_status": 200,
+            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:14:47.324Z",
+            "oldest_date": "2026-10-25",
+            "page": 4,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261106-101301-e08b09"
+      },
+      "error": "",
+      "error_code": null,
+      "first_book": {
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "title": "Xin Chào!Vietnam 越南語學習誌"
+      },
+      "id": "tnml",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
+      "last_partial_check": "2026-10-31T08:28:37+08:00",
+      "last_success": "2026-10-30",
+      "name": "臺南市立圖書館",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
+      "retries": 0,
+      "retry_wait_seconds": [],
+      "saved_first_book": {
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+        "title": "Xin Chào!Vietnam 越南語學習誌"
+      },
+      "stale_observations": [],
+      "status": "ok",
+      "verified_count": 72
+    },
+    {
+      "active_count": 135,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
+      "attempts": 1,
+      "change_count": 24,
+      "changes": {
+        "link_added": [
+          {
+            "from": "",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
+          },
+          {
+            "from": "",
+            "title": "常春月刊",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236"
+          },
+          {
+            "from": "",
+            "title": "職業棒球",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
+          }
+        ],
+        "link_changed": [],
+        "new": [
+          {
+            "title": "吾愛吾家",
+            "to": "2026-11-01"
+          }
+        ],
+        "new_issue": [
+          {
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
+          },
+          {
+            "from": "2026-10-29",
+            "title": "點股成金特別版",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "常春月刊",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-29",
+            "title": "新新聞",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "職業棒球",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
+            "to": "2026-11-01"
+          }
+        ],
+        "not_listed": [],
+        "returned": []
+      },
+      "coverage": {
+        "checked_pages": 4,
+        "date_boundary_reached": true,
+        "diagnostics": {
+          "cache_index_span_seconds": null,
+          "first_page_stable": null,
+          "issues": [],
+          "missing_pages": [],
+          "observed_span_seconds": 23,
+          "scan_id": "resume-4a5af82247f2",
+          "source_types": {
+            "direct": 4,
+            "search_index": 0
+          }
+        },
+        "direct_pages": 4,
+        "failed_pages": 0,
+        "first_book": {
+          "date": "2026-11-15",
+          "jid": "355",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        "first_page_ok": true,
+        "method": "latest_pages",
+        "mode": "simple",
+        "pages": [
+          {
+            "content_digest": "e7a78f3af689d11b7631b9a1996c0704003d2569b70233cefeac59cfd669ab27",
+            "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:24:18.506Z",
+            "oldest_date": "2026-11-04",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "0700c40e62900a4904442e04809355d8d3864ccb68b2c6520d1d86cb8a67bfcd",
+            "content_digest": "3f8f2a1023019362ba126860a115085dbfa551029bc52b088033cf283aeaefec",
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:32:42.959Z",
+            "newest_date": "2026-11-02",
+            "observed_at": "2026-11-06T02:24:26.719Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "58ab275f6f3fd547df304f2f12073df7a2c222b37536e6892a79bced6b426f00",
+            "content_digest": "e2ac2aa33124dd549907955fec7eff98d2185d9ffd70bcb0a2c9301b71b48ad9",
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:32:49.873Z",
-            "oldest_date": "2026-10-30",
+            "observed_at": "2026-11-06T02:24:34.072Z",
+            "oldest_date": "2026-11-01",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
           },
           {
-            "content_digest": "0abdc46442a546287d09213b04d3ca54e8f4881c7396b63bd2a54c3a450062b1",
+            "content_digest": "c1346d0d728c9bb81d4c759509486678b3abc2f467a355874bf05a4e8f739b75",
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-10-29",
-            "observed_at": "2026-11-04T14:32:56.709Z",
-            "oldest_date": "2026-10-10",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:24:42.138Z",
+            "oldest_date": "2026-10-25",
             "page": 4,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
+        "scan_id": "resume-4a5af82247f2"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "id": "tphcc",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新北市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 62
+      "verified_count": 73
     },
     {
-      "active_count": 121,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
+      "active_count": 122,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
       "attempts": 1,
-      "change_count": 11,
+      "change_count": 22,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
           },
           {
             "from": "",
-            "title": "張老師月刊",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
+            "title": "職業棒球",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "美育",
+            "title": "吾愛吾家",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
           },
           {
             "from": "2026-10-29",
-            "title": "今周刊(精華版)",
+            "title": "點股成金特別版",
             "to": "2026-11-05"
           },
           {
-            "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "先探投資週刊",
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
             "to": "2026-11-05"
           },
           {
             "from": "2026-10-29",
-            "title": "理財周刊",
+            "title": "新新聞",
             "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "職業棒球",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
             "to": "2026-11-01"
           }
         ],
@@ -3848,183 +5014,257 @@
         "returned": []
       },
       "coverage": {
-        "checked_pages": 3,
+        "checked_pages": 4,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 17,
-          "scan_id": "catalog-20261104-223039-f8b835",
+          "observed_span_seconds": 24,
+          "scan_id": "resume-4a5af82247f2",
           "source_types": {
-            "direct": 3,
+            "direct": 4,
             "search_index": 0
           }
         },
-        "direct_pages": 3,
+        "direct_pages": 4,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
+          "date": "2026-11-15",
+          "jid": "355",
           "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
             "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
+          "title": "Xin Chào!Vietnam 越南語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "5639d3e0b53761fd153ad0ba787727a8d0f81f0cefd1090d6c9a2729591f78d8",
+            "content_digest": "c783e8931b2efd37f3be5602d1f073d68bf698adb2d7e045f2100edb43c176e5",
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:33:12.683Z",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:24:58.654Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "4204e920fa963eb19a16bc816e37cfbefbe9cdbb68bd2f2ab7f974b7d76eda47",
+            "content_digest": "e7574f75edb50872cbde551551ee5aefc861e5c8d26bfeb7785cc1b5670b2b2a",
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:33:21.218Z",
+            "observed_at": "2026-11-06T02:25:05.536Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "80121a7a9cf0d8a9f147c0ad1506f98b5042b699384c6bbea0da3f2481872654",
+            "content_digest": "8158bb6336e2798f847a6880b041cee734f3c7a1c28a1bb417cd05a3b01a0126",
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:33:30.037Z",
-            "oldest_date": "2026-10-25",
+            "observed_at": "2026-11-06T02:25:12.700Z",
+            "oldest_date": "2026-11-01",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          },
+          {
+            "content_digest": "ec6d077451b369610bf9304db4c3fc045fd80b46e786643c50d58e1c7cad1cd5",
+            "http_status": 200,
+            "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:25:23.164Z",
+            "oldest_date": "2026-10-14",
+            "page": 4,
+            "record_count": 20,
+            "scan_id": "resume-4a5af82247f2",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
+        "scan_id": "resume-4a5af82247f2"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "id": "ksml",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "高雄市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 56
+      "verified_count": 66
     },
     {
-      "active_count": 131,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
+      "active_count": 132,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
       "attempts": 1,
-      "change_count": 12,
+      "change_count": 24,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
           },
           {
             "from": "",
-            "title": "張老師月刊",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
+            "title": "常春月刊",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236"
+          },
+          {
+            "from": "",
+            "title": "職業棒球",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "美育",
+            "title": "吾愛吾家",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
-          },
-          {
-            "from": "2026-11-02",
-            "title": "商業周刊",
-            "to": "2026-11-09"
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
           },
           {
             "from": "2026-10-29",
-            "title": "今周刊(精華版)",
+            "title": "點股成金特別版",
             "to": "2026-11-05"
           },
           {
             "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
+            "title": "常春月刊",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
             "to": "2026-11-05"
           },
           {
             "from": "2026-10-29",
-            "title": "先探投資週刊",
+            "title": "新新聞",
             "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "理財周刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "職業棒球",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
             "to": "2026-11-01"
           }
         ],
@@ -4032,183 +5272,247 @@
         "returned": []
       },
       "coverage": {
-        "checked_pages": 3,
+        "checked_pages": 4,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 14,
-          "scan_id": "catalog-20261104-223039-f8b835",
+          "observed_span_seconds": 22,
+          "scan_id": "resume-4a5af82247f2",
           "source_types": {
-            "direct": 3,
+            "direct": 4,
             "search_index": 0
           }
         },
-        "direct_pages": 3,
+        "direct_pages": 4,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
+          "date": "2026-11-15",
+          "jid": "355",
           "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
             "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
+          "title": "Xin Chào!Vietnam 越南語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "d406a6830a42b620736526889f1a4b6be31fc3a0d1f7f0ed868822d2be2689b9",
+            "content_digest": "190dd02718027bb76268aafe763118dc8d435326dd7c1e2913f35bbdc806966c",
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:33:47.977Z",
-            "oldest_date": "2026-11-01",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:25:45.180Z",
+            "oldest_date": "2026-11-02",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "7f420c5ba3cb1ad1424c3d08a45019f20db697e4c0f2e238275457bb96cd7a8c",
+            "content_digest": "2f9cbc7e6c06ffb84f4d02397ad0b7d9c6e5ddd5a26a9ff5726af4dd34c53867",
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:33:54.601Z",
+            "observed_at": "2026-11-06T02:25:50.955Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "e6ac54a338e373768e15e827452832d51f539846505bb1b5648efa48da644e38",
+            "content_digest": "38c5b8ef8e042102e0e9b2d6b7d6abd4d202e6bbb9f149a659867c9596176ed5",
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:34:02.388Z",
-            "oldest_date": "2026-10-28",
+            "observed_at": "2026-11-06T02:25:59.639Z",
+            "oldest_date": "2026-11-01",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          },
+          {
+            "content_digest": "f15e5595ae30b8528823b96a412304870f4ddb9dce6f42f89abbebad53e906c1",
+            "http_status": 200,
+            "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:26:07.726Z",
+            "oldest_date": "2026-10-20",
+            "page": 4,
+            "record_count": 20,
+            "scan_id": "resume-4a5af82247f2",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
+        "scan_id": "resume-4a5af82247f2"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "id": "tycccgov",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "桃園市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 59
+      "verified_count": 70
     },
     {
-      "active_count": 124,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
+      "active_count": 125,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
       "attempts": 1,
-      "change_count": 12,
+      "change_count": 22,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
           },
           {
             "from": "",
-            "title": "張老師月刊",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
+            "title": "職業棒球",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "美育",
+            "title": "吾愛吾家",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
-          },
-          {
-            "from": "2026-11-02",
-            "title": "商業周刊",
-            "to": "2026-11-09"
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
           },
           {
             "from": "2026-10-29",
-            "title": "今周刊(精華版)",
+            "title": "點股成金特別版",
             "to": "2026-11-05"
           },
           {
-            "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
             "to": "2026-11-05"
           },
           {
             "from": "2026-10-29",
-            "title": "先探投資週刊",
+            "title": "新新聞",
             "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "理財周刊",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "職業棒球",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
             "to": "2026-11-01"
           }
         ],
@@ -4216,178 +5520,247 @@
         "returned": []
       },
       "coverage": {
-        "checked_pages": 3,
+        "checked_pages": 4,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 12,
-          "scan_id": "catalog-20261104-223039-f8b835",
+          "observed_span_seconds": 24,
+          "scan_id": "resume-4a5af82247f2",
           "source_types": {
-            "direct": 3,
+            "direct": 4,
             "search_index": 0
           }
         },
-        "direct_pages": 3,
+        "direct_pages": 4,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
+          "date": "2026-11-15",
+          "jid": "355",
           "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
             "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
+          "title": "Xin Chào!Vietnam 越南語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "34e6bc3ceead11641bdeaa8f07954a558d009b644e9d4b17bb65a46072522b5d",
+            "content_digest": "f012c15917f3b340e1b47477e6fb2d986fe491e5950ab4dd4e44fc15dfa9a64a",
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:34:18.050Z",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:26:26.611Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "a99ed32eb2475f05773b8357d02bca7fa845c58483481f031789973104cfd00f",
+            "content_digest": "ea87b1664f2cef6c053ab3f16dfa41227ca0c63ca70cb29700e9c384453309ea",
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:34:24.547Z",
+            "observed_at": "2026-11-06T02:26:36.395Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "bfc64f386fd7612d64ff046bf89d6c5bdc79ddec21288647333507d3d9428e2f",
+            "content_digest": "fa43e878e5a3629281d48d57bffd4ddfef1d4dc4d3c50e7763821d91463ba064",
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:34:30.447Z",
-            "oldest_date": "2026-10-25",
+            "observed_at": "2026-11-06T02:26:44.421Z",
+            "oldest_date": "2026-11-01",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          },
+          {
+            "content_digest": "ed14767890ca1080be9455fb7ff973b4538a210edf46529205a8e1e2e425fc99",
+            "http_status": 200,
+            "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:26:51.434Z",
+            "oldest_date": "2026-10-15",
+            "page": 4,
+            "record_count": 20,
+            "scan_id": "resume-4a5af82247f2",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
+        "scan_id": "resume-4a5af82247f2"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "id": "hchcc",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹縣公共圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 55
+      "verified_count": 65
     },
     {
-      "active_count": 122,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
+      "active_count": 123,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
       "attempts": 1,
-      "change_count": 11,
+      "change_count": 22,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
           },
           {
             "from": "",
-            "title": "張老師月刊",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
+            "title": "職業棒球",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "美育",
+            "title": "吾愛吾家",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
           },
           {
             "from": "2026-10-29",
-            "title": "今周刊(精華版)",
+            "title": "點股成金特別版",
             "to": "2026-11-05"
           },
           {
-            "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "先探投資週刊",
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
             "to": "2026-11-05"
           },
           {
             "from": "2026-10-29",
-            "title": "理財周刊",
+            "title": "新新聞",
             "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "職業棒球",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
             "to": "2026-11-01"
           }
         ],
@@ -4395,178 +5768,247 @@
         "returned": []
       },
       "coverage": {
-        "checked_pages": 3,
+        "checked_pages": 4,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 16,
-          "scan_id": "catalog-20261104-223039-f8b835",
+          "observed_span_seconds": 26,
+          "scan_id": "resume-4a5af82247f2",
           "source_types": {
-            "direct": 3,
+            "direct": 4,
             "search_index": 0
           }
         },
-        "direct_pages": 3,
+        "direct_pages": 4,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
+          "date": "2026-11-15",
+          "jid": "355",
           "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
             "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
+          "title": "Xin Chào!Vietnam 越南語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "b312f5c530cf81b9696a0494456223f5209c7dd97738322792e6fd9c57cae692",
+            "content_digest": "a1d24b9472f701144b91dd5df2dd3e7efb8a627f2abf305f2999bda2331a4302",
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:34:49.779Z",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:27:06.840Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "1fb072fcd7b3aad5ec4f56744ee8fc3ebb02c691fa4b892e95277b9582fb38bf",
+            "content_digest": "14353545b35ed707a837ff4ece85159fcd5949c639a7f83a979e31e6269d1afe",
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:34:58.065Z",
+            "observed_at": "2026-11-06T02:27:15.521Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "1fac5946fc2b9f7cc322aba2adb848e6c1325a44014e2cabccaa4e2e3bf11ac0",
+            "content_digest": "c1e086d7d1cf3c076dc2499a40bb88704e085bf7eeb0d06b7b7c60ffcb4dfffe",
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:35:05.782Z",
-            "oldest_date": "2026-10-25",
+            "observed_at": "2026-11-06T02:27:24.110Z",
+            "oldest_date": "2026-11-01",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "resume-4a5af82247f2",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          },
+          {
+            "content_digest": "565ffa6768d927088cfe4b08941502d9624029fb5b3842abb625431ef06b935d",
+            "http_status": 200,
+            "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:27:32.991Z",
+            "oldest_date": "2026-10-14",
+            "page": 4,
+            "record_count": 20,
+            "scan_id": "resume-4a5af82247f2",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
+        "scan_id": "resume-4a5af82247f2"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "id": "hcmlgov",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹市圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 53
+      "verified_count": 63
     },
     {
-      "active_count": 122,
-      "attempted_at": "2026-11-04T23:10:13+08:00",
+      "active_count": 123,
+      "attempted_at": "2026-11-06T10:27:40+08:00",
       "attempts": 1,
-      "change_count": 11,
+      "change_count": 22,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "enya FASHION QUEEN",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781"
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355"
           },
           {
             "from": "",
-            "title": "張老師月刊",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=217"
+            "title": "職業棒球",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=908"
+          },
+          {
+            "from": "",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=813"
+          },
+          {
+            "from": "",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=653"
+          },
+          {
+            "from": "",
+            "title": "機械工業雜誌",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=602"
+          },
+          {
+            "from": "",
+            "title": "CIO雜誌",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=365"
+          },
+          {
+            "from": "",
+            "title": "Audioart音響論壇",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=164"
+          },
+          {
+            "from": "",
+            "title": "汽車百科",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=139"
+          },
+          {
+            "from": "",
+            "title": "行遍天下",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=8"
           }
         ],
         "link_changed": [],
         "new": [
           {
-            "title": "美育",
+            "title": "吾愛吾家",
             "to": "2026-11-01"
           }
         ],
         "new_issue": [
           {
-            "from": "2026-11-02",
-            "title": "商業周刊(精華版)",
-            "to": "2026-11-09"
+            "from": "2026-10-15",
+            "title": "Xin Chào!Vietnam 越南語學習誌",
+            "to": "2026-11-15"
           },
           {
             "from": "2026-10-29",
-            "title": "今周刊(精華版)",
+            "title": "點股成金特別版",
             "to": "2026-11-05"
           },
           {
-            "from": "2026-10-05",
-            "title": "enya FASHION QUEEN",
-            "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-29",
-            "title": "先探投資週刊",
+            "from": "2026-10-22",
+            "title": "財訊雙週刊",
             "to": "2026-11-05"
           },
           {
             "from": "2026-10-29",
-            "title": "理財周刊",
+            "title": "新新聞",
             "to": "2026-11-05"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "鏡週刊",
-            "to": "2026-11-04"
-          },
-          {
-            "from": "2026-10-28",
-            "title": "大師輕鬆讀",
-            "to": "2026-11-04"
           },
           {
             "from": "2026-10-01",
-            "title": "張老師月刊",
+            "title": "職業棒球",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "EZ Thai 泰語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "HALLO!Germany德語學習誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "機械工業雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "CIO雜誌",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "Audioart音響論壇",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "汽車百科",
+            "to": "2026-11-01"
+          },
+          {
+            "from": "2026-10-01",
+            "title": "行遍天下",
             "to": "2026-11-01"
           }
         ],
@@ -4574,137 +6016,151 @@
         "returned": []
       },
       "coverage": {
-        "checked_pages": 3,
+        "checked_pages": 4,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 13,
-          "scan_id": "catalog-20261104-223039-f8b835",
+          "observed_span_seconds": 22,
+          "scan_id": "catalog-20261106-101301-e08b09",
           "source_types": {
-            "direct": 3,
+            "direct": 4,
             "search_index": 0
           }
         },
-        "direct_pages": 3,
+        "direct_pages": 4,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-09",
-          "jid": "846",
+          "date": "2026-11-15",
+          "jid": "355",
           "link_evidence": {
-            "anchor_text": "商業周刊(精華版)",
-            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
             "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
           "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "商業周刊(精華版)"
+          "title": "Xin Chào!Vietnam 越南語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "b110f885d5a40a7738d0e8cc7b54a6d1e3d83dc535a0f6a61d56a5c73aa22bec",
+            "content_digest": "cf561bbbf9c922be8695d3ca0716e3885bc938edb3da4ac1d7d10585669a587a",
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-09",
-            "observed_at": "2026-11-04T14:35:22.979Z",
+            "newest_date": "2026-11-15",
+            "observed_at": "2026-11-06T02:17:10.500Z",
             "oldest_date": "2026-11-01",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "catalog-20261106-101301-e08b09",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "ef0089cb7cccb691ba7b03909bb222dc4b587a975a89a1ecabbd38e025c23ba6",
+            "content_digest": "3a6c68a52e9e5f4787f04bfea29b7a760c094a7cb7b5c5b532f961b8b1391fcb",
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:35:30.063Z",
+            "observed_at": "2026-11-06T02:17:17.497Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "catalog-20261106-101301-e08b09",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
           },
           {
-            "content_digest": "abc6c5406c56f5581f9f266e1b6837b059a2f08d8c50323ee4dd6f2fcb717549",
+            "content_digest": "bbfe19a79bb593ca0def3f5095c4477d461523f53b9b8cbf180eac85d04c5eb7",
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
             "newest_date": "2026-11-01",
-            "observed_at": "2026-11-04T14:35:36.150Z",
-            "oldest_date": "2026-10-25",
+            "observed_at": "2026-11-06T02:17:24.879Z",
+            "oldest_date": "2026-11-01",
             "page": 3,
             "record_count": 20,
-            "scan_id": "catalog-20261104-223039-f8b835",
+            "scan_id": "catalog-20261106-101301-e08b09",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          },
+          {
+            "content_digest": "ecd7701cfb1a01379ec2da49f5c51dbea287c2d6fa0970a67a2a156a9c4b4b77",
+            "http_status": 200,
+            "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
+            "newest_date": "2026-11-01",
+            "observed_at": "2026-11-06T02:17:32.592Z",
+            "oldest_date": "2026-10-14",
+            "page": 4,
+            "record_count": 20,
+            "scan_id": "catalog-20261106-101301-e08b09",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261104-223039-f8b835"
+        "scan_id": "catalog-20261106-101301-e08b09"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "id": "klccab",
-      "last_assisted_success": "2026-11-04T23:10:13+08:00",
-      "last_complete_check": "2026-11-04T23:10:13+08:00",
+      "last_assisted_success": "2026-11-06T10:27:40+08:00",
+      "last_complete_check": "2026-11-06T10:27:40+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "基隆市公共圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-29；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-10-31；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-04T23:10:13+08:00",
-        "date": "2026-11-09",
-        "jid": "846",
-        "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+        "checked_at": "2026-11-06T10:27:40+08:00",
+        "date": "2026-11-15",
+        "jid": "355",
+        "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
         "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "商業周刊(精華版)"
+        "title": "Xin Chào!Vietnam 越南語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 53
+      "verified_count": 63
     }
   ],
   "schema": 1,
   "summary": {
-    "active_records": 1147,
+    "active_records": 1156,
     "cached_pages": 0,
-    "changes_total": 107,
+    "changes_total": 207,
     "error_code_counts": {},
     "failed": 0,
-    "links_added": 18,
+    "links_added": 85,
     "links_changed": 0,
-    "new_issues": 80,
+    "new_issues": 113,
     "new_titles": 9,
     "not_checked": 0,
     "not_listed": 0,
-    "pages_checked": 30,
+    "pages_checked": 36,
     "pages_failed": 0,
     "partial": 0,
     "returned": 0,
     "successful": 9,
     "total": 9,
-    "verified_records": 516
+    "verified_records": 610
   },
   "type": "chatgpt_assisted",
-  "window_end": "2026-11-04",
-  "window_start": "2026-10-29"
+  "window_end": "2026-11-06",
+  "window_start": "2026-10-31"
 }
