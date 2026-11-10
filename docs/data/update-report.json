@@ -1,9 +1,548 @@
 {
-  "batch_id": "catalog-20261107-220546-e38742",
+  "batch_id": "catalog-20261110-183705-1970ef",
   "batch_schema": 4,
   "complete": true,
-  "generated_at": "2026-11-07T23:50:36+08:00",
+  "generated_at": "2026-11-10T18:49:25+08:00",
   "history": [
+    {
+      "at": "2026-11-10T18:49:25+08:00",
+      "batch_id": "catalog-20261110-183705-1970ef",
+      "complete": true,
+      "source": "chatgpt_assisted",
+      "summary": {
+        "active_records": 1166,
+        "cached_pages": 0,
+        "changes_total": 101,
+        "error_code_counts": {},
+        "failed": 0,
+        "links_added": 28,
+        "links_changed": 0,
+        "new_issues": 73,
+        "new_titles": 0,
+        "not_checked": 0,
+        "not_listed": 0,
+        "pages_checked": 18,
+        "pages_failed": 0,
+        "partial": 0,
+        "returned": 0,
+        "successful": 9,
+        "total": 9,
+        "verified_records": 248
+      },
+      "title_changes": [
+        {
+          "from": "2026-10-25",
+          "library": "taichunggov",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "taichunggov",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "taichunggov",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "taichunggov",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "taichunggov",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "taichunggov",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "taichunggov",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "taichunggov",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tpml",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tpml",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tpml",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "tpml",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tpml",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tpml",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tpml",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tpml",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tpml",
+          "title": "La_Vie",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tnml",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tnml",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tnml",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "tnml",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tnml",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tnml",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tnml",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tnml",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tphcc",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tphcc",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tphcc",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "tphcc",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tphcc",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tphcc",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tphcc",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tphcc",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "ksml",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "ksml",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "ksml",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "ksml",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "ksml",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "ksml",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "ksml",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "ksml",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tycccgov",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tycccgov",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tycccgov",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "tycccgov",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "tycccgov",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tycccgov",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tycccgov",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "tycccgov",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "hchcc",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "hchcc",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "hchcc",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "hchcc",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "hchcc",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "hchcc",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "hchcc",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "hchcc",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "hcmlgov",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "hcmlgov",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "hcmlgov",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "hcmlgov",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "hcmlgov",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "hcmlgov",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "hcmlgov",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "hcmlgov",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "klccab",
+          "title": "APA KABAR印尼語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "klccab",
+          "title": "英語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "klccab",
+          "title": "Hi! JAPAN 日語學習誌",
+          "to": "2026-11-25",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-26",
+          "library": "klccab",
+          "title": "Android玩樂誌",
+          "to": "2026-11-09",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-25",
+          "library": "klccab",
+          "title": "500輯",
+          "to": "2026-11-06",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "klccab",
+          "title": "放築塾代誌",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "klccab",
+          "title": "HOUSE STYLE 時尚家居",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        },
+        {
+          "from": "2026-10-05",
+          "library": "klccab",
+          "title": "Prime AV新視聽",
+          "to": "2026-11-05",
+          "type": "new_issue"
+        }
+      ]
+    },
     {
       "at": "2026-11-07T23:50:36+08:00",
       "batch_id": "catalog-20261107-220546-e38742",
@@ -4141,1588 +4680,1522 @@
   "libraries": [
     {
       "active_count": 125,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 7,
+      "change_count": 11,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
           }
         ],
         "link_changed": [],
-        "new": [
-          {
-            "title": "料理.台灣",
-            "to": "2026-11-05"
-          }
-        ],
+        "new": [],
         "new_issue": [
           {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 19,
-          "scan_id": "catalog-20261107-220546-e38742",
+          "observed_span_seconds": 13,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "7f8b0433f379e1995b98bfb908e303c7329a4bb66d9de07680b3327428933898",
+            "content_digest": "031eed863665e9827737f9ba339a58d1e17fd98537316536a1e1a5569c6a2455",
             "http_status": 200,
             "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T14:05:53.431Z",
-            "oldest_date": "2026-11-01",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:37:14.972Z",
+            "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261107-220546-e38742",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "c6fee253e246515c5a42b5a3bc20b22f7faaac51aeaf030f7b25f216fbc6069c",
+            "content_digest": "11159b41b049962709be9281203d15fdb790c81a193c3e5045f4f749ba94e2e9",
             "http_status": 200,
             "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T14:06:00.519Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:37:28.798Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261107-220546-e38742",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "2aaa47d13f7cc722a1e80a119a787a45bb7fcdd3bd6d27603b9dbe5767dd1301",
-            "http_status": 200,
-            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T14:06:07.065Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "catalog-20261107-220546-e38742",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "eed7c75f17740f008c9b262940964fbc83a7758580b3f76cd5ce359f37550591",
-            "http_status": 200,
-            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T14:06:12.785Z",
-            "oldest_date": "2026-10-15",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "catalog-20261107-220546-e38742",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261107-220546-e38742"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "taichunggov",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "臺中市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 68
+      "verified_count": 26
     },
     {
       "active_count": 139,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 7,
+      "change_count": 13,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
+          },
+          {
+            "from": "",
+            "title": "La_Vie",
+            "to": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=26"
           }
         ],
         "link_changed": [],
-        "new": [
-          {
-            "title": "料理.台灣",
-            "to": "2026-11-05"
-          }
-        ],
+        "new": [],
         "new_issue": [
           {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "La_Vie",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 22,
-          "scan_id": "resume-314d828c964c",
+          "observed_span_seconds": 5,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "46534120d518c41a5aa3d2ce165bcbff64c096d97ad79d8c0aa2612f5daa1293",
+            "content_digest": "52e17c52dc20b8433e5c40fed7243de8f989ba15e54f2da250d195333d85d025",
             "http_status": 200,
             "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T15:04:13.878Z",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:37:46.067Z",
             "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "35e2991be947c33626e1f47223c0039f5f94ab3f785df8f08bb6e8b31997f7d5",
+            "content_digest": "bd1cee30973854fe9502729d864973e46e87b4f032a8b003fd02f0ab3ca1034d",
             "http_status": 200,
             "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-04",
-            "observed_at": "2026-11-07T15:04:22.426Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:37:51.668Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "e086205c673ad9ad8d31f19c2c00f2ee934433649f9c79c004446e180aee7c53",
-            "http_status": 200,
-            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:04:28.931Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "5880fdb0b099718b102b469557df6067e29e0e691ef1b05f75b8cbc3382ad040",
-            "http_status": 200,
-            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:04:35.917Z",
-            "oldest_date": "2026-10-28",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "resume-314d828c964c"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "tpml",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "臺北市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 78
+      "verified_count": 31
     },
     {
       "active_count": 135,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 7,
+      "change_count": 11,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
           }
         ],
         "link_changed": [],
-        "new": [
-          {
-            "title": "料理.台灣",
-            "to": "2026-11-05"
-          }
-        ],
+        "new": [],
         "new_issue": [
           {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 22,
-          "scan_id": "resume-314d828c964c",
+          "observed_span_seconds": 10,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "c9a3468923e03ac23b16706ea38dcd383e31619ae1155be10032ce2d3a4e13c4",
+            "content_digest": "e2ea719754e52f397bf19dc4b5b070aa9e61ceb381dac55a3514456fca3a2926",
             "http_status": 200,
             "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T15:04:51.541Z",
-            "oldest_date": "2026-11-04",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:38:13.812Z",
+            "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "16084d4ea9b9d123f0d4c05eb13ba30984910b5b63cb17cc085074f5bdf17386",
+            "content_digest": "e5710f999fcf950c7dc6e250ae59f9468d691153ed8006f8b7930a2b725f91f5",
             "http_status": 200,
             "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-04",
-            "observed_at": "2026-11-07T15:04:58.437Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:38:24.192Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "6f028622dfd4be3aeee418c965b42c3b5ab1a6d03ea5a5c1950234dff13facb9",
-            "http_status": 200,
-            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:05:07.720Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "85c49c7c11f6f9a996aa1a2802be0d28c0457c2f04d881ea3767cfd0059ab220",
-            "http_status": 200,
-            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:05:13.974Z",
-            "oldest_date": "2026-10-28",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "resume-314d828c964c"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "tnml",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "臺南市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 76
+      "verified_count": 29
     },
     {
       "active_count": 137,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 8,
+      "change_count": 11,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
           }
         ],
         "link_changed": [],
-        "new": [
+        "new": [],
+        "new_issue": [
           {
-            "title": "料理.台灣",
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
             "to": "2026-11-05"
           },
           {
-            "title": "新北市環保小局長",
-            "to": "2026-11-01"
-          }
-        ],
-        "new_issue": [
-          {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
-          },
-          {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 25,
-          "scan_id": "catalog-20261107-220546-e38742",
+          "observed_span_seconds": 8,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "96954213949d7c51d06a4480b9d8276afed5d455a01f35a52a14be7b54df056e",
+            "content_digest": "8aee355f0c9bd6ebe95a9b644116b979b918e76e949f18f7e6b33b601f074a77",
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T14:07:21.743Z",
-            "oldest_date": "2026-11-04",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:38:46.159Z",
+            "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "catalog-20261107-220546-e38742",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "684296ad34d6289eaf612ee447438e7aca26b56d4491bc3666c0bdd9a272c18a",
+            "content_digest": "630f5717bc75182ec68ff731b9c4078f0d20a6d2c560a9c305999bd7ad152cb5",
             "http_status": 200,
             "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-04",
-            "observed_at": "2026-11-07T14:07:29.856Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:38:54.945Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "catalog-20261107-220546-e38742",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "ab39ab480142a620a59781b9704e27929ca7b9bb7fc3bc478ab0e6b4a36b96af",
-            "http_status": 200,
-            "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T14:07:38.284Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "catalog-20261107-220546-e38742",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "98747b35a4dae4e2430a02df169ceb7e61d885b6c9b68e56817830c41b6d17b6",
-            "http_status": 200,
-            "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T14:07:47.219Z",
-            "oldest_date": "2026-10-28",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "catalog-20261107-220546-e38742",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "catalog-20261107-220546-e38742"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "tphcc",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新北市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 78
+      "verified_count": 29
     },
     {
       "active_count": 123,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 7,
+      "change_count": 11,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
           }
         ],
         "link_changed": [],
-        "new": [
-          {
-            "title": "料理.台灣",
-            "to": "2026-11-05"
-          }
-        ],
+        "new": [],
         "new_issue": [
           {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 20,
-          "scan_id": "resume-314d828c964c",
+          "observed_span_seconds": 8,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "16cecbb83aeb15a57414cd02f311f2450c46eecd00d24b74a391cd80f62529d0",
+            "content_digest": "60199dcaf22b30ab49652550bd2c30abe8799664b926ff974f53172b623dc2b3",
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T15:05:35.266Z",
-            "oldest_date": "2026-11-01",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:39:10.583Z",
+            "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "dd247babf956b4d9cfcf11da5e7f543f18ebded91e90e1c9029ef389f6f01347",
+            "content_digest": "a8416f1339268bafe4b67051957378afa0d514a6f215afdbc6ddc74af541fce2",
             "http_status": 200,
             "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:05:42.832Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:39:19.116Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "796dfd4d2e48cc796d3a390433860ca50766bcdefc618c545a2649ac660c5873",
-            "http_status": 200,
-            "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:05:50.114Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "4e58c197c9dc214d8b0786e9e944d5e97cd676cf56f03e9ab59b5f234c6da71b",
-            "http_status": 200,
-            "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:05:56.063Z",
-            "oldest_date": "2026-10-20",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "resume-314d828c964c"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "ksml",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "高雄市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 70
+      "verified_count": 26
     },
     {
       "active_count": 133,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 7,
+      "change_count": 11,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
           }
         ],
         "link_changed": [],
-        "new": [
-          {
-            "title": "料理.台灣",
-            "to": "2026-11-05"
-          }
-        ],
+        "new": [],
         "new_issue": [
           {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 18,
-          "scan_id": "resume-314d828c964c",
+          "observed_span_seconds": 6,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "51ffac8cfda7f2a63569d158c03bff17750d1d0bd22b7ee7a02f5b3867a2a998",
+            "content_digest": "730040e0c1dfbdc505d3de825a94e3f218d61e676c3353e8dba9926a33d730d2",
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T15:06:12.778Z",
-            "oldest_date": "2026-11-04",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:39:40.980Z",
+            "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "529127721c8ba76c17805f70fe5d77e574632b43618932d16d9555fda5daa6a3",
+            "content_digest": "41bacd53646d5b0615a92efeb95983f1bedc69093d090ab999a3253c9e088024",
             "http_status": 200,
             "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-02",
-            "observed_at": "2026-11-07T15:06:18.350Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:39:47.946Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "6d54399f18d01e0f0ef6cecaa91238ca35ded110fede5785e154662c92fbd23b",
-            "http_status": 200,
-            "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:06:24.575Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "2372b4927f23b1b488297030ae81ac408a68a18d9bd6e7352bc32adae7431daa",
-            "http_status": 200,
-            "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:06:31.191Z",
-            "oldest_date": "2026-10-25",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "resume-314d828c964c"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "tycccgov",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "桃園市立圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 74
+      "verified_count": 28
     },
     {
       "active_count": 126,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 7,
+      "change_count": 11,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
           }
         ],
         "link_changed": [],
-        "new": [
-          {
-            "title": "料理.台灣",
-            "to": "2026-11-05"
-          }
-        ],
+        "new": [],
         "new_issue": [
           {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 23,
-          "scan_id": "resume-314d828c964c",
+          "observed_span_seconds": 6,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "b46deaf55a1719f28911bab8ed79e3b881afd74796ccf0e15d8fadf84b1856f0",
+            "content_digest": "29f253fdfda4920b615ec8ba71a937477da2258d3b06dd8b5fa39e79e6ec424e",
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T15:06:53.142Z",
-            "oldest_date": "2026-11-02",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:40:05.486Z",
+            "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "e6ccd9a5350e8135bc612991f2ec9203b904681805d258f0bfaa63ce2b5c9961",
+            "content_digest": "ca399c84fcdbeecc9c06bd1633cf8e1f09d202a38f187737094f8a912aa8611a",
             "http_status": 200,
             "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:07:00.321Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:40:11.766Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "731716e3a091ef07dc4521cf757c68f296974653e9264766b94155afcc546f2d",
-            "http_status": 200,
-            "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:07:08.249Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "20c79eb7e2a28854da89485d309f6b740799355c08caa749faed238d59a21d50",
-            "http_status": 200,
-            "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:07:16.450Z",
-            "oldest_date": "2026-10-16",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "resume-314d828c964c"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "hchcc",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹縣公共圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 69
+      "verified_count": 27
     },
     {
       "active_count": 124,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 7,
+      "change_count": 11,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
           }
         ],
         "link_changed": [],
-        "new": [
-          {
-            "title": "料理.台灣",
-            "to": "2026-11-05"
-          }
-        ],
+        "new": [],
         "new_issue": [
           {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 18,
-          "scan_id": "resume-314d828c964c",
+          "observed_span_seconds": 7,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "1390eee5d51b14b77c115267b036e137c22921715172104904d70f7a40d56c74",
+            "content_digest": "e570434dbc6b5fc9414acb2956b58448129e46d07f8772b9f3fe7b964d8f7cb0",
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T15:07:30.689Z",
-            "oldest_date": "2026-11-01",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:40:30.261Z",
+            "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "7462988d053cf7d12c8c4fd095e0854dc307aa6a17e6e5eb83b73798eed9b239",
+            "content_digest": "9be12eb48b2670d8464bec3a482295006c17df670d72c74df910abf265f5c547",
             "http_status": 200,
             "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:07:37.735Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:40:37.298Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "cd054260ad26a5fee1a57bd3104d18c48ad4b13802cc51063e91db20bb7e3045",
-            "http_status": 200,
-            "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:07:43.948Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "67c7fe25426b53776e14028199fdffe3bb0c3d647d7c08354651c85637d4fb9b",
-            "http_status": 200,
-            "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:07:49.485Z",
-            "oldest_date": "2026-10-15",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "resume-314d828c964c"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "hcmlgov",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-31T08:28:37+08:00",
       "last_success": "2026-10-30",
       "name": "新竹市圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 67
+      "verified_count": 26
     },
     {
       "active_count": 124,
-      "attempted_at": "2026-11-07T23:50:36+08:00",
+      "attempted_at": "2026-11-10T18:49:25+08:00",
       "attempts": 1,
-      "change_count": 7,
+      "change_count": 11,
       "changes": {
         "link_added": [
           {
             "from": "",
-            "title": "幸運雜誌",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=183"
+            "title": "放築塾代誌",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351"
           },
           {
             "from": "",
-            "title": "WOW! SCREEN",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=53"
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171"
           },
           {
             "from": "",
-            "title": "Marie Claire美麗佳人",
-            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=21"
+            "title": "Prime AV新視聽",
+            "to": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163"
           }
         ],
         "link_changed": [],
-        "new": [
-          {
-            "title": "料理.台灣",
-            "to": "2026-11-05"
-          }
-        ],
+        "new": [],
         "new_issue": [
           {
-            "from": "2026-10-01",
-            "title": "幸運雜誌",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "APA KABAR印尼語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "WOW! SCREEN",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "英語學習誌",
+            "to": "2026-11-25"
           },
           {
-            "from": "2026-10-01",
-            "title": "Marie Claire美麗佳人",
-            "to": "2026-11-01"
+            "from": "2026-10-25",
+            "title": "Hi! JAPAN 日語學習誌",
+            "to": "2026-11-25"
+          },
+          {
+            "from": "2026-10-26",
+            "title": "Android玩樂誌",
+            "to": "2026-11-09"
+          },
+          {
+            "from": "2026-10-25",
+            "title": "500輯",
+            "to": "2026-11-06"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "放築塾代誌",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "HOUSE STYLE 時尚家居",
+            "to": "2026-11-05"
+          },
+          {
+            "from": "2026-10-05",
+            "title": "Prime AV新視聽",
+            "to": "2026-11-05"
           }
         ],
         "not_listed": [],
         "returned": []
       },
       "coverage": {
-        "checked_pages": 4,
+        "checked_pages": 2,
         "date_boundary_reached": true,
         "diagnostics": {
           "cache_index_span_seconds": null,
           "first_page_stable": null,
           "issues": [],
           "missing_pages": [],
-          "observed_span_seconds": 20,
-          "scan_id": "resume-314d828c964c",
+          "observed_span_seconds": 7,
+          "scan_id": "catalog-20261110-183705-1970ef",
           "source_types": {
-            "direct": 4,
+            "direct": 2,
             "search_index": 0
           }
         },
-        "direct_pages": 4,
+        "direct_pages": 2,
         "failed_pages": 0,
         "first_book": {
-          "date": "2026-11-15",
-          "jid": "355",
+          "date": "2026-11-25",
+          "jid": "814",
           "link_evidence": {
-            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
-            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
             "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
-          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
           "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-          "title": "Xin Chào!Vietnam 越南語學習誌"
+          "title": "APA KABAR印尼語學習誌"
         },
         "first_page_ok": true,
         "method": "latest_pages",
         "mode": "simple",
         "pages": [
           {
-            "content_digest": "647398183359142d7368341e0c807b4380c7c559ddf939e3c5040cdeff6708a9",
+            "content_digest": "08c66e0f88b16ee2557e4778fd98ea0589e90fc0d13fdc1630e83f498f98231e",
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
-            "newest_date": "2026-11-15",
-            "observed_at": "2026-11-07T15:08:03.866Z",
-            "oldest_date": "2026-11-01",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:40:55.865Z",
+            "oldest_date": "2026-11-05",
             "page": 1,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
           },
           {
-            "content_digest": "22619a4d2f500e88aa80faaf658fd1d8a6364b4500990649f4f094fb05ced9d7",
+            "content_digest": "8d5242e98ab850dbfa74ff2ec5562fc2698a11c6757b66c4b869b2d3df0a2479",
             "http_status": 200,
             "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:08:09.814Z",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:41:03.692Z",
             "oldest_date": "2026-11-01",
             "page": 2,
             "record_count": 20,
-            "scan_id": "resume-314d828c964c",
+            "scan_id": "catalog-20261110-183705-1970ef",
             "source_type": "direct",
             "status": "ok",
             "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
-          },
-          {
-            "content_digest": "d95c181103841d528eecabfb55455d345c8c71377efe65db1a655e9cdb06b73f",
-            "http_status": 200,
-            "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:08:19.076Z",
-            "oldest_date": "2026-11-01",
-            "page": 3,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
-          },
-          {
-            "content_digest": "2c97abd2f43cf63568adf0383a122084cce9ccc460d8de915268e089c2e222ae",
-            "http_status": 200,
-            "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=5",
-            "newest_date": "2026-11-01",
-            "observed_at": "2026-11-07T15:08:24.472Z",
-            "oldest_date": "2026-10-15",
-            "page": 4,
-            "record_count": 20,
-            "scan_id": "resume-314d828c964c",
-            "source_type": "direct",
-            "status": "ok",
-            "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=4"
           }
         ],
         "pagination_contiguous": true,
-        "scan_id": "resume-314d828c964c"
+        "scan_id": "catalog-20261110-183705-1970ef"
       },
       "error": "",
       "error_code": null,
       "first_book": {
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "id": "klccab",
-      "last_assisted_success": "2026-11-07T23:50:36+08:00",
-      "last_complete_check": "2026-11-07T23:50:36+08:00",
+      "last_assisted_success": "2026-11-10T18:49:25+08:00",
+      "last_complete_check": "2026-11-10T18:49:25+08:00",
       "last_partial_check": "2026-10-30T19:04:43.776+08:00",
       "last_success": "2026-10-30",
       "name": "基隆市公共圖書館",
-      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-01；無最晚刊期限制。",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
       "retries": 0,
       "retry_wait_seconds": [],
       "saved_first_book": {
-        "checked_at": "2026-11-07T23:50:36+08:00",
-        "date": "2026-11-15",
-        "jid": "355",
-        "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+        "checked_at": "2026-11-10T18:49:25+08:00",
+        "date": "2026-11-25",
+        "jid": "814",
+        "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
         "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
-        "title": "Xin Chào!Vietnam 越南語學習誌"
+        "title": "APA KABAR印尼語學習誌"
       },
       "stale_observations": [],
       "status": "ok",
-      "verified_count": 67
+      "verified_count": 26
     }
   ],
   "schema": 1,
   "summary": {
     "active_records": 1166,
     "cached_pages": 0,
-    "changes_total": 64,
+    "changes_total": 101,
     "error_code_counts": {},
     "failed": 0,
-    "links_added": 27,
+    "links_added": 28,
     "links_changed": 0,
-    "new_issues": 27,
-    "new_titles": 10,
+    "new_issues": 73,
+    "new_titles": 0,
     "not_checked": 0,
     "not_listed": 0,
-    "pages_checked": 36,
+    "pages_checked": 18,
     "pages_failed": 0,
     "partial": 0,
     "returned": 0,
     "successful": 9,
     "total": 9,
-    "verified_records": 647
+    "verified_records": 248
   },
   "type": "chatgpt_assisted",
-  "window_end": "2026-11-07",
-  "window_start": "2026-11-01"
+  "window_end": "2026-11-10",
+  "window_start": "2026-11-04"
 }

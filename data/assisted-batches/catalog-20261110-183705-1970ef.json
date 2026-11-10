@@ -1,0 +1,3422 @@
+{
+  "batch_id": "catalog-20261110-183705-1970ef",
+  "collector": "normal_chromium_extension_v0.4",
+  "evidence_note": "Live rendered DOM plus read-only main-document HTTP observation; no response headers or cookies exported.",
+  "libraries": [
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "031eed863665e9827737f9ba339a58d1e17fd98537316536a1e1a5569c6a2455",
+            "http_status": 200,
+            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:37:14.972Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "11159b41b049962709be9281203d15fdb790c81a193c3e5045f4f749ba94e2e9",
+            "http_status": 200,
+            "navigation_next_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:37:28.798Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "taichunggov",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "新新聞"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Prime AV新視聽"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Fighting! KOREA韓語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "先探投資週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "理財周刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "鏡週刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "source_url": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "大師輕鬆讀"
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    },
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "52e17c52dc20b8433e5c40fed7243de8f989ba15e54f2da250d195333d85d025",
+            "http_status": 200,
+            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:37:46.067Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "bd1cee30973854fe9502729d864973e46e87b4f032a8b003fd02f0ab3ca1034d",
+            "http_status": 200,
+            "navigation_next_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:37:51.668Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "tpml",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "常春月刊",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "常春月刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "新新聞"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Prime AV新視聽"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "今周刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Fighting! KOREA韓語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "先探投資週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "理財周刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "萬寶週刊",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=79",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=79",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "萬寶週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "La_Vie",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=26",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=26",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "La_Vie"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "鏡週刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "source_url": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "大師輕鬆讀"
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    },
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "e2ea719754e52f397bf19dc4b5b070aa9e61ceb381dac55a3514456fca3a2926",
+            "http_status": 200,
+            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:38:13.812Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "e5710f999fcf950c7dc6e250ae59f9468d691153ed8006f8b7930a2b725f91f5",
+            "http_status": 200,
+            "navigation_next_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:38:24.192Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "tnml",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "常春月刊",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "常春月刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "新新聞"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Prime AV新視聽"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "今周刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Fighting! KOREA韓語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "先探投資週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "理財周刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "鏡週刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "source_url": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "大師輕鬆讀"
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    },
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "8aee355f0c9bd6ebe95a9b644116b979b918e76e949f18f7e6b33b601f074a77",
+            "http_status": 200,
+            "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:38:46.159Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "630f5717bc75182ec68ff731b9c4078f0d20a6d2c560a9c305999bd7ad152cb5",
+            "http_status": 200,
+            "navigation_next_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:38:54.945Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "tphcc",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "常春月刊",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "常春月刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "新新聞"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Prime AV新視聽"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=134",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "今周刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Fighting! KOREA韓語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "先探投資週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "理財周刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "鏡週刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "source_url": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "大師輕鬆讀"
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    },
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "60199dcaf22b30ab49652550bd2c30abe8799664b926ff974f53172b623dc2b3",
+            "http_status": 200,
+            "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:39:10.583Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "a8416f1339268bafe4b67051957378afa0d514a6f215afdbc6ddc74af541fce2",
+            "http_status": 200,
+            "navigation_next_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:39:19.116Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "ksml",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "新新聞"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Prime AV新視聽"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Fighting! KOREA韓語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "先探投資週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "理財周刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "鏡週刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "source_url": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "大師輕鬆讀"
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    },
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "730040e0c1dfbdc505d3de825a94e3f218d61e676c3353e8dba9926a33d730d2",
+            "http_status": 200,
+            "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:39:40.980Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "41bacd53646d5b0615a92efeb95983f1bedc69093d090ab999a3253c9e088024",
+            "http_status": 200,
+            "navigation_next_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:39:47.946Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "tycccgov",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "常春月刊",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=236",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "常春月刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "新新聞"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Prime AV新視聽"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Fighting! KOREA韓語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "先探投資週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "理財周刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "鏡週刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "source_url": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "大師輕鬆讀"
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    },
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "29f253fdfda4920b615ec8ba71a937477da2258d3b06dd8b5fa39e79e6ec424e",
+            "http_status": 200,
+            "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:40:05.486Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "ca399c84fcdbeecc9c06bd1633cf8e1f09d202a38f187737094f8a912aa8611a",
+            "http_status": 200,
+            "navigation_next_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:40:11.766Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "hchcc",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=101",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "新新聞"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Prime AV新視聽"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Fighting! KOREA韓語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "先探投資週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "理財周刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "鏡週刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "source_url": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "大師輕鬆讀"
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    },
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "e570434dbc6b5fc9414acb2956b58448129e46d07f8772b9f3fe7b964d8f7cb0",
+            "http_status": 200,
+            "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:40:30.261Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "content_digest": "9be12eb48b2670d8464bec3a482295006c17df670d72c74df910abf265f5c547",
+            "http_status": 200,
+            "navigation_next_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3",
+            "newest_date": "2026-11-05",
+            "observed_at": "2026-11-10T10:40:37.298Z",
+            "oldest_date": "2026-11-01",
+            "page": 2,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "hcmlgov",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "新新聞"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Prime AV新視聽"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "Fighting! KOREA韓語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "先探投資週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "理財周刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "鏡週刊"
+        },
+        {
+          "date": "2026-11-04",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          },
+          "magazine_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "source_url": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "title": "大師輕鬆讀"
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    },
+    {
+      "attempts": 1,
+      "coverage": {
+        "date_boundary_reached": true,
+        "first_book": {
+          "date": "2026-11-25",
+          "jid": "814",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        "method": "latest_pages",
+        "pages": [
+          {
+            "content_digest": "08c66e0f88b16ee2557e4778fd98ea0589e90fc0d13fdc1630e83f498f98231e",
+            "http_status": 200,
+            "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "newest_date": "2026-11-25",
+            "observed_at": "2026-11-10T10:40:55.865Z",
+            "oldest_date": "2026-11-05",
+            "page": 1,
+            "record_count": 20,
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "source_type": "direct",
+            "status": "ok",
+            "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          {
+            "page": 2,
+            "url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+            "status": "ok",
+            "source_type": "direct",
+            "observed_at": "2026-11-10T10:41:03.692Z",
+            "newest_date": "2026-11-05",
+            "oldest_date": "2026-11-01",
+            "record_count": 20,
+            "content_digest": "8d5242e98ab850dbfa74ff2ec5562fc2698a11c6757b66c4b869b2d3df0a2479",
+            "scan_id": "catalog-20261110-183705-1970ef",
+            "http_status": 200,
+            "navigation_next_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=3"
+          }
+        ],
+        "pagination_contiguous": true,
+        "scan_id": "catalog-20261110-183705-1970ef"
+      },
+      "id": "klccab",
+      "notes": "正常瀏覽器擴充功能依網站分頁連續讀到早於 2026-11-04；無最晚刊期限制。",
+      "records": [
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "APA KABAR印尼語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=814",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "APA KABAR印尼語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "英語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=676",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "英語學習誌"
+        },
+        {
+          "date": "2026-11-25",
+          "link_evidence": {
+            "anchor_text": "Hi! JAPAN 日語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=356",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hi! JAPAN 日語學習誌"
+        },
+        {
+          "date": "2026-11-15",
+          "link_evidence": {
+            "anchor_text": "Xin Chào!Vietnam 越南語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=355",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Xin Chào!Vietnam 越南語學習誌"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "商業周刊(精華版)",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=846",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "商業周刊(精華版)"
+        },
+        {
+          "date": "2026-11-09",
+          "link_evidence": {
+            "anchor_text": "Android玩樂誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=415",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Android玩樂誌"
+        },
+        {
+          "date": "2026-11-06",
+          "link_evidence": {
+            "anchor_text": "500輯",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=869",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "500輯"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "今周刊(精華版)",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=941",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "今周刊(精華版)"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "點股成金特別版",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=850",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "點股成金特別版"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "enya FASHION QUEEN",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=781",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "enya FASHION QUEEN"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Bonjour!France法語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=569",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Bonjour!France法語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Hola España 西語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=566",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Hola España 西語學習誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "放築塾代誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=351",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "放築塾代誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "料理.台灣",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=262",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "料理.台灣"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "財訊雙週刊",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=222",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "財訊雙週刊"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "看雜誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=205",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "看雜誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "Camera攝影誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=187",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "Camera攝影誌"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "消費者報導",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=181",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "消費者報導"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "HOUSE STYLE 時尚家居",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=171",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "HOUSE STYLE 時尚家居"
+        },
+        {
+          "date": "2026-11-05",
+          "link_evidence": {
+            "anchor_text": "新新聞",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+          },
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=165",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp",
+          "title": "新新聞"
+        },
+        {
+          "title": "Prime AV新視聽",
+          "date": "2026-11-05",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+          "link_evidence": {
+            "anchor_text": "Prime AV新視聽",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=163",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        },
+        {
+          "title": "Fighting! KOREA韓語學習誌",
+          "date": "2026-11-05",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+          "link_evidence": {
+            "anchor_text": "Fighting! KOREA韓語學習誌",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=122",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        },
+        {
+          "title": "先探投資週刊",
+          "date": "2026-11-05",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+          "link_evidence": {
+            "anchor_text": "先探投資週刊",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=89",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        },
+        {
+          "title": "理財周刊",
+          "date": "2026-11-05",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+          "link_evidence": {
+            "anchor_text": "理財周刊",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=88",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        },
+        {
+          "title": "鏡週刊",
+          "date": "2026-11-04",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+          "link_evidence": {
+            "anchor_text": "鏡週刊",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=589",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        },
+        {
+          "title": "大師輕鬆讀",
+          "date": "2026-11-04",
+          "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2",
+          "magazine_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+          "link_evidence": {
+            "anchor_text": "大師輕鬆讀",
+            "href": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_more.jsp?jid=69",
+            "source_url": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+          }
+        }
+      ],
+      "retry_wait_seconds": [],
+      "status": "complete"
+    }
+  ],
+  "pacing": {
+    "library": [
+      12,
+      20
+    ],
+    "page": [
+      4,
+      8
+    ],
+    "retry": [
+      2,
+      60
+    ]
+  },
+  "pacing_events": [
+    {
+      "actual_wait_ms": 4437.9000000003725,
+      "delay_ms": 4426,
+      "departed_at": "2026-11-10T10:37:19.418Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:37:14.975Z",
+      "target": "https://taichunggov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    },
+    {
+      "actual_wait_ms": 15268.400000000373,
+      "delay_ms": 15265,
+      "departed_at": "2026-11-10T10:37:44.088Z",
+      "kind": "library",
+      "scheduled_at": "2026-11-10T10:37:28.810Z",
+      "target": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+    },
+    {
+      "actual_wait_ms": 4176.5999999996275,
+      "delay_ms": 4161,
+      "departed_at": "2026-11-10T10:37:50.257Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:37:46.071Z",
+      "target": "https://tpml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    },
+    {
+      "actual_wait_ms": 19799.799999999814,
+      "delay_ms": 19788,
+      "departed_at": "2026-11-10T10:38:11.500Z",
+      "kind": "library",
+      "scheduled_at": "2026-11-10T10:37:51.686Z",
+      "target": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+    },
+    {
+      "actual_wait_ms": 5192.200000000186,
+      "delay_ms": 5189,
+      "departed_at": "2026-11-10T10:38:19.024Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:38:13.817Z",
+      "target": "https://tnml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    },
+    {
+      "actual_wait_ms": 15309.100000000559,
+      "delay_ms": 15299,
+      "departed_at": "2026-11-10T10:38:39.544Z",
+      "kind": "library",
+      "scheduled_at": "2026-11-10T10:38:24.218Z",
+      "target": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+    },
+    {
+      "actual_wait_ms": 6775.9000000003725,
+      "delay_ms": 6765,
+      "departed_at": "2026-11-10T10:38:52.961Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:38:46.166Z",
+      "target": "https://tphcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    },
+    {
+      "actual_wait_ms": 12795.200000000186,
+      "delay_ms": 12789,
+      "departed_at": "2026-11-10T10:39:07.815Z",
+      "kind": "library",
+      "scheduled_at": "2026-11-10T10:38:54.998Z",
+      "target": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+    },
+    {
+      "actual_wait_ms": 6488.5999999996275,
+      "delay_ms": 6482,
+      "departed_at": "2026-11-10T10:39:17.110Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:39:10.589Z",
+      "target": "https://ksml.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    },
+    {
+      "actual_wait_ms": 19266.400000000373,
+      "delay_ms": 19258,
+      "departed_at": "2026-11-10T10:39:38.516Z",
+      "kind": "library",
+      "scheduled_at": "2026-11-10T10:39:19.186Z",
+      "target": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+    },
+    {
+      "actual_wait_ms": 5402.9000000003725,
+      "delay_ms": 5401,
+      "departed_at": "2026-11-10T10:39:46.424Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:39:40.990Z",
+      "target": "https://tycccgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    },
+    {
+      "actual_wait_ms": 13265,
+      "delay_ms": 13264,
+      "departed_at": "2026-11-10T10:40:01.354Z",
+      "kind": "library",
+      "scheduled_at": "2026-11-10T10:39:48.033Z",
+      "target": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+    },
+    {
+      "actual_wait_ms": 4244.5999999996275,
+      "delay_ms": 4236,
+      "departed_at": "2026-11-10T10:40:09.771Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:40:05.496Z",
+      "target": "https://hchcc.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    },
+    {
+      "actual_wait_ms": 14090.099999999627,
+      "delay_ms": 14088,
+      "departed_at": "2026-11-10T10:40:26.038Z",
+      "kind": "library",
+      "scheduled_at": "2026-11-10T10:40:11.870Z",
+      "target": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+    },
+    {
+      "actual_wait_ms": 5546,
+      "delay_ms": 5542,
+      "departed_at": "2026-11-10T10:40:35.874Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:40:30.278Z",
+      "target": "https://hcmlgov.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    },
+    {
+      "actual_wait_ms": 15025.900000000373,
+      "delay_ms": 15022,
+      "departed_at": "2026-11-10T10:40:52.503Z",
+      "kind": "library",
+      "scheduled_at": "2026-11-10T10:40:37.390Z",
+      "target": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp"
+    },
+    {
+      "actual_wait_ms": 5379.4000000003725,
+      "delay_ms": 5367,
+      "departed_at": "2026-11-10T10:41:01.299Z",
+      "kind": "page",
+      "scheduled_at": "2026-11-10T10:40:55.878Z",
+      "target": "https://klccab.ebook.hyread.com.tw/Template/RWD3.0/magazine_view_more.jsp?nowpage=2"
+    }
+  ],
+  "retry_policy": {
+    "denial_statuses": [
+      401,
+      403
+    ],
+    "maximum_extra_retries": 2,
+    "scope": "library",
+    "wait_ranges": [
+      [
+        2,
+        5
+      ],
+      [
+        6,
+        12
+      ]
+    ]
+  },
+  "schema": 4,
+  "source": "chatgpt_assisted",
+  "window_end": "2026-11-10",
+  "window_start": "2026-11-04"
+}
